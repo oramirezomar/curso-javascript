@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tipos de datos de JavaScript</title>
+  <desc id="d">Siete tipos primitivos: string, number, bigint, boolean, undefined, null y symbol, cada uno con un ejemplo y el resultado de typeof. Y los objetos como tipo compuesto, que incluye arreglos, funciones y clases. NaN es un valor especial del tipo number.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tipos de datos: 7 primitivos y los objetos</text>
+
+  <!-- Primitivos -->
+  <rect x="20" y="52" width="520" height="330" rx="12" fill="#fff" stroke="#b45f06" stroke-width="2"/>
+  <text x="280" y="80" text-anchor="middle" font-size="16" font-weight="800" fill="#4d290b">Primitivos (acceden directamente al valor)</text>
+  <g font-size="12" font-weight="700" fill="#783d06">
+    <text x="40" y="106">Tipo</text>
+    <text x="160" y="106">Ejemplo</text>
+    <text x="360" y="106">typeof</text>
+  </g>
+  <line x1="36" y1="112" x2="524" y2="112" stroke="#e2c28a"/>
+  <g font-size="13" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">
+    <text x="40" y="136" font-family="system-ui, sans-serif" font-weight="700">String</text>
+    <text x="160" y="136">"hola"</text>
+    <text x="360" y="136">"string"</text>
+
+    <text x="40" y="168" font-family="system-ui, sans-serif" font-weight="700">Number</text>
+    <text x="160" y="168">42   3.14   NaN</text>
+    <text x="360" y="168">"number"</text>
+
+    <text x="40" y="200" font-family="system-ui, sans-serif" font-weight="700">BigInt</text>
+    <text x="160" y="200">9007199254740993n</text>
+    <text x="360" y="200">"bigint"</text>
+
+    <text x="40" y="232" font-family="system-ui, sans-serif" font-weight="700">Boolean</text>
+    <text x="160" y="232">true   false</text>
+    <text x="360" y="232">"boolean"</text>
+
+    <text x="40" y="264" font-family="system-ui, sans-serif" font-weight="700">Undefined</text>
+    <text x="160" y="264">undefined</text>
+    <text x="360" y="264">"undefined"</text>
+
+    <text x="40" y="296" font-family="system-ui, sans-serif" font-weight="700">Null</text>
+    <text x="160" y="296">null</text>
+    <text x="360" y="296" fill="#b91c1c">"object" (rareza)</text>
+
+    <text x="40" y="328" font-family="system-ui, sans-serif" font-weight="700">Symbol</text>
+    <text x="160" y="328">Symbol("id")</text>
+    <text x="360" y="328">"symbol"</text>
+  </g>
+  <text x="280" y="364" text-anchor="middle" font-size="12" fill="#783d06">NaN («Not a Number») es un valor del tipo Number, no un tipo aparte.</text>
+
+  <!-- Compuestos -->
+  <rect x="560" y="52" width="280" height="330" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="700" y="80" text-anchor="middle" font-size="16" font-weight="800" fill="#0c4a6e">Objetos (compuestos)</text>
+  <text x="700" y="100" text-anchor="middle" font-size="12" fill="#075985">acceden por referencia</text>
+  <g text-anchor="middle" font-size="13" fill="#0c4a6e">
+    <rect x="590" y="116" width="220" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+    <text x="700" y="138" font-weight="700">Objetos  { clave: valor }</text>
+    <rect x="590" y="160" width="220" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+    <text x="700" y="182" font-weight="700">Arreglos  [ 1, 2, 3 ]</text>
+    <rect x="590" y="204" width="220" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+    <text x="700" y="226" font-weight="700">Funciones</text>
+    <rect x="590" y="248" width="220" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+    <text x="700" y="270" font-weight="700">Clases</text>
+    <rect x="590" y="292" width="220" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+    <text x="700" y="314" font-weight="700">Map · Set · Date · …</text>
+  </g>
+  <text x="700" y="354" text-anchor="middle" font-size="12" fill="#075985">En la práctica, todo lo que no es primitivo</text>
+  <text x="700" y="370" text-anchor="middle" font-size="12" fill="#075985">es un objeto.</text>
+</svg>

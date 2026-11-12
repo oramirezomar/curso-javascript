@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 350" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Aplicación de principio a fin con una sola tecnología</title>
+  <desc id="d">Comparación de dos pilas tecnológicas en las tres capas del patrón MVC. Pila tradicional de ejemplo: JavaScript en la vista, PHP en el controlador y una base de datos SQL en el modelo. Pila JavaScript: JavaScript en el navegador, Node.js en el servidor y una base de datos documental con datos parecidos a JSON.</desc>
+  <rect width="860" height="350" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Isomorfismo: el mismo lenguaje en todas las capas</text>
+
+  <!-- Cabeceras de capa -->
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#5f3109">
+    <text x="300" y="76">Vista</text>
+    <text x="520" y="76">Controlador</text>
+    <text x="740" y="76">Modelo</text>
+  </g>
+  <g text-anchor="middle" font-size="12" fill="#783d06">
+    <text x="300" y="94">interfaz en el navegador</text>
+    <text x="520" y="94">lógica de negocio</text>
+    <text x="740" y="94">almacenamiento de datos</text>
+  </g>
+
+  <!-- Fila tradicional -->
+  <text x="30" y="150" font-size="14" font-weight="700" fill="#475569">Pila tradicional</text>
+  <text x="30" y="168" font-size="12" fill="#475569">(un ejemplo común)</text>
+  <g text-anchor="middle">
+    <rect x="200" y="112" width="200" height="72" rx="12" fill="#f7df1e" stroke="#b45f06" stroke-width="2"/>
+    <text x="300" y="144" font-size="17" font-weight="800" fill="#1f1f1f">JavaScript</text>
+    <text x="300" y="166" font-size="12" fill="#3f3f3f">en el navegador</text>
+
+    <rect x="420" y="112" width="200" height="72" rx="12" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <text x="520" y="144" font-size="17" font-weight="800" fill="#334155">PHP</text>
+    <text x="520" y="166" font-size="12" fill="#475569">en el servidor</text>
+
+    <rect x="640" y="112" width="200" height="72" rx="12" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <text x="740" y="144" font-size="17" font-weight="800" fill="#334155">SQL</text>
+    <text x="740" y="166" font-size="12" fill="#475569">MySQL · PostgreSQL · SQL Server</text>
+  </g>
+
+  <!-- Fila JavaScript -->
+  <text x="30" y="260" font-size="14" font-weight="700" fill="#4d290b">Pila JavaScript</text>
+  <text x="30" y="278" font-size="12" fill="#783d06">(isomorfismo)</text>
+  <g text-anchor="middle">
+    <rect x="200" y="222" width="200" height="72" rx="12" fill="#f7df1e" stroke="#b45f06" stroke-width="2"/>
+    <text x="300" y="254" font-size="17" font-weight="800" fill="#1f1f1f">JavaScript</text>
+    <text x="300" y="276" font-size="12" fill="#3f3f3f">en el navegador</text>
+
+    <rect x="420" y="222" width="200" height="72" rx="12" fill="#f7df1e" stroke="#b45f06" stroke-width="2"/>
+    <text x="520" y="254" font-size="17" font-weight="800" fill="#1f1f1f">JavaScript</text>
+    <text x="520" y="276" font-size="12" fill="#3f3f3f">Node.js en el servidor</text>
+
+    <rect x="640" y="222" width="200" height="72" rx="12" fill="#fef9c3" stroke="#b45f06" stroke-width="2"/>
+    <text x="740" y="254" font-size="15" font-weight="800" fill="#4d290b">Documentos tipo JSON</text>
+    <text x="740" y="276" font-size="12" fill="#5f3109">MongoDB · Firestore · Couchbase</text>
+  </g>
+
+  <rect x="200" y="312" width="640" height="26" rx="13" fill="#ecfccb" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="520" y="330" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">Un solo lenguaje para interfaz, lógica y (en bases documentales) estructura de datos</text>
+</svg>

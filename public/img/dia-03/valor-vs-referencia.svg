@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Valor frente a referencia</title>
+  <desc id="d">A la izquierda, con tipos primitivos cada variable guarda su propia copia del valor: al cambiar b, a sigue valiendo 10. A la derecha, con objetos dos variables guardan una referencia al mismo objeto: al cambiar el objeto desde una, la otra también lo ve.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Primitivos guardan el valor; los compuestos guardan una referencia</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Panel izquierdo -->
+  <rect x="20" y="52" width="400" height="240" rx="12" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <text x="220" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Primitivo (copia del valor)</text>
+  <text x="220" y="100" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">let a = 10;  let b = a;  b = 20;</text>
+  <g text-anchor="middle">
+    <text x="110" y="148" font-size="14" font-weight="700" fill="#4d290b">a</text>
+    <rect x="70" y="158" width="80" height="56" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="110" y="194" font-size="22" font-weight="800" fill="#4d290b">10</text>
+
+    <text x="330" y="148" font-size="14" font-weight="700" fill="#4d290b">b</text>
+    <rect x="290" y="158" width="80" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="330" y="194" font-size="22" font-weight="800" fill="#14532d">20</text>
+  </g>
+  <text x="220" y="192" text-anchor="middle" font-size="12" fill="#783d06">cajas independientes</text>
+  <text x="220" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Resultado: a = 10 · b = 20</text>
+
+  <!-- Panel derecho -->
+  <rect x="440" y="52" width="400" height="240" rx="12" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <text x="640" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Compuesto (referencia)</text>
+  <text x="640" y="100" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">const o1 = { n: 1 };  const o2 = o1;  o2.n = 2;</text>
+  <g text-anchor="middle">
+    <rect x="470" y="140" width="80" height="40" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="510" y="166" font-size="14" font-weight="700" fill="#0c4a6e">o1</text>
+    <rect x="470" y="200" width="80" height="40" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="510" y="226" font-size="14" font-weight="700" fill="#0c4a6e">o2</text>
+
+    <rect x="680" y="150" width="130" height="80" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <text x="745" y="182" font-size="12" fill="#854d0e">objeto en memoria</text>
+    <text x="745" y="212" font-size="18" font-weight="800" fill="#713f12">{ n: 2 }</text>
+  </g>
+  <path d="M552 160 L674 184" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M552 220 L674 200" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="640" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Resultado: o1.n = 2 · o2.n = 2</text>
+
+  <text x="430" y="320" text-anchor="middle" font-size="13" fill="#783d06">Como una coordenada de ajedrez: te indica dónde está la pieza, no es la pieza.</text>
+</svg>

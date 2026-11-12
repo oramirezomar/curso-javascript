@@ -5,6 +5,7 @@
 // cookies ni el localStorage de la página. La consola se reenvía con postMessage.
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import RichText from "./RichText";
 
 type Kind = "log" | "info" | "warn" | "error";
 interface OutputLine {
@@ -117,7 +118,9 @@ export default function Playground({
             ▶ {title ?? "Pruébalo tú mismo"}
           </p>
           {description && (
-            <p className="text-xs text-brand-700 dark:text-brand-300">{description}</p>
+            <p className="text-xs text-brand-700 dark:text-brand-300">
+              <RichText text={description} />
+            </p>
           )}
         </div>
         <div className="flex gap-2">

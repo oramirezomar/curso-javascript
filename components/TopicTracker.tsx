@@ -4,6 +4,7 @@
 // y el avance sigue ahí. Muestra además el texto exacto que queda guardado.
 
 import { useEffect, useState } from "react";
+import RichText from "./RichText";
 
 const PREFIX = "curso-javascript-demo:";
 
@@ -86,7 +87,9 @@ export default function TopicTracker({
           ☑ {title ?? "Marca tu progreso"}
         </p>
         {description && (
-          <p className="text-xs text-brand-700 dark:text-brand-300">{description}</p>
+          <p className="text-xs text-brand-700 dark:text-brand-300">
+            <RichText text={description} />
+          </p>
         )}
       </header>
 

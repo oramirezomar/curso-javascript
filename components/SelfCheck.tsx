@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Lesson } from "@/lib/types";
+import RichText from "./RichText";
 
 export default function SelfCheck({ questions }: { questions: Lesson["selfCheck"] }) {
   const [selected, setSelected] = useState<Record<number, number>>({});
@@ -39,7 +40,7 @@ export default function SelfCheck({ questions }: { questions: Lesson["selfCheck"
         return (
           <div key={qIdx} className="flex flex-col gap-3">
             <p className="font-medium text-slate-800 dark:text-slate-200">
-              {qIdx + 1}. {q.question}
+              {qIdx + 1}. <RichText text={q.question} />
             </p>
             <div className="flex flex-col gap-2">
               {q.options.map((option, oIdx) => {
@@ -61,7 +62,7 @@ export default function SelfCheck({ questions }: { questions: Lesson["selfCheck"
                       !isRevealed ? "hover:border-brand-400 hover:bg-brand-50 dark:hover:bg-brand-900/20" : ""
                     }`}
                   >
-                    {option}
+                    <RichText text={option} />
                   </button>
                 );
               })}
@@ -75,7 +76,7 @@ export default function SelfCheck({ questions }: { questions: Lesson["selfCheck"
                 }`}
               >
                 {isCorrect ? "✅ Correcto. " : "❌ No es esa. "}
-                {q.explanation}
+                <RichText text={q.explanation} />
               </p>
             )}
           </div>

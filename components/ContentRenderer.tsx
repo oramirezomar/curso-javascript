@@ -205,7 +205,7 @@ export default async function ContentRenderer({ blocks }: { blocks: ContentBlock
                         <span className="mr-2 inline-block text-brand-500 transition group-open:rotate-90" aria-hidden>
                           ▸
                         </span>
-                        {item.title}
+                        <RichText text={item.title} />
                       </summary>
                       <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
                         <RichText text={item.text} />
