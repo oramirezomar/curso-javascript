@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Evolución de ECMAScript</title>
+  <desc id="d">Línea de tiempo de versiones: JavaScript 1995, ECMAScript 1 en 1997, ECMAScript 2 en 1998, ECMAScript 3 en 1999, ECMAScript 4 abandonada, una década de sequía hasta ECMAScript 5 en 2009, 5.1 en 2011 y ECMAScript 2015 (ES6).</desc>
+  <rect width="860" height="320" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Evolución del estándar ECMAScript</text>
+
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Eje -->
+  <line x1="30" y1="170" x2="835" y2="170" stroke="#b45f06" stroke-width="4" marker-end="url(#a)"/>
+
+  <!-- 1995 -->
+  <circle cx="70" cy="170" r="9" fill="#f7df1e" stroke="#b45f06" stroke-width="3"/>
+  <text x="70" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">1995</text>
+  <text x="70" y="206" text-anchor="middle" font-size="13" fill="#5f3109">Nace</text>
+  <text x="70" y="223" text-anchor="middle" font-size="13" fill="#5f3109">JavaScript</text>
+
+  <!-- 1997 -->
+  <circle cx="170" cy="170" r="9" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+  <text x="170" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">1997</text>
+  <text x="170" y="206" text-anchor="middle" font-size="13" fill="#5f3109">ES1</text>
+  <text x="170" y="223" text-anchor="middle" font-size="12" fill="#783d06">1.ª versión estable</text>
+
+  <!-- 1998 -->
+  <circle cx="260" cy="170" r="9" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+  <text x="260" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">1998</text>
+  <text x="260" y="206" text-anchor="middle" font-size="13" fill="#5f3109">ES2</text>
+
+  <!-- 1999 -->
+  <circle cx="340" cy="170" r="9" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+  <text x="340" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">1999</text>
+  <text x="340" y="206" text-anchor="middle" font-size="13" fill="#5f3109">ES3</text>
+
+  <!-- ES4 abandonada -->
+  <rect x="385" y="62" width="120" height="44" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="445" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">ES4</text>
+  <text x="445" y="98" text-anchor="middle" font-size="12" fill="#7f1d1d">abandonada</text>
+  <path d="M445 106 L445 160" stroke="#b91c1c" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Década sin versión -->
+  <path d="M365 232 Q450 262 535 232" stroke="#64748b" stroke-width="2" fill="none"/>
+  <text x="450" y="268" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">~10 años sin versión nueva</text>
+  <text x="450" y="286" text-anchor="middle" font-size="12" fill="#475569">(época de auge de Flash)</text>
+
+  <!-- 2009 -->
+  <circle cx="580" cy="170" r="9" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+  <text x="580" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">2009</text>
+  <text x="580" y="206" text-anchor="middle" font-size="13" fill="#5f3109">ES5</text>
+  <text x="580" y="223" text-anchor="middle" font-size="12" fill="#783d06">+ Node.js</text>
+
+  <!-- 2011 -->
+  <circle cx="670" cy="170" r="9" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+  <text x="670" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">2011</text>
+  <text x="670" y="206" text-anchor="middle" font-size="13" fill="#5f3109">ES5.1</text>
+
+  <!-- 2015 -->
+  <circle cx="775" cy="170" r="11" fill="#f7df1e" stroke="#b45f06" stroke-width="3"/>
+  <text x="775" y="144" text-anchor="middle" font-size="16" font-weight="700" fill="#4d290b">2015</text>
+  <text x="775" y="206" text-anchor="middle" font-size="13" font-weight="700" fill="#5f3109">ES2015</text>
+  <text x="775" y="223" text-anchor="middle" font-size="12" fill="#783d06">(ES6)</text>
+</svg>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+}
+
+/* Evita desbordamiento horizontal en móvil por tokens largos en el texto del
+   artículo, sin afectar los bloques de código, que hacen scroll propio. */
+article p,
+article li,
+article h1,
+article h2,
+article h3 {
+  overflow-wrap: anywhere;
+}
+
+/* Oculta el marcador nativo de <summary> (se usa un ▸ propio). */
+details > summary::-webkit-details-marker {
+  display: none;
+}

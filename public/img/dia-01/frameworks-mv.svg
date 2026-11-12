@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De MVC en el servidor a los frameworks de componentes</title>
+  <desc id="d">El patrón modelo-vista-controlador del servidor se replica en el cliente con variantes MV*, como MVP y MVVM. Surgen Backbone y AngularJS en 2010, Ember en 2011, React en 2013 y Vue en 2014.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Del servidor al cliente: la ola de los frameworks (2010-2014)</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Servidor -->
+  <rect x="30" y="58" width="220" height="112" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="140" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#0c4a6e">Servidor</text>
+  <text x="140" y="120" text-anchor="middle" font-size="20" font-weight="800" fill="#075985">MVC</text>
+  <text x="140" y="146" text-anchor="middle" font-size="12" fill="#075985">Modelo · Vista · Controlador</text>
+
+  <path d="M254 114 L316 114" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="285" y="102" text-anchor="middle" font-size="12" fill="#783d06">se lleva</text>
+  <text x="285" y="140" text-anchor="middle" font-size="12" fill="#783d06">al cliente</text>
+
+  <!-- Cliente -->
+  <rect x="322" y="58" width="508" height="112" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="576" y="86" text-anchor="middle" font-size="14" font-weight="700" fill="#5f3109">Cliente (front-end): patrones «MV*»</text>
+  <g font-size="14" font-weight="700" fill="#4d290b" text-anchor="middle">
+    <rect x="344" y="100" width="130" height="32" rx="16" fill="#fff" stroke="#b45f06"/>
+    <text x="409" y="121">MVP</text>
+    <rect x="488" y="100" width="130" height="32" rx="16" fill="#fff" stroke="#b45f06"/>
+    <text x="553" y="121">MVVM</text>
+    <rect x="632" y="100" width="176" height="32" rx="16" fill="#fff" stroke="#b45f06"/>
+    <text x="720" y="121">…y otros MV*</text>
+  </g>
+  <text x="576" y="154" text-anchor="middle" font-size="12" fill="#783d06">MVP = Modelo-Vista-Presentador · MVVM = Modelo-Vista-VistaModelo</text>
+
+  <!-- Línea de librerías -->
+  <line x1="50" y1="246" x2="815" y2="246" stroke="#b45f06" stroke-width="3" marker-end="url(#a)"/>
+  <g text-anchor="middle" font-size="14" fill="#4d290b">
+    <circle cx="110" cy="246" r="8" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+    <text x="110" y="222" font-weight="700">Backbone</text>
+    <text x="110" y="277" font-size="12" fill="#783d06">2010</text>
+
+    <circle cx="270" cy="246" r="9" fill="#dd0031" stroke="#9b0022" stroke-width="3"/>
+    <text x="270" y="222" font-weight="700">AngularJS</text>
+    <text x="270" y="277" font-size="12" fill="#783d06">2010</text>
+
+    <circle cx="430" cy="246" r="8" fill="#fff" stroke="#b45f06" stroke-width="3"/>
+    <text x="430" y="222" font-weight="700">Ember</text>
+    <text x="430" y="277" font-size="12" fill="#783d06">2011</text>
+
+    <circle cx="590" cy="246" r="9" fill="#61dafb" stroke="#0e7490" stroke-width="3"/>
+    <text x="590" y="222" font-weight="700">React</text>
+    <text x="590" y="277" font-size="12" fill="#783d06">2013</text>
+
+    <circle cx="750" cy="246" r="9" fill="#42b883" stroke="#256f4f" stroke-width="3"/>
+    <text x="750" y="222" font-weight="700">Vue</text>
+    <text x="750" y="277" font-size="12" fill="#783d06">2014</text>
+  </g>
+  <text x="430" y="316" text-anchor="middle" font-size="14" font-weight="700" fill="#5f3109">Angular · React · Vue → componentes, programación reactiva, estilo declarativo y funcional</text>
+</svg>

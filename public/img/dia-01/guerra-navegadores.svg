@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De la guerra de navegadores a la ruta común</title>
+  <desc id="d">Internet Explorer dominaba y seguía su propio camino; hacia 2012 Chrome lo superó en uso y Microsoft retiró Internet Explorer en 2022. En marzo de 2017 CSS Grid llegó a Firefox 52, Chrome 57 y Safari 10.1 con días de diferencia.</desc>
+  <rect width="800" height="330" fill="#fffdf7"/>
+  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Del «cada quien a su manera» a la ruta común</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="56" width="340" height="120" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="200" y="86" text-anchor="middle" font-size="16" font-weight="800" fill="#7f1d1d">Hasta ~2012</text>
+  <text x="200" y="112" text-anchor="middle" font-size="14" fill="#7f1d1d">Internet Explorer, el más usado,</text>
+  <text x="200" y="132" text-anchor="middle" font-size="14" fill="#7f1d1d">se aparta de los estándares</text>
+  <text x="200" y="152" text-anchor="middle" font-size="14" fill="#7f1d1d">y obliga a escribir código distinto.</text>
+
+  <path d="M374 116 L426 116" stroke="#b45f06" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <text x="400" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#783d06">2012</text>
+
+  <rect x="430" y="56" width="340" height="120" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="600" y="86" text-anchor="middle" font-size="16" font-weight="800" fill="#14532d">Hoy</text>
+  <text x="600" y="112" text-anchor="middle" font-size="14" fill="#14532d">Chrome superó a Explorer y este</text>
+  <text x="600" y="132" text-anchor="middle" font-size="14" fill="#14532d">se retiró en 2022. Los navegadores</text>
+  <text x="600" y="152" text-anchor="middle" font-size="14" fill="#14532d">siguen estándares comunes.</text>
+
+  <!-- Ejemplo CSS Grid -->
+  <text x="400" y="214" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Ejemplo: CSS Grid, marzo de 2017</text>
+  <line x1="90" y1="262" x2="710" y2="262" stroke="#b45f06" stroke-width="3" marker-end="url(#a)"/>
+  <g text-anchor="middle">
+    <circle cx="170" cy="262" r="10" fill="#f97316" stroke="#9a3412" stroke-width="3"/>
+    <text x="170" y="240" font-size="14" font-weight="700" fill="#4d290b">Firefox 52</text>
+    <text x="170" y="294" font-size="12" fill="#783d06">7 de marzo</text>
+
+    <circle cx="300" cy="262" r="10" fill="#fbbf24" stroke="#92400e" stroke-width="3"/>
+    <text x="300" y="240" font-size="14" font-weight="700" fill="#4d290b">Chrome 57</text>
+    <text x="300" y="294" font-size="12" fill="#783d06">9 de marzo</text>
+
+    <circle cx="560" cy="262" r="10" fill="#38bdf8" stroke="#075985" stroke-width="3"/>
+    <text x="560" y="240" font-size="14" font-weight="700" fill="#4d290b">Safari 10.1</text>
+    <text x="560" y="294" font-size="12" fill="#783d06">26-27 de marzo</text>
+  </g>
+</svg>

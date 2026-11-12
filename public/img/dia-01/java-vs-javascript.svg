@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Java no es JavaScript</title>
+  <desc id="d">Java y JavaScript son lenguajes distintos que solo comparten letras en el nombre, como ham y hamster. JavaScript tuvo los nombres Mocha y LiveScript antes de llamarse así por marketing.</desc>
+  <rect width="800" height="380" fill="#fffdf7"/>
+  <text x="400" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Java ≠ JavaScript</text>
+
+  <rect x="50" y="56" width="290" height="132" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="195" y="92" text-anchor="middle" font-size="24" font-weight="800" fill="#7f1d1d">Java</text>
+  <text x="195" y="120" text-anchor="middle" font-size="14" fill="#7f1d1d">Tecnología de Sun Microsystems</text>
+  <text x="195" y="142" text-anchor="middle" font-size="14" fill="#7f1d1d">(hoy pertenece a Oracle)</text>
+  <text x="195" y="168" text-anchor="middle" font-size="13" fill="#991b1b">El «boom» de los años 90</text>
+
+  <text x="400" y="130" text-anchor="middle" font-size="56" font-weight="800" fill="#64748b">≠</text>
+
+  <rect x="460" y="56" width="290" height="132" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="605" y="92" text-anchor="middle" font-size="24" font-weight="800" fill="#713f12">JavaScript</text>
+  <text x="605" y="120" text-anchor="middle" font-size="14" fill="#713f12">Nacido en Netscape</text>
+  <text x="605" y="142" text-anchor="middle" font-size="14" fill="#713f12">para el navegador web</text>
+  <text x="605" y="168" text-anchor="middle" font-size="13" fill="#854d0e">Renombrado por marketing</text>
+
+  <!-- Nombres clave -->
+  <text x="400" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Los nombres de JavaScript</text>
+  <rect x="150" y="240" width="130" height="40" rx="20" fill="#e2e8f0"/>
+  <text x="215" y="266" text-anchor="middle" font-size="15" fill="#334155">Mocha</text>
+  <path d="M284 260 L322 260" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="326" y="240" width="148" height="40" rx="20" fill="#e2e8f0"/>
+  <text x="400" y="266" text-anchor="middle" font-size="15" fill="#334155">LiveScript</text>
+  <path d="M478 260 L516 260" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="520" y="240" width="140" height="40" rx="20" fill="#f7df1e"/>
+  <text x="590" y="266" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">JavaScript</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Analogía ham / hamster -->
+  <rect x="150" y="304" width="500" height="56" rx="12" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <text x="400" y="328" text-anchor="middle" font-size="14" fill="#5f3109">Como <tspan font-weight="700">ham</tspan> (jamón) y <tspan font-weight="700">hamster</tspan> (hámster):</text>
+  <text x="400" y="348" text-anchor="middle" font-size="14" fill="#5f3109">empiezan igual, pero no tienen nada que ver.</text>
+</svg>

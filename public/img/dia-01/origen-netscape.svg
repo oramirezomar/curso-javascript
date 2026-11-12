@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Origen de JavaScript en Netscape</title>
+  <desc id="d">Netscape Navigator compite con Internet Explorer; Brendan Eich crea el primer prototipo de JavaScript en unos 10 días en mayo de 1995 para hacer páginas dinámicas.</desc>
+  <rect width="800" height="360" fill="#fffdf7"/>
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">1995 · Nace JavaScript</text>
+
+  <!-- Navegadores -->
+  <rect x="60" y="62" width="250" height="84" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="185" y="96" text-anchor="middle" font-size="18" font-weight="700" fill="#5f3109">Netscape Navigator</text>
+  <text x="185" y="122" text-anchor="middle" font-size="14" fill="#783d06">Hoy ya no existe (AOL, 1999)</text>
+
+  <text x="400" y="112" text-anchor="middle" font-size="22" font-weight="700" fill="#64748b">vs</text>
+
+  <rect x="490" y="62" width="250" height="84" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="615" y="96" text-anchor="middle" font-size="18" font-weight="700" fill="#0c4a6e">Internet Explorer</text>
+  <text x="615" y="122" text-anchor="middle" font-size="14" fill="#075985">El competidor de la época</text>
+
+  <!-- Flecha de pedido -->
+  <path d="M185 146 L185 190" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+  <text x="200" y="174" font-size="14" fill="#783d06">Netscape pide una tecnología para el navegador</text>
+
+  <!-- Brendan Eich -->
+  <circle cx="110" cy="244" r="44" fill="#b45f06"/>
+  <text x="110" y="252" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">BE</text>
+  <text x="110" y="310" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Brendan Eich</text>
+  <text x="110" y="330" text-anchor="middle" font-size="13" fill="#783d06">creador de JavaScript</text>
+
+  <!-- 13 días -->
+  <path d="M160 244 L330 244" stroke="#b45f06" stroke-width="2.5" stroke-dasharray="6 5" fill="none" marker-end="url(#a)"/>
+  <text x="245" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">~10 días</text>
+  <text x="245" y="266" text-anchor="middle" font-size="12" fill="#783d06">(prototipo, mayo de 1995)</text>
+
+  <!-- JavaScript -->
+  <rect x="335" y="204" width="170" height="80" rx="12" fill="#f7df1e" stroke="#b45f06" stroke-width="2"/>
+  <text x="420" y="238" text-anchor="middle" font-size="26" font-weight="800" fill="#1f1f1f">JS</text>
+  <text x="420" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#1f1f1f">JavaScript</text>
+
+  <!-- Para qué -->
+  <rect x="540" y="196" width="200" height="104" rx="12" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <text x="640" y="222" text-anchor="middle" font-size="14" font-weight="700" fill="#4d290b">Para hacer páginas dinámicas</text>
+  <text x="640" y="248" text-anchor="middle" font-size="13" fill="#5f3109">• Reaccionar a botones</text>
+  <text x="640" y="270" text-anchor="middle" font-size="13" fill="#5f3109">• Enviar formularios HTML</text>
+  <text x="640" y="292" text-anchor="middle" font-size="13" fill="#5f3109">• Interactividad en el cliente</text>
+  <path d="M505 244 L536 244" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+</svg>
