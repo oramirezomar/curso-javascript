@@ -4,6 +4,7 @@ import CodeTabs from "./CodeTabs";
 import Timeline from "./Timeline";
 import Playground from "./Playground";
 import RichText from "./RichText";
+import TopicTracker from "./TopicTracker";
 
 function CalloutIcon({ variant }: { variant: "info" | "warning" | "success" }) {
   if (variant === "warning") return <span aria-hidden>⚠️</span>;
@@ -175,6 +176,17 @@ export default async function ContentRenderer({ blocks }: { blocks: ContentBlock
                   description={block.description}
                   code={block.code}
                   expected={block.expected}
+                />
+              );
+
+            case "topicTracker":
+              return (
+                <TopicTracker
+                  key={idx}
+                  title={block.title}
+                  description={block.description}
+                  storageKey={block.storageKey}
+                  items={block.items}
                 />
               );
 

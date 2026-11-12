@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Ruta de aprendizaje de JavaScript</title>
+  <desc id="d">Doce paradas en tres filas: introducción, variables y constantes, tipos de datos, funciones; arreglos, objetos, estructuras de control y condicionales, programación orientada a objetos; DOM, AJAX y REST, aplicaciones de una sola página y cursos complementarios como PWA y Node.js. Hay bloques de ejercicios tras la sintaxis básica, el DOM y AJAX con REST.</desc>
+  <rect width="900" height="470" fill="#fffdf7"/>
+  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Ruta de aprendizaje: de las bases a las aplicaciones web</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Fila 1: bases -->
+  <g text-anchor="middle">
+    <rect x="30" y="60" width="165" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="112" y="84" font-size="12" font-weight="700" fill="#783d06">1</text>
+    <text x="112" y="106" font-size="15" font-weight="700" fill="#4d290b">Introducción</text>
+    <text x="112" y="124" font-size="12" fill="#5f3109">historia y enfoque</text>
+
+    <rect x="255" y="60" width="165" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="337" y="84" font-size="12" font-weight="700" fill="#783d06">2</text>
+    <text x="337" y="106" font-size="15" font-weight="700" fill="#4d290b">Variables</text>
+    <text x="337" y="124" font-size="12" fill="#5f3109">let y const</text>
+
+    <rect x="480" y="60" width="165" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="562" y="84" font-size="12" font-weight="700" fill="#783d06">3</text>
+    <text x="562" y="106" font-size="15" font-weight="700" fill="#4d290b">Tipos de datos</text>
+    <text x="562" y="124" font-size="12" fill="#5f3109">texto · números · booleanos</text>
+
+    <rect x="705" y="60" width="165" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="787" y="84" font-size="12" font-weight="700" fill="#783d06">4</text>
+    <text x="787" y="106" font-size="15" font-weight="700" fill="#4d290b">Funciones</text>
+    <text x="787" y="124" font-size="12" fill="#5f3109">incluye arrow functions</text>
+  </g>
+  <path d="M197 98 L251 98" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M422 98 L476 98" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M647 98 L701 98" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M787 138 L787 160 L112 160 L112 176" stroke="#b45f06" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#a)"/>
+
+  <!-- Fila 2: estructuras -->
+  <g text-anchor="middle">
+    <rect x="30" y="180" width="165" height="76" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="112" y="204" font-size="12" font-weight="700" fill="#075985">5</text>
+    <text x="112" y="226" font-size="15" font-weight="700" fill="#0c4a6e">Arreglos</text>
+    <text x="112" y="244" font-size="12" fill="#075985">listas de datos</text>
+
+    <rect x="255" y="180" width="165" height="76" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="337" y="204" font-size="12" font-weight="700" fill="#075985">6</text>
+    <text x="337" y="226" font-size="15" font-weight="700" fill="#0c4a6e">Objetos</text>
+    <text x="337" y="244" font-size="12" fill="#075985">datos con propiedades</text>
+
+    <rect x="480" y="180" width="165" height="76" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="562" y="204" font-size="12" font-weight="700" fill="#075985">7</text>
+    <text x="562" y="226" font-size="13" font-weight="700" fill="#0c4a6e">Estructuras de control</text>
+    <text x="562" y="244" font-size="12" fill="#075985">condicionales y bucles</text>
+
+    <rect x="705" y="180" width="165" height="76" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="787" y="204" font-size="12" font-weight="700" fill="#075985">8</text>
+    <text x="787" y="226" font-size="15" font-weight="700" fill="#0c4a6e">POO</text>
+    <text x="787" y="244" font-size="12" fill="#075985">orientación a objetos</text>
+  </g>
+  <path d="M197 218 L251 218" stroke="#0369a1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M422 218 L476 218" stroke="#0369a1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M647 218 L701 218" stroke="#0369a1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M787 258 L787 290 L112 290 L112 306" stroke="#0369a1" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#a)"/>
+
+  <!-- Insignia ejercicios tras la sintaxis básica (parada 7) -->
+  <rect x="502" y="266" width="120" height="22" rx="11" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <text x="562" y="281" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">+ ejercicios</text>
+
+  <!-- Fila 3: web -->
+  <g text-anchor="middle">
+    <rect x="30" y="310" width="165" height="76" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="112" y="334" font-size="12" font-weight="700" fill="#166534">9</text>
+    <text x="112" y="356" font-size="15" font-weight="700" fill="#14532d">DOM</text>
+    <text x="112" y="374" font-size="12" fill="#166534">JavaScript + HTML + CSS</text>
+
+    <rect x="255" y="310" width="165" height="76" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="337" y="334" font-size="12" font-weight="700" fill="#166534">10</text>
+    <text x="337" y="356" font-size="15" font-weight="700" fill="#14532d">AJAX y REST</text>
+    <text x="337" y="374" font-size="12" fill="#166534">consumo de datos</text>
+
+    <rect x="480" y="310" width="165" height="76" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="562" y="334" font-size="12" font-weight="700" fill="#166534">11</text>
+    <text x="562" y="356" font-size="15" font-weight="700" fill="#14532d">SPA</text>
+    <text x="562" y="374" font-size="12" fill="#166534">una sola página</text>
+
+    <rect x="705" y="310" width="165" height="76" rx="12" fill="#fff" stroke="#b45f06" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="787" y="334" font-size="12" font-weight="700" fill="#783d06">+</text>
+    <text x="787" y="356" font-size="15" font-weight="700" fill="#4d290b">Complementos</text>
+    <text x="787" y="374" font-size="12" fill="#5f3109">PWA · Node.js</text>
+  </g>
+  <path d="M197 348 L251 348" stroke="#15803d" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M422 348 L476 348" stroke="#15803d" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <path d="M647 348 L701 348" stroke="#15803d" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+
+  <!-- Insignias ejercicios DOM y AJAX/REST -->
+  <rect x="52" y="396" width="120" height="22" rx="11" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <text x="112" y="411" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">+ ejercicios</text>
+  <rect x="277" y="396" width="120" height="22" rx="11" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <text x="337" y="411" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">+ ejercicios</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="13" fill="#5f3109">Ruta orientativa: puedes saltar a la parada que necesites. Los temas se publican día a día.</text>
+</svg>

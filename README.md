@@ -31,6 +31,7 @@ npm run build    # compila y valida el catálogo
 | `timeline` | Línea de tiempo navegable (cada hito puede llevar código) |
 | `playground` | Editor ejecutable: corre en un `<iframe sandbox="allow-scripts">` aislado |
 | `accordion` | Preguntas frecuentes desplegables |
+| `topicTracker` | Lista de temas marcables que se guarda en `localStorage` y muestra el valor guardado |
 
 Cada lección termina con autoevaluación (`selfCheck`) y el progreso se guarda en `localStorage`.
 

@@ -65,7 +65,15 @@ export type ContentBlock =
     }
   // Preguntas/respuestas desplegables.
   | { type: "accordion"; title?: string; items: { title: string; text: string }[] }
-  | { type: "table"; caption?: string; headers: string[]; rows: string[][] };
+  | { type: "table"; caption?: string; headers: string[]; rows: string[][] }
+  // Lista de temas marcables cuyo estado se guarda en localStorage (demo real).
+  | {
+      type: "topicTracker";
+      title?: string;
+      description?: string;
+      storageKey: string;
+      items: string[];
+    };
 
 export interface Lesson {
   day: number;

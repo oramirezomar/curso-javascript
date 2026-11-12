@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De sitio web a aplicación instalable (PWA)</title>
+  <desc id="d">Un sitio servido por HTTPS con un manifiesto de aplicación web puede ser instalado desde el navegador. En ordenador se usa el icono de instalar de la barra de direcciones, en Android el menú del navegador y en iPhone o iPad la opción Compartir y Añadir a pantalla de inicio. Un service worker es opcional para instalar, pero habilita el uso sin conexión.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">PWA: un sitio web que se instala como una app</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Requisitos -->
+  <rect x="30" y="58" width="260" height="170" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="160" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Lo que necesita tu sitio</text>
+  <g font-size="13" fill="#5f3109">
+    <text x="48" y="116">✔ Servirse por HTTPS</text>
+    <text x="48" y="140">✔ Manifiesto (manifest.json):</text>
+    <text x="64" y="158">nombre, iconos 192 y 512 px,</text>
+    <text x="64" y="176">start_url y display</text>
+    <text x="48" y="202" fill="#783d06">○ Service worker (opcional:</text>
+    <text x="64" y="220" fill="#783d06">uso sin conexión)</text>
+  </g>
+
+  <path d="M294 143 L346 143" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+
+  <!-- Navegador -->
+  <rect x="350" y="58" width="190" height="170" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="445" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#0c4a6e">El navegador</text>
+  <text x="445" y="118" text-anchor="middle" font-size="13" fill="#075985">detecta que se puede</text>
+  <text x="445" y="138" text-anchor="middle" font-size="13" fill="#075985">instalar y ofrece</text>
+  <text x="445" y="158" text-anchor="middle" font-size="13" fill="#075985">hacerlo</text>
+  <rect x="385" y="178" width="120" height="28" rx="14" fill="#0369a1"/>
+  <text x="445" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Instalar</text>
+
+  <path d="M544 143 L596 143" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+
+  <!-- Resultado -->
+  <rect x="600" y="58" width="230" height="170" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="715" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#14532d">Resultado</text>
+  <g font-size="13" fill="#166534">
+    <text x="618" y="116">• Icono propio en inicio/escritorio</text>
+    <text x="618" y="140">• Ventana propia, sin barra</text>
+    <text x="634" y="158">del navegador</text>
+    <text x="618" y="182">• Se abre como una aplicación</text>
+    <text x="618" y="206">• Sigue siendo una web</text>
+  </g>
+
+  <!-- Cómo instalar -->
+  <text x="430" y="262" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Cómo instalarla según el dispositivo</text>
+  <g text-anchor="middle">
+    <rect x="30" y="274" width="260" height="62" rx="10" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+    <text x="160" y="298" font-size="13" font-weight="700" fill="#4d290b">Ordenador (Chrome, Edge)</text>
+    <text x="160" y="318" font-size="12" fill="#5f3109">Icono «Instalar» en la barra de direcciones</text>
+
+    <rect x="300" y="274" width="260" height="62" rx="10" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+    <text x="430" y="298" font-size="13" font-weight="700" fill="#4d290b">Android (Chrome)</text>
+    <text x="430" y="318" font-size="12" fill="#5f3109">Menú ⋮ → Instalar app / Añadir a inicio</text>
+
+    <rect x="570" y="274" width="260" height="62" rx="10" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+    <text x="700" y="298" font-size="13" font-weight="700" fill="#4d290b">iPhone y iPad</text>
+    <text x="700" y="318" font-size="12" fill="#5f3109">Compartir → Añadir a pantalla de inicio</text>
+  </g>
+</svg>
