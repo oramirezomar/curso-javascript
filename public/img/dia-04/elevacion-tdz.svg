@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Elevación de var y zona muerta temporal de let</title>
+  <desc id="d">Con var la declaración se procesa al principio del ámbito, así que leer la variable antes de su línea de declaración da undefined. Con let la variable existe pero está en la zona muerta temporal hasta que se ejecuta su declaración, y leerla antes lanza un ReferenceError.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Usar una variable antes de declararla</text>
+
+  <!-- var -->
+  <text x="30" y="72" font-size="15" font-weight="800" fill="#7f1d1d">var → elevación (hoisting)</text>
+  <rect x="30" y="84" width="800" height="28" rx="6" fill="#fee2e2"/>
+  <rect x="30" y="84" width="270" height="28" rx="6" fill="#fecaca"/>
+  <text x="165" y="103" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">existe y vale undefined</text>
+  <text x="565" y="103" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">ya tiene su valor</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#334155">
+    <rect x="30" y="122" width="800" height="78" rx="8" fill="#0d1117"/>
+    <text x="44" y="144" fill="#c9d1d9">console.log(antes);        <tspan fill="#8b949e">// undefined (no hay error)</tspan></text>
+    <text x="44" y="164" fill="#c9d1d9">var antes = "valor";       <tspan fill="#8b949e">// aquí se asigna el valor</tspan></text>
+    <text x="44" y="184" fill="#c9d1d9">console.log(antes);        <tspan fill="#8b949e">// "valor"</tspan></text>
+  </g>
+  <line x1="300" y1="84" x2="300" y2="112" stroke="#b91c1c" stroke-width="2" stroke-dasharray="5 4"/>
+
+  <!-- let -->
+  <text x="30" y="236" font-size="15" font-weight="800" fill="#14532d">let → zona muerta temporal (TDZ)</text>
+  <rect x="30" y="248" width="800" height="28" rx="6" fill="#dcfce7"/>
+  <rect x="30" y="248" width="270" height="28" rx="6" fill="#bbf7d0"/>
+  <text x="165" y="267" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">zona muerta: ReferenceError</text>
+  <text x="565" y="267" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">inicializada y utilizable</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12">
+    <rect x="30" y="286" width="800" height="42" rx="8" fill="#0d1117"/>
+    <text x="44" y="304" fill="#c9d1d9">console.log(despues);      <tspan fill="#f85149">// ReferenceError</tspan></text>
+    <text x="44" y="320" fill="#c9d1d9">let despues = "valor";     <tspan fill="#8b949e">// termina la zona muerta</tspan></text>
+  </g>
+  <line x1="300" y1="248" x2="300" y2="276" stroke="#15803d" stroke-width="2" stroke-dasharray="5 4"/>
+</svg>

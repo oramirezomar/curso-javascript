@@ -15,10 +15,26 @@ interface OutputLine {
 
 const COLLECT_MS = 3000; // ventana para capturar logs asíncronos (setTimeout, promesas)
 
-function buildSrcDoc(code: string, runId: string): string {
+export type PlaygroundMode = "function" | "script" | "module";
+
+function buildSrcDoc(code: string, runId: string, mode: PlaygroundMode): string {
   // Se serializa como JSON y se escapa "<" para que el código no cierre el <script>.
   const payload = JSON.stringify(code).replace(/</g, "\\u003c");
   const id = JSON.stringify(runId);
+  // "function": el código corre dentro de una función (var queda local).
+  // "script"/"module": se inyecta un <script> para reproducir el ámbito global real
+  // de un script clásico o el ámbito de un módulo ES.
+  const runner =
+    mode === "function"
+      ? `try {
+    new Function(${payload})();
+  } catch (e) {
+    send("error", [e && e.name ? e.name + ": " + e.message : String(e)]);
+  }`
+      : `var s = document.createElement("script");
+  ${mode === "module" ? 's.type = "module";' : ""}
+  s.textContent = ${payload};
+  document.body.appendChild(s);`;
   return `<!doctype html><html><body><script>
 (function () {
   var runId = ${id};
@@ -37,13 +53,9 @@ function buildSrcDoc(code: string, runId: string): string {
   console.info = function () { send("info", arguments); };
   console.warn = function () { send("warn", arguments); };
   console.error = function () { send("error", arguments); };
-  window.addEventListener("error", function (e) { send("error", [e.message]); });
+  window.addEventListener("error", function (e) { send("error", [String(e.message).replace(/^Uncaught /, "")]); });
   window.addEventListener("unhandledrejection", function (e) { send("error", ["Promesa rechazada: " + fmt(e.reason)]); });
-  try {
-    new Function(${payload})();
-  } catch (e) {
-    send("error", [e && e.name ? e.name + ": " + e.message : String(e)]);
-  }
+  ${runner}
 })();
 <\/script></body></html>`;
 }
@@ -60,11 +72,13 @@ export default function Playground({
   description,
   code: initialCode,
   expected,
+  mode = "function",
 }: {
   title?: string;
   description?: string;
   code: string;
   expected?: string;
+  mode?: PlaygroundMode;
 }) {
   const [code, setCode] = useState(initialCode);
   const [lines, setLines] = useState<OutputLine[]>([]);
@@ -89,7 +103,10 @@ export default function Playground({
     };
   }, [run]);
 
-  const srcDoc = useMemo(() => (run ? buildSrcDoc(run.code, run.id) : undefined), [run]);
+  const srcDoc = useMemo(
+    () => (run ? buildSrcDoc(run.code, run.id, mode) : undefined),
+    [run, mode],
+  );
 
   function execute() {
     counter.current += 1;

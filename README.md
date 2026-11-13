@@ -29,7 +29,7 @@ npm run build    # compila y valida el catálogo
 | `image` | Ilustración con `alt` obligatorio y pie de figura |
 | `keyFacts` | Tarjetas de cifras clave |
 | `timeline` | Línea de tiempo navegable (cada hito puede llevar código) |
-| `playground` | Editor ejecutable: corre en un `<iframe sandbox="allow-scripts">` aislado |
+| `playground` | Editor ejecutable: corre en un `<iframe sandbox="allow-scripts">` aislado. `mode`: `function` (por defecto), `script` (script clásico, `var` pasa a `window`) o `module` (ámbito de módulo) |
 | `accordion` | Preguntas frecuentes desplegables |
 | `topicTracker` | Lista de temas marcables que se guarda en `localStorage` y muestra el valor guardado |
 

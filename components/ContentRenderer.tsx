@@ -176,6 +176,7 @@ export default async function ContentRenderer({ blocks }: { blocks: ContentBlock
                   description={block.description}
                   code={block.code}
                   expected={block.expected}
+                  mode={block.mode}
                 />
               );
 

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Ámbitos de las variables: global, de función y de bloque</title>
+  <desc id="d">Tres ámbitos anidados: el global, el de una función y el de un bloque entre llaves. Una variable declarada con var dentro de un bloque se ve en toda la función; una declarada con let solo se ve en su bloque.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Dónde «vive» una variable</text>
+
+  <!-- Global -->
+  <rect x="20" y="52" width="820" height="332" rx="14" fill="#fff" stroke="#b45f06" stroke-width="2.5"/>
+  <text x="36" y="78" font-size="14" font-weight="800" fill="#783d06">Ámbito global (el documento o script)</text>
+
+  <!-- Función -->
+  <rect x="48" y="96" width="560" height="270" rx="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.5"/>
+  <text x="64" y="122" font-size="14" font-weight="800" fill="#0c4a6e">Ámbito de función:  function demo() { … }</text>
+  <rect x="64" y="136" width="250" height="34" rx="17" fill="#fff" stroke="#0369a1"/>
+  <text x="76" y="158" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#0c4a6e">var deFuncion = "…"</text>
+  <text x="330" y="158" font-size="12" fill="#075985">visible en toda la función</text>
+
+  <!-- Bloque -->
+  <rect x="76" y="188" width="504" height="160" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+  <text x="92" y="214" font-size="14" font-weight="800" fill="#14532d">Bloque:  if (…) { … }</text>
+  <rect x="92" y="228" width="220" height="34" rx="17" fill="#fff" stroke="#15803d"/>
+  <text x="104" y="250" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#14532d">let conLet = "…"</text>
+  <text x="326" y="250" font-size="12" fill="#166534">solo dentro del bloque</text>
+  <rect x="92" y="278" width="220" height="34" rx="17" fill="#fff" stroke="#b91c1c"/>
+  <text x="104" y="300" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">var conVar = "…"</text>
+  <text x="326" y="300" font-size="12" fill="#991b1b">«escapa» del bloque: se ve</text>
+  <text x="326" y="316" font-size="12" fill="#991b1b">en toda la función</text>
+
+  <!-- Leyenda -->
+  <rect x="632" y="96" width="196" height="270" rx="12" fill="#fffdf7" stroke="#e2c28a" stroke-width="2"/>
+  <text x="730" y="124" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Regla de oro</text>
+  <g font-size="12" fill="#5f3109" text-anchor="middle">
+    <text x="730" y="154">Los ámbitos se anidan:</text>
+    <text x="730" y="172">de dentro se puede mirar</text>
+    <text x="730" y="190">hacia fuera, nunca al revés.</text>
+    <text x="730" y="226" font-weight="700" fill="#14532d">let y const</text>
+    <text x="730" y="244">respetan los bloques</text>
+    <text x="730" y="276" font-weight="700" fill="#7f1d1d">var</text>
+    <text x="730" y="294">solo respeta funciones</text>
+    <text x="730" y="312">(y el ámbito global)</text>
+    <text x="730" y="346" font-size="11" fill="#783d06">Bloque = lo delimitado por { }</text>
+  </g>
+</svg>

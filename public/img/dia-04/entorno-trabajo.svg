@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Entorno de trabajo para practicar JavaScript</title>
+  <desc id="d">Un editor de código con tres herramientas: un linter que avisa de errores, un formateador que ordena el código y un servidor local con recarga automática. El servidor muestra el archivo HTML en el navegador y la consola del navegador imprime lo que escribe console.log.</desc>
+  <rect width="860" height="330" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tu entorno de práctica</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Editor -->
+  <rect x="20" y="56" width="320" height="236" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="180" y="84" text-anchor="middle" font-size="15" font-weight="700" fill="#0c4a6e">Editor de código (VS Code)</text>
+  <rect x="38" y="98" width="284" height="64" rx="8" fill="#0d1117"/>
+  <text x="50" y="120" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#7ee787">&lt;script&gt;</text>
+  <text x="62" y="138" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">let hola = "Hola mundo";</text>
+  <text x="62" y="154" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">console.log(hola);</text>
+  <g font-size="12" fill="#075985">
+    <rect x="38" y="174" width="284" height="32" rx="16" fill="#fff" stroke="#0369a1"/>
+    <text x="52" y="194"><tspan font-weight="700">Linter</tspan> · avisa de errores y advertencias</text>
+    <rect x="38" y="212" width="284" height="32" rx="16" fill="#fff" stroke="#0369a1"/>
+    <text x="52" y="232"><tspan font-weight="700">Prettier</tspan> · formatea HTML, CSS y JavaScript</text>
+    <rect x="38" y="250" width="284" height="32" rx="16" fill="#fff" stroke="#0369a1"/>
+    <text x="52" y="270"><tspan font-weight="700">Live Server</tspan> · servidor local con recarga</text>
+  </g>
+
+  <path d="M344 174 L392 174" stroke="#b45f06" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="368" y="164" text-anchor="middle" font-size="11" font-weight="700" fill="#783d06">guardar</text>
+
+  <!-- Navegador -->
+  <rect x="396" y="56" width="444" height="236" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="618" y="84" text-anchor="middle" font-size="15" font-weight="700" fill="#4d290b">Navegador (se recarga solo)</text>
+  <rect x="414" y="98" width="408" height="68" rx="8" fill="#fff" stroke="#e2c28a"/>
+  <text x="426" y="120" font-size="12" fill="#5f3109">http://127.0.0.1:5500/javascript-fundamentos.html</text>
+  <text x="618" y="148" text-anchor="middle" font-size="12" fill="#783d06">tu página</text>
+
+  <rect x="414" y="178" width="408" height="102" rx="8" fill="#0d1117"/>
+  <text x="426" y="198" font-size="11" font-weight="700" fill="#8b949e">CONSOLA  (F12 · clic derecho → Inspeccionar)</text>
+  <text x="426" y="222" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">Hola mundo</text>
+  <text x="780" y="222" text-anchor="end" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#8b949e">index.html:14</text>
+  <text x="426" y="262" font-size="12" fill="#8b949e">La consola indica el archivo y la línea que lo imprimió.</text>
+</svg>

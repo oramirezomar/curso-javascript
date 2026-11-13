@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cuándo var crea una propiedad del objeto global</title>
+  <desc id="d">En un script clásico del navegador, una variable var de nivel superior se convierte en propiedad de window y let no. En un módulo del navegador, en un archivo de Node.js (CommonJS o módulo) no se crea propiedad global ni con var. En la consola interactiva de Node.js (REPL) sí se comporta como script global.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">¿Termina var en el objeto global?</text>
+
+  <!-- Cabeceras -->
+  <g font-size="13" font-weight="700" fill="#783d06">
+    <text x="30" y="70">Dónde se ejecuta el código</text>
+    <text x="400" y="70">var de nivel superior</text>
+    <text x="580" y="70">let / const</text>
+    <text x="700" y="70">Objeto global</text>
+  </g>
+  <line x1="20" y1="78" x2="840" y2="78" stroke="#e2c28a" stroke-width="2"/>
+
+  <!-- Fila 1 -->
+  <rect x="20" y="88" width="820" height="52" rx="10" fill="#fff" stroke="#e2c28a"/>
+  <text x="30" y="110" font-size="14" font-weight="700" fill="#4d290b">Navegador · script clásico</text>
+  <text x="30" y="128" font-size="11" fill="#783d06">&lt;script&gt; sin type="module"</text>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="400" y="98" width="130" height="32" rx="16" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="465" y="119" fill="#7f1d1d">Sí → window.x</text>
+    <rect x="580" y="98" width="90" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="625" y="119" fill="#14532d">No</text>
+    <text x="700" y="119" text-anchor="start" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">window</text>
+  </g>
+
+  <!-- Fila 2 -->
+  <rect x="20" y="148" width="820" height="52" rx="10" fill="#fff" stroke="#e2c28a"/>
+  <text x="30" y="170" font-size="14" font-weight="700" fill="#4d290b">Navegador · módulo</text>
+  <text x="30" y="188" font-size="11" fill="#783d06">&lt;script type="module"&gt;</text>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="400" y="158" width="130" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="465" y="179" fill="#14532d">No (módulo)</text>
+    <rect x="580" y="158" width="90" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="625" y="179" fill="#14532d">No</text>
+    <text x="700" y="179" text-anchor="start" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">window</text>
+  </g>
+
+  <!-- Fila 3 -->
+  <rect x="20" y="208" width="820" height="52" rx="10" fill="#fff" stroke="#e2c28a"/>
+  <text x="30" y="230" font-size="14" font-weight="700" fill="#4d290b">Node.js · archivo .js o .mjs</text>
+  <text x="30" y="248" font-size="11" fill="#783d06">CommonJS o módulo ES</text>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="400" y="218" width="130" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="465" y="239" fill="#14532d">No (módulo)</text>
+    <rect x="580" y="218" width="90" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="625" y="239" fill="#14532d">No</text>
+    <text x="700" y="239" text-anchor="start" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">global</text>
+  </g>
+
+  <!-- Fila 4 -->
+  <rect x="20" y="268" width="820" height="52" rx="10" fill="#fff" stroke="#e2c28a"/>
+  <text x="30" y="290" font-size="14" font-weight="700" fill="#4d290b">Node.js · consola interactiva (REPL)</text>
+  <text x="30" y="308" font-size="11" fill="#783d06">escribes comandos tras el prompt &gt;</text>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="400" y="278" width="130" height="32" rx="16" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="465" y="299" fill="#7f1d1d">Sí → global.x</text>
+    <rect x="580" y="278" width="90" height="32" rx="16" fill="#dcfce7" stroke="#15803d"/>
+    <text x="625" y="299" fill="#14532d">No</text>
+    <text x="700" y="299" text-anchor="start" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">global</text>
+  </g>
+
+  <rect x="20" y="334" width="820" height="32" rx="16" fill="#ecfccb" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="430" y="355" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">En cualquier entorno, globalThis es el nombre estándar del objeto global (window en el navegador, global en Node.js).</text>
+</svg>

@@ -62,6 +62,11 @@ export type ContentBlock =
       description?: string;
       code: string;
       expected?: string;
+      // Cómo se ejecuta el código dentro del iframe aislado:
+      //  - "function" (por defecto): dentro de una función; `var` queda local.
+      //  - "script": como <script> clásico; `var` y `function` de nivel superior pasan a window.
+      //  - "module": como <script type="module">; el nivel superior es el ámbito del módulo.
+      mode?: "function" | "script" | "module";
     }
   // Preguntas/respuestas desplegables.
   | { type: "accordion"; title?: string; items: { title: string; text: string }[] }
