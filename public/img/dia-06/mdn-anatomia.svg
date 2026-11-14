@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo está organizada una página de MDN Web Docs</title>
+  <desc id="d">Esquema de una página de referencia de MDN: a la izquierda un menú con el constructor, los métodos estáticos, las propiedades de instancia y los métodos de instancia, con insignias de estado; a la derecha el título, una descripción breve, un ejemplo ejecutable, la sintaxis con parámetros y valor devuelto, ejemplos y la tabla de compatibilidad con navegadores.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Anatomía de una página de MDN (esquema)</text>
+
+  <!-- Ventana -->
+  <rect x="20" y="46" width="820" height="336" rx="12" fill="#fff" stroke="#b45f06" stroke-width="2"/>
+  <rect x="20" y="46" width="820" height="30" rx="12" fill="#ffedc9"/>
+  <rect x="20" y="64" width="820" height="12" fill="#ffedc9"/>
+  <circle cx="42" cy="61" r="5" fill="#f87171"/><circle cx="60" cy="61" r="5" fill="#fbbf24"/><circle cx="78" cy="61" r="5" fill="#4ade80"/>
+  <text x="430" y="66" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#783d06">developer.mozilla.org/…/Global_Objects/String</text>
+
+  <!-- Menú izquierdo -->
+  <rect x="34" y="88" width="230" height="282" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
+  <text x="48" y="110" font-size="12" font-weight="800" fill="#0c4a6e">① Menú lateral</text>
+  <g font-size="11" fill="#075985">
+    <text x="48" y="132" font-weight="700">Constructor</text>
+    <text x="48" y="148">Métodos estáticos</text>
+    <text x="48" y="168" font-weight="700">Propiedades de instancia</text>
+    <text x="60" y="184" font-family="ui-monospace, Menlo, monospace">length</text>
+    <text x="48" y="204" font-weight="700">Métodos de instancia</text>
+    <text x="60" y="220" font-family="ui-monospace, Menlo, monospace">includes()</text>
+    <text x="60" y="236" font-family="ui-monospace, Menlo, monospace">split()</text>
+    <text x="60" y="252" font-family="ui-monospace, Menlo, monospace">substr()</text>
+    <text x="60" y="268" font-family="ui-monospace, Menlo, monospace">toUpperCase()</text>
+  </g>
+  <rect x="150" y="242" width="94" height="14" rx="7" fill="#fee2e2" stroke="#b91c1c"/>
+  <text x="197" y="253" text-anchor="middle" font-size="9" font-weight="700" fill="#7f1d1d">Deprecated</text>
+  <text x="48" y="296" font-size="10" fill="#075985">Insignias de estado:</text>
+  <g font-size="9" font-weight="700" text-anchor="middle">
+    <rect x="46" y="304" width="66" height="14" rx="7" fill="#fee2e2" stroke="#b91c1c"/><text x="79" y="314" fill="#7f1d1d">Deprecated</text>
+    <rect x="116" y="304" width="72" height="14" rx="7" fill="#fef9c3" stroke="#a16207"/><text x="152" y="314" fill="#713f12">Experimental</text>
+    <rect x="192" y="304" width="74" height="14" rx="7" fill="#ede9fe" stroke="#6d28d9"/><text x="229" y="314" fill="#4c1d95">Non-standard</text>
+  </g>
+
+  <!-- Contenido -->
+  <text x="284" y="106" font-size="12" font-weight="800" fill="#4d290b">② Contenido principal</text>
+  <rect x="280" y="114" width="546" height="28" rx="6" fill="#fff" stroke="#e2c28a"/>
+  <text x="292" y="133" font-size="12" font-weight="700" fill="#4d290b">String  ·  resumen: «representa una secuencia de caracteres»</text>
+
+  <rect x="280" y="150" width="266" height="58" rx="6" fill="#0d1117"/>
+  <text x="292" y="168" font-size="11" font-weight="700" fill="#8b949e">Try it  (ejemplo ejecutable)</text>
+  <text x="292" y="186" font-size="11" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">"Hola".toUpperCase();</text>
+  <text x="292" y="200" font-size="11" font-family="ui-monospace, Menlo, monospace" fill="#7ee787">// "HOLA"</text>
+
+  <rect x="556" y="150" width="270" height="58" rx="6" fill="#fff" stroke="#e2c28a"/>
+  <text x="568" y="168" font-size="11" font-weight="700" fill="#4d290b">Sintaxis</text>
+  <text x="568" y="184" font-size="10" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">str.includes(searchString)</text>
+  <text x="568" y="199" font-size="10" fill="#783d06">Parámetros · Valor devuelto</text>
+
+  <rect x="280" y="216" width="266" height="62" rx="6" fill="#fff" stroke="#e2c28a"/>
+  <text x="292" y="234" font-size="11" font-weight="700" fill="#4d290b">Ejemplos</text>
+  <text x="292" y="252" font-size="10" fill="#783d06">Casos de uso reales con salida esperada</text>
+  <text x="292" y="268" font-size="10" fill="#783d06">y notas de comportamiento.</text>
+
+  <rect x="556" y="216" width="270" height="62" rx="6" fill="#dcfce7" stroke="#15803d"/>
+  <text x="568" y="234" font-size="11" font-weight="700" fill="#14532d">Especificaciones</text>
+  <text x="568" y="252" font-size="10" fill="#166534">Enlace al estándar (ECMA-262)</text>
+  <text x="568" y="268" font-size="10" fill="#166534">que define el comportamiento.</text>
+
+  <rect x="280" y="286" width="546" height="76" rx="6" fill="#fef9c3" stroke="#a16207"/>
+  <text x="292" y="304" font-size="11" font-weight="700" fill="#713f12">③ Compatibilidad con navegadores</text>
+  <g font-size="10" fill="#854d0e" text-anchor="middle">
+    <rect x="292" y="312" width="104" height="38" rx="4" fill="#fff" stroke="#a16207"/><text x="344" y="335">Chrome</text>
+    <rect x="404" y="312" width="104" height="38" rx="4" fill="#fff" stroke="#a16207"/><text x="456" y="335">Firefox</text>
+    <rect x="516" y="312" width="104" height="38" rx="4" fill="#fff" stroke="#a16207"/><text x="568" y="335">Safari</text>
+    <rect x="628" y="312" width="104" height="38" rx="4" fill="#fff" stroke="#a16207"/><text x="680" y="335">Node.js</text>
+  </g>
+  <text x="780" y="335" text-anchor="middle" font-size="10" fill="#854d0e">desde qué</text>
+  <text x="780" y="347" text-anchor="middle" font-size="10" fill="#854d0e">versión</text>
+</svg>

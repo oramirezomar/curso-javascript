@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Propiedades y métodos de una cadena</title>
+  <desc id="d">Las propiedades describen al valor, como length, que da el número de unidades de código. Los métodos son acciones que se ejecutan con paréntesis, a veces con datos de entrada: toUpperCase, includes, trim y split.</desc>
+  <rect width="860" height="320" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Propiedades describen; métodos actúan</text>
+
+  <!-- Centro -->
+  <rect x="320" y="54" width="220" height="64" rx="32" fill="#f7df1e" stroke="#b45f06" stroke-width="3"/>
+  <text x="430" y="82" text-anchor="middle" font-size="12" fill="#3f3f3f">la cadena</text>
+  <text x="430" y="104" text-anchor="middle" font-size="20" font-weight="800" fill="#1f1f1f" font-family="ui-monospace, Menlo, monospace">"Hola mundo"</text>
+
+  <!-- Propiedades -->
+  <rect x="20" y="146" width="400" height="154" rx="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.5"/>
+  <text x="220" y="174" text-anchor="middle" font-size="16" font-weight="800" fill="#0c4a6e">Propiedades  (características)</text>
+  <text x="220" y="194" text-anchor="middle" font-size="12" fill="#075985">se leen SIN paréntesis</text>
+  <rect x="44" y="208" width="352" height="40" rx="8" fill="#fff" stroke="#0369a1"/>
+  <text x="58" y="233" font-size="14" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#0c4a6e">saludo.length</text>
+  <text x="380" y="233" text-anchor="end" font-size="14" font-weight="800" fill="#0c4a6e">→ 10</text>
+  <text x="220" y="272" text-anchor="middle" font-size="12" fill="#075985">Describe algo del valor: cuántas unidades tiene.</text>
+  <path d="M370 118 L250 146" stroke="#0369a1" stroke-width="2" fill="none"/>
+
+  <!-- Métodos -->
+  <rect x="440" y="146" width="400" height="154" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+  <text x="640" y="174" text-anchor="middle" font-size="16" font-weight="800" fill="#14532d">Métodos  (acciones)</text>
+  <text x="640" y="194" text-anchor="middle" font-size="12" fill="#166534">se llaman CON paréntesis</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#14532d">
+    <rect x="464" y="206" width="170" height="26" rx="6" fill="#fff" stroke="#15803d"/><text x="476" y="224">toUpperCase()</text>
+    <rect x="646" y="206" width="170" height="26" rx="6" fill="#fff" stroke="#15803d"/><text x="658" y="224">trim()</text>
+    <rect x="464" y="240" width="170" height="26" rx="6" fill="#fff" stroke="#15803d"/><text x="476" y="258">includes("mun")</text>
+    <rect x="646" y="240" width="170" height="26" rx="6" fill="#fff" stroke="#15803d"/><text x="658" y="258">split(" ")</text>
+  </g>
+  <text x="640" y="288" text-anchor="middle" font-size="12" fill="#166534">Hacen algo y devuelven un resultado.</text>
+  <path d="M490 118 L610 146" stroke="#15803d" stroke-width="2" fill="none"/>
+</svg>

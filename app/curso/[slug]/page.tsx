@@ -3,6 +3,7 @@ import { getLessonBySlug, getNextLesson, getPreviousLesson, lessons } from "@/co
 import ContentRenderer from "@/components/ContentRenderer";
 import SelfCheck from "@/components/SelfCheck";
 import LessonFooter from "@/components/LessonFooter";
+import RichText from "@/components/RichText";
 
 export function generateStaticParams() {
   return lessons.map((lesson) => ({ slug: lesson.slug }));
@@ -39,7 +40,9 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-slate-600 dark:text-slate-400">
             {lesson.objectives.map((obj, i) => (
-              <li key={i}>{obj}</li>
+              <li key={i}>
+                <RichText text={obj} />
+              </li>
             ))}
           </ul>
         </div>

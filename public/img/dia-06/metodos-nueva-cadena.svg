@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Los métodos de cadena devuelven una cadena nueva</title>
+  <desc id="d">Las cadenas son inmutables. Al llamar a toUpperCase sobre la cadena Ana se obtiene una cadena nueva ANA, y la variable original sigue valiendo Ana. Para conservar el resultado hay que guardarlo en otra variable.</desc>
+  <rect width="860" height="300" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Las cadenas no se modifican: se obtiene una nueva</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Original -->
+  <text x="130" y="72" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">const nombre</text>
+  <rect x="50" y="84" width="160" height="70" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2.5"/>
+  <text x="130" y="128" text-anchor="middle" font-size="26" font-weight="800" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">"Ana"</text>
+
+  <!-- Método -->
+  <path d="M214 119 L318 119" stroke="#b45f06" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="322" y="92" width="216" height="54" rx="27" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="430" y="125" text-anchor="middle" font-size="16" font-weight="800" fill="#0c4a6e" font-family="ui-monospace, Menlo, monospace">.toUpperCase()</text>
+
+  <!-- Nueva -->
+  <path d="M542 119 L646 119" stroke="#b45f06" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="730" y="72" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">resultado (cadena NUEVA)</text>
+  <rect x="650" y="84" width="160" height="70" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+  <text x="730" y="128" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">"ANA"</text>
+
+  <!-- Nota -->
+  <rect x="50" y="184" width="760" height="94" rx="12" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <g font-size="14" fill="#5f3109" font-family="ui-monospace, Menlo, monospace">
+    <text x="70" y="212">nombre.toUpperCase();</text>
+    <text x="330" y="212" fill="#7f1d1d">// el resultado se pierde si no lo guardas</text>
+    <text x="70" y="236">console.log(nombre);</text>
+    <text x="330" y="236" fill="#14532d">// "Ana"  (la original no cambió)</text>
+    <text x="70" y="256">const grito = nombre.toUpperCase();</text>
+    <text x="400" y="256" fill="#14532d">// "ANA"</text>
+  </g>
+</svg>

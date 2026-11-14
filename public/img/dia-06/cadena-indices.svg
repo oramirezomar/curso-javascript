@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Una cadena es una secuencia con posiciones desde 0</title>
+  <desc id="d">La cadena Hola mundo tiene diez caracteres: nueve letras y un espacio. Cada carácter tiene una posición que empieza en cero. La propiedad length vale diez porque el espacio también cuenta.</desc>
+  <rect width="860" height="280" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los caracteres de "Hola mundo" y sus posiciones</text>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace">
+    <rect x="70" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="102" y="104" font-size="28" font-weight="800" fill="#4d290b">H</text>
+    <rect x="144" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="176" y="104" font-size="28" font-weight="800" fill="#4d290b">o</text>
+    <rect x="218" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="250" y="104" font-size="28" font-weight="800" fill="#4d290b">l</text>
+    <rect x="292" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="324" y="104" font-size="28" font-weight="800" fill="#4d290b">a</text>
+    <rect x="366" y="62" width="64" height="64" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="2" stroke-dasharray="5 4"/><text x="398" y="100" font-size="13" font-weight="700" fill="#713f12">espacio</text>
+    <rect x="440" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="472" y="104" font-size="28" font-weight="800" fill="#4d290b">m</text>
+    <rect x="514" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="546" y="104" font-size="28" font-weight="800" fill="#4d290b">u</text>
+    <rect x="588" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="620" y="104" font-size="28" font-weight="800" fill="#4d290b">n</text>
+    <rect x="662" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="694" y="104" font-size="28" font-weight="800" fill="#4d290b">d</text>
+    <rect x="736" y="62" width="64" height="64" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="768" y="104" font-size="28" font-weight="800" fill="#4d290b">o</text>
+  </g>
+  <g text-anchor="middle" font-size="14" font-weight="700" fill="#0c4a6e">
+    <text x="102" y="150">0</text><text x="176" y="150">1</text><text x="250" y="150">2</text><text x="324" y="150">3</text><text x="398" y="150">4</text>
+    <text x="472" y="150">5</text><text x="546" y="150">6</text><text x="620" y="150">7</text><text x="694" y="150">8</text><text x="768" y="150">9</text>
+  </g>
+  <text x="8" y="150" text-anchor="start" font-size="12" fill="#075985">posición</text>
+
+  <!-- length -->
+  <path d="M70 168 L70 180 L800 180 L800 168" stroke="#15803d" stroke-width="2.5" fill="none"/>
+  <text x="435" y="204" text-anchor="middle" font-size="16" font-weight="800" fill="#14532d">saludo.length  →  10</text>
+  <text x="435" y="226" text-anchor="middle" font-size="13" fill="#166534">9 letras + 1 espacio. El espacio también es un carácter.</text>
+
+  <g font-size="12" fill="#5f3109" text-anchor="middle">
+    <text x="215" y="260">saludo[0]  →  "H"</text>
+    <text x="435" y="260">saludo[saludo.length - 1]  →  "o"</text>
+    <text x="655" y="260">saludo.at(-1)  →  "o"</text>
+  </g>
+</svg>
