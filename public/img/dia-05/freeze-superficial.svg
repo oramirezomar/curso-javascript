@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Object.freeze es superficial</title>
+  <desc id="d">Un objeto congelado con Object.freeze no permite cambiar sus propiedades directas, como tema. Pero un objeto anidado dentro, como opciones, no queda congelado y sus propiedades sí se pueden modificar.</desc>
+  <rect width="860" height="320" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Object.freeze solo congela el primer nivel</text>
+
+  <!-- Objeto congelado -->
+  <rect x="30" y="56" width="500" height="220" rx="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.5"/>
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#0c4a6e">config  (congelado con Object.freeze)  🧊</text>
+
+  <rect x="50" y="102" width="460" height="42" rx="8" fill="#fff" stroke="#0369a1"/>
+  <text x="64" y="128" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#0c4a6e">tema: "claro"</text>
+  <text x="496" y="128" text-anchor="end" font-size="12" font-weight="700" fill="#7f1d1d">no se puede cambiar</text>
+
+  <rect x="50" y="154" width="460" height="104" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="64" y="178" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#713f12">opciones: {</text>
+  <text x="84" y="204" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#713f12">idioma: "es"</text>
+  <text x="64" y="228" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#713f12">}</text>
+  <text x="496" y="204" text-anchor="end" font-size="12" font-weight="700" fill="#14532d">sí se puede cambiar</text>
+  <text x="496" y="244" text-anchor="end" font-size="11" fill="#854d0e">(objeto anidado, sin congelar)</text>
+
+  <!-- Explicación -->
+  <rect x="560" y="56" width="270" height="220" rx="14" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+  <g font-size="13" fill="#5f3109">
+    <text x="580" y="86" font-weight="800" fill="#4d290b">Qué ocurre</text>
+    <text x="580" y="114" font-family="ui-monospace, Menlo, monospace" font-size="12">config.tema = "oscuro"</text>
+    <text x="580" y="132" fill="#7f1d1d" font-weight="700">→ ignorado (sin error)</text>
+    <text x="580" y="160" font-family="ui-monospace, Menlo, monospace" font-size="12">config.opciones.idioma</text>
+    <text x="580" y="176" font-family="ui-monospace, Menlo, monospace" font-size="12">= "en"</text>
+    <text x="580" y="196" fill="#14532d" font-weight="700">→ funciona</text>
+    <text x="580" y="228" font-size="12">En modo estricto, el primer caso</text>
+    <text x="580" y="246" font-size="12">lanza un TypeError.</text>
+  </g>
+  <text x="430" y="304" text-anchor="middle" font-size="13" fill="#783d06">Para una inmutabilidad total habría que congelar también cada objeto anidado.</text>
+</svg>

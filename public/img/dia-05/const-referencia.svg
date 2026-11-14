@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">const fija la referencia, no el contenido</title>
+  <desc id="d">La constante colores apunta a un arreglo en memoria. El enlace no puede cambiar: reasignar colores a otro arreglo lanza TypeError. Pero el contenido del arreglo sí puede crecer: con push pasa de tres a cuatro colores y sigue siendo el mismo arreglo.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">const bloquea el enlace, no el contenido</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+    <marker id="x" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+
+  <!-- Constante -->
+  <text x="110" y="82" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">const colores</text>
+  <rect x="40" y="96" width="140" height="64" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2.5"/>
+  <text x="110" y="134" text-anchor="middle" font-size="16" font-weight="800" fill="#4d290b">colores</text>
+  <text x="150" y="90" font-size="16">🔒</text>
+
+  <!-- Enlace fijo -->
+  <path d="M182 128 L318 128" stroke="#b45f06" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <text x="250" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#783d06">enlace fijo</text>
+
+  <!-- Arreglo en memoria -->
+  <rect x="322" y="70" width="498" height="140" rx="14" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="571" y="94" text-anchor="middle" font-size="13" font-weight="700" fill="#713f12">El arreglo en memoria (sigue siendo el mismo)</text>
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="342" y="108" width="88" height="42" rx="8" fill="#fff" stroke="#a16207"/>
+    <text x="386" y="134" fill="#713f12">"blanco"</text>
+    <rect x="440" y="108" width="88" height="42" rx="8" fill="#fff" stroke="#a16207"/>
+    <text x="484" y="134" fill="#713f12">"negro"</text>
+    <rect x="538" y="108" width="88" height="42" rx="8" fill="#fff" stroke="#a16207"/>
+    <text x="582" y="134" fill="#713f12">"azul"</text>
+    <rect x="636" y="108" width="100" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="686" y="134" fill="#14532d">"naranja"</text>
+  </g>
+  <text x="686" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">colores.push("naranja")</text>
+  <text x="571" y="196" text-anchor="middle" font-size="12" fill="#854d0e">de 3 a 4 elementos: permitido</text>
+
+  <!-- Reasignación bloqueada -->
+  <rect x="40" y="244" width="780" height="92" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="60" y="272" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">colores = ["rojo"];   // otro arreglo distinto</text>
+  <path d="M470 266 L560 266" stroke="#b91c1c" stroke-width="2.5" fill="none" marker-end="url(#x)"/>
+  <text x="572" y="271" font-size="15" font-weight="800" fill="#7f1d1d">✖ TypeError</text>
+  <text x="60" y="300" font-size="13" fill="#991b1b">Reasignar la constante a otro valor está prohibido: «Assignment to constant variable».</text>
+  <text x="60" y="320" font-size="13" fill="#991b1b">Hacer crecer, vaciar o modificar el mismo arreglo sí está permitido.</text>
+</svg>

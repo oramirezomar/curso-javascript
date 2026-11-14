@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Un objeto y un arreglo</title>
+  <desc id="d">Un objeto es una colección de propiedades con nombre y valor, parecida a una regla de CSS; se escribe entre llaves. Un arreglo es una lista ordenada de valores a los que se accede por su posición, que empieza en cero; se escribe entre corchetes.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Dos valores compuestos que verás siempre</text>
+
+  <!-- Objeto -->
+  <rect x="20" y="52" width="410" height="272" rx="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="225" y="80" text-anchor="middle" font-size="16" font-weight="800" fill="#0c4a6e">Objeto  { }</text>
+  <text x="225" y="100" text-anchor="middle" font-size="12" fill="#075985">propiedades con nombre y valor</text>
+  <rect x="44" y="116" width="362" height="92" rx="8" fill="#0d1117"/>
+  <g font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">
+    <text x="58" y="140">const persona = {</text>
+    <text x="78" y="162">nombre: "Ana",</text>
+    <text x="78" y="182">edad: 35,</text>
+    <text x="58" y="202">};</text>
+  </g>
+  <g font-size="12" fill="#075985">
+    <text x="44" y="236">• Acceso por nombre:  <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">persona.nombre</tspan></text>
+    <text x="44" y="256">• Añadir:  <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">persona.correo = "…"</tspan></text>
+    <text x="44" y="282">Se parece a una regla de CSS:</text>
+    <text x="44" y="300" font-family="ui-monospace, Menlo, monospace" font-weight="700">propiedad: valor;</text>
+  </g>
+
+  <!-- Arreglo -->
+  <rect x="450" y="52" width="390" height="272" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="645" y="80" text-anchor="middle" font-size="16" font-weight="800" fill="#14532d">Arreglo  [ ]</text>
+  <text x="645" y="100" text-anchor="middle" font-size="12" fill="#166534">lista ordenada de valores</text>
+  <rect x="470" y="116" width="350" height="48" rx="8" fill="#0d1117"/>
+  <text x="484" y="146" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#c9d1d9">const colores = ["blanco", "negro", "azul"];</text>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="480" y="182" width="96" height="44" rx="8" fill="#fff" stroke="#15803d" stroke-width="2"/>
+    <text x="528" y="210" fill="#14532d">"blanco"</text>
+    <rect x="590" y="182" width="96" height="44" rx="8" fill="#fff" stroke="#15803d" stroke-width="2"/>
+    <text x="638" y="210" fill="#14532d">"negro"</text>
+    <rect x="700" y="182" width="96" height="44" rx="8" fill="#fff" stroke="#15803d" stroke-width="2"/>
+    <text x="748" y="210" fill="#14532d">"azul"</text>
+  </g>
+  <g text-anchor="middle" font-size="12" fill="#166534">
+    <text x="528" y="244">posición 0</text>
+    <text x="638" y="244">posición 1</text>
+    <text x="748" y="244">posición 2</text>
+  </g>
+  <g font-size="12" fill="#166534">
+    <text x="470" y="274">• Acceso por posición:  <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">colores[0]</tspan></text>
+    <text x="470" y="294">• Añadir al final:  <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">colores.push("naranja")</tspan></text>
+    <text x="470" y="314">• Cuenta de elementos:  <tspan font-family="ui-monospace, Menlo, monospace" font-weight="700">colores.length</tspan></text>
+  </g>
+</svg>

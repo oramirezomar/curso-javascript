@@ -11,13 +11,14 @@ import { day01 } from "./day-01";
 import { day02 } from "./day-02";
 import { day03 } from "./day-03";
 import { day04 } from "./day-04";
+import { day05 } from "./day-05";
 
 export const sections: CourseSection[] = [
   { title: "Introducción y contexto", dayRange: [1, 2], icon: "🧭" },
-  { title: "Fundamentos del lenguaje", dayRange: [3, 4], icon: "🧱" },
+  { title: "Fundamentos del lenguaje", dayRange: [3, 5], icon: "🧱" },
 ];
 
-export const lessons: Lesson[] = [day01, day02, day03, day04];
+export const lessons: Lesson[] = [day01, day02, day03, day04, day05];
 
 export function getLessonByDay(day: number): Lesson | undefined {
   return lessons.find((lesson) => lesson.day === day);
