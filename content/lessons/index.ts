@@ -13,14 +13,15 @@ import { day03 } from "./day-03";
 import { day04 } from "./day-04";
 import { day05 } from "./day-05";
 import { day06 } from "./day-06";
+import { day07 } from "./day-07";
 
 export const sections: CourseSection[] = [
   { title: "Introducción y contexto", dayRange: [1, 2], icon: "🧭" },
   { title: "Fundamentos del lenguaje", dayRange: [3, 5], icon: "🧱" },
-  { title: "Tipos de datos básicos", dayRange: [6, 6], icon: "🔤" },
+  { title: "Tipos de datos básicos", dayRange: [6, 7], icon: "🔤" },
 ];
 
-export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06];
+export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06, day07];
 
 export function getLessonByDay(day: number): Lesson | undefined {
   return lessons.find((lesson) => lesson.day === day);

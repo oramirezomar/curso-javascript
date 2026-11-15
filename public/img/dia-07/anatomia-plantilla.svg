@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Anatomía de una plantilla de texto</title>
+  <desc id="d">Una plantilla de texto empieza y termina con acento grave. Mezcla texto fijo con marcadores de posición con la forma dólar y llaves, que se sustituyen por el valor de una expresión. El resultado es una sola cadena.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una plantilla de texto (template literal)</text>
+
+  <!-- Código -->
+  <rect x="30" y="74" width="800" height="70" rx="12" fill="#0d1117"/>
+  <g font-size="22" font-family="ui-monospace, Menlo, monospace">
+    <text x="50" y="118" fill="#f0883e">`</text>
+    <text x="68" y="118" fill="#c9d1d9">Hola, mi nombre es </text>
+    <text x="318" y="118" fill="#79c0ff">${nombre}</text>
+    
+    <text x="448" y="118" fill="#79c0ff">${apellido}</text>
+    <text x="594" y="118" fill="#c9d1d9">.</text>
+    <text x="612" y="118" fill="#f0883e">`</text>
+  </g>
+
+  <!-- Etiquetas -->
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <rect x="30" y="170" width="120" height="44" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="90" y="189" fill="#4d290b">Acento grave</text>
+    <text x="90" y="205" font-weight="400" fill="#783d06">abre y cierra</text>
+
+    <rect x="190" y="170" width="170" height="44" rx="10" fill="#fff" stroke="#e2c28a" stroke-width="2"/>
+    <text x="275" y="189" fill="#4d290b">Texto fijo</text>
+    <text x="275" y="205" font-weight="400" fill="#783d06">se copia tal cual</text>
+
+    <rect x="400" y="170" width="250" height="44" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="525" y="189" fill="#0c4a6e">Marcador  ${ expresión }</text>
+    <text x="525" y="205" font-weight="400" fill="#075985">se evalúa y se convierte en texto</text>
+  </g>
+  <g stroke="#b45f06" stroke-width="1.5" fill="none">
+    <path d="M58 148 L90 168"/>
+    <path d="M140 148 L275 168"/>
+    <path d="M380 148 L480 168"/>
+    <path d="M540 148 L560 168"/>
+    <path d="M655 148 L640 168"/>
+  </g>
+
+  <!-- Resultado -->
+  <path d="M430 220 L430 248" stroke="#b45f06" stroke-width="2" fill="none"/>
+  <text x="446" y="240" font-size="12" font-weight="700" fill="#783d06">se obtiene una sola cadena</text>
+  <rect x="190" y="254" width="480" height="58" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="430" y="290" text-anchor="middle" font-size="20" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#14532d">"Hola, mi nombre es Ana Pérez."</text>
+</svg>

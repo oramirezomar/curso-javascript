@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Datos de usuario dentro de HTML: innerHTML frente a textContent</title>
+  <desc id="d">Un texto escrito por un usuario que contiene una etiqueta img con un controlador onerror se coloca en una plantilla. Si se inserta con innerHTML sin sanear, el navegador lo interpreta como HTML y el código se ejecuta: es un ataque XSS. Si se inserta con textContent, se muestra como texto plano y es seguro. Para HTML legítimo hay que sanear con una biblioteca como DOMPurify y usar Trusted Types.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuidado al mezclar datos de usuario con HTML</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b45f06"/>
+    </marker>
+  </defs>
+
+  <!-- Entrada -->
+  <rect x="20" y="56" width="260" height="96" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="150" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#713f12">Texto escrito por el usuario</text>
+  <rect x="34" y="94" width="232" height="44" rx="6" fill="#0d1117"/>
+  <text x="44" y="112" font-size="11" font-family="ui-monospace, Menlo, monospace" fill="#f85149">&lt;img src=x</text>
+  <text x="44" y="128" font-size="11" font-family="ui-monospace, Menlo, monospace" fill="#f85149">  onerror="robar()"&gt;</text>
+
+  <path d="M284 104 L348 104" stroke="#b45f06" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="306" y="90" text-anchor="middle" font-size="11" fill="#783d06">en una</text>
+  <text x="306" y="126" text-anchor="middle" font-size="11" fill="#783d06">plantilla</text>
+
+  <rect x="352" y="68" width="230" height="72" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="467" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#4d290b">Cadena de HTML</text>
+  <text x="467" y="114" text-anchor="middle" font-size="11" font-family="ui-monospace, Menlo, monospace" fill="#5f3109">`&lt;p&gt;${comentario}&lt;/p&gt;`</text>
+
+  <!-- Ramas -->
+  <path d="M467 142 L170 196" stroke="#b91c1c" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M467 142 L467 196" stroke="#15803d" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M467 142 L740 196" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- innerHTML -->
+  <rect x="20" y="200" width="270" height="160" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="155" y="228" text-anchor="middle" font-size="14" font-weight="800" fill="#7f1d1d">elemento.innerHTML = html</text>
+  <text x="155" y="252" text-anchor="middle" font-size="22">⚠️</text>
+  <g font-size="12" text-anchor="middle" fill="#991b1b">
+    <text x="155" y="280">El navegador interpreta el texto</text>
+    <text x="155" y="298">como HTML: la imagen falla y</text>
+    <text x="155" y="316">se ejecuta onerror.</text>
+    <text x="155" y="344" font-weight="800">Ataque XSS</text>
+  </g>
+
+  <!-- textContent -->
+  <rect x="320" y="200" width="270" height="160" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+  <text x="455" y="228" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">elemento.textContent = texto</text>
+  <text x="455" y="252" text-anchor="middle" font-size="22">✅</text>
+  <g font-size="12" text-anchor="middle" fill="#166534">
+    <text x="455" y="280">Se muestra tal cual, como texto:</text>
+    <text x="455" y="298">no se interpreta ninguna etiqueta.</text>
+    <text x="455" y="326" font-weight="800">Úsalo para texto plano</text>
+  </g>
+
+  <!-- sanear -->
+  <rect x="620" y="200" width="220" height="160" rx="12" fill="#e0f2fe" stroke="#0369a1" stroke-width="2.5"/>
+  <text x="730" y="228" text-anchor="middle" font-size="14" font-weight="800" fill="#0c4a6e">¿Necesitas HTML?</text>
+  <g font-size="12" text-anchor="middle" fill="#075985">
+    <text x="730" y="256">Sanéalo con una biblioteca</text>
+    <text x="730" y="274">(p. ej. DOMPurify) y activa</text>
+    <text x="730" y="292">Trusted Types.</text>
+    <text x="730" y="326" font-weight="800">Nunca confíes en el dato</text>
+  </g>
+</svg>
