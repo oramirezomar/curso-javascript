@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cuatro situaciones que producen undefined</title>
+  <desc id="d">Una variable declarada sin valor, un parámetro de función al que no se le pasa argumento, una propiedad que no existe en un objeto, y una función que no tiene return, producen todas el valor undefined.</desc>
+  <rect width="860" height="330" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuatro situaciones que producen undefined</text>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#4d290b">
+    <rect x="30" y="52" width="190" height="150" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="125" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Variable sin valor</text>
+    <text x="46" y="118">let x;</text>
+    <text x="46" y="142">console.log(x);</text>
+
+    <rect x="235" y="52" width="190" height="150" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="330" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Argumento omitido</text>
+    <text x="251" y="108">function f(a) {</text>
+    <text x="251" y="128">&#160;&#160;return a;</text>
+    <text x="251" y="148">}</text>
+    <text x="251" y="172">f();</text>
+
+    <rect x="440" y="52" width="190" height="150" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="535" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Propiedad inexistente</text>
+    <text x="456" y="118">const p = { n: 1 };</text>
+    <text x="456" y="142">p.edad;</text>
+
+    <rect x="645" y="52" width="185" height="150" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="737" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Función sin return</text>
+    <text x="661" y="108">function g() {</text>
+    <text x="661" y="128">&#160;&#160;const y = 1;</text>
+    <text x="661" y="148">}</text>
+    <text x="661" y="172">g();</text>
+  </g>
+
+  <g stroke="#783d06" stroke-width="3" fill="#783d06">
+    <line x1="125" y1="204" x2="125" y2="238"/><polygon points="118,236 125,250 132,236"/>
+    <line x1="330" y1="204" x2="330" y2="238"/><polygon points="323,236 330,250 337,236"/>
+    <line x1="535" y1="204" x2="535" y2="238"/><polygon points="528,236 535,250 542,236"/>
+    <line x1="737" y1="204" x2="737" y2="238"/><polygon points="730,236 737,250 744,236"/>
+  </g>
+  <rect x="30" y="256" width="800" height="48" rx="12" fill="#ffffff" stroke="#b45f06" stroke-width="3"/>
+  <text x="430" y="288" text-anchor="middle" font-size="18" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">undefined</text>
+</svg>

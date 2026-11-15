@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">undefined, null y NaN</title>
+  <desc id="d">Tres valores especiales. undefined indica que no hay valor y suele producirlo JavaScript, su typeof es undefined. null indica una ausencia intencional de objeto, su typeof es object por un error histórico. NaN es un resultado numérico inválido y su typeof es number.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tres valores especiales</text>
+
+  <g text-anchor="middle">
+    <!-- undefined -->
+    <rect x="30" y="52" width="250" height="300" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="3"/>
+    <text x="155" y="92" font-size="24" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">undefined</text>
+    <text x="155" y="122" font-size="13" font-weight="700" fill="#783d06">«Aquí todavía no hay valor»</text>
+    <text x="155" y="160" font-size="13" fill="#5f3109">Lo asigna JavaScript cuando</text>
+    <text x="155" y="180" font-size="13" fill="#5f3109">algo no tiene valor.</text>
+    <text x="155" y="214" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">let x;</text>
+    <text x="155" y="236" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">persona.edad</text>
+    <text x="155" y="258" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">saluda()  // sin argumento</text>
+    <rect x="55" y="290" width="200" height="40" rx="9" fill="#ffffff" stroke="#b45f06"/>
+    <text x="155" y="316" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">typeof → "undefined"</text>
+
+    <!-- null -->
+    <rect x="305" y="52" width="250" height="300" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="430" y="92" font-size="24" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#14532d">null</text>
+    <text x="430" y="122" font-size="13" font-weight="700" fill="#166534">«Aquí no hay objeto, a propósito»</text>
+    <text x="430" y="160" font-size="13" fill="#14532d">Lo asigna el programador o lo</text>
+    <text x="430" y="180" font-size="13" fill="#14532d">devuelve una API.</text>
+    <text x="430" y="214" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#14532d">let vacio = null;</text>
+    <text x="430" y="236" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#14532d">querySelector("#nada")</text>
+    <text x="430" y="258" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#14532d">"abc".match(/z/)</text>
+    <rect x="330" y="290" width="200" height="40" rx="9" fill="#ffffff" stroke="#15803d"/>
+    <text x="430" y="316" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#14532d">typeof → "object"</text>
+
+    <!-- NaN -->
+    <rect x="580" y="52" width="250" height="300" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="705" y="92" font-size="24" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">NaN</text>
+    <text x="705" y="122" font-size="13" font-weight="700" fill="#991b1b">«No es un número válido»</text>
+    <text x="705" y="160" font-size="13" fill="#7f1d1d">Resultado de una operación o</text>
+    <text x="705" y="180" font-size="13" fill="#7f1d1d">conversión numérica fallida.</text>
+    <text x="705" y="214" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">3.7 * "texto"</text>
+    <text x="705" y="236" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">parseInt("blabla")</text>
+    <text x="705" y="258" font-size="12" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">Math.sqrt(-1)</text>
+    <rect x="605" y="290" width="200" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/>
+    <text x="705" y="316" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">typeof → "number"</text>
+  </g>
+
+  <text x="430" y="382" text-anchor="middle" font-size="12" fill="#5f3109">Los tres son falsy. typeof null devuelve "object" por un error histórico que no se puede corregir.</text>
+</svg>
