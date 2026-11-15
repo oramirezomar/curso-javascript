@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Formas de convertir un valor a booleano</title>
+  <desc id="d">Tres formas correctas: llamar a Boolean como función, usar el doble signo de negación o dejar que JavaScript lo convierta en un contexto booleano como if. Una forma incorrecta: new Boolean, que crea un objeto que siempre es truthy aunque envuelva false.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Convertir un valor a booleano</text>
+
+  <g text-anchor="middle">
+    <rect x="30" y="52" width="250" height="150" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="155" y="82" font-size="14" font-weight="800" fill="#14532d">Función Boolean</text>
+    <text x="155" y="118" font-size="18" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#14532d">Boolean(valor)</text>
+    <text x="155" y="150" font-size="12" fill="#14532d">Sin new. Es la forma más clara</text>
+    <text x="155" y="168" font-size="12" fill="#14532d">de expresar la intención.</text>
+
+    <rect x="305" y="52" width="250" height="150" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="430" y="82" font-size="14" font-weight="800" fill="#14532d">Doble negación</text>
+    <text x="430" y="118" font-size="18" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#14532d">!!valor</text>
+    <text x="430" y="150" font-size="12" fill="#14532d">El primer ! lo niega y el segundo</text>
+    <text x="430" y="168" font-size="12" fill="#14532d">lo vuelve a negar: mismo resultado.</text>
+
+    <rect x="580" y="52" width="250" height="150" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="705" y="82" font-size="14" font-weight="800" fill="#14532d">Automática</text>
+    <text x="705" y="112" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">if (valor) { }</text>
+    <text x="705" y="134" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">while (valor) { }</text>
+    <text x="705" y="156" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">valor ? a : b</text>
+    <text x="705" y="184" font-size="12" fill="#14532d">JavaScript convierte por ti.</text>
+  </g>
+
+  <rect x="150" y="226" width="560" height="104" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+  <text x="430" y="256" text-anchor="middle" font-size="14" font-weight="800" fill="#7f1d1d">Evítalo: el constructor con new</text>
+  <text x="430" y="286" text-anchor="middle" font-size="18" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">new Boolean(false)  ✗</text>
+  <text x="430" y="312" text-anchor="middle" font-size="12" fill="#7f1d1d">Crea un objeto, y todo objeto es truthy: un if lo trata como true aunque envuelva false.</text>
+</svg>

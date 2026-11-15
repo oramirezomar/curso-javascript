@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Los operadores lógicos devuelven uno de sus operandos</title>
+  <desc id="d">El operador || devuelve el primer operando truthy, por ejemplo 0 || 10 da 10. El operador &amp;&amp; devuelve el primer operando falsy, o el último si todos son truthy, por ejemplo 0 &amp;&amp; "dog" da 0. El operador ?? solo usa el valor de la derecha si el de la izquierda es null o undefined, por ejemplo 0 ?? 10 da 0.</desc>
+  <rect width="860" height="390" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los operadores lógicos devuelven un operando, no true o false</text>
+
+  <g font-size="15" font-weight="800" text-anchor="middle" font-family="ui-monospace, Menlo, monospace">
+    <rect x="30" y="50" width="300" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="180" y="76" fill="#4d290b">Expresión</text>
+    <rect x="345" y="50" width="130" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="410" y="76" fill="#4d290b">Resultado</text>
+    <rect x="490" y="50" width="340" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="660" y="76" fill="#4d290b">Regla</text>
+  </g>
+
+  <g font-size="15" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="45" y="124">0 || 10</text>
+    <text x="45" y="168">"" || "anónimo"</text>
+    <text x="45" y="212">0 ?? 10</text>
+    <text x="45" y="256">null ?? 10</text>
+    <text x="45" y="300">true &amp;&amp; "dog"</text>
+    <text x="45" y="344">0 &amp;&amp; "dog"</text>
+  </g>
+  <g font-size="15" font-weight="800" text-anchor="middle" font-family="ui-monospace, Menlo, monospace">
+    <text x="410" y="124" fill="#14532d">10</text>
+    <text x="410" y="168" fill="#14532d">"anónimo"</text>
+    <text x="410" y="212" fill="#b45f06">0</text>
+    <text x="410" y="256" fill="#14532d">10</text>
+    <text x="410" y="300" fill="#14532d">"dog"</text>
+    <text x="410" y="344" fill="#b45f06">0</text>
+  </g>
+  <g font-size="13" fill="#5f3109">
+    <text x="505" y="124">|| devuelve el primer truthy</text>
+    <text x="505" y="168">|| usa el de la derecha si el izquierdo es falsy</text>
+    <text x="505" y="212">?? conserva el 0: solo salta con null o undefined</text>
+    <text x="505" y="256">?? salta cuando el izquierdo es null</text>
+    <text x="505" y="300">&amp;&amp; devuelve el último si todos son truthy</text>
+    <text x="505" y="344">&amp;&amp; se detiene en el primer falsy</text>
+  </g>
+  <g stroke="#e2c28a"><line x1="30" y1="140" x2="830" y2="140"/><line x1="30" y1="184" x2="830" y2="184"/><line x1="30" y1="228" x2="830" y2="228"/><line x1="30" y1="272" x2="830" y2="272"/><line x1="30" y1="316" x2="830" y2="316"/></g>
+  <text x="430" y="378" text-anchor="middle" font-size="12" fill="#5f3109">En naranja, los casos donde un 0 se conserva o se devuelve tal cual. Los condicionales completos llegan en lecciones posteriores.</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Valores falsy y valores truthy</title>
+  <desc id="d">Los valores falsy son false, 0, menos 0, 0n, la cadena vacía, null, undefined y NaN, además del heredado document.all. Todo lo demás es truthy, incluidos la cadena "0", la cadena "false", un espacio en blanco, el arreglo vacío, el objeto vacío, los números negativos, Infinity y un objeto Boolean que envuelve false.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Solo hay ocho valores falsy; todo lo demás es truthy</text>
+
+  <!-- Falsy -->
+  <rect x="30" y="50" width="800" height="150" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="50" y="80" font-size="15" font-weight="800" fill="#7f1d1d">Falsy: Boolean(valor) devuelve false</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" text-anchor="middle" fill="#7f1d1d">
+    <rect x="50" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="91" y="122">false</text>
+    <rect x="144" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="185" y="122">0</text>
+    <rect x="238" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="279" y="122">-0</text>
+    <rect x="332" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="373" y="122">0n</text>
+    <rect x="426" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="467" y="122">""</text>
+    <rect x="520" y="96" width="82" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="561" y="122">null</text>
+    <rect x="614" y="96" width="104" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="666" y="122">undefined</text>
+    <rect x="730" y="96" width="80" height="40" rx="9" fill="#ffffff" stroke="#b91c1c"/><text x="770" y="122">NaN</text>
+  </g>
+  <g font-size="12" fill="#7f1d1d">
+    <text x="50" y="166">Incluye las cadenas vacías con comillas simples, dobles y acento grave.</text>
+    <text x="50" y="186">Existe un noveno, document.all, heredado y no estándar: no lo uses.</text>
+  </g>
+
+  <!-- Truthy -->
+  <rect x="30" y="216" width="800" height="150" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="50" y="246" font-size="15" font-weight="800" fill="#14532d">Truthy: todo lo demás devuelve true</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" text-anchor="middle" fill="#14532d">
+    <rect x="50" y="262" width="70" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="85" y="287">true</text>
+    <rect x="130" y="262" width="56" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="158" y="287">-1</text>
+    <rect x="196" y="262" width="70" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="231" y="287">3.14</text>
+    <rect x="276" y="262" width="62" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="307" y="287">"0"</text>
+    <rect x="348" y="262" width="92" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="394" y="287">"false"</text>
+    <rect x="450" y="262" width="54" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="477" y="287">" "</text>
+    <rect x="514" y="262" width="54" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="541" y="287">[]</text>
+    <rect x="578" y="262" width="54" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="605" y="287">{}</text>
+    <rect x="642" y="262" width="96" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="690" y="287">Infinity</text>
+    <rect x="748" y="262" width="62" height="38" rx="9" fill="#ffffff" stroke="#15803d"/><text x="779" y="287">12n</text>
+  </g>
+  <g font-size="12" fill="#14532d">
+    <text x="50" y="330">Ojo: "0", "false", un espacio, un arreglo vacío y un objeto vacío son truthy.</text>
+    <text x="50" y="350">Cualquier objeto lo es, incluso new Boolean(false) y una fecha.</text>
+  </g>
+  <text x="430" y="388" text-anchor="middle" font-size="12" fill="#5f3109">Fuente de la lista: MDN Web Docs, glosario «Falsy».</text>
+</svg>
