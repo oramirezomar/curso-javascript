@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tipos numéricos en otros lenguajes y en JavaScript</title>
+  <desc id="d">A la izquierda, varios lenguajes separan los números en tipos como byte, short, int, long, float y double. A la derecha, JavaScript usa un único tipo number de punto flotante de 64 bits para enteros y decimales, y un tipo aparte llamado bigint para enteros muy grandes.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Números: muchos tipos frente a un tipo principal</text>
+
+  <!-- Otros lenguajes -->
+  <text x="215" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#783d06">Otros lenguajes (por ejemplo, Java o C#)</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" text-anchor="middle" fill="#4d290b">
+    <rect x="40" y="86" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="100" y="116">byte</text>
+    <rect x="170" y="86" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="230" y="116">short</text>
+    <rect x="300" y="86" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="360" y="116">int</text>
+    <rect x="40" y="146" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="100" y="176">long</text>
+    <rect x="170" y="146" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="230" y="176">float</text>
+    <rect x="300" y="146" width="120" height="48" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="360" y="176">double</text>
+  </g>
+  <text x="230" y="224" text-anchor="middle" font-size="13" fill="#5f3109">Cada tipo tiene su tamaño y su rango.</text>
+
+  <line x1="440" y1="60" x2="440" y2="300" stroke="#e2c28a" stroke-dasharray="6 6"/>
+
+  <!-- JavaScript -->
+  <text x="650" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">JavaScript</text>
+  <rect x="470" y="86" width="360" height="108" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="650" y="122" text-anchor="middle" font-size="22" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#14532d">number</text>
+  <text x="650" y="148" text-anchor="middle" font-size="13" fill="#14532d">Decimal de 64 bits (IEEE 754, doble precisión)</text>
+  <text x="650" y="170" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">7   7.19   -3   1e3   NaN   Infinity</text>
+
+  <rect x="470" y="210" width="360" height="74" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="650" y="240" text-anchor="middle" font-size="18" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">bigint</text>
+  <text x="650" y="262" text-anchor="middle" font-size="13" fill="#5f3109">Enteros de cualquier tamaño: 10n, 9007199254740993n</text>
+
+  <text x="430" y="326" text-anchor="middle" font-size="13" fill="#5f3109">En JavaScript, 5 y 5.0 son el mismo valor: no hay un tipo «entero» aparte.</text>
+</svg>

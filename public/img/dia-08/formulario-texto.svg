@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El valor de un formulario llega como texto</title>
+  <desc id="d">Un campo de formulario de tipo number contiene 5.6, pero la propiedad value entrega el texto "5.6". Si se suma 7.19 con ese texto, JavaScript concatena y produce "7.195.6". Si primero se convierte el texto a número con Number o parseFloat, la suma da 12.79.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">El dato de un formulario siempre llega como texto</text>
+
+  <!-- Paso 1 -->
+  <rect x="30" y="60" width="200" height="110" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="130" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#4d290b">Campo del formulario</text>
+  <rect x="55" y="104" width="150" height="38" rx="6" fill="#ffffff" stroke="#b45f06"/>
+  <text x="70" y="129" font-size="16" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">5.6</text>
+  <text x="130" y="160" text-anchor="middle" font-size="11" fill="#783d06">type="number"</text>
+
+  <line x1="232" y1="115" x2="298" y2="115" stroke="#783d06" stroke-width="3"/>
+  <polygon points="298,108 310,115 298,122" fill="#783d06"/>
+
+  <!-- Paso 2 -->
+  <rect x="312" y="60" width="230" height="110" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="427" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">En JavaScript: input.value</text>
+  <text x="427" y="124" text-anchor="middle" font-size="20" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">"5.6"</text>
+  <text x="427" y="152" text-anchor="middle" font-size="12" fill="#7f1d1d">typeof → "string"</text>
+
+  <line x1="544" y1="115" x2="610" y2="115" stroke="#783d06" stroke-width="3"/>
+  <polygon points="610,108 622,115 610,122" fill="#783d06"/>
+  <text x="716" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#4d290b">Operación con 7.19</text>
+
+  <!-- Rama incorrecta -->
+  <rect x="624" y="100" width="206" height="62" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="727" y="124" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">7.19 + "5.6"</text>
+  <text x="727" y="148" text-anchor="middle" font-size="16" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#b91c1c">"7.195.6" ✗</text>
+
+  <!-- Conversión -->
+  <rect x="312" y="206" width="230" height="110" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="427" y="234" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Conversión (casting)</text>
+  <text x="427" y="264" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#14532d">Number("5.6")</text>
+  <text x="427" y="288" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#14532d">parseFloat("5.6")</text>
+  <text x="427" y="308" text-anchor="middle" font-size="12" fill="#14532d">→ 5.6 (number)</text>
+
+  <path d="M427 172 L427 204" stroke="#783d06" stroke-width="3" fill="none"/>
+  <polygon points="420,204 427,216 434,204" fill="#783d06"/>
+
+  <line x1="544" y1="262" x2="610" y2="262" stroke="#783d06" stroke-width="3"/>
+  <polygon points="610,255 622,262 610,269" fill="#783d06"/>
+  <rect x="624" y="232" width="206" height="62" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="727" y="256" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">7.19 + 5.6</text>
+  <text x="727" y="280" text-anchor="middle" font-size="16" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#15803d">12.79 ✓</text>
+
+  <text x="30" y="344" font-size="12" fill="#5f3109">Alternativa: input.valueAsNumber entrega directamente un número (o NaN si el campo está vacío o es inválido).</text>
+</svg>

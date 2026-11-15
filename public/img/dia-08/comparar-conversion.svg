@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Number, parseInt y parseFloat con distintos textos</title>
+  <desc id="d">Tabla con siete textos y el resultado de Number, parseInt y parseFloat. Number exige que todo el texto sea un número válido. parseInt lee el entero inicial y parseFloat lee el decimal inicial, ignorando el resto.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tres formas de convertir texto a número</text>
+
+  <g font-size="15" font-weight="800" text-anchor="middle" font-family="ui-monospace, Menlo, monospace">
+    <rect x="30" y="50" width="180" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="120" y="76" fill="#4d290b">Texto</text>
+    <rect x="230" y="50" width="190" height="40" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="325" y="76" fill="#14532d">Number(t)</text>
+    <rect x="440" y="50" width="190" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="535" y="76" fill="#4d290b">parseInt(t, 10)</text>
+    <rect x="650" y="50" width="180" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+    <text x="740" y="76" fill="#4d290b">parseFloat(t)</text>
+  </g>
+
+  <g font-size="15" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="120" y="122">"5.6"</text><text x="325" y="122">5.6</text><text x="535" y="122">5</text><text x="740" y="122">5.6</text>
+    <text x="120" y="162">"5.6px"</text><text x="325" y="162" fill="#b91c1c">NaN</text><text x="535" y="162">5</text><text x="740" y="162">5.6</text>
+    <text x="120" y="202">"px5.6"</text><text x="325" y="202" fill="#b91c1c">NaN</text><text x="535" y="202" fill="#b91c1c">NaN</text><text x="740" y="202" fill="#b91c1c">NaN</text>
+    <text x="120" y="242">""</text><text x="325" y="242" fill="#b45f06">0</text><text x="535" y="242" fill="#b91c1c">NaN</text><text x="740" y="242" fill="#b91c1c">NaN</text>
+    <text x="120" y="282">"1e3"</text><text x="325" y="282">1000</text><text x="535" y="282" fill="#b45f06">1</text><text x="740" y="282">1000</text>
+    <text x="120" y="322">"0x1f"</text><text x="325" y="322">31</text><text x="535" y="322">31</text><text x="740" y="322" fill="#b45f06">0</text>
+    <text x="120" y="362">"1,5"</text><text x="325" y="362" fill="#b91c1c">NaN</text><text x="535" y="362" fill="#b45f06">1</text><text x="740" y="362" fill="#b45f06">1</text>
+  </g>
+  <g stroke="#e2c28a">
+    <line x1="30" y1="138" x2="830" y2="138"/><line x1="30" y1="178" x2="830" y2="178"/><line x1="30" y1="218" x2="830" y2="218"/>
+    <line x1="30" y1="258" x2="830" y2="258"/><line x1="30" y1="298" x2="830" y2="298"/><line x1="30" y1="338" x2="830" y2="338"/>
+  </g>
+  <text x="430" y="391" text-anchor="middle" font-size="12" fill="#5f3109">En naranja, los resultados que más sorprenden: "" da 0, "1e3" da 1 con parseInt y "1,5" se corta en la coma.</text>
+</svg>
