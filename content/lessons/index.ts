@@ -17,14 +17,16 @@ import { day07 } from "./day-07";
 import { day08 } from "./day-08";
 import { day09 } from "./day-09";
 import { day10 } from "./day-10";
+import { day11 } from "./day-11";
 
 export const sections: CourseSection[] = [
   { title: "Introducción y contexto", dayRange: [1, 2], icon: "🧭" },
   { title: "Fundamentos del lenguaje", dayRange: [3, 5], icon: "🧱" },
   { title: "Tipos de datos básicos", dayRange: [6, 10], icon: "🔤" },
+  { title: "Funciones y tipos compuestos", dayRange: [11, 11], icon: "⚙️" },
 ];
 
-export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06, day07, day08, day09, day10];
+export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06, day07, day08, day09, day10, day11];
 
 export function getLessonByDay(day: number): Lesson | undefined {
   return lessons.find((lesson) => lesson.day === day);

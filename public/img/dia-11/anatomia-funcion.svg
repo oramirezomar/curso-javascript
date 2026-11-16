@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Anatomía de una función y su invocación</title>
+  <desc id="d">Una declaración de función tiene la palabra reservada function, un nombre, paréntesis con los parámetros (que pueden tener valor por defecto) y un cuerpo entre llaves que puede terminar con return. Para ejecutarla se escribe su nombre con paréntesis y los argumentos, y la invocación se reemplaza por el valor devuelto.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Declarar una función y ejecutarla</text>
+
+  <!-- Etiquetas sobre la primera línea -->
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <text x="96" y="68" fill="#9d174d">palabra reservada</text>
+    <text x="297" y="68" fill="#1e40af">parámetros</text>
+    <text x="182" y="88" fill="#92400e">nombre de la función</text>
+    <text x="428" y="88" fill="#166534">valor por defecto</text>
+  </g>
+  <g stroke="#783d06" stroke-width="1.5">
+    <line x1="96" y1="74" x2="96" y2="132"/>
+    <line x1="297" y1="74" x2="297" y2="132"/>
+    <line x1="182" y1="94" x2="182" y2="132"/>
+    <line x1="428" y1="94" x2="428" y2="132"/>
+  </g>
+
+  <!-- Código -->
+  <rect x="30" y="104" width="800" height="156" rx="14" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" fill="#e2e8f0">
+    <text x="60" y="156"><tspan fill="#f9a8d4">function</tspan> <tspan fill="#fde68a">saludar</tspan>(<tspan fill="#93c5fd">nombre</tspan>, <tspan fill="#93c5fd">edad</tspan> = <tspan fill="#86efac">0</tspan>) {</text>
+    <text x="60" y="186">&#160;&#160;console.log(<tspan fill="#fca5a5">`${nombre} tiene ${edad}`</tspan>);</text>
+    <text x="60" y="216">&#160;&#160;<tspan fill="#f9a8d4">return</tspan> nombre;</text>
+    <text x="60" y="246">}</text>
+  </g>
+
+  <!-- Guías a la derecha -->
+  <g stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="500" y1="181" x2="546" y2="181"/>
+    <line x1="260" y1="211" x2="546" y2="211"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#fde68a">
+    <text x="554" y="178">cuerpo: las instrucciones</text>
+    <text x="554" y="194">que van entre llaves</text>
+  </g>
+  <g font-size="12" font-weight="700" fill="#f9a8d4">
+    <text x="554" y="208">return: devuelve un valor</text>
+    <text x="554" y="224">y termina la función</text>
+  </g>
+
+  <!-- Invocación -->
+  <rect x="30" y="290" width="480" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="50" y="318" font-size="12" font-weight="700" fill="#783d06">Invocación: nombre + paréntesis + argumentos</text>
+  <text x="50" y="348" font-size="17" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">saludar("Ana", 30)</text>
+  <line x1="512" y1="328" x2="568" y2="328" stroke="#783d06" stroke-width="3"/>
+  <polygon points="566,321 580,328 566,335" fill="#783d06"/>
+  <rect x="584" y="290" width="246" height="76" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="707" y="318" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">Se reemplaza por lo que devuelve</text>
+  <text x="707" y="348" text-anchor="middle" font-size="17" font-family="ui-monospace, Menlo, monospace" fill="#14532d">"Ana"</text>
+</svg>

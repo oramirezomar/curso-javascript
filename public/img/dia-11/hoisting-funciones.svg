@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Llamar a una función antes de definirla</title>
+  <desc id="d">Una función declarada con la palabra function se eleva con su cuerpo, así que se puede llamar antes de su línea de declaración. Una función expresada asignada a const existe pero no está inicializada hasta su línea y llamarla antes lanza ReferenceError. Una función expresada asignada a var vale undefined hasta su línea y llamarla antes lanza TypeError.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">¿Puedo llamarla antes de su línea?</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="30" y="50" width="250" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="155" y="76" fill="#4d290b">Cómo se define</text>
+    <rect x="296" y="50" width="250" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="421" y="76" fill="#4d290b">Antes de ejecutar el código</text>
+    <rect x="562" y="50" width="268" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="696" y="76" fill="#4d290b">Llamarla antes de su línea</text>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#4d290b">
+    <rect x="30" y="104" width="250" height="84" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="44" y="136">function saludar() {</text><text x="44" y="158">&#160;&#160;...</text><text x="44" y="178">}</text>
+    <rect x="30" y="204" width="250" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="44" y="236">const saludar = function () {</text><text x="44" y="258">&#160;&#160;...</text><text x="44" y="278">};</text>
+    <rect x="30" y="304" width="250" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="44" y="336">var saludar = function () {</text><text x="44" y="358">&#160;&#160;...</text><text x="44" y="378">};</text>
+  </g>
+
+  <g font-size="13" text-anchor="middle">
+    <rect x="296" y="104" width="250" height="84" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="421" y="140" font-weight="800" fill="#14532d">saludar existe</text>
+    <text x="421" y="162" fill="#14532d">con su cuerpo completo</text>
+    <rect x="296" y="204" width="250" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="421" y="240" font-weight="800" fill="#7f1d1d">saludar existe</text>
+    <text x="421" y="262" fill="#7f1d1d">pero sin inicializar</text>
+    <rect x="296" y="304" width="250" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="421" y="340" font-weight="800" fill="#7f1d1d">saludar vale undefined</text>
+    <text x="421" y="362" fill="#7f1d1d">hasta llegar a su línea</text>
+
+    <rect x="562" y="104" width="268" height="84" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="696" y="142" font-size="18" font-weight="800" fill="#14532d">Sí funciona ✓</text>
+    <text x="696" y="168" fill="#14532d">Se eleva con su valor (hoisting)</text>
+    <rect x="562" y="204" width="268" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="696" y="242" font-size="16" font-weight="800" fill="#7f1d1d">ReferenceError ✗</text>
+    <text x="696" y="268" fill="#7f1d1d">Cannot access before initialization</text>
+    <rect x="562" y="304" width="268" height="84" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="696" y="342" font-size="16" font-weight="800" fill="#7f1d1d">TypeError ✗</text>
+    <text x="696" y="368" fill="#7f1d1d">saludar is not a function</text>
+  </g>
+</svg>

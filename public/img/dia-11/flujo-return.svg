@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">return termina la función</title>
+  <desc id="d">Una función imprime 1, ejecuta return 19 y las líneas siguientes no se ejecutan. La llamada const r igual f paréntesis, que estaba en la línea 7, recibe el valor 19 y el programa continúa en esa línea. Las líneas 4 y 5 quedan sin ejecutar.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">return: devuelve el valor y termina la función</text>
+
+  <rect x="30" y="50" width="470" height="300" rx="14" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#e2e8f0">
+    <text x="48" y="84" fill="#64748b">1</text><text x="80" y="84"><tspan fill="#f9a8d4">function</tspan> <tspan fill="#fde68a">f</tspan>() {</text>
+    <text x="48" y="116" fill="#64748b">2</text><text x="80" y="116">&#160;&#160;console.log(<tspan fill="#fca5a5">"1"</tspan>);</text>
+    <text x="48" y="148" fill="#64748b">3</text><text x="80" y="148">&#160;&#160;<tspan fill="#f9a8d4">return</tspan> <tspan fill="#86efac">19</tspan>;</text>
+    <text x="48" y="180" fill="#475569">4</text><text x="80" y="180" fill="#475569">&#160;&#160;console.log("2");</text>
+    <text x="48" y="212" fill="#475569">5</text><text x="80" y="212" fill="#475569">&#160;&#160;return "texto";</text>
+    <text x="48" y="244" fill="#64748b">6</text><text x="80" y="244">}</text>
+    <text x="48" y="292" fill="#64748b">7</text><text x="80" y="292"><tspan fill="#f9a8d4">const</tspan> r = f();</text>
+  </g>
+
+  <!-- Marcas de ejecución -->
+  <g font-size="12" font-weight="700">
+    <rect x="360" y="132" width="124" height="24" rx="6" fill="#dcfce7" stroke="#15803d"/>
+    <text x="422" y="149" text-anchor="middle" fill="#14532d">se ejecuta y sale</text>
+    <rect x="360" y="164" width="124" height="48" rx="6" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="422" y="184" text-anchor="middle" fill="#7f1d1d">nunca se</text>
+    <text x="422" y="202" text-anchor="middle" fill="#7f1d1d">ejecutan</text>
+  </g>
+
+  <!-- Flujo -->
+  <g stroke="#15803d" stroke-width="3" fill="none">
+    <path d="M504 148 L560 148 L560 292 L518 292"/>
+  </g>
+  <polygon points="520,285 506,292 520,299" fill="#15803d"/>
+  <text x="580" y="90" font-size="13" font-weight="700" fill="#14532d">1. La línea 7 llama a f()</text>
+  <text x="580" y="112" font-size="13" font-weight="700" fill="#14532d">2. Se ejecutan las líneas 2 y 3</text>
+  <text x="580" y="134" font-size="13" font-weight="700" fill="#14532d">3. return 19 sale de la función</text>
+  <text x="580" y="156" font-size="13" font-weight="700" fill="#14532d">4. Vuelve a la línea 7</text>
+  <rect x="580" y="244" width="250" height="64" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="705" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">Resultado</text>
+  <text x="705" y="296" text-anchor="middle" font-size="16" font-family="ui-monospace, Menlo, monospace" fill="#14532d">r vale 19</text>
+  <text x="430" y="370" text-anchor="middle" font-size="12" fill="#5f3109">Sin return, o con return solo, una función devuelve undefined.</text>
+</svg>
