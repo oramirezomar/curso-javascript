@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Igualdad flexible frente a igualdad estricta</title>
+  <desc id="d">Comparación de == y === con siete pares de valores. "7" == 7 es true porque el texto se convierte a número, pero === es false. 0 == false es true por conversión a número, no porque ambos sean falsy. null == undefined es true pero === es false. null == false es false aunque ambos sean falsy. [] == false es true aunque [] sea truthy. NaN no es igual a nada ni con == ni con ===.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">== convierte tipos; === no</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="30" y="50" width="250" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="155" y="75" fill="#4d290b">Comparación</text>
+    <rect x="292" y="50" width="100" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="342" y="75" fill="#4d290b">==</text>
+    <rect x="404" y="50" width="100" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="454" y="75" fill="#14532d">===</text>
+    <rect x="516" y="50" width="314" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="673" y="75" fill="#4d290b">Por qué</text>
+  </g>
+
+  <g font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="44" y="122">"7" y 7</text>
+    <text x="44" y="164">0 y false</text>
+    <text x="44" y="206">null y undefined</text>
+    <text x="44" y="248">null y false</text>
+    <text x="44" y="290">"" y 0</text>
+    <text x="44" y="332">[] y false</text>
+    <text x="44" y="374">NaN y NaN</text>
+  </g>
+  <g font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" text-anchor="middle">
+    <text x="342" y="122" fill="#15803d">true</text><text x="454" y="122" fill="#b91c1c">false</text>
+    <text x="342" y="164" fill="#15803d">true</text><text x="454" y="164" fill="#b91c1c">false</text>
+    <text x="342" y="206" fill="#15803d">true</text><text x="454" y="206" fill="#b91c1c">false</text>
+    <text x="342" y="248" fill="#b91c1c">false</text><text x="454" y="248" fill="#b91c1c">false</text>
+    <text x="342" y="290" fill="#15803d">true</text><text x="454" y="290" fill="#b91c1c">false</text>
+    <text x="342" y="332" fill="#15803d">true</text><text x="454" y="332" fill="#b91c1c">false</text>
+    <text x="342" y="374" fill="#b91c1c">false</text><text x="454" y="374" fill="#b91c1c">false</text>
+  </g>
+  <g font-size="12" fill="#5f3109">
+    <text x="530" y="122">el texto se convierte a número</text>
+    <text x="530" y="164">false se convierte a 0</text>
+    <text x="530" y="206">regla especial: solo se igualan entre sí</text>
+    <text x="530" y="248">ambos son falsy, pero == no usa falsy</text>
+    <text x="530" y="290">"" se convierte a 0</text>
+    <text x="530" y="332">[] es truthy y aun así es == false</text>
+    <text x="530" y="374">NaN no es igual a nada, ni a sí mismo</text>
+  </g>
+  <g stroke="#e2c28a"><line x1="30" y1="138" x2="830" y2="138"/><line x1="30" y1="180" x2="830" y2="180"/><line x1="30" y1="222" x2="830" y2="222"/><line x1="30" y1="264" x2="830" y2="264"/><line x1="30" y1="306" x2="830" y2="306"/><line x1="30" y1="348" x2="830" y2="348"/></g>
+  <text x="430" y="414" text-anchor="middle" font-size="13" fill="#5f3109">Los resultados de == salen de reglas de conversión de tipos, no de «valores falsy». Por eso se prefiere ===.</text>
+</svg>

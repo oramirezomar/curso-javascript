@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Orden en que se evalúan los operadores</title>
+  <desc id="d">De mayor a menor precedencia: paréntesis, incremento y decremento postfijo, operadores unarios como negación y typeof, potencia, multiplicación división y resto, suma y resta, comparaciones de orden, igualdad, AND lógico, OR lógico y fusión de nulos, y por último la asignación. El ejemplo 2 más 3 por 4 elevado a 2 se evalúa primero la potencia, luego el producto y al final la suma, y da 50.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Precedencia: quién se evalúa primero</text>
+
+  <!-- Escalera -->
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700">
+    <rect x="30" y="50" width="470" height="30" rx="7" fill="#dcfce7" stroke="#15803d"/><text x="44" y="71" fill="#14532d">1  ( )</text><text x="250" y="71" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#14532d">agrupación</text>
+    <rect x="30" y="84" width="470" height="30" rx="7" fill="#dcfce7" stroke="#15803d"/><text x="44" y="105" fill="#14532d">2  x++  x--</text><text x="250" y="105" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#14532d">postfijos</text>
+    <rect x="30" y="118" width="470" height="30" rx="7" fill="#dcfce7" stroke="#15803d"/><text x="44" y="139" fill="#14532d">3  ++x  --x  !  +  -  typeof</text><text x="330" y="139" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#14532d">unarios</text>
+    <rect x="30" y="152" width="470" height="30" rx="7" fill="#ecfccb" stroke="#65a30d"/><text x="44" y="173" fill="#365314">4  **</text><text x="250" y="173" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#365314">potencia (de derecha a izquierda)</text>
+    <rect x="30" y="186" width="470" height="30" rx="7" fill="#ecfccb" stroke="#65a30d"/><text x="44" y="207" fill="#365314">5  *  /  %</text><text x="250" y="207" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#365314">multiplicativos (izquierda a derecha)</text>
+    <rect x="30" y="220" width="470" height="30" rx="7" fill="#fef9c3" stroke="#ca8a04"/><text x="44" y="241" fill="#713f12">6  +  -</text><text x="250" y="241" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#713f12">suma y resta</text>
+    <rect x="30" y="254" width="470" height="30" rx="7" fill="#fef9c3" stroke="#ca8a04"/><text x="44" y="275" fill="#713f12">7  &lt;  &lt;=  &gt;  &gt;=</text><text x="250" y="275" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#713f12">relacionales</text>
+    <rect x="30" y="288" width="470" height="30" rx="7" fill="#ffedd5" stroke="#ea580c"/><text x="44" y="309" fill="#7c2d12">8  ==  !=  ===  !==</text><text x="330" y="309" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#7c2d12">igualdad</text>
+    <rect x="30" y="322" width="470" height="30" rx="7" fill="#ffedd5" stroke="#ea580c"/><text x="44" y="343" fill="#7c2d12">9  &amp;&amp;</text><text x="250" y="343" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#7c2d12">AND lógico</text>
+    <rect x="30" y="356" width="470" height="30" rx="7" fill="#fee2e2" stroke="#b91c1c"/><text x="44" y="377" fill="#7f1d1d">10  ||  ??</text><text x="250" y="377" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#7f1d1d">OR lógico y fusión de nulos</text>
+    <rect x="30" y="390" width="470" height="30" rx="7" fill="#fee2e2" stroke="#b91c1c"/><text x="44" y="411" fill="#7f1d1d">11  =  +=  -=  ...</text><text x="330" y="411" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#7f1d1d">asignación (la última)</text>
+  </g>
+
+  <!-- Flecha lateral -->
+  <line x1="520" y1="60" x2="520" y2="410" stroke="#783d06" stroke-width="3"/>
+  <polygon points="513,402 520,418 527,402" fill="#783d06"/>
+  <text x="534" y="72" font-size="11" fill="#5f3109">primero</text>
+  <text x="534" y="414" font-size="11" fill="#5f3109">al final</text>
+
+  <!-- Ejemplo -->
+  <rect x="590" y="50" width="240" height="250" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="710" y="78" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Ejemplo</text>
+  <text x="710" y="108" text-anchor="middle" font-size="16" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#4d290b">2 + 3 * 4 ** 2</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#4d290b" text-anchor="middle">
+    <text x="710" y="146">1. 4 ** 2   →  16</text>
+    <text x="710" y="176">2. 3 * 16   →  48</text>
+    <text x="710" y="206">3. 2 + 48   →  50</text>
+  </g>
+  <text x="710" y="244" text-anchor="middle" font-size="12" fill="#5f3109">Con paréntesis cambias el orden:</text>
+  <text x="710" y="268" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#4d290b">(2 + 3) * 4 ** 2  →  80</text>
+
+  <rect x="590" y="316" width="240" height="104" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="710" y="342" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">Ante la duda, paréntesis</text>
+  <text x="710" y="366" text-anchor="middle" font-size="12" fill="#7f1d1d">true || false &amp;&amp; false</text>
+  <text x="710" y="384" text-anchor="middle" font-size="12" fill="#7f1d1d">es true: &amp;&amp; va antes que ||</text>
+  <text x="710" y="406" text-anchor="middle" font-size="11" fill="#7f1d1d">(true || false) &amp;&amp; false es false</text>
+</svg>

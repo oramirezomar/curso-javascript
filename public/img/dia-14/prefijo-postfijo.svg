@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Incremento postfijo y prefijo</title>
+  <desc id="d">Con la variable i valiendo 2, la expresión i++ devuelve el valor anterior, 2, y después i pasa a valer 3. La expresión ++i incrementa primero, i pasa a valer 3, y devuelve el valor nuevo, 3. Cuando se usan como instrucción aparte, el resultado final es el mismo.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">i++ frente a ++i (con i valiendo 2)</text>
+
+  <!-- Postfijo -->
+  <rect x="30" y="52" width="390" height="226" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="225" y="82" text-anchor="middle" font-size="16" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">console.log(i++)</text>
+  <text x="225" y="104" text-anchor="middle" font-size="12" fill="#783d06">postfijo: el operador va después</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="60" y="124" width="330" height="40" rx="9" fill="#ffffff" stroke="#b45f06"/><text x="225" y="149" fill="#4d290b">1. Se toma el valor actual: 2</text>
+    <rect x="60" y="174" width="330" height="40" rx="9" fill="#ffffff" stroke="#b45f06"/><text x="225" y="199" fill="#4d290b">2. i pasa a valer 3</text>
+    <rect x="60" y="224" width="330" height="40" rx="9" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="225" y="249" font-weight="800" fill="#14532d">La expresión vale 2 (imprime 2)</text>
+  </g>
+
+  <!-- Prefijo -->
+  <rect x="440" y="52" width="390" height="226" rx="14" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="635" y="82" text-anchor="middle" font-size="16" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">console.log(++i)</text>
+  <text x="635" y="104" text-anchor="middle" font-size="12" fill="#1e3a8a">prefijo: el operador va antes</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="470" y="124" width="330" height="40" rx="9" fill="#ffffff" stroke="#1d4ed8"/><text x="635" y="149" fill="#1e3a8a">1. i pasa a valer 3</text>
+    <rect x="470" y="174" width="330" height="40" rx="9" fill="#ffffff" stroke="#1d4ed8"/><text x="635" y="199" fill="#1e3a8a">2. Se toma el valor nuevo: 3</text>
+    <rect x="470" y="224" width="330" height="40" rx="9" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="635" y="249" font-weight="800" fill="#14532d">La expresión vale 3 (imprime 3)</text>
+  </g>
+
+  <rect x="30" y="292" width="800" height="36" rx="10" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="430" y="315" text-anchor="middle" font-size="13" fill="#334155">En los dos casos i acaba valiendo 3. La diferencia es qué valor entrega la expresión. Como instrucción aparte (i++;) da igual.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tablas de verdad y cortocircuito</title>
+  <desc id="d">Tabla de verdad del operador Y lógico, que es true solo si ambos lados son true. Tabla de verdad del operador O lógico, que es true si al menos un lado es true. El operador NO invierte el valor. El cortocircuito: si el lado izquierdo de Y es false, o el izquierdo de O es true, el lado derecho ni se evalúa.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Operadores lógicos: tablas de verdad</text>
+
+  <!-- AND -->
+  <rect x="30" y="50" width="250" height="200" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="155" y="78" text-anchor="middle" font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">a &amp;&amp; b   (Y)</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="50" y="108" font-weight="700">a</text><text x="110" y="108" font-weight="700">b</text><text x="190" y="108" font-weight="700">resultado</text>
+    <text x="50" y="136">true</text><text x="110" y="136">true</text><text x="190" y="136" font-weight="800" fill="#15803d">true</text>
+    <text x="50" y="162">true</text><text x="110" y="162">false</text><text x="190" y="162" font-weight="800" fill="#b91c1c">false</text>
+    <text x="50" y="188">false</text><text x="110" y="188">true</text><text x="190" y="188" font-weight="800" fill="#b91c1c">false</text>
+    <text x="50" y="214">false</text><text x="110" y="214">false</text><text x="190" y="214" font-weight="800" fill="#b91c1c">false</text>
+  </g>
+  <text x="155" y="238" text-anchor="middle" font-size="11" fill="#783d06">verdadero solo si todas se cumplen</text>
+
+  <!-- OR -->
+  <rect x="305" y="50" width="250" height="200" rx="14" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="430" y="78" text-anchor="middle" font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">a || b   (O)</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">
+    <text x="325" y="108" font-weight="700">a</text><text x="385" y="108" font-weight="700">b</text><text x="465" y="108" font-weight="700">resultado</text>
+    <text x="325" y="136">true</text><text x="385" y="136">true</text><text x="465" y="136" font-weight="800" fill="#15803d">true</text>
+    <text x="325" y="162">true</text><text x="385" y="162">false</text><text x="465" y="162" font-weight="800" fill="#15803d">true</text>
+    <text x="325" y="188">false</text><text x="385" y="188">true</text><text x="465" y="188" font-weight="800" fill="#15803d">true</text>
+    <text x="325" y="214">false</text><text x="385" y="214">false</text><text x="465" y="214" font-weight="800" fill="#b91c1c">false</text>
+  </g>
+  <text x="430" y="238" text-anchor="middle" font-size="11" fill="#1e3a8a">verdadero si se cumple al menos una</text>
+
+  <!-- NOT -->
+  <rect x="580" y="50" width="250" height="200" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="705" y="78" text-anchor="middle" font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">!a   (NO)</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">
+    <text x="610" y="108" font-weight="700">a</text><text x="710" y="108" font-weight="700">resultado</text>
+    <text x="610" y="136">true</text><text x="710" y="136" font-weight="800">false</text>
+    <text x="610" y="162">false</text><text x="710" y="162" font-weight="800">true</text>
+  </g>
+  <text x="705" y="196" text-anchor="middle" font-size="12" fill="#7f1d1d">Invierte el valor.</text>
+  <text x="705" y="216" text-anchor="middle" font-size="12" fill="#7f1d1d">!!a convierte a booleano.</text>
+
+  <!-- Cortocircuito -->
+  <rect x="30" y="268" width="800" height="112" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="430" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d">Cortocircuito: el lado derecho no siempre se evalúa</text>
+  <g font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#14532d">
+    <text x="60" y="326">false &amp;&amp; f()   →  f() nunca se llama (ya es false)</text>
+    <text x="60" y="350">true  || f()   →  f() nunca se llama (ya es true)</text>
+  </g>
+  <text x="60" y="372" font-size="12" fill="#14532d">Por eso se escribe usuario &amp;&amp; usuario.nombre: si no hay usuario, no se lee la propiedad.</text>
+</svg>
