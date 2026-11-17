@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tres tipos de estructuras de control</title>
+  <desc id="d">Las estructuras secuenciales ejecutan una instrucción detrás de otra. Las condicionales eligen un camino según una condición y se ven en esta lección. Las repetitivas o bucles repiten un bloque mientras se cumpla algo y se ven en la próxima lección.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Estructuras de control: cómo fluye el programa</text>
+
+  <!-- Secuencial -->
+  <rect x="30" y="52" width="250" height="250" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="155" y="80" text-anchor="middle" font-size="15" font-weight="800" fill="#4d290b">Secuencial</text>
+  <g font-size="13" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <rect x="75" y="98" width="160" height="34" rx="8" fill="#ffffff" stroke="#b45f06"/><text x="155" y="120">instrucción 1</text>
+    <rect x="75" y="152" width="160" height="34" rx="8" fill="#ffffff" stroke="#b45f06"/><text x="155" y="174">instrucción 2</text>
+    <rect x="75" y="206" width="160" height="34" rx="8" fill="#ffffff" stroke="#b45f06"/><text x="155" y="228">instrucción 3</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="155" y1="133" x2="155" y2="148"/><polygon points="149,146 155,152 161,146"/><line x1="155" y1="187" x2="155" y2="202"/><polygon points="149,200 155,206 161,200"/></g>
+  <text x="155" y="270" text-anchor="middle" font-size="12" fill="#783d06">Una línea tras otra. Es lo que</text>
+  <text x="155" y="288" text-anchor="middle" font-size="12" fill="#783d06">hemos escrito hasta ahora.</text>
+
+  <!-- Condicional -->
+  <rect x="305" y="52" width="250" height="250" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="430" y="80" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d">Condicional (hoy)</text>
+  <polygon points="430,96 490,134 430,172 370,134" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+  <text x="430" y="138" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">¿condición?</text>
+  <g stroke="#15803d" stroke-width="2.5" fill="#15803d"><line x1="372" y1="134" x2="338" y2="134"/><line x1="338" y1="134" x2="338" y2="190"/><polygon points="332,188 338,198 344,188"/><line x1="488" y1="134" x2="522" y2="134"/><line x1="522" y1="134" x2="522" y2="190"/><polygon points="516,188 522,198 528,188"/></g>
+  <text x="352" y="128" font-size="11" font-weight="700" fill="#14532d">sí</text>
+  <text x="498" y="128" font-size="11" font-weight="700" fill="#14532d">no</text>
+  <g font-size="12" text-anchor="middle" fill="#14532d"><rect x="315" y="200" width="86" height="34" rx="8" fill="#ffffff" stroke="#15803d"/><text x="358" y="222">camino A</text><rect x="459" y="200" width="86" height="34" rx="8" fill="#ffffff" stroke="#15803d"/><text x="502" y="222">camino B</text></g>
+  <text x="430" y="270" text-anchor="middle" font-size="12" fill="#14532d">if, else if, else, ternario</text>
+  <text x="430" y="288" text-anchor="middle" font-size="12" fill="#14532d">y switch.</text>
+
+  <!-- Repetitiva -->
+  <rect x="580" y="52" width="250" height="250" rx="14" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="705" y="80" text-anchor="middle" font-size="15" font-weight="800" fill="#1e3a8a">Repetitiva (próxima)</text>
+  <g font-size="13" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">
+    <rect x="650" y="106" width="110" height="34" rx="8" fill="#ffffff" stroke="#1d4ed8"/><text x="705" y="128">bloque</text>
+  </g>
+  <path d="M765 123 L795 123 L795 205 L705 205 L705 146" stroke="#1d4ed8" stroke-width="2.5" fill="none"/>
+  <polygon points="699,148 705,138 711,148" fill="#1d4ed8"/>
+  <text x="705" y="230" text-anchor="middle" font-size="11" fill="#1e3a8a">mientras se cumpla algo</text>
+  <text x="705" y="270" text-anchor="middle" font-size="12" fill="#1e3a8a">for, while y do...while.</text>
+  <text x="705" y="288" text-anchor="middle" font-size="12" fill="#1e3a8a">Se ven en la lección 16.</text>
+</svg>

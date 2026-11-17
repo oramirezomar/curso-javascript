@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué operadores incluyen el valor límite</title>
+  <desc id="d">Para decidir si alguien es mayor de edad desde los 18 años, se prueban cinco condiciones con las edades 17 y 18. La condición edad mayor que 17 da falso para 17 y verdadero para 18. La condición edad mayor o igual a 17 da verdadero para ambas, y es un error lógico. Edad mayor o igual a 18 da falso y verdadero. Edad menor que 18 da verdadero y falso. Edad menor o igual a 17 da verdadero y falso.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">¿Es mayor de edad quien tiene 18 años o más?</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="30" y="50" width="250" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="155" y="75" fill="#4d290b">Condición</text>
+    <rect x="292" y="50" width="130" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="357" y="75" fill="#4d290b">edad = 17</text>
+    <rect x="434" y="50" width="130" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="499" y="75" fill="#4d290b">edad = 18</text>
+    <rect x="576" y="50" width="254" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="703" y="75" fill="#4d290b">¿Es correcta?</text>
+  </g>
+
+  <rect x="30" y="141" width="800" height="45" fill="#fee2e2" opacity="0.7"/>
+  <g font-size="15" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="46" y="124">edad &gt; 17</text>
+    <text x="46" y="170">edad &gt;= 17</text>
+    <text x="46" y="216">edad &gt;= 18</text>
+    <text x="46" y="262">edad &lt; 18</text>
+    <text x="46" y="308">edad &lt;= 17</text>
+  </g>
+  <g font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" text-anchor="middle">
+    <text x="357" y="124" fill="#b91c1c">false</text><text x="499" y="124" fill="#15803d">true</text>
+    <text x="357" y="170" fill="#15803d">true</text><text x="499" y="170" fill="#15803d">true</text>
+    <text x="357" y="216" fill="#b91c1c">false</text><text x="499" y="216" fill="#15803d">true</text>
+    <text x="357" y="262" fill="#15803d">true</text><text x="499" y="262" fill="#b91c1c">false</text>
+    <text x="357" y="308" fill="#15803d">true</text><text x="499" y="308" fill="#b91c1c">false</text>
+  </g>
+  <g font-size="13" fill="#5f3109">
+    <text x="590" y="124">Sí: excluye el 17, incluye el 18</text>
+    <text x="590" y="170" fill="#b91c1c" font-weight="700">No: marca como mayor a un 17</text>
+    <text x="590" y="216">Sí: la más clara con el número 18</text>
+    <text x="590" y="262">Sí: es la condición contraria</text>
+    <text x="590" y="308">Sí: 17 es el último menor de edad</text>
+  </g>
+  <g stroke="#e2c28a"><line x1="30" y1="140" x2="830" y2="140"/><line x1="30" y1="186" x2="830" y2="186"/><line x1="30" y1="232" x2="830" y2="232"/><line x1="30" y1="278" x2="830" y2="278"/><line x1="30" y1="324" x2="830" y2="324"/></g>
+  <text x="430" y="358" text-anchor="middle" font-size="13" fill="#5f3109">Sin «=» el valor límite queda fuera; con «=» queda dentro. Prueba siempre los valores en el borde.</text>
+  <text x="430" y="382" text-anchor="middle" font-size="12" fill="#5f3109">Aquí las condiciones correctas son las que dan false con 17 y true con 18 (o al revés si la condición es la contraria).</text>
+</svg>

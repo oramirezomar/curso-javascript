@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Una cadena de else if para saludar según la hora</title>
+  <desc id="d">Las horas de 0 a 23 se reparten en cuatro rangos: de 0 a 5 Déjame dormir, de 6 a 11 Buenos días, de 12 a 18 Buenas tardes y de 19 a 23 Buenas noches. En la cadena se pregunta en orden: si hora menor o igual a 5, si no si hora menor o igual a 11, si no si hora menor o igual a 18, y si no, el else final. Cada pregunta solo se evalúa si las anteriores fallaron, por eso no hace falta repetir el límite inferior.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuatro rangos, una cadena de else if</text>
+
+  <!-- Franja de horas -->
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <rect x="30" y="52" width="160" height="56" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="110" y="76" fill="#1e3a8a">0 a 5</text><text x="110" y="95" font-weight="400" fill="#1e3a8a">Déjame dormir</text>
+    <rect x="196" y="52" width="160" height="56" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="276" y="76" fill="#713f12">6 a 11</text><text x="276" y="95" font-weight="400" fill="#713f12">Buenos días</text>
+    <rect x="362" y="52" width="240" height="56" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="482" y="76" fill="#7c2d12">12 a 18</text><text x="482" y="95" font-weight="400" fill="#7c2d12">Buenas tardes</text>
+    <rect x="608" y="52" width="222" height="56" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="719" y="76" fill="#312e81">19 a 23</text><text x="719" y="95" font-weight="400" fill="#312e81">Buenas noches</text>
+  </g>
+
+  <!-- Cadena -->
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="30" y="136" width="250" height="44" rx="10" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/><text x="155" y="164" fill="#1e3a8a">if (hora &lt;= 5)</text>
+    <rect x="30" y="214" width="250" height="44" rx="10" fill="#ffffff" stroke="#ca8a04" stroke-width="2"/><text x="155" y="242" fill="#713f12">else if (hora &lt;= 11)</text>
+    <rect x="30" y="292" width="250" height="44" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="2"/><text x="155" y="320" fill="#7c2d12">else if (hora &lt;= 18)</text>
+    <rect x="30" y="370" width="250" height="44" rx="10" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="155" y="398" fill="#312e81">else</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="155" y1="181" x2="155" y2="210"/><polygon points="149,208 155,216 161,208"/>
+    <line x1="155" y1="259" x2="155" y2="288"/><polygon points="149,286 155,294 161,286"/>
+    <line x1="155" y1="337" x2="155" y2="366"/><polygon points="149,364 155,372 161,364"/>
+  </g>
+  <g font-size="11" fill="#783d06"><text x="166" y="200">no</text><text x="166" y="278">no</text><text x="166" y="356">no</text></g>
+
+  <!-- Resultados -->
+  <g stroke="#15803d" stroke-width="2" fill="#15803d">
+    <line x1="282" y1="158" x2="330" y2="158"/><polygon points="328,152 338,158 328,164"/>
+    <line x1="282" y1="236" x2="330" y2="236"/><polygon points="328,230 338,236 328,242"/>
+    <line x1="282" y1="314" x2="330" y2="314"/><polygon points="328,308 338,314 328,320"/>
+    <line x1="282" y1="392" x2="330" y2="392"/><polygon points="328,386 338,392 328,398"/>
+  </g>
+  <g font-size="13" font-weight="700" fill="#14532d">
+    <text x="346" y="162">sí → «Déjame dormir» y termina</text>
+    <text x="346" y="240">sí → «Buenos días» y termina</text>
+    <text x="346" y="318">sí → «Buenas tardes» y termina</text>
+    <text x="346" y="396">en cualquier otro caso → «Buenas noches»</text>
+  </g>
+  <rect x="590" y="130" width="240" height="94" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="710" y="154" text-anchor="middle" font-size="12" font-weight="800" fill="#4d290b">Por qué basta con el límite superior</text>
+  <text x="710" y="176" text-anchor="middle" font-size="11" fill="#4d290b">Una condición solo se evalúa si</text>
+  <text x="710" y="192" text-anchor="middle" font-size="11" fill="#4d290b">las anteriores fallaron: con hora = 9,</text>
+  <text x="710" y="208" text-anchor="middle" font-size="11" fill="#4d290b">ya se sabe que hora &gt; 5.</text>
+</svg>

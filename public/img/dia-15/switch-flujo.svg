@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo avanza un switch con y sin break</title>
+  <desc id="d">Un switch compara el valor con cada case usando igualdad estricta. Con break, al encontrar el caso 2 se ejecutan sus instrucciones y se sale del switch. Sin break en el caso 1, la ejecución cae al caso 2 y al 3 aunque no coincidan, hasta encontrar un break. Si ningún caso coincide, se ejecuta default.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">switch: break corta; sin break, la ejecución sigue cayendo</text>
+
+  <!-- Con break -->
+  <rect x="30" y="52" width="400" height="290" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="230" y="80" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">Con break (dia = 2)</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#14532d">
+    <rect x="48" y="96" width="364" height="26" rx="6" fill="#ffffff" opacity="0.7"/><text x="58" y="114">case 0: nombre = "domingo"; break;</text>
+    <rect x="48" y="128" width="364" height="26" rx="6" fill="#ffffff" opacity="0.7"/><text x="58" y="146">case 1: nombre = "lunes"; break;</text>
+    <rect x="48" y="160" width="364" height="26" rx="6" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/><text x="58" y="178" font-weight="700">case 2: nombre = "martes"; break;</text>
+    <rect x="48" y="192" width="364" height="26" rx="6" fill="#ffffff" opacity="0.7"/><text x="58" y="210" fill="#94a3b8">case 3: nombre = "miércoles"; break;</text>
+    <rect x="48" y="224" width="364" height="26" rx="6" fill="#ffffff" opacity="0.7"/><text x="58" y="242" fill="#94a3b8">default: nombre = "no existe";</text>
+  </g>
+  <text x="230" y="278" text-anchor="middle" font-size="12" fill="#14532d">1. Compara 2 === 0, 2 === 1: no coincide.</text>
+  <text x="230" y="298" text-anchor="middle" font-size="12" fill="#14532d">2. Coincide con case 2: ejecuta y llega a break.</text>
+  <text x="230" y="318" text-anchor="middle" font-size="12" font-weight="800" fill="#14532d">Resultado: "martes". Sale del switch.</text>
+
+  <!-- Sin break -->
+  <rect x="450" y="52" width="380" height="290" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="640" y="80" text-anchor="middle" font-size="14" font-weight="800" fill="#7f1d1d">Sin break en el 1 y el 2 (n = 1)</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#7f1d1d">
+    <rect x="468" y="96" width="344" height="26" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="478" y="114" font-weight="700">case 1: out.push("uno");</text>
+    <rect x="468" y="128" width="344" height="26" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="478" y="146" font-weight="700">case 2: out.push("dos");</text>
+    <rect x="468" y="160" width="344" height="26" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="478" y="178" font-weight="700">case 3: out.push("tres"); break;</text>
+    <rect x="468" y="192" width="344" height="26" rx="6" fill="#ffffff" opacity="0.7"/><text x="478" y="210" fill="#94a3b8">default: out.push("otro");</text>
+  </g>
+  <g stroke="#b91c1c" stroke-width="2" fill="#b91c1c"><path d="M818 109 L828 109 L828 141 L818 141" fill="none"/><polygon points="820,136 812,141 820,146"/><path d="M818 141 L828 141 L828 173 L818 173" fill="none"/><polygon points="820,168 812,173 820,178"/></g>
+  <text x="640" y="278" text-anchor="middle" font-size="12" fill="#7f1d1d">1. Coincide con case 1 y ejecuta «uno».</text>
+  <text x="640" y="298" text-anchor="middle" font-size="12" fill="#7f1d1d">2. Cae al case 2 y al 3 sin comparar de nuevo.</text>
+  <text x="640" y="318" text-anchor="middle" font-size="12" font-weight="800" fill="#7f1d1d">Resultado: "uno", "dos", "tres" (fallthrough).</text>
+
+  <rect x="30" y="358" width="800" height="52" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="382" text-anchor="middle" font-size="13" fill="#4d290b">La comparación es estricta (===): case 2 no coincide con "2". Para agrupar casos, a propósito, se deja el break fuera:</text>
+  <text x="430" y="400" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">case 0: case 6: return "fin de semana";</text>
+</svg>

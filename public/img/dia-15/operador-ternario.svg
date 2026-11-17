@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Anatomía del operador ternario</title>
+  <desc id="d">El operador ternario tiene tres partes: una condición, el signo de interrogación seguido de la expresión que se usa si la condición es verdadera, dos puntos y la expresión que se usa si es falsa. Es una expresión que produce un valor, y equivale a un if else que asigna ese valor.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Operador ternario: condición ? sí : no</text>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800">
+    <rect x="30" y="56" width="230" height="56" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="145" y="90" fill="#1e3a8a">edad &gt;= 18</text>
+    <rect x="268" y="56" width="44" height="56" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/><text x="290" y="92" fill="#334155">?</text>
+    <rect x="320" y="56" width="230" height="56" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="435" y="90" fill="#14532d">"mayor de edad"</text>
+    <rect x="558" y="56" width="44" height="56" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/><text x="580" y="92" fill="#334155">:</text>
+    <rect x="610" y="56" width="220" height="56" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/><text x="720" y="90" fill="#7f1d1d">"menor de edad"</text>
+  </g>
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <text x="145" y="136" fill="#1e3a8a">1. condición</text>
+    <text x="435" y="136" fill="#14532d">2. si es verdadera</text>
+    <text x="720" y="136" fill="#7f1d1d">3. si es falsa</text>
+  </g>
+
+  <rect x="30" y="158" width="800" height="198" rx="14" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#4d290b">
+    <text x="52" y="188">const mensaje = edad &gt;= 18 ? "mayor de edad" : "menor de edad";</text>
+    <text x="52" y="216" font-size="12" fill="#783d06">// equivale a:</text>
+    <text x="52" y="240">let mensaje;</text>
+    <text x="52" y="260">if (edad &gt;= 18) {</text>
+    <text x="52" y="280">&#160;&#160;mensaje = "mayor de edad";</text>
+    <text x="52" y="300">} else {</text>
+    <text x="52" y="320">&#160;&#160;mensaje = "menor de edad";</text>
+    <text x="52" y="340">}</text>
+  </g>
+  <text x="430" y="382" text-anchor="middle" font-size="12" fill="#5f3109">Es una expresión: devuelve un valor que se puede guardar o usar dentro de otra expresión.</text>
+</svg>
