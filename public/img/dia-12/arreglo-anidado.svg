@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Acceder a un arreglo dentro de otro arreglo</title>
+  <desc id="d">El arreglo b tiene cuatro elementos: el número 1, el booleano true, el texto hola y otro arreglo con las letras a, b y c. Para llegar a la letra c se usan dos coordenadas: b[3] elige el arreglo interno y [2] elige la letra c dentro de él.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Dos coordenadas para llegar a «c»</text>
+  <text x="430" y="58" text-anchor="middle" font-size="15" font-family="ui-monospace, Menlo, monospace" fill="#783d06">const b = [1, true, "hola", ["a", "b", "c"]];</text>
+
+  <!-- índices del arreglo padre -->
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#14532d">
+    <text x="85" y="96">0</text><text x="205" y="96">1</text><text x="345" y="96">2</text><text x="590" y="96">3</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="30" y="106" width="110" height="64" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="85" y="145" fill="#4d290b">1</text>
+    <rect x="150" y="106" width="110" height="64" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="205" y="145" fill="#4d290b">true</text>
+    <rect x="270" y="106" width="150" height="64" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="345" y="145" fill="#4d290b">"hola"</text>
+    <rect x="440" y="106" width="390" height="64" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  </g>
+
+  <!-- arreglo interno -->
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#1e40af">
+    <text x="508" y="190">0</text><text x="635" y="190">1</text><text x="758" y="190">2</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="458" y="118" width="100" height="40" rx="9" fill="#ffffff" stroke="#15803d"/><text x="508" y="144" fill="#14532d">"a"</text>
+    <rect x="585" y="118" width="100" height="40" rx="9" fill="#ffffff" stroke="#15803d"/><text x="635" y="144" fill="#14532d">"b"</text>
+    <rect x="700" y="118" width="116" height="40" rx="9" fill="#fef9c3" stroke="#ca8a04" stroke-width="3"/><text x="758" y="144" fill="#713f12">"c"</text>
+  </g>
+
+  <!-- coordenadas -->
+  <g stroke="#783d06" stroke-width="2" fill="none">
+    <path d="M571 172 L571 226 L100 226"/>
+    <path d="M792 172 L792 262 L100 262"/>
+  </g>
+  <text x="100" y="246" font-size="13" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#4d290b">b[3]  →  el arreglo ["a", "b", "c"]</text>
+  <text x="100" y="282" font-size="13" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#713f12">b[3][2]  →  "c"</text>
+
+  <rect x="30" y="302" width="800" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="327" text-anchor="middle" font-size="13" fill="#4d290b">Como las coordenadas de un tablero de ajedrez: primero el arreglo externo, después la posición dentro del interno.</text>
+</svg>

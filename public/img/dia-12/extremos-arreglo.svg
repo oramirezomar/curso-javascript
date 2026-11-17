@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Agregar y quitar elementos en los extremos de un arreglo</title>
+  <desc id="d">El método push agrega un elemento al final y devuelve la nueva longitud. El método pop quita el último elemento y lo devuelve. El método unshift agrega un elemento al principio y devuelve la nueva longitud. El método shift quita el primer elemento y lo devuelve. Los cuatro modifican el arreglo original.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Agregar y quitar en los extremos</text>
+
+  <!-- Arreglo central -->
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" text-anchor="middle">
+    <rect x="260" y="130" width="110" height="60" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="3"/><text x="315" y="167" fill="#4d290b">"rojo"</text>
+    <rect x="380" y="130" width="110" height="60" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="3"/><text x="435" y="167" fill="#4d290b">"verde"</text>
+    <rect x="500" y="130" width="110" height="60" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="3"/><text x="555" y="167" fill="#4d290b">"azul"</text>
+  </g>
+  <text x="435" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#783d06">colores</text>
+
+  <!-- Extremo izquierdo -->
+  <rect x="30" y="64" width="190" height="86" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="125" y="90" text-anchor="middle" font-size="14" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">unshift("blanco")</text>
+  <text x="125" y="112" text-anchor="middle" font-size="12" fill="#1e3a8a">agrega al principio</text>
+  <text x="125" y="132" text-anchor="middle" font-size="12" fill="#1e3a8a">devuelve la nueva longitud</text>
+  <line x1="220" y1="130" x2="252" y2="150" stroke="#1d4ed8" stroke-width="3"/><polygon points="244,140 258,154 240,154" fill="#1d4ed8"/>
+
+  <rect x="30" y="196" width="190" height="86" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="125" y="222" text-anchor="middle" font-size="14" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">shift()</text>
+  <text x="125" y="244" text-anchor="middle" font-size="12" fill="#7f1d1d">quita el primero</text>
+  <text x="125" y="264" text-anchor="middle" font-size="12" fill="#7f1d1d">devuelve el elemento quitado</text>
+  <line x1="256" y1="176" x2="222" y2="214" stroke="#b91c1c" stroke-width="3"/><polygon points="220,216 224,200 234,210" fill="#b91c1c"/>
+
+  <!-- Extremo derecho -->
+  <rect x="640" y="64" width="190" height="86" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="735" y="90" text-anchor="middle" font-size="14" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#1e3a8a">push("negro")</text>
+  <text x="735" y="112" text-anchor="middle" font-size="12" fill="#1e3a8a">agrega al final</text>
+  <text x="735" y="132" text-anchor="middle" font-size="12" fill="#1e3a8a">devuelve la nueva longitud</text>
+  <line x1="640" y1="130" x2="618" y2="150" stroke="#1d4ed8" stroke-width="3"/><polygon points="610,154 628,152 620,140" fill="#1d4ed8"/>
+
+  <rect x="640" y="196" width="190" height="86" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="735" y="222" text-anchor="middle" font-size="14" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">pop()</text>
+  <text x="735" y="244" text-anchor="middle" font-size="12" fill="#7f1d1d">quita el último</text>
+  <text x="735" y="264" text-anchor="middle" font-size="12" fill="#7f1d1d">devuelve el elemento quitado</text>
+  <line x1="612" y1="176" x2="642" y2="212" stroke="#b91c1c" stroke-width="3"/><polygon points="644,214 628,208 640,198" fill="#b91c1c"/>
+
+  <text x="430" y="318" text-anchor="middle" font-size="13" fill="#5f3109">Los cuatro métodos modifican el arreglo original (lo «mutan»).</text>
+</svg>
