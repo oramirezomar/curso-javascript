@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">this dentro de un método apunta al objeto que lo invoca</title>
+  <desc id="d">Un objeto persona tiene la propiedad nombre y un método presentarse que usa this.nombre. Al invocar persona.presentarse(), this es persona y el resultado es Hola, soy Ana. Dos situaciones donde se pierde this: guardar el método en una variable suelta y llamarlo, o escribir el método como una función flecha.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">this dentro de un método</text>
+
+  <rect x="30" y="50" width="470" height="180" rx="14" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#e2e8f0">
+    <text x="50" y="82"><tspan fill="#f9a8d4">const</tspan> persona = {</text>
+    <text x="50" y="108">&#160;&#160;nombre: <tspan fill="#fca5a5">"Ana"</tspan>,</text>
+    <text x="50" y="134">&#160;&#160;presentarse: <tspan fill="#f9a8d4">function</tspan> () {</text>
+    <text x="50" y="160">&#160;&#160;&#160;&#160;<tspan fill="#f9a8d4">return</tspan> <tspan fill="#fca5a5">"Hola, soy "</tspan> + <tspan fill="#fde68a">this</tspan>.nombre;</text>
+    <text x="50" y="186">&#160;&#160;},</text>
+    <text x="50" y="212">};</text>
+  </g>
+
+  <g stroke="#783d06" stroke-width="3" fill="#783d06">
+    <line x1="502" y1="140" x2="560" y2="140"/><polygon points="558,133 572,140 558,147"/>
+  </g>
+  <rect x="580" y="50" width="250" height="180" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+  <text x="705" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">Invocación</text>
+  <text x="705" y="108" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#14532d">persona.presentarse()</text>
+  <text x="705" y="140" text-anchor="middle" font-size="12" fill="#14532d">this es el objeto antes del punto:</text>
+  <text x="705" y="158" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" font-weight="700" fill="#14532d">this === persona</text>
+  <text x="705" y="196" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, monospace" font-weight="800" fill="#14532d">"Hola, soy Ana"</text>
+
+  <rect x="30" y="252" width="395" height="104" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="227" y="278" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">Se pierde this: método suelto</text>
+  <text x="227" y="304" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">const f = persona.presentarse;</text>
+  <text x="227" y="326" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">f();  // this ya no es persona</text>
+  <text x="227" y="346" text-anchor="middle" font-size="11" fill="#7f1d1d">Depende de cómo se invoca, no de dónde se escribió.</text>
+
+  <rect x="435" y="252" width="395" height="104" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="632" y="278" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">Se pierde this: función flecha</text>
+  <text x="632" y="304" text-anchor="middle" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#7f1d1d">presentarse: () =&gt; this.nombre</text>
+  <text x="632" y="326" text-anchor="middle" font-size="11" fill="#7f1d1d">Una flecha no tiene su propio this.</text>
+  <text x="632" y="346" text-anchor="middle" font-size="11" fill="#7f1d1d">En un método usa la sintaxis normal.</text>
+</svg>

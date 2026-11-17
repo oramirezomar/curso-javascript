@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Object.keys, Object.values, Object.entries y Object.hasOwn</title>
+  <desc id="d">Con el objeto con nombre Ana y edad 35, Object.keys devuelve el arreglo de claves nombre y edad, Object.values devuelve el arreglo de valores Ana y 35, Object.entries devuelve un arreglo de pares clave y valor, y Object.hasOwn comprueba si el objeto tiene una propiedad propia, devolviendo true o false.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Métodos de Object para listar y comprobar</text>
+
+  <rect x="30" y="48" width="800" height="56" rx="12" fill="#0f172a"/>
+  <text x="50" y="84" font-size="16" font-family="ui-monospace, Menlo, monospace" fill="#e2e8f0"><tspan fill="#f9a8d4">const</tspan> persona = { nombre: <tspan fill="#fca5a5">"Ana"</tspan>, edad: <tspan fill="#86efac">35</tspan> };</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="30" y="122" width="330" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="195" y="146" fill="#4d290b">Llamada</text>
+    <rect x="372" y="122" width="458" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="601" y="146" fill="#4d290b">Devuelve</text>
+  </g>
+
+  <g font-size="14" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="44" y="190">Object.keys(persona)</text>
+    <text x="44" y="236">Object.values(persona)</text>
+    <text x="44" y="282">Object.entries(persona)</text>
+    <text x="44" y="328">Object.hasOwn(persona, "edad")</text>
+    <text x="44" y="358">Object.hasOwn(persona, "color")</text>
+  </g>
+  <g font-size="14" font-weight="800" font-family="ui-monospace, Menlo, monospace" fill="#14532d">
+    <text x="386" y="190">["nombre", "edad"]</text>
+    <text x="386" y="236">["Ana", 35]</text>
+    <text x="386" y="282">[["nombre", "Ana"], ["edad", 35]]</text>
+    <text x="386" y="328">true</text>
+    <text x="386" y="358" fill="#b45f06">false</text>
+  </g>
+  <g font-size="11" fill="#5f3109">
+    <text x="386" y="206">las claves, en un arreglo</text>
+    <text x="386" y="252">los valores, en un arreglo</text>
+    <text x="386" y="298">pares [clave, valor]</text>
+  </g>
+  <g stroke="#e2c28a"><line x1="30" y1="212" x2="830" y2="212"/><line x1="30" y1="258" x2="830" y2="258"/><line x1="30" y1="304" x2="830" y2="304"/></g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Formas de acceder a las propiedades de un objeto</title>
+  <desc id="d">Con la notación de punto, persona.nombre devuelve Ana. Con corchetes y texto, persona["nombre"] devuelve lo mismo, y los corchetes con una variable sirven cuando la clave se decide al ejecutar. Para llegar a un elemento de un arreglo se encadena persona.pasatiempos[1], y para un objeto anidado persona.contacto.twitter. Una propiedad que no existe da undefined.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Acceder a una propiedad</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="30" y="50" width="400" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="230" y="75" fill="#4d290b">Expresión</text>
+    <rect x="445" y="50" width="160" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="525" y="75" fill="#4d290b">Resultado</text>
+    <rect x="620" y="50" width="210" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="725" y="75" fill="#4d290b">Notación</text>
+  </g>
+
+  <g font-size="15" font-family="ui-monospace, Menlo, monospace" fill="#4d290b">
+    <text x="46" y="122">persona.nombre</text>
+    <text x="46" y="164">persona["nombre"]</text>
+    <text x="46" y="206">persona[clave]</text>
+    <text x="46" y="248">persona.pasatiempos[1]</text>
+    <text x="46" y="290">persona.contacto.twitter</text>
+    <text x="46" y="332">persona.direccion</text>
+    <text x="46" y="374">persona.direccion?.calle</text>
+  </g>
+  <g font-size="15" font-weight="800" font-family="ui-monospace, Menlo, monospace" text-anchor="middle">
+    <text x="525" y="122" fill="#14532d">"Ana"</text>
+    <text x="525" y="164" fill="#14532d">"Ana"</text>
+    <text x="525" y="206" fill="#14532d">"Ana"</text>
+    <text x="525" y="248" fill="#14532d">"leer"</text>
+    <text x="525" y="290" fill="#14532d">"@ana"</text>
+    <text x="525" y="332" fill="#b45f06">undefined</text>
+    <text x="525" y="374" fill="#b45f06">undefined</text>
+  </g>
+  <g font-size="12" fill="#5f3109">
+    <text x="636" y="122">punto: la más usada</text>
+    <text x="636" y="164">corchetes con texto</text>
+    <text x="636" y="200">corchetes con una variable</text>
+    <text x="636" y="214">(clave = "nombre")</text>
+    <text x="636" y="248">punto + índice</text>
+    <text x="636" y="290">punto encadenado</text>
+    <text x="636" y="326">no existe: sin error</text>
+    <text x="636" y="368">?. evita el TypeError</text>
+  </g>
+  <g stroke="#e2c28a"><line x1="30" y1="138" x2="830" y2="138"/><line x1="30" y1="180" x2="830" y2="180"/><line x1="30" y1="222" x2="830" y2="222"/><line x1="30" y1="264" x2="830" y2="264"/><line x1="30" y1="306" x2="830" y2="306"/><line x1="30" y1="348" x2="830" y2="348"/></g>
+</svg>
