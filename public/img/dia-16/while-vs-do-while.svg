@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">while y do...while: cuándo se evalúa la condición</title>
+  <desc id="d">A la izquierda, el diagrama de while: primero se evalúa la condición; si es verdadera se ejecuta el cuerpo y se vuelve a preguntar; si es falsa, el ciclo termina, y puede no ejecutar el cuerpo ni una vez. A la derecha, do...while: primero se ejecuta el cuerpo, después se evalúa la condición; si es verdadera se repite y si es falsa termina, así que el cuerpo se ejecuta al menos una vez.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">while y do...while: cuándo se evalúa la condición</text>
+
+  <!-- Paneles -->
+  <rect x="20" y="42" width="400" height="372" rx="14" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="440" y="42" width="400" height="372" rx="14" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#4d290b">
+    <text x="220" y="68">while (condición) { ... }</text>
+    <text x="640" y="68">do { ... } while (condición);</text>
+  </g>
+
+  <!-- Cajas izquierda: while -->
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="110" y="86" width="200" height="46" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="210" y="114" fill="#1e3a8a">¿contador &lt; 10?</text>
+    <rect x="110" y="172" width="200" height="46" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="210" y="200" fill="#14532d">Ejecutar el cuerpo</text>
+    <rect x="110" y="304" width="200" height="44" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="210" y="331" fill="#7c2d12">Fin del ciclo</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="210" y1="132" x2="210" y2="166"/><polygon points="204,164 210,172 216,164"/>
+    <polyline points="310,195 350,195 350,109 318,109" fill="none"/><polygon points="318,103 310,109 318,115"/>
+    <polyline points="110,109 78,109 78,326 102,326" fill="none"/><polygon points="102,320 110,326 102,332"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#783d06">
+    <text x="220" y="156">sí</text>
+    <text x="356" y="156">repite</text>
+    <text x="84" y="103">no</text>
+  </g>
+
+  <!-- Cajas derecha: do...while -->
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="540" y="86" width="200" height="46" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="640" y="114" fill="#14532d">Ejecutar el cuerpo</text>
+    <rect x="540" y="172" width="200" height="46" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="640" y="200" fill="#1e3a8a">¿contador &lt; 10?</text>
+    <rect x="540" y="304" width="200" height="44" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="640" y="331" fill="#7c2d12">Fin del ciclo</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="640" y1="132" x2="640" y2="166"/><polygon points="634,164 640,172 646,164"/>
+    <polyline points="740,195 780,195 780,109 748,109" fill="none"/><polygon points="748,103 740,109 748,115"/>
+    <line x1="640" y1="218" x2="640" y2="298"/><polygon points="634,296 640,304 646,296"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#783d06">
+    <text x="750" y="188">sí</text>
+    <text x="786" y="150">repite</text>
+    <text x="650" y="262">no</text>
+  </g>
+
+  <!-- Notas -->
+  <g font-size="13" text-anchor="middle" fill="#4d290b">
+    <text x="220" y="380" font-weight="700">Pregunta primero.</text>
+    <text x="220" y="398">Puede no ejecutar el cuerpo ni una vez.</text>
+    <text x="640" y="380" font-weight="700">Ejecuta primero.</text>
+    <text x="640" y="398">El cuerpo corre al menos una vez.</text>
+  </g>
+</svg>

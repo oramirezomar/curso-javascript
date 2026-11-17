@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">var frente a let dentro de un ciclo for</title>
+  <desc id="d">A la izquierda, con var las tres funciones creadas en el ciclo comparten una sola variable i, que al terminar vale 3, así que las tres imprimen 3, 3, 3, y después del ciclo la variable sigue existiendo. A la derecha, con let cada vuelta tiene su propia copia de i con los valores 0, 1 y 2, así que las funciones imprimen 0, 1, 2, y después del ciclo la variable ya no existe.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tres funciones creadas dentro del ciclo</text>
+
+  <rect x="20" y="42" width="400" height="372" rx="14" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="440" y="42" width="400" height="372" rx="14" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#4d290b">
+    <text x="220" y="68">for (var i = 0; i &lt; 3; i++)</text>
+    <text x="640" y="68">for (let i = 0; i &lt; 3; i++)</text>
+  </g>
+  <g font-size="12" text-anchor="middle" fill="#4d290b">
+    <text x="220" y="88">Una sola variable para todo el ciclo</text>
+    <text x="640" y="88">Una variable nueva en cada vuelta</text>
+  </g>
+
+  <!-- Funciones: var -->
+  <g text-anchor="middle">
+    <rect x="48" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <rect x="166" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <rect x="284" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <g font-size="12" font-weight="700" fill="#312e81">
+      <text x="100" y="128">función 1</text><text x="218" y="128">función 2</text><text x="336" y="128">función 3</text>
+    </g>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#312e81">
+      <text x="100" y="147">() =&gt; i</text><text x="218" y="147">() =&gt; i</text><text x="336" y="147">() =&gt; i</text>
+    </g>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="100" y1="158" x2="100" y2="216"/><polygon points="94,214 100,222 106,214"/>
+    <line x1="218" y1="158" x2="218" y2="216"/><polygon points="212,214 218,222 224,214"/>
+    <line x1="336" y1="158" x2="336" y2="216"/><polygon points="330,214 336,222 342,214"/>
+  </g>
+  <rect x="48" y="224" width="340" height="62" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="218" y="250" text-anchor="middle" font-size="14" font-weight="800" fill="#7f1d1d">i (una sola variable)</text>
+  <text x="218" y="272" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#7f1d1d">valor final: 3</text>
+
+  <!-- Funciones: let -->
+  <g text-anchor="middle">
+    <rect x="468" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <rect x="586" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <rect x="704" y="108" width="104" height="50" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <g font-size="12" font-weight="700" fill="#312e81">
+      <text x="520" y="128">función 1</text><text x="638" y="128">función 2</text><text x="756" y="128">función 3</text>
+    </g>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#312e81">
+      <text x="520" y="147">() =&gt; i</text><text x="638" y="147">() =&gt; i</text><text x="756" y="147">() =&gt; i</text>
+    </g>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="520" y1="158" x2="520" y2="216"/><polygon points="514,214 520,222 526,214"/>
+    <line x1="638" y1="158" x2="638" y2="216"/><polygon points="632,214 638,222 644,214"/>
+    <line x1="756" y1="158" x2="756" y2="216"/><polygon points="750,214 756,222 762,214"/>
+  </g>
+  <g text-anchor="middle">
+    <rect x="468" y="224" width="104" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <rect x="586" y="224" width="104" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <rect x="704" y="224" width="104" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <g font-size="12" font-weight="800" fill="#14532d">
+      <text x="520" y="248">i de la vuelta 1</text><text x="638" y="248">i de la vuelta 2</text><text x="756" y="248">i de la vuelta 3</text>
+    </g>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#14532d">
+      <text x="520" y="272">0</text><text x="638" y="272">1</text><text x="756" y="272">2</text>
+    </g>
+  </g>
+
+  <!-- Resultados -->
+  <rect x="68" y="314" width="300" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="218" y="340" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Las tres imprimen: 3 3 3</text>
+  <rect x="488" y="314" width="300" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="638" y="340" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Imprimen: 0 1 2</text>
+
+  <g font-size="13" text-anchor="middle" fill="#3b2410">
+    <text x="218" y="388">Tras el ciclo, i sigue existiendo (typeof i es "number").</text>
+    <text x="638" y="388">Tras el ciclo, i ya no existe (typeof i es "undefined").</text>
+  </g>
+</svg>

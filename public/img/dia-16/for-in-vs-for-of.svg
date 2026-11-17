@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">for...in frente a for...of</title>
+  <desc id="d">Tabla comparativa. for...in recorre las claves enumerables de un objeto, incluidas las heredadas; la variable guarda un texto con el nombre de la clave; no conviene con arreglos; existe desde la primera edición del lenguaje. for...of recorre los valores de un iterable como arreglos, textos, Map y Set; la variable guarda cada elemento; no sirve con objetos literales, que no son iterables; apareció en ES2015.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">for...in recorre claves; for...of recorre valores</text>
+
+  <!-- Fondos de celdas -->
+  <rect x="20" y="42" width="150" height="40" rx="8" fill="#fff7e6" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="42" width="320" height="40" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="510" y="42" width="330" height="40" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+
+  <g fill="#ffffff" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="180" y="90" width="320" height="64" rx="8"/><rect x="510" y="90" width="330" height="64" rx="8"/>
+    <rect x="180" y="158" width="320" height="64" rx="8"/><rect x="510" y="158" width="330" height="64" rx="8"/>
+    <rect x="180" y="226" width="320" height="64" rx="8"/><rect x="510" y="226" width="330" height="64" rx="8"/>
+    <rect x="180" y="294" width="320" height="64" rx="8"/><rect x="510" y="294" width="330" height="64" rx="8"/>
+    <rect x="180" y="362" width="320" height="64" rx="8"/><rect x="510" y="362" width="330" height="64" rx="8"/>
+  </g>
+  <g fill="#fff7e6" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="20" y="90" width="150" height="64" rx="8"/>
+    <rect x="20" y="158" width="150" height="64" rx="8"/>
+    <rect x="20" y="226" width="150" height="64" rx="8"/>
+    <rect x="20" y="294" width="150" height="64" rx="8"/>
+    <rect x="20" y="362" width="150" height="64" rx="8"/>
+  </g>
+
+  <!-- Encabezados -->
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="800" text-anchor="middle">
+    <text x="340" y="68" fill="#1e3a8a">for...in</text>
+    <text x="675" y="68" fill="#14532d">for...of</text>
+  </g>
+
+  <!-- Etiquetas de fila -->
+  <g font-size="13" font-weight="800" fill="#4d290b" text-anchor="middle">
+    <text x="95" y="127">Recorre</text>
+    <text x="95" y="188">La variable</text><text x="95" y="206">guarda</text>
+    <text x="95" y="256">No conviene</text><text x="95" y="274">con</text>
+    <text x="95" y="324">Ejemplo</text>
+    <text x="95" y="397">Origen</text>
+  </g>
+
+  <!-- Contenido -->
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="340" y="117">Las claves enumerables de un objeto</text><text x="340" y="136">(también las heredadas)</text>
+    <text x="675" y="117">Los valores de un iterable</text><text x="675" y="136">(arreglo, texto, Map, Set…)</text>
+
+    <text x="340" y="185">Un texto con el nombre de la clave</text><text x="340" y="204">(en un arreglo: "0", "1", "2"…)</text>
+    <text x="675" y="194">Cada elemento, uno por vuelta</text>
+
+    <text x="340" y="253">Arreglos (mejor un for o for...of)</text><text x="340" y="272">y objetos con herencia inesperada</text>
+    <text x="675" y="253">Objetos literales: no son iterables</text><text x="675" y="272">(usa Object.keys, values o entries)</text>
+
+    <text x="340" y="400">Desde la primera edición (ES1)</text>
+    <text x="675" y="400">ES2015 (ES6)</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="340" y="321" fill="#1e3a8a">for (const k in persona) {</text><text x="340" y="340" fill="#1e3a8a">&#160;&#160;console.log(k, persona[k]);</text>
+    <text x="675" y="321" fill="#14532d">for (const x of numeros) {</text><text x="675" y="340" fill="#14532d">&#160;&#160;console.log(x);</text>
+  </g>
+</svg>

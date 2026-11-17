@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Bucle infinito y cómo evitarlo</title>
+  <desc id="d">A la izquierda, un while sin incremento: contador siempre vale 0, la condición contador menor que 10 siempre es verdadera y el programa no termina. A la derecha, el mismo while con contador++ dentro del cuerpo: cada vuelta acerca el contador a 10 y la condición termina siendo falsa. Abajo, una guarda de seguridad para practicar: añadir una segunda condición con un límite de vueltas.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Todo ciclo necesita algo que cambie la condición</text>
+
+  <rect x="20" y="42" width="400" height="270" rx="14" fill="#fef2f2" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="440" y="42" width="400" height="270" rx="14" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+
+  <g font-size="16" font-weight="800" text-anchor="middle">
+    <text x="220" y="70" fill="#7f1d1d">Bucle infinito</text>
+    <text x="640" y="70" fill="#14532d">Bucle que termina</text>
+  </g>
+
+  <!-- Código izquierda -->
+  <rect x="46" y="88" width="348" height="116" rx="10" fill="#2b1b0e"/>
+  <rect x="56" y="162" width="328" height="24" rx="4" fill="#7f1d1d"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fde7c2">
+    <text x="64" y="112">let contador = 0;</text>
+    <text x="64" y="134">while (contador &lt; 10) {</text>
+    <text x="64" y="156">&#160;&#160;console.log(contador);</text>
+    <text x="64" y="179" fill="#fecaca">&#160;&#160;// falta: contador++</text>
+    <text x="64" y="198">}</text>
+  </g>
+
+  <!-- Código derecha -->
+  <rect x="466" y="88" width="348" height="116" rx="10" fill="#2b1b0e"/>
+  <rect x="476" y="162" width="328" height="24" rx="4" fill="#14532d"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fde7c2">
+    <text x="484" y="112">let contador = 0;</text>
+    <text x="484" y="134">while (contador &lt; 10) {</text>
+    <text x="484" y="156">&#160;&#160;console.log(contador);</text>
+    <text x="484" y="179" fill="#bbf7d0">&#160;&#160;contador++;</text>
+    <text x="484" y="198">}</text>
+  </g>
+
+  <g font-size="13" text-anchor="middle" fill="#3b2410">
+    <text x="220" y="234" font-weight="700" fill="#7f1d1d">contador siempre vale 0</text>
+    <text x="220" y="254">0 &lt; 10 es siempre verdadero</text>
+    <text x="220" y="274">El programa no termina y la pestaña se congela.</text>
+    <text x="640" y="234" font-weight="700" fill="#14532d">contador sube 0, 1, 2 … 10</text>
+    <text x="640" y="254">Con 10, la condición 10 &lt; 10 es falsa</text>
+    <text x="640" y="274">El ciclo termina tras 10 vueltas (0 a 9).</text>
+  </g>
+
+  <!-- Guarda -->
+  <rect x="60" y="334" width="740" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="362" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Guarda de seguridad para practicar</text>
+  <text x="430" y="390" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#4d290b">while (contador &lt; 10 &amp;&amp; vueltas &lt; 1000) { ... vueltas++; }</text>
+</svg>

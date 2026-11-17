@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Anatomía de un ciclo for</title>
+  <desc id="d">El ciclo for (let i = 0; i &lt; 5; i++) tiene tres partes separadas por punto y coma. La inicialización let i = 0 se ejecuta una sola vez antes de la primera vuelta. La condición i &lt; 5 se evalúa antes de cada vuelta y, si es falsa, el ciclo termina. La actualización i++ se ejecuta después de cada vuelta. El orden es 1, 2, cuerpo, 3, 2, cuerpo, 3, y así hasta que la condición es falsa.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Las tres partes del for</text>
+
+  <!-- Código -->
+  <rect x="150" y="50" width="560" height="64" rx="12" fill="#2b1b0e"/>
+  <text x="430" y="92" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="26" font-weight="700" fill="#fde7c2">for (<tspan fill="#93c5fd">let i = 0</tspan>; <tspan fill="#fdba74">i &lt; 5</tspan>; <tspan fill="#86efac">i++</tspan>) {</text>
+
+  <!-- Tarjetas -->
+  <rect x="30" y="140" width="250" height="150" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="305" y="140" width="250" height="150" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <rect x="580" y="140" width="250" height="150" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+
+  <g font-size="16" font-weight="800" text-anchor="middle">
+    <text x="155" y="168" fill="#1e3a8a">1 · Inicialización</text>
+    <text x="430" y="168" fill="#7c2d12">2 · Condición</text>
+    <text x="705" y="168" fill="#14532d">3 · Actualización</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="155" y="198" fill="#1e3a8a">let i = 0</text>
+    <text x="430" y="198" fill="#7c2d12">i &lt; 5</text>
+    <text x="705" y="198" fill="#14532d">i++</text>
+  </g>
+  <g font-size="13" text-anchor="middle" fill="#3b2410">
+    <text x="155" y="230">Se ejecuta una sola vez,</text>
+    <text x="155" y="249">antes de la primera vuelta.</text>
+    <text x="430" y="230">Se evalúa antes de cada vuelta.</text>
+    <text x="430" y="249">Si es falsa, el ciclo termina.</text>
+    <text x="705" y="230">Se ejecuta después de cada vuelta</text>
+    <text x="705" y="249">y se vuelve a la condición.</text>
+  </g>
+
+  <!-- Orden -->
+  <rect x="80" y="318" width="700" height="78" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="347" text-anchor="middle" font-size="15" font-weight="800" fill="#4d290b">Orden de ejecución</text>
+  <text x="430" y="376" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#4d290b">1 → 2 → cuerpo → 3 → 2 → cuerpo → 3 → … → 2 (falsa) → fin</text>
+</svg>
