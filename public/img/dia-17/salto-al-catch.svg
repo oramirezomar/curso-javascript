@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué ejecuta cada línea cuando hay un error en el try</title>
+  <desc id="d">Un bloque try con tres líneas. La primera imprime antes y se ejecuta. La segunda usa una variable que no existe y lanza un ReferenceError. La tercera, que imprimiría después, se salta y nunca se ejecuta. El control salta al catch, que imprime el nombre del error, y luego el finally se ejecuta siempre.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuando una línea del try falla, las siguientes no se ejecutan</text>
+
+  <rect x="30" y="76" width="480" height="298" rx="12" fill="#2b1b0e"/>
+
+  <!-- Bandas de resalte (antes del texto) -->
+  <rect x="38" y="116" width="464" height="28" rx="4" fill="#14532d"/>
+  <rect x="38" y="148" width="464" height="28" rx="4" fill="#7f1d1d"/>
+  <rect x="38" y="180" width="464" height="28" rx="4" fill="#44403c"/>
+  <rect x="38" y="244" width="464" height="28" rx="4" fill="#78350f"/>
+  <rect x="38" y="308" width="464" height="28" rx="4" fill="#14532d"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fde7c2">
+    <text x="52" y="104">try {</text>
+    <text x="52" y="135">&#160;&#160;console.log("antes");</text>
+    <text x="52" y="167">&#160;&#160;console.log(noExiste);</text>
+    <text x="52" y="199" fill="#a8a29e">&#160;&#160;console.log("después");</text>
+    <text x="52" y="231">} catch (error) {</text>
+    <text x="52" y="263">&#160;&#160;console.log(error.name);</text>
+    <text x="52" y="295">} finally {</text>
+    <text x="52" y="327">&#160;&#160;console.log("fin");</text>
+    <text x="52" y="359">}</text>
+  </g>
+
+  <!-- Anotaciones -->
+  <g font-size="13" font-weight="800">
+    <rect x="534" y="116" width="296" height="28" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="548" y="135" fill="#14532d">1 · Se ejecuta con normalidad</text>
+    <rect x="534" y="148" width="296" height="28" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="548" y="167" fill="#7f1d1d">2 · Lanza un ReferenceError</text>
+    <rect x="534" y="180" width="296" height="28" rx="8" fill="#e7e5e4" stroke="#57534e" stroke-width="2"/>
+    <text x="548" y="199" fill="#44403c">Se salta: nunca se ejecuta</text>
+    <rect x="534" y="244" width="296" height="28" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="548" y="263" fill="#7c2d12">3 · El control salta al catch</text>
+    <rect x="534" y="308" width="296" height="28" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="548" y="327" fill="#14532d">4 · El finally se ejecuta siempre</text>
+  </g>
+
+  <!-- Flecha de salto -->
+  <g stroke="#fb923c" stroke-width="2.5" fill="#fb923c">
+    <polyline points="496,162 520,162 520,258 506,258" fill="none"/><polygon points="508,252 498,258 508,264"/>
+  </g>
+
+  <text x="682" y="360" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Salida en la consola:</text>
+  <text x="682" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#14532d">antes → ReferenceError → fin</text>
+</svg>

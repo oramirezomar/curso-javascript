@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Flujo de try, catch y finally</title>
+  <desc id="d">El programa entra al bloque try. Si no se lanza ningún error, el bloque catch se salta y la ejecución pasa directo al bloque finally. Si se lanza un error, el resto del try se abandona y el control pasa al catch; al terminar el catch, se ejecuta el finally. En ambos caminos el finally se ejecuta, y después el programa continúa.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los dos caminos de un try...catch...finally</text>
+
+  <!-- El programa continúa -->
+  <rect x="630" y="52" width="200" height="50" rx="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="2"/>
+  <text x="730" y="83" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">El programa continúa</text>
+
+  <!-- Cajas principales -->
+  <g text-anchor="middle">
+    <rect x="30" y="170" width="190" height="64" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="125" y="196" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" fill="#1e3a8a">try</text>
+    <text x="125" y="217" font-size="12" fill="#1e3a8a">ejecuta el código</text>
+
+    <rect x="320" y="296" width="200" height="64" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="420" y="322" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" fill="#7f1d1d">catch</text>
+    <text x="420" y="343" font-size="12" fill="#7f1d1d">recibe el error y lo maneja</text>
+
+    <rect x="630" y="170" width="200" height="64" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="730" y="196" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" fill="#14532d">finally</text>
+    <text x="730" y="217" font-size="12" fill="#14532d">se ejecuta siempre</text>
+  </g>
+
+  <!-- Camino sin error -->
+  <g stroke="#15803d" stroke-width="3" fill="#15803d">
+    <line x1="222" y1="202" x2="620" y2="202"/><polygon points="618,195 630,202 618,209"/>
+  </g>
+  <text x="420" y="190" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">Camino 1: no se lanzó ningún error</text>
+  <text x="420" y="224" text-anchor="middle" font-size="12" fill="#14532d">el catch se salta</text>
+
+  <!-- Camino con error -->
+  <g stroke="#b91c1c" stroke-width="3" fill="#b91c1c">
+    <polyline points="125,236 125,328 312,328" fill="none"/><polygon points="310,321 322,328 310,335"/>
+    <polyline points="522,328 730,328 730,244" fill="none"/><polygon points="723,246 730,234 737,246"/>
+  </g>
+  <text x="140" y="270" font-size="13" font-weight="800" fill="#7f1d1d">Camino 2: se lanzó un error</text>
+  <text x="140" y="288" font-size="12" fill="#7f1d1d">el resto del try se abandona</text>
+
+  <!-- finally hacia continúa -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="730" y1="168" x2="730" y2="112"/><polygon points="723,114 730,102 737,114"/>
+  </g>
+
+  <!-- Nota -->
+  <rect x="60" y="384" width="740" height="32" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="405" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">El finally se ejecuta en los dos caminos, haya error o no.</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tipos de error de JavaScript</title>
+  <desc id="d">Ocho tarjetas. Error es el tipo genérico y base de los demás. ReferenceError ocurre al usar una variable que no existe. TypeError ocurre cuando un valor no es del tipo esperado, por ejemplo null.propiedad. RangeError ocurre cuando un número está fuera de su rango, por ejemplo toFixed con 101. SyntaxError ocurre cuando un texto tiene sintaxis inválida, por ejemplo JSON.parse con una llave sola. URIError ocurre con argumentos inválidos en funciones de URI. EvalError existe por compatibilidad y los motores actuales ya no lo lanzan. AggregateError agrupa varios errores en uno, por ejemplo en Promise.any.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los tipos de error del lenguaje</text>
+
+  <!-- Fila 1 -->
+  <rect x="25" y="48" width="195" height="150" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <rect x="230" y="48" width="195" height="150" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="435" y="48" width="195" height="150" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <rect x="640" y="48" width="195" height="150" rx="12" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <!-- Fila 2 -->
+  <rect x="25" y="212" width="195" height="150" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="230" y="212" width="195" height="150" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <rect x="435" y="212" width="195" height="150" rx="12" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="640" y="212" width="195" height="150" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" text-anchor="middle">
+    <text x="122" y="78" fill="#1f2937">Error</text>
+    <text x="327" y="78" fill="#7f1d1d">ReferenceError</text>
+    <text x="532" y="78" fill="#7c2d12">TypeError</text>
+    <text x="737" y="78" fill="#713f12">RangeError</text>
+    <text x="122" y="242" fill="#1e3a8a">SyntaxError</text>
+    <text x="327" y="242" fill="#312e81">URIError</text>
+    <text x="532" y="242" fill="#4b5563">EvalError</text>
+    <text x="737" y="242" fill="#14532d">AggregateError</text>
+  </g>
+
+  <g font-size="13" text-anchor="middle" fill="#3b2410">
+    <text x="122" y="108">Error genérico y base</text><text x="122" y="127">de todos los demás.</text>
+    <text x="327" y="108">Se usa una variable</text><text x="327" y="127">que no existe.</text>
+    <text x="532" y="108">El valor no es del tipo</text><text x="532" y="127">que la operación necesita.</text>
+    <text x="737" y="108">Un número está fuera</text><text x="737" y="127">de su rango válido.</text>
+    <text x="122" y="272">El texto no tiene una</text><text x="122" y="291">sintaxis válida.</text>
+    <text x="327" y="272">Argumento inválido en</text><text x="327" y="291">una función de URI.</text>
+    <text x="532" y="272">Existe por compatibilidad;</text><text x="532" y="291">ya no lo lanzan los motores.</text>
+    <text x="737" y="272">Agrupa varios errores</text><text x="737" y="291">en uno solo.</text>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" text-anchor="middle">
+    <rect x="37" y="146" width="171" height="32" rx="6" fill="#ffffff"/><text x="122" y="167" fill="#1f2937">new Error("texto")</text>
+    <rect x="242" y="146" width="171" height="32" rx="6" fill="#ffffff"/><text x="327" y="167" fill="#7f1d1d">noExiste</text>
+    <rect x="447" y="146" width="171" height="32" rx="6" fill="#ffffff"/><text x="532" y="167" fill="#7c2d12">null.propiedad</text>
+    <rect x="652" y="146" width="171" height="32" rx="6" fill="#ffffff"/><text x="737" y="167" fill="#713f12">(1).toFixed(101)</text>
+    <rect x="37" y="310" width="171" height="32" rx="6" fill="#ffffff"/><text x="122" y="331" fill="#1e3a8a">JSON.parse("{")</text>
+    <rect x="242" y="310" width="171" height="32" rx="6" fill="#ffffff"/><text x="327" y="331" font-size="10.5" fill="#312e81">decodeURIComponent("%")</text>
+    <rect x="447" y="310" width="171" height="32" rx="6" fill="#ffffff"/><text x="532" y="331" fill="#4b5563">new EvalError("x")</text>
+    <rect x="652" y="310" width="171" height="32" rx="6" fill="#ffffff"/><text x="737" y="331" fill="#14532d">Promise.any([...])</text>
+  </g>
+
+  <rect x="80" y="382" width="700" height="38" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="406" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Todos son objetos con name y message: en el catch puedes mirar error.name.</text>
+</svg>
