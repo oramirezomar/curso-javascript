@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo parar o saltar una vuelta según la herramienta</title>
+  <desc id="d">Tabla. En for, while y do...while, break y continue funcionan. En for...of y for...in también. En forEach, break y continue no están permitidos dentro de la función y dan un SyntaxError; no hay forma de parar salvo lanzar un error, y un return equivale a continue. El método some se detiene cuando la función devuelve true. every se detiene cuando devuelve false. find y findIndex se detienen al encontrar el primer elemento que cumple.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Qué usar para parar antes o saltar una vuelta</text>
+
+  <!-- Encabezado -->
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="44" width="220" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="130" y="68">Herramienta</text>
+    <rect x="250" y="44" width="200" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="350" y="68">¿break y continue?</text>
+    <rect x="460" y="44" width="380" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="650" y="68">Cómo parar o saltar</text>
+  </g>
+
+  <!-- Filas -->
+  <g stroke-width="2">
+    <rect x="20" y="92" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="92" width="200" height="48" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="92" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+    <rect x="20" y="148" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="148" width="200" height="48" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="148" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+    <rect x="20" y="204" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="204" width="200" height="48" rx="8" fill="#fee2e2" stroke="#b91c1c"/><rect x="460" y="204" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+    <rect x="20" y="260" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="260" width="200" height="48" rx="8" fill="#f3f4f6" stroke="#d1d5db"/><rect x="460" y="260" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+    <rect x="20" y="316" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="316" width="200" height="48" rx="8" fill="#f3f4f6" stroke="#d1d5db"/><rect x="460" y="316" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+    <rect x="20" y="372" width="220" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/><rect x="250" y="372" width="200" height="48" rx="8" fill="#f3f4f6" stroke="#d1d5db"/><rect x="460" y="372" width="380" height="48" rx="8" fill="#ffffff" stroke="#e8c98a"/>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" text-anchor="middle" fill="#3b2410">
+    <text x="130" y="121">for, while, do...while</text>
+    <text x="130" y="177">for...of, for...in</text>
+    <text x="130" y="233">forEach</text>
+    <text x="130" y="289">some</text>
+    <text x="130" y="345">every</text>
+    <text x="130" y="401">find, findIndex</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="350" y="121" fill="#14532d">Sí</text>
+    <text x="350" y="177" fill="#14532d">Sí</text>
+    <text x="350" y="233" fill="#7f1d1d">No: SyntaxError</text>
+    <text x="350" y="289" fill="#6b7280">No aplica</text>
+    <text x="350" y="345" fill="#6b7280">No aplica</text>
+    <text x="350" y="401" fill="#6b7280">No aplica</text>
+  </g>
+  <g font-size="12" text-anchor="middle" fill="#3b2410">
+    <text x="650" y="121">break sale del ciclo; continue salta la vuelta</text>
+    <text x="650" y="177">break sale del ciclo; continue salta la vuelta</text>
+    <text x="650" y="227">No hay forma de parar (salvo lanzar un error).</text><text x="650" y="243">Un return dentro de la función actúa como continue.</text>
+    <text x="650" y="283">Se detiene cuando la función devuelve true.</text>
+    <text x="650" y="339">Se detiene cuando la función devuelve false.</text>
+    <text x="650" y="395">Se detienen en el primer elemento que cumple.</text>
+  </g>
+</svg>

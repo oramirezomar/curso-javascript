@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Adónde lleva break y adónde lleva continue</title>
+  <desc id="d">Flujo de un ciclo for: inicialización, condición, cuerpo y actualización, que vuelve a la condición. Si la condición es falsa, el ciclo termina. Dentro del cuerpo, un if con break sale directamente del ciclo, y un if con continue salta el resto del cuerpo y pasa a la actualización.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Recorrido de un for y los desvíos de break y continue</text>
+
+  <!-- Cajas -->
+  <g text-anchor="middle" font-size="14" font-weight="700">
+    <rect x="20" y="150" width="140" height="50" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="90" y="180" fill="#1e3a8a">Inicialización</text>
+    <rect x="210" y="150" width="150" height="50" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="285" y="180" fill="#312e81">¿Condición?</text>
+    <rect x="690" y="150" width="150" height="50" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="765" y="180" fill="#14532d">Actualización</text>
+    <rect x="210" y="302" width="150" height="50" rx="10" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/><text x="285" y="332" fill="#1f2937">Fin del ciclo</text>
+  </g>
+
+  <!-- Cuerpo -->
+  <rect x="420" y="108" width="210" height="136" rx="12" fill="#fff7e6" stroke="#b45f06" stroke-width="2"/>
+  <text x="525" y="128" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Cuerpo del ciclo</text>
+  <rect x="436" y="138" width="178" height="30" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="525" y="158" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#7c2d12">if (...) continue;</text>
+  <rect x="436" y="182" width="178" height="30" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="525" y="202" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#7f1d1d">if (...) break;</text>
+  <text x="560" y="233" text-anchor="middle" font-size="11" fill="#6b7280">resto del cuerpo</text>
+
+  <!-- Flechas normales -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="160" y1="175" x2="202" y2="175"/><polygon points="200,169 210,175 200,181"/>
+    <line x1="360" y1="175" x2="412" y2="175"/><polygon points="410,169 420,175 410,181"/>
+    <line x1="630" y1="196" x2="682" y2="196"/><polygon points="680,190 690,196 680,202"/>
+    <polyline points="765,148 765,80 285,80 285,140" fill="none"/><polygon points="279,138 285,148 291,138"/>
+    <line x1="285" y1="200" x2="285" y2="294"/><polygon points="279,292 285,302 291,292"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#783d06">
+    <text x="372" y="168">sí</text>
+    <text x="295" y="252">no</text>
+    <text x="525" y="72" text-anchor="middle">vuelve a evaluar la condición</text>
+  </g>
+
+  <!-- continue -->
+  <g stroke="#ea580c" stroke-width="2.5" fill="#ea580c">
+    <polyline points="614,153 650,153 650,170 682,170" fill="none"/><polygon points="680,164 690,170 680,176"/>
+  </g>
+  <text x="652" y="146" text-anchor="middle" font-size="12" font-weight="800" fill="#7c2d12">continue</text>
+
+  <!-- break -->
+  <g stroke="#b91c1c" stroke-width="2.5" fill="#b91c1c">
+    <polyline points="450,212 450,327 368,327" fill="none"/><polygon points="370,321 360,327 370,333"/>
+  </g>
+  <text x="460" y="300" font-size="12" font-weight="800" fill="#7f1d1d">break</text>
+
+  <!-- Nota -->
+  <rect x="60" y="372" width="740" height="30" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="392" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">break abandona el ciclo; continue salta al paso siguiente (la actualización en un for).</text>
+</svg>
