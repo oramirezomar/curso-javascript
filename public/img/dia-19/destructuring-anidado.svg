@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Desestructuración anidada</title>
+  <desc id="d">A la izquierda, el patrón const { datos: { correo, direccion: { ciudad } }, roles: [primerRol] } = usuario. A la derecha, el objeto usuario con id, datos (que contiene correo y direccion con ciudad) y roles. Los colores unen cada variable con su valor: correo vale ana@example.com, ciudad vale Lima y primerRol vale admin. Las propiedades datos, direccion y roles solo sirven para llegar al valor y no se crean como variables.</desc>
+  <rect width="860" height="450" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">El patrón sigue la forma del objeto</text>
+
+  <rect x="20" y="44" width="420" height="270" rx="12" fill="#2b1b0e"/>
+  <rect x="460" y="44" width="380" height="270" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <text x="36" y="66" font-size="12" font-weight="700" fill="#fdba74">Patrón</text>
+  <text x="476" y="66" font-size="12" font-weight="700" fill="#783d06">Objeto usuario</text>
+
+  <!-- Bandas de color (antes del texto) -->
+  <rect x="28" y="124" width="404" height="24" rx="4" fill="#14532d"/>
+  <rect x="28" y="152" width="404" height="24" rx="4" fill="#1e3a8a"/>
+  <rect x="28" y="208" width="404" height="24" rx="4" fill="#78350f"/>
+  <rect x="468" y="142" width="364" height="24" rx="4" fill="#bbf7d0"/>
+  <rect x="468" y="186" width="364" height="24" rx="4" fill="#bfdbfe"/>
+  <rect x="468" y="252" width="364" height="24" rx="4" fill="#fed7aa"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fde7c2">
+    <text x="36" y="96">const {</text>
+    <text x="36" y="118">&#160;&#160;datos: {</text>
+    <text x="36" y="142">&#160;&#160;&#160;&#160;correo,</text>
+    <text x="36" y="170">&#160;&#160;&#160;&#160;direccion: { ciudad },</text>
+    <text x="36" y="196">&#160;&#160;},</text>
+    <text x="36" y="226">&#160;&#160;roles: [primerRol],</text>
+    <text x="36" y="252">} = usuario;</text>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#3b2410">
+    <text x="476" y="92">usuario = {</text>
+    <text x="476" y="114">&#160;&#160;id: 1,</text>
+    <text x="476" y="136">&#160;&#160;datos: {</text>
+    <text x="476" y="158" fill="#14532d">&#160;&#160;&#160;&#160;correo: "ana@example.com",</text>
+    <text x="476" y="180">&#160;&#160;&#160;&#160;direccion: {</text>
+    <text x="476" y="202" fill="#1e3a8a">&#160;&#160;&#160;&#160;&#160;&#160;ciudad: "Lima",</text>
+    <text x="476" y="224">&#160;&#160;&#160;&#160;},</text>
+    <text x="476" y="246">&#160;&#160;},</text>
+    <text x="476" y="268" fill="#7c2d12">&#160;&#160;roles: ["admin", "editor"],</text>
+    <text x="476" y="290">}</text>
+  </g>
+
+  <!-- Resultados -->
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">
+    <rect x="30" y="336" width="250" height="38" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="155" y="360" fill="#14532d">correo = "ana@example.com"</text>
+    <rect x="300" y="336" width="250" height="38" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="425" y="360" fill="#1e3a8a">ciudad = "Lima"</text>
+    <rect x="570" y="336" width="260" height="38" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="700" y="360" fill="#7c2d12">primerRol = "admin"</text>
+  </g>
+  <rect x="30" y="390" width="800" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="415" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">datos, direccion y roles solo sirven para llegar al valor: no se crean como variables.</text>
+</svg>

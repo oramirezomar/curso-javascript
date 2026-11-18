@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Desestructurar un arreglo: se empareja por posición</title>
+  <desc id="d">Tres ejemplos. Primero: const [uno, dos, tres] = numeros asigna los valores de las posiciones 0, 1 y 2 a las variables uno, dos y tres. Segundo: const [primero, , tercero] = lista deja una coma vacía para omitir la posición 1, así que primero vale 10 y tercero vale 30. Tercero: con valores por defecto, p vale 5 porque la posición 0 es undefined, y q vale 0 porque 0 no es undefined, así que no usa el valor por defecto.</desc>
+  <rect width="860" height="450" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">En un arreglo, cada variable toma el valor de su posición</text>
+
+  <rect x="20" y="44" width="820" height="128" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="20" y="180" width="820" height="128" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="20" y="316" width="820" height="128" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#4d290b">
+    <text x="36" y="112">const [uno, dos, tres] = numeros;</text>
+    <text x="36" y="248">const [primero, , tercero] = lista;</text>
+    <text x="36" y="384">const [p = 5, q = 7] = [undefined, 0];</text>
+  </g>
+
+  <!-- Fila 1 -->
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="390" y="62" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="455" y="84" fill="#312e81">[0] → 1</text>
+    <rect x="535" y="62" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="600" y="84" fill="#312e81">[1] → 2</text>
+    <rect x="680" y="62" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="745" y="84" fill="#312e81">[2] → 3</text>
+    <rect x="390" y="122" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="455" y="144" font-family="ui-monospace, Menlo, monospace" fill="#14532d">uno = 1</text>
+    <rect x="535" y="122" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="600" y="144" font-family="ui-monospace, Menlo, monospace" fill="#14532d">dos = 2</text>
+    <rect x="680" y="122" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="745" y="144" font-family="ui-monospace, Menlo, monospace" fill="#14532d">tres = 3</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="455" y1="96" x2="455" y2="114"/><polygon points="449,112 455,121 461,112"/>
+    <line x1="600" y1="96" x2="600" y2="114"/><polygon points="594,112 600,121 606,112"/>
+    <line x1="745" y1="96" x2="745" y2="114"/><polygon points="739,112 745,121 751,112"/>
+  </g>
+
+  <!-- Fila 2 -->
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="390" y="198" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="455" y="220" fill="#312e81">[0] → 10</text>
+    <rect x="535" y="198" width="130" height="34" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/><text x="600" y="220" fill="#9ca3af">[1] → 20</text>
+    <rect x="680" y="198" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="745" y="220" fill="#312e81">[2] → 30</text>
+    <rect x="390" y="258" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="455" y="280" font-family="ui-monospace, Menlo, monospace" fill="#14532d">primero = 10</text>
+    <text x="600" y="280" font-size="12" font-weight="700" fill="#6b7280">se omite</text>
+    <rect x="680" y="258" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="745" y="280" font-family="ui-monospace, Menlo, monospace" fill="#14532d">tercero = 30</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="455" y1="232" x2="455" y2="250"/><polygon points="449,248 455,257 461,248"/>
+    <line x1="745" y1="232" x2="745" y2="250"/><polygon points="739,248 745,257 751,248"/>
+  </g>
+
+  <!-- Fila 3 -->
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="390" y="334" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="455" y="356" fill="#312e81">[0] → undefined</text>
+    <rect x="535" y="334" width="130" height="34" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="600" y="356" fill="#312e81">[1] → 0</text>
+    <rect x="390" y="394" width="130" height="34" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="455" y="416" font-family="ui-monospace, Menlo, monospace" fill="#713f12">p = 5</text>
+    <rect x="535" y="394" width="130" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="600" y="416" font-family="ui-monospace, Menlo, monospace" fill="#14532d">q = 0</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="455" y1="368" x2="455" y2="386"/><polygon points="449,384 455,393 461,384"/>
+    <line x1="600" y1="368" x2="600" y2="386"/><polygon points="594,384 600,393 606,384"/>
+  </g>
+  <g font-size="12" fill="#4d290b">
+    <text x="684" y="404" font-weight="800">Solo undefined activa</text>
+    <text x="684" y="420" font-weight="800">el valor por defecto.</text>
+  </g>
+</svg>

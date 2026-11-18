@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Desestructurar arreglos frente a objetos</title>
+  <desc id="d">Tabla comparativa. Con arreglos, la desestructuración se empareja por posición, el orden importa, la variable puede llamarse como quieras, se omite una posición con una coma vacía, el valor por defecto se escribe a = 1 y el resto se recoge con puntos suspensivos. Con objetos, se empareja por nombre de propiedad, el orden no importa, se renombra con propiedad dos puntos alias, se omite simplemente no nombrándola, el valor por defecto se escribe a = 1 y el resto se recoge con puntos suspensivos.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Arreglo y objeto: qué cambia al desestructurar</text>
+
+  <!-- Encabezado -->
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="20" y="44" width="190" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="115" y="68" fill="#4d290b">Criterio</text>
+    <rect x="220" y="44" width="300" height="38" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="370" y="68" fill="#312e81" font-family="ui-monospace, Menlo, monospace">Arreglo  [ ]</text>
+    <rect x="530" y="44" width="310" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="685" y="68" fill="#14532d" font-family="ui-monospace, Menlo, monospace">Objeto  { }</text>
+  </g>
+
+  <!-- Filas -->
+  <g fill="#ffffff" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="20" y="90" width="190" height="46" rx="8"/><rect x="220" y="90" width="300" height="46" rx="8"/><rect x="530" y="90" width="310" height="46" rx="8"/>
+    <rect x="20" y="142" width="190" height="46" rx="8"/><rect x="220" y="142" width="300" height="46" rx="8"/><rect x="530" y="142" width="310" height="46" rx="8"/>
+    <rect x="20" y="194" width="190" height="46" rx="8"/><rect x="220" y="194" width="300" height="46" rx="8"/><rect x="530" y="194" width="310" height="46" rx="8"/>
+    <rect x="20" y="246" width="190" height="46" rx="8"/><rect x="220" y="246" width="300" height="46" rx="8"/><rect x="530" y="246" width="310" height="46" rx="8"/>
+    <rect x="20" y="298" width="190" height="46" rx="8"/><rect x="220" y="298" width="300" height="46" rx="8"/><rect x="530" y="298" width="310" height="46" rx="8"/>
+    <rect x="20" y="350" width="190" height="46" rx="8"/><rect x="220" y="350" width="300" height="46" rx="8"/><rect x="530" y="350" width="310" height="46" rx="8"/>
+  </g>
+  <g font-size="13" font-weight="800" fill="#4d290b" text-anchor="middle">
+    <text x="115" y="118">Se empareja por</text>
+    <text x="115" y="170">¿Importa el orden?</text>
+    <text x="115" y="222">Nombre de la variable</text>
+    <text x="115" y="274">Omitir un valor</text>
+    <text x="115" y="326">Valor por defecto</text>
+    <text x="115" y="378">Recoger el resto</text>
+  </g>
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="370" y="118">La posición</text>
+    <text x="685" y="118">El nombre de la propiedad</text>
+    <text x="370" y="170">Sí: la primera variable es la posición 0</text>
+    <text x="685" y="170">No: se busca cada nombre en el objeto</text>
+    <text x="370" y="222">Cualquiera</text>
+    <text x="685" y="213">El de la propiedad, o un alias</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="370" y="274" fill="#312e81">[a, , c]</text>
+    <text x="685" y="274" fill="#14532d">{ a, c }   (no nombras b)</text>
+    <text x="370" y="326" fill="#312e81">[a = 1, b = 2]</text>
+    <text x="685" y="326" fill="#14532d">{ a = 1, b = 2 }</text>
+    <text x="370" y="378" fill="#312e81">[a, ...resto]</text>
+    <text x="685" y="378" fill="#14532d">{ a, ...resto }</text>
+  </g>
+  <text x="685" y="231" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d">{ propiedad: alias }</text>
+  <text x="430" y="418" text-anchor="middle" font-size="12" fill="#6b7280">El valor por defecto solo se usa cuando el valor es undefined.</text>
+</svg>
