@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Rest frente a spread: mismos tres puntos, dos funciones</title>
+  <desc id="d">Tabla comparativa. Rest aparece en la definición, como último parámetro de una función o en el lado izquierdo de una desestructuración, y reúne varios valores en un arreglo o un objeto. Spread aparece al usar valores, en una llamada a función, en un arreglo literal o en un objeto literal, y reparte los elementos de un iterable o las propiedades de un objeto. Regla práctica: si recoge valores, es rest; si los reparte, es spread.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los mismos tres puntos, según de qué lado estén</text>
+
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="20" y="44" width="150" height="38" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="95" y="68" fill="#4d290b">Criterio</text>
+    <rect x="180" y="44" width="320" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="340" y="68" fill="#78350f" font-family="ui-monospace, Menlo, monospace">Rest: recoge</text>
+    <rect x="510" y="44" width="330" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="675" y="68" fill="#14532d" font-family="ui-monospace, Menlo, monospace">Spread: reparte</text>
+  </g>
+
+  <g fill="#ffffff" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="20" y="90" width="150" height="62" rx="8"/><rect x="180" y="90" width="320" height="62" rx="8"/><rect x="510" y="90" width="330" height="62" rx="8"/>
+    <rect x="20" y="158" width="150" height="62" rx="8"/><rect x="180" y="158" width="320" height="62" rx="8"/><rect x="510" y="158" width="330" height="62" rx="8"/>
+    <rect x="20" y="226" width="150" height="62" rx="8"/><rect x="180" y="226" width="320" height="62" rx="8"/><rect x="510" y="226" width="330" height="62" rx="8"/>
+    <rect x="20" y="294" width="150" height="62" rx="8"/><rect x="180" y="294" width="320" height="62" rx="8"/><rect x="510" y="294" width="330" height="62" rx="8"/>
+  </g>
+
+  <g font-size="13" font-weight="800" fill="#4d290b" text-anchor="middle">
+    <text x="95" y="126">Dónde aparece</text>
+    <text x="95" y="194">Qué hace</text>
+    <text x="95" y="262">Ejemplos</text>
+    <text x="95" y="330">Desde</text>
+  </g>
+
+  <g font-size="12" fill="#3b2410" text-anchor="middle">
+    <text x="340" y="116">En la definición: último parámetro de una</text><text x="340" y="134">función, o izquierda de una desestructuración.</text>
+    <text x="675" y="116">Al usar valores: en una llamada, un arreglo</text><text x="675" y="134">literal o un objeto literal.</text>
+    <text x="340" y="184">Reúne varios valores sueltos</text><text x="340" y="202">en un arreglo (o un objeto).</text>
+    <text x="675" y="184">Reparte los elementos de un iterable</text><text x="675" y="202">(o las propiedades de un objeto).</text>
+    <text x="340" y="324" font-weight="700">Parámetros: ES2015 · En objetos: ES2018</text>
+    <text x="675" y="324" font-weight="700">Arreglos y llamadas: ES2015 · Objetos: ES2018</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" text-anchor="middle">
+    <text x="340" y="252" fill="#78350f">function f(a, ...resto) { }</text>
+    <text x="340" y="272" fill="#78350f">const [x, ...cola] = lista;</text>
+    <text x="675" y="252" fill="#14532d">f(...lista)   [0, ...lista]</text>
+    <text x="675" y="272" fill="#14532d">{ ...estado, edad: 36 }</text>
+  </g>
+
+  <rect x="60" y="374" width="740" height="40" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="399" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Si los tres puntos recogen valores, es rest. Si los reparten, es spread.</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Spread en un arreglo: de arreglos anidados a un arreglo plano</title>
+  <desc id="d">A la izquierda, [arreglo1, arreglo2] crea un arreglo de dos elementos, y cada elemento es a su vez un arreglo de cinco números. A la derecha, [...arreglo1, ...arreglo2] reparte los elementos de cada arreglo y crea un solo arreglo plano de diez números.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los tres puntos reparten los elementos uno por uno</text>
+
+  <rect x="20" y="44" width="400" height="290" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <rect x="440" y="44" width="400" height="290" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" text-anchor="middle">
+    <text x="220" y="72" fill="#7f1d1d">[arreglo1, arreglo2]</text>
+    <text x="640" y="72" fill="#14532d">[...arreglo1, ...arreglo2]</text>
+  </g>
+
+  <!-- Izquierda: anidado -->
+  <rect x="50" y="92" width="340" height="190" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="68" y="112" width="304" height="68" rx="10" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="68" y="196" width="304" height="68" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+  <g>
+    <rect x="98" y="131" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="113.0" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">1</text>
+    <rect x="132" y="131" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="147.0" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">2</text>
+    <rect x="166" y="131" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="181.0" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">3</text>
+    <rect x="200" y="131" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="215.0" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">4</text>
+    <rect x="234" y="131" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="249.0" y="151" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">5</text>
+    <rect x="98" y="215" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="113.0" y="235" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">6</text>
+    <rect x="132" y="215" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="147.0" y="235" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">7</text>
+    <rect x="166" y="215" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="181.0" y="235" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">8</text>
+    <rect x="200" y="215" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="215.0" y="235" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">9</text>
+    <rect x="234" y="215" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="249.0" y="235" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">0</text>
+  </g>
+  <text x="78" y="108" font-size="11" font-weight="700" fill="#1e3a8a">elemento 0: un arreglo</text>
+  <text x="78" y="192" font-size="11" font-weight="700" fill="#14532d">elemento 1: otro arreglo</text>
+
+  <!-- Derecha: plano -->
+  <rect x="460" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+  <g>
+    <rect x="478" y="120" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="493.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">1</text>
+    <rect x="512" y="120" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="527.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">2</text>
+    <rect x="546" y="120" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="561.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">3</text>
+    <rect x="580" y="120" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="595.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">4</text>
+    <rect x="614" y="120" width="30" height="30" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="629.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#1e3a8a">5</text>
+  </g>
+  <g>
+    <rect x="648" y="120" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="663.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">6</text>
+    <rect x="682" y="120" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="697.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">7</text>
+    <rect x="716" y="120" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="731.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">8</text>
+    <rect x="750" y="120" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="765.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">9</text>
+    <rect x="784" y="120" width="30" height="30" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="799.0" y="140" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">0</text>
+  </g>
+  <text x="478" y="112" font-size="11" font-weight="700" fill="#14532d">un solo arreglo, sin niveles</text>
+
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <text x="563" y="168" fill="#1e3a8a">...arreglo1</text>
+    <text x="733" y="168" fill="#14532d">...arreglo2</text>
+  </g>
+
+  <rect x="460" y="200" width="360" height="84" rx="10" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="640" y="224" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">Se puede usar en cualquier posición</text>
+  <text x="640" y="248" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#14532d">[0, ...arreglo1, 99]</text>
+  <text x="640" y="270" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#14532d">→ [0, 1, 2, 3, 4, 5, 99]</text>
+
+  <g text-anchor="middle" font-size="15" font-weight="800">
+    <text x="220" y="312" fill="#7f1d1d">length: 2</text>
+    <text x="640" y="312" fill="#14532d">length: 10</text>
+  </g>
+
+  <rect x="60" y="352" width="740" height="60" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="378" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Con ... cada elemento entra al arreglo nuevo como un valor suelto.</text>
+  <text x="430" y="398" text-anchor="middle" font-size="13" fill="#4d290b">Sin ..., entra el arreglo completo como un solo elemento.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El parámetro rest recoge los argumentos sobrantes</title>
+  <desc id="d">La función sumar(a, b, ...c) se llama con cinco argumentos: 1, 2, 3, 4 y 5. Los parámetros a y b reciben el 1 y el 2. El parámetro rest c recoge los argumentos restantes, 3, 4 y 5, en un arreglo. Si se llama con solo dos argumentos, c es un arreglo vacío.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">...c recoge lo que sobra en un arreglo</text>
+
+  <rect x="190" y="44" width="480" height="40" rx="10" fill="#2b1b0e"/>
+  <text x="430" y="70" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" fill="#fde7c2">function sumar(a, b, ...c) { ... }</text>
+
+  <text x="430" y="116" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#4d290b">sumar(1, 2, 3, 4, 5)</text>
+
+  <!-- Argumentos -->
+  <g text-anchor="middle" font-size="20" font-weight="800">
+    <rect x="40" y="136" width="120" height="44" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="100" y="166" fill="#1e3a8a">1</text>
+    <rect x="190" y="136" width="120" height="44" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="250" y="166" fill="#1e3a8a">2</text>
+    <rect x="340" y="136" width="120" height="44" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="400" y="166" fill="#713f12">3</text>
+    <rect x="490" y="136" width="120" height="44" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="550" y="166" fill="#713f12">4</text>
+    <rect x="640" y="136" width="120" height="44" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="700" y="166" fill="#713f12">5</text>
+  </g>
+
+  <!-- Flechas -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="100" y1="180" x2="100" y2="240"/><polygon points="94,238 100,248 106,238"/>
+    <line x1="250" y1="180" x2="250" y2="240"/><polygon points="244,238 250,248 256,238"/>
+    <line x1="400" y1="180" x2="400" y2="240"/><polygon points="394,238 400,248 406,238"/>
+    <line x1="550" y1="180" x2="550" y2="240"/><polygon points="544,238 550,248 556,238"/>
+    <line x1="700" y1="180" x2="700" y2="240"/><polygon points="694,238 700,248 706,238"/>
+  </g>
+
+  <!-- Destinos -->
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800">
+    <rect x="40" y="250" width="120" height="48" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="100" y="281" fill="#14532d">a = 1</text>
+    <rect x="190" y="250" width="120" height="48" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="250" y="281" fill="#14532d">b = 2</text>
+    <rect x="340" y="250" width="420" height="48" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="550" y="281" fill="#78350f">c = [3, 4, 5]</text>
+  </g>
+  <g font-size="12" font-weight="700" text-anchor="middle" fill="#4d290b">
+    <text x="175" y="322">parámetros normales: toman los primeros</text>
+    <text x="550" y="322">parámetro rest: un arreglo real con el resto</text>
+  </g>
+
+  <rect x="60" y="346" width="740" height="66" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="372" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">sumar(1, 2) → c es [] (un arreglo vacío, no undefined).</text>
+  <text x="430" y="396" text-anchor="middle" font-size="13" fill="#4d290b">El parámetro rest va siempre al final y solo puede haber uno.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Spread en un objeto: copia de un nivel</title>
+  <desc id="d">El objeto estado tiene nombre Ana, edad 35 y direccion, que apunta a un objeto con la ciudad Lima. La instrucción const nuevo = { ...estado, edad: 36 } crea un objeto nuevo que copia nombre y direccion, y reemplaza edad por 36. El estado original no cambia. La propiedad direccion de los dos objetos apunta al mismo objeto, porque la copia es de un solo nivel.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Copiar un objeto cambiando solo una propiedad</text>
+
+  <rect x="220" y="44" width="420" height="38" rx="10" fill="#2b1b0e"/>
+  <text x="430" y="69" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fde7c2">const nuevo = { ...estado, edad: 36 };</text>
+
+  <!-- Objeto direccion compartido (antes de las flechas) -->
+  <rect x="330" y="316" width="200" height="54" rx="10" fill="#f3e8ff" stroke="#7e22ce" stroke-width="2"/>
+  <text x="430" y="340" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#581c87">{ ciudad: "Lima" }</text>
+  <text x="430" y="360" text-anchor="middle" font-size="11" font-weight="700" fill="#581c87">un solo objeto, compartido</text>
+
+  <!-- Flechas -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="292" y1="152" x2="560" y2="152"/><polygon points="558,146 568,152 558,158"/>
+  </g>
+  <text x="430" y="142" text-anchor="middle" font-size="12" font-weight="800" fill="#783d06">copia las propiedades</text>
+  <g stroke="#7e22ce" stroke-width="2.5" fill="none">
+    <polyline points="250,236 250,290 330,343"/>
+    <polyline points="610,236 610,290 530,343"/>
+  </g>
+  <polygon points="320,334 332,344 318,348" fill="#7e22ce"/>
+  <polygon points="540,334 528,344 542,348" fill="#7e22ce"/>
+
+  <!-- estado -->
+  <rect x="40" y="100" width="250" height="150" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="165" y="124" text-anchor="middle" font-size="14" font-weight="800" fill="#312e81">estado</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#312e81">
+    <text x="58" y="156">nombre: "Ana"</text>
+    <text x="58" y="186">edad: 35</text>
+    <text x="58" y="216">direccion: ●</text>
+  </g>
+
+  <!-- nuevo -->
+  <rect x="570" y="100" width="250" height="150" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="695" y="124" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">nuevo</text>
+  <rect x="580" y="168" width="230" height="26" rx="6" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#14532d">
+    <text x="588" y="156">nombre: "Ana"</text>
+    <text x="588" y="187" fill="#7c2d12">edad: 36  ← reemplazada</text>
+    <text x="588" y="216">direccion: ●</text>
+  </g>
+
+  <text x="165" y="276" text-anchor="middle" font-size="12" font-weight="700" fill="#4338ca">el original no cambia</text>
+
+  <rect x="60" y="386" width="740" height="44" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="406" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">La copia es de un solo nivel: los objetos anidados se comparten.</text>
+  <text x="430" y="422" text-anchor="middle" font-size="12" fill="#4d290b">El último valor gana: { ...a, x: 1 } y { x: 1, ...a } no dan lo mismo.</text>
+</svg>
