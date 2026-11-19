@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De una función expresada a una función flecha, paso a paso</title>
+  <desc id="d">Cuatro pasos. Primero, una función expresada: const sumar = function (a, b) { return a + b; }. Segundo, se quita la palabra function y se añade la flecha: const sumar = (a, b) => { return a + b; }. Tercero, como el cuerpo es una sola expresión, se quitan las llaves y el return, y queda el retorno implícito: const sumar = (a, b) => a + b. Cuarto, con un solo parámetro se pueden omitir los paréntesis: const doble = n => n * 2.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">De function a flecha en cuatro pasos</text>
+
+  <!-- Círculos de paso -->
+  <g text-anchor="middle" font-size="16" font-weight="800" fill="#ffffff">
+    <circle cx="40" cy="82" r="16" fill="#b45f06"/><text x="40" y="88">1</text>
+    <circle cx="40" cy="172" r="16" fill="#b45f06"/><text x="40" y="178">2</text>
+    <circle cx="40" cy="262" r="16" fill="#b45f06"/><text x="40" y="268">3</text>
+    <circle cx="40" cy="352" r="16" fill="#b45f06"/><text x="40" y="358">4</text>
+  </g>
+
+  <!-- Franjas de código -->
+  <rect x="70" y="58" width="500" height="48" rx="10" fill="#2b1b0e"/>
+  <rect x="70" y="148" width="500" height="48" rx="10" fill="#2b1b0e"/>
+  <rect x="70" y="238" width="500" height="48" rx="10" fill="#2b1b0e"/>
+  <rect x="70" y="328" width="500" height="48" rx="10" fill="#2b1b0e"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" fill="#fde7c2">
+    <text x="88" y="89">const sumar = <tspan fill="#fca5a5">function</tspan> (a, b) { return a + b; };</text>
+    <text x="88" y="179">const sumar = (a, b) <tspan fill="#86efac">=&gt;</tspan> { return a + b; };</text>
+    <text x="88" y="269">const sumar = (a, b) <tspan fill="#86efac">=&gt;</tspan> <tspan fill="#93c5fd">a + b</tspan>;</text>
+    <text x="88" y="359">const doble = <tspan fill="#fdba74">n</tspan> <tspan fill="#86efac">=&gt;</tspan> n * 2;</text>
+  </g>
+
+  <!-- Flechas entre pasos -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="320" y1="106" x2="320" y2="140"/><polygon points="314,138 320,148 326,138"/>
+    <line x1="320" y1="196" x2="320" y2="230"/><polygon points="314,228 320,238 326,228"/>
+    <line x1="320" y1="286" x2="320" y2="320"/><polygon points="314,318 320,328 326,318"/>
+  </g>
+
+  <!-- Anotaciones -->
+  <g font-size="13" fill="#3b2410">
+    <text x="590" y="78" font-weight="800" fill="#4d290b">Función expresada</text>
+    <text x="590" y="96">Una función anónima guardada</text>
+    <text x="590" y="112">en una variable.</text>
+
+    <text x="590" y="168" font-weight="800" fill="#14532d">Se quita function y se añade =&gt;</text>
+    <text x="590" y="186">Es la «flecha gruesa».</text>
+
+    <text x="590" y="258" font-weight="800" fill="#1e3a8a">Una sola expresión</text>
+    <text x="590" y="276">Sin llaves y sin return: el valor</text>
+    <text x="590" y="292">se devuelve solo (retorno implícito).</text>
+
+    <text x="590" y="348" font-weight="800" fill="#7c2d12">Un solo parámetro</text>
+    <text x="590" y="366">Los paréntesis son opcionales.</text>
+  </g>
+
+  <rect x="70" y="396" width="720" height="32" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="417" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Las cuatro versiones de sumar y doble se llaman y se comportan igual.</text>
+</svg>

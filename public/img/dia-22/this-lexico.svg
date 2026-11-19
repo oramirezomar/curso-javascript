@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">this en un método y en una función flecha</title>
+  <desc id="d">A la izquierda, un método abreviado ladrar() dentro del objeto perro: al llamar perro.ladrar(), this es el objeto perro y devuelve Rex. A la derecha, ladrar definido como función flecha dentro del mismo objeto: la flecha no tiene su propio this, usa el del lugar donde se escribió, que no es perro, y por eso this.nombre no devuelve Rex. Abajo, un caso donde la flecha sí conviene: dentro de un método, una flecha usada como callback toma el this del método.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una flecha no tiene su propio this</text>
+
+  <rect x="20" y="44" width="400" height="290" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <rect x="440" y="44" width="400" height="290" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+
+  <g text-anchor="middle" font-size="14" font-weight="800">
+    <text x="220" y="70" fill="#14532d">Método: this es el objeto</text>
+    <text x="640" y="70" fill="#7f1d1d">Flecha como método: this es el de afuera</text>
+  </g>
+
+  <rect x="40" y="84" width="360" height="120" rx="10" fill="#2b1b0e"/>
+  <rect x="460" y="84" width="360" height="120" rx="10" fill="#2b1b0e"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#fde7c2">
+    <text x="54" y="108">const perro = {</text>
+    <text x="54" y="128">&#160;&#160;nombre: "Rex",</text>
+    <text x="54" y="148">&#160;&#160;ladrar() { return this.nombre; },</text>
+    <text x="54" y="168">};</text>
+    <text x="54" y="186" fill="#86efac">perro.ladrar();</text>
+
+    <text x="474" y="108">const perro = {</text>
+    <text x="474" y="128">&#160;&#160;nombre: "Rex",</text>
+    <text x="474" y="148">&#160;&#160;ladrar: () =&gt; this.nombre,</text>
+    <text x="474" y="168">};</text>
+    <text x="474" y="186" fill="#fca5a5">perro.ladrar();</text>
+  </g>
+
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="220" y1="204" x2="220" y2="228"/><polygon points="214,226 220,236 226,226"/>
+    <line x1="640" y1="204" x2="640" y2="228"/><polygon points="634,226 640,236 646,226"/>
+  </g>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800">
+    <rect x="70" y="238" width="300" height="38" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="220" y="262" fill="#14532d">this = perro</text>
+    <rect x="490" y="238" width="300" height="38" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/><text x="640" y="262" fill="#7f1d1d">this ≠ perro</text>
+  </g>
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <text x="220" y="304" fill="#14532d">Devuelve "Rex".</text>
+    <text x="640" y="304" fill="#7f1d1d">Usa el this del lugar donde se escribió la flecha,</text>
+    <text x="640" y="322" fill="#7f1d1d">no el del objeto: no devuelve "Rex".</text>
+  </g>
+
+  <rect x="20" y="350" width="820" height="76" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="374" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">Sí conviene dentro de un método: la flecha toma el this del método</text>
+  <text x="430" y="400" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#4d290b">listar() { return this.miembros.map(m =&gt; m + " en " + this.nombre); }</text>
+</svg>
