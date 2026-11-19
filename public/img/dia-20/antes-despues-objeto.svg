@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El mismo objeto en forma larga y en forma abreviada</title>
+  <desc id="d">A la izquierda, el objeto perro en forma larga: nombre dos puntos nombre, edad dos puntos edad y ladrar dos puntos function. A la derecha, el mismo objeto en forma abreviada: nombre, edad y ladrar con paréntesis, sin la palabra function. Los dos objetos tienen las mismas propiedades y el mismo método.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Mismo objeto, menos código</text>
+
+  <g text-anchor="middle" font-size="15" font-weight="800">
+    <text x="220" y="62" fill="#7f1d1d">Forma larga</text>
+    <text x="640" y="62" fill="#14532d">Forma abreviada</text>
+  </g>
+
+  <rect x="20" y="72" width="400" height="290" rx="12" fill="#2b1b0e"/>
+  <rect x="440" y="72" width="400" height="290" rx="12" fill="#2b1b0e"/>
+
+  <!-- Bandas (antes del texto) -->
+  <rect x="28" y="184" width="384" height="26" rx="4" fill="#7f1d1d"/>
+  <rect x="28" y="210" width="384" height="26" rx="4" fill="#7f1d1d"/>
+  <rect x="28" y="236" width="384" height="26" rx="4" fill="#7f1d1d"/>
+  <rect x="448" y="184" width="384" height="26" rx="4" fill="#14532d"/>
+  <rect x="448" y="210" width="384" height="26" rx="4" fill="#14532d"/>
+  <rect x="448" y="236" width="384" height="26" rx="4" fill="#14532d"/>
+
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#fde7c2">
+    <text x="40" y="106">const nombre = "Rex";</text>
+    <text x="40" y="132">const edad = 7;</text>
+    <text x="40" y="176">const perro = {</text>
+    <text x="40" y="202">&#160;&#160;nombre: nombre,</text>
+    <text x="40" y="228">&#160;&#160;edad: edad,</text>
+    <text x="40" y="254">&#160;&#160;ladrar: function () {</text>
+    <text x="40" y="280">&#160;&#160;&#160;&#160;console.log("guau guau");</text>
+    <text x="40" y="306">&#160;&#160;},</text>
+    <text x="40" y="332">};</text>
+
+    <text x="460" y="106">const nombre = "Rex";</text>
+    <text x="460" y="132">const edad = 7;</text>
+    <text x="460" y="176">const perro = {</text>
+    <text x="460" y="202">&#160;&#160;nombre,</text>
+    <text x="460" y="228">&#160;&#160;edad,</text>
+    <text x="460" y="254">&#160;&#160;ladrar() {</text>
+    <text x="460" y="280">&#160;&#160;&#160;&#160;console.log("guau guau");</text>
+    <text x="460" y="306">&#160;&#160;},</text>
+    <text x="460" y="332">};</text>
+  </g>
+
+  <g font-size="13" text-anchor="middle" font-weight="700">
+    <text x="220" y="386" fill="#7f1d1d">Repites cada nombre y escribes : function</text>
+    <text x="640" y="386" fill="#14532d">El nombre se escribe una vez; el método pierde : function</text>
+  </g>
+  <rect x="120" y="398" width="620" height="30" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="418" text-anchor="middle" font-size="13" font-weight="700" fill="#4d290b">Los dos objetos tienen las mismas propiedades y el mismo método.</text>
+</svg>

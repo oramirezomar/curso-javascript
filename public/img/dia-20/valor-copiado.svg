@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">La forma abreviada copia el valor en ese momento</title>
+  <desc id="d">Tres pasos. Primero, let x = 1 crea la variable x con valor 1. Segundo, const o = { x } crea un objeto con la propiedad x que toma el valor 1 de la variable. Tercero, x = 2 cambia la variable a 2, pero la propiedad del objeto sigue valiendo 1, porque se copió el valor y no hay un enlace con la variable.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">{ x } toma el valor de x en el momento de crear el objeto</text>
+
+  <rect x="20" y="46" width="260" height="250" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="300" y="46" width="260" height="250" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+  <rect x="580" y="46" width="260" height="250" rx="12" fill="#fff7e6" stroke="#e8c98a" stroke-width="2"/>
+
+  <g text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">
+    <text x="150" y="74">1 · Se declara la variable</text>
+    <text x="430" y="74">2 · Se crea el objeto</text>
+    <text x="710" y="74">3 · Cambia la variable</text>
+  </g>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800">
+    <rect x="60" y="92" width="180" height="34" rx="8" fill="#2b1b0e"/><text x="150" y="115" fill="#fde7c2">let x = 1;</text>
+    <rect x="340" y="92" width="180" height="34" rx="8" fill="#2b1b0e"/><text x="430" y="115" fill="#fde7c2">const o = { x };</text>
+    <rect x="620" y="92" width="180" height="34" rx="8" fill="#2b1b0e"/><text x="710" y="115" fill="#fde7c2">x = 2;</text>
+  </g>
+
+  <!-- Flecha de copia (paso 2) -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="430" y1="186" x2="430" y2="214"/><polygon points="424,212 430,222 436,212"/>
+  </g>
+  <text x="442" y="206" font-size="12" font-weight="700" fill="#783d06">copia el valor</text>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800">
+    <rect x="70" y="160" width="160" height="40" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="150" y="186" fill="#14532d">x = 1</text>
+
+    <rect x="350" y="146" width="160" height="40" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="430" y="172" fill="#14532d">x = 1</text>
+    <rect x="350" y="224" width="160" height="40" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="430" y="250" fill="#312e81">o = { x: 1 }</text>
+
+    <rect x="630" y="146" width="160" height="40" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/><text x="710" y="172" fill="#7c2d12">x = 2</text>
+    <rect x="630" y="224" width="160" height="40" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="710" y="250" fill="#312e81">o = { x: 1 }</text>
+  </g>
+  <text x="710" y="284" text-anchor="middle" font-size="12" font-weight="800" fill="#4338ca">no cambia</text>
+  <text x="710" y="214" text-anchor="middle" font-size="12" font-weight="800" fill="#7c2d12">cambia solo la variable</text>
+
+  <rect x="60" y="314" width="740" height="72" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="340" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">La forma abreviada copia el valor, no crea un enlace con la variable.</text>
+  <text x="430" y="364" text-anchor="middle" font-size="13" fill="#4d290b">Si el valor es un arreglo o un objeto, lo que se copia es la referencia: los dos nombres apuntan al mismo dato.</text>
+</svg>
