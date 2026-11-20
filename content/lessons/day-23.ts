@@ -416,7 +416,7 @@ export const day23: Lesson = {
     {
       type: "paragraph",
       text:
-        "En la próxima lección verás `class`. Una clase hace por debajo lo que acabas de hacer a mano: `constructor` es la función constructora, y los métodos que escribes en el cuerpo se crean en `Animal.prototype`. Según MDN, las clases son azúcar sintáctica sobre las funciones constructoras. Hay diferencias de detalle: los métodos de una clase no son enumerables (no aparecen en `for...in` ni en `Object.keys`), y llamar a una clase sin `new` da un `TypeError` en lugar de fallar en silencio.",
+        "En la próxima lección verás `class`. Una clase hace por debajo lo que acabas de hacer a mano: `constructor` es la función constructora, y los métodos que escribes en el cuerpo se crean en `Animal.prototype`. Según MDN, las clases están construidas sobre los prototipos y son sobre todo una abstracción del mecanismo de herencia prototípica, aunque añaden sintaxis y semántica propias. Hay diferencias de detalle: los métodos de una clase no son enumerables (no aparecen en `for...in` ni en `Object.keys`), y llamar a una clase sin `new` da un `TypeError` en lugar de fallar en silencio.",
     },
     {
       type: "playground",
@@ -734,7 +734,7 @@ export const day23: Lesson = {
       ],
       correctIndex: 1,
       explanation:
-        "Según MDN, las clases son azúcar sintáctica sobre las funciones constructoras y los prototipos.",
+        "Según MDN, las clases están construidas sobre los prototipos y son sobre todo una abstracción de la herencia prototípica, con algo de sintaxis y semántica propias.",
     },
   ],
 };

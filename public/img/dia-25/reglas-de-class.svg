@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Seis reglas de las clases</title>
+  <desc id="d">Seis reglas de class. Una clase siempre se llama con new, y sin new lanza un TypeError. Una clase no se eleva: hay que declararla antes de usarla, y si no lanza un ReferenceError. El cuerpo de la clase está siempre en modo estricto, así que un método suelto pierde this y vale undefined. Los métodos de una clase no son enumerables, y Object.keys del prototipo devuelve un arreglo vacío. Una clase solo puede tener un constructor, y dos lanzan un SyntaxError. En una clase hija con constructor propio hay que llamar a super antes de usar this, y si no se lanza un ReferenceError.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Reglas que las clases imponen</text>
+  <g>
+    <rect x="20" y="52" width="260" height="160" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <rect x="300" y="52" width="260" height="160" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <rect x="580" y="52" width="260" height="160" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <rect x="20" y="228" width="260" height="160" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <rect x="300" y="228" width="260" height="160" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <rect x="580" y="228" width="260" height="160" rx="12" fill="#f3e8ff" stroke="#7e22ce" stroke-width="2"/>
+  </g>
+  <g font-size="15" font-weight="800">
+    <text x="36" y="82" fill="#7f1d1d">1 · Siempre con new</text>
+    <text x="316" y="82" fill="#713f12">2 · No se eleva</text>
+    <text x="596" y="82" fill="#312e81">3 · Modo estricto</text>
+    <text x="36" y="258" fill="#14532d">4 · Métodos no enumerables</text>
+    <text x="316" y="258" fill="#7c2d12">5 · Un solo constructor</text>
+    <text x="596" y="258" fill="#581c87">6 · En la hija, super primero</text>
+  </g>
+  <g font-size="13">
+    <g fill="#7f1d1d"><text x="36" y="110">Llamar a una clase sin new</text><text x="36" y="130">lanza un error.</text></g>
+    <g fill="#713f12"><text x="316" y="110">Hay que declararla antes</text><text x="316" y="130">de usarla, como let o const.</text></g>
+    <g fill="#312e81"><text x="596" y="110">El cuerpo de la clase siempre</text><text x="596" y="130">está en modo estricto: un</text><text x="596" y="150">método suelto pierde this.</text></g>
+    <g fill="#14532d"><text x="36" y="286">No aparecen en for...in</text><text x="36" y="306">ni en Object.keys.</text></g>
+    <g fill="#7c2d12"><text x="316" y="286">Una clase no puede tener</text><text x="316" y="306">dos métodos constructor.</text></g>
+    <g fill="#581c87"><text x="596" y="286">Con constructor propio,</text><text x="596" y="306">llama a super() antes de</text><text x="596" y="326">usar this.</text></g>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" text-anchor="middle">
+    <rect x="36" y="160" width="228" height="34" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="150" y="182" fill="#7f1d1d">Animal("x") → TypeError</text>
+    <rect x="316" y="160" width="228" height="34" rx="8" fill="#ffffff" stroke="#fde68a" stroke-width="1.5"/><text x="430" y="182" fill="#713f12">new A() antes → ReferenceError</text>
+    <rect x="596" y="160" width="228" height="34" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.5"/><text x="710" y="182" fill="#312e81">suelto() → TypeError</text>
+    <rect x="36" y="336" width="228" height="34" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/><text x="150" y="358" fill="#14532d">Object.keys(A.prototype) → []</text>
+    <rect x="316" y="336" width="228" height="34" rx="8" fill="#ffffff" stroke="#fdba74" stroke-width="1.5"/><text x="430" y="358" fill="#7c2d12">dos constructor → SyntaxError</text>
+    <rect x="596" y="336" width="228" height="34" rx="8" fill="#ffffff" stroke="#d8b4fe" stroke-width="1.5"/><text x="710" y="358" fill="#581c87">this antes → ReferenceError</text>
+  </g>
+</svg>

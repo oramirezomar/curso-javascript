@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 496" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De los prototipos a las clases</title>
+  <desc id="d">Equivalencias entre escribir la herencia a mano y escribirla con class. El constructor Animal pasa a ser el método constructor de la clase. Un método asignado a Animal.prototype pasa a escribirse dentro del cuerpo de la clase. Animal.call(this, nombre, genero) pasa a ser super(nombre, genero). Object.setPrototypeOf(Perro.prototype, Animal.prototype) pasa a ser class Perro extends Animal. Animal.prototype.sonar.call(this) pasa a ser super.sonar().</desc>
+  <rect width="860" height="496" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Lo mismo, escrito de dos maneras</text>
+  <g font-size="14" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="48" width="390" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="215" y="70">A mano (lecciones 23 y 24)</text>
+    <rect x="450" y="48" width="390" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="645" y="70">Con class (hoy)</text>
+  </g>
+  <rect x="20" y="94" width="390" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="450" y="94" width="390" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="412" y1="125" x2="438" y2="125"/><polygon points="436,119 446,125 436,131"/></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81"><text x="32" y="130">function Animal(nombre, genero) { ... }</text></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d"><text x="462" y="120">class Animal {</text><text x="462" y="140">&#160;&#160;constructor(nombre, genero) { ... }</text></g>
+  <rect x="20" y="164" width="390" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="450" y="164" width="390" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="412" y1="195" x2="438" y2="195"/><polygon points="436,189 446,195 436,201"/></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81"><text x="32" y="190">Animal.prototype.saludar =</text><text x="32" y="210">&#160;&#160;function () { ... };</text></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d"><text x="462" y="190">saludar() { ... }</text><text x="462" y="210">&#160;&#160;// dentro del cuerpo de la clase</text></g>
+  <rect x="20" y="234" width="390" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="450" y="234" width="390" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="412" y1="265" x2="438" y2="265"/><polygon points="436,259 446,265 436,271"/></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81"><text x="32" y="270">Animal.call(this, nombre, genero);</text></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d"><text x="462" y="270">super(nombre, genero);</text></g>
+  <rect x="20" y="304" width="390" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="450" y="304" width="390" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="412" y1="335" x2="438" y2="335"/><polygon points="436,329 446,335 436,341"/></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81"><text x="32" y="330">Object.setPrototypeOf(</text><text x="32" y="350">&#160;&#160;Perro.prototype, Animal.prototype);</text></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d"><text x="462" y="340">class Perro extends Animal { ... }</text></g>
+  <rect x="20" y="374" width="390" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="450" y="374" width="390" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06"><line x1="412" y1="405" x2="438" y2="405"/><polygon points="436,399 446,405 436,411"/></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81"><text x="32" y="410">Animal.prototype.sonar.call(this)</text></g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d"><text x="462" y="410">super.sonar()</text></g>
+  <rect x="20" y="448" width="820" height="34" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="470" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">Por debajo, el motor construye los mismos prototipos y la misma cadena.</text>
+</svg>
