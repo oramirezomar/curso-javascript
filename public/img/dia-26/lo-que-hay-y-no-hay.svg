@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué traen las clases de JavaScript frente a otros lenguajes</title>
+  <desc id="d">Siete conceptos de la programación orientada a objetos. Public: sí, es el valor por defecto y no existe la palabra public. Private: sí, con el prefijo almohadilla. Protected: no existe, solo la convención del guion bajo. Static: sí. Abstract: no existe, se simula con new.target. Get y set: sí. Interface: no existe en JavaScript, solo en TypeScript.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Lo que JavaScript tiene y lo que no tiene</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="48" width="190" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="115" y="70">Concepto</text>
+    <rect x="220" y="48" width="230" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="335" y="70">En JavaScript</text>
+    <rect x="460" y="48" width="380" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="650" y="70">Cómo se hace</text>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="20" y="92" width="190" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="220" y="92" width="230" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="92" width="380" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="140" width="190" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="220" y="140" width="230" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="140" width="380" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="188" width="190" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="220" y="188" width="230" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="460" y="188" width="380" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="236" width="190" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="220" y="236" width="230" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="236" width="380" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="284" width="190" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="220" y="284" width="230" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="460" y="284" width="380" height="42" rx="8" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="332" width="190" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="220" y="332" width="230" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="460" y="332" width="380" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="380" width="190" height="42" rx="8" fill="#fee2e2" stroke="#fca5a5"/><rect x="220" y="380" width="230" height="42" rx="8" fill="#fee2e2" stroke="#fca5a5"/><rect x="460" y="380" width="380" height="42" rx="8" fill="#fee2e2" stroke="#fca5a5"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81" text-anchor="middle">
+    <text x="115" y="118">public</text><text x="115" y="166">private</text><text x="115" y="214">protected</text><text x="115" y="262">static</text><text x="115" y="310">abstract</text><text x="115" y="358">get / set</text><text x="115" y="406">interface</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="335" y="118" fill="#14532d">Sí, es el valor por defecto</text>
+    <text x="335" y="166" fill="#14532d">Sí, con el prefijo #</text>
+    <text x="335" y="214" fill="#713f12">No existe</text>
+    <text x="335" y="262" fill="#14532d">Sí</text>
+    <text x="335" y="310" fill="#713f12">No existe</text>
+    <text x="335" y="358" fill="#14532d">Sí</text>
+    <text x="335" y="406" fill="#7f1d1d">No existe</text>
+  </g>
+  <g font-size="12" fill="#3b2410" text-anchor="middle">
+    <text x="650" y="118">No hay palabra public: todo lo que no lleva # es público</text>
+    <text x="650" y="166">Campos y métodos: #saldo, #registrar()</text>
+    <text x="650" y="214">Solo una convención: _nombre avisa, pero no impide nada</text>
+    <text x="650" y="262">static metodo() y static campo</text>
+    <text x="650" y="310">Se simula con new.target y errores en los métodos base</text>
+    <text x="650" y="358">get nombre() { } y set nombre(valor) { }</text>
+    <text x="650" y="406">Las interfaces existen en TypeScript, no en JavaScript</text>
+  </g>
+</svg>

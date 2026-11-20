@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo funcionan un getter y un setter</title>
+  <desc id="d">Al asignar scooby.raza igual a gran danés se ejecuta el setter set raza, que escribe el valor en la propiedad propia _raza de scooby. Al leer scooby.raza se ejecuta el getter get raza, que devuelve el valor de _raza. Desde fuera se usan como propiedades, sin paréntesis, aunque por dentro son funciones definidas en el prototipo de la clase.</desc>
+  <rect width="860" height="390" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Se usan como propiedades, pero ejecutan código</text>
+  <!-- Fila 1: asignar -->
+  <rect x="20" y="56" width="250" height="84" rx="12" fill="#ffffff" stroke="#4338ca" stroke-width="2"/>
+  <text x="34" y="80" font-size="12" font-weight="800" fill="#312e81">Asignar</text>
+  <text x="34" y="112" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81">scooby.raza = "gran danés"</text>
+  <rect x="310" y="56" width="250" height="84" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="324" y="80" font-size="12" font-weight="800" fill="#312e81">Se ejecuta el setter</text>
+  <text x="324" y="112" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81">set raza(valor)</text>
+  <!-- Fila 2: leer -->
+  <rect x="20" y="170" width="250" height="84" rx="12" fill="#ffffff" stroke="#a16207" stroke-width="2"/>
+  <text x="34" y="194" font-size="12" font-weight="800" fill="#713f12">Leer</text>
+  <text x="34" y="226" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#713f12">scooby.raza</text>
+  <rect x="310" y="170" width="250" height="84" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="324" y="194" font-size="12" font-weight="800" fill="#713f12">Se ejecuta el getter</text>
+  <text x="324" y="226" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#713f12">get raza()</text>
+  <!-- Almacén -->
+  <rect x="600" y="56" width="240" height="198" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="720" y="82" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">scooby</text>
+  <text x="720" y="102" text-anchor="middle" font-size="11" fill="#14532d">propiedades propias</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d">
+    <text x="620" y="136">nombre: "Scooby"</text>
+  </g>
+  <rect x="614" y="152" width="212" height="34" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/>
+  <text x="624" y="174" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#14532d">_raza: "gran danés"</text>
+  <text x="720" y="226" text-anchor="middle" font-size="11" fill="#14532d">el dato se guarda aquí</text>
+  <!-- Flechas -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="270" y1="98" x2="300" y2="98"/><polygon points="298,92 308,98 298,104"/>
+    <line x1="560" y1="98" x2="590" y2="98"/><polygon points="588,92 598,98 588,104"/>
+    <line x1="270" y1="212" x2="300" y2="212"/><polygon points="298,206 308,212 298,218"/>
+    <line x1="598" y1="212" x2="568" y2="212"/><polygon points="570,206 560,212 570,218"/>
+  </g>
+  <rect x="20" y="276" width="820" height="90" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <g fill="#4d290b">
+    <text x="36" y="302" font-size="13" font-weight="800">Reglas útiles</text>
+    <text x="36" y="324" font-size="13">Se escriben scooby.raza, no scooby.raza(): son propiedades de acceso, definidas en el prototipo.</text>
+    <text x="36" y="346" font-size="13">Un getter sin setter es de solo lectura. Un setter puede validar el valor antes de guardarlo.</text>
+  </g>
+</svg>

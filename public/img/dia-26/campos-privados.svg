@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 350" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cuatro reglas de los campos privados</title>
+  <desc id="d">Cuatro reglas de los elementos privados con almohadilla. Uno: dentro del cuerpo de la clase se pueden usar, en el constructor y en los métodos. Dos: fuera de la clase, leerlos con cuenta.#saldo es un SyntaxError que se detecta antes de ejecutar. Tres: no aparecen en Object.keys, ni en for...in, ni en JSON.stringify. Cuatro: no se heredan, y una clase hija que usa el #x del padre da un SyntaxError.</desc>
+  <rect width="860" height="350" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Un campo con # solo existe dentro de su clase</text>
+  <rect x="20" y="52" width="400" height="130" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <rect x="440" y="52" width="400" height="130" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="20" y="198" width="400" height="130" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <rect x="440" y="198" width="400" height="130" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <g font-size="15" font-weight="800">
+    <text x="36" y="80" fill="#14532d">1 · Dentro de la clase</text>
+    <text x="456" y="80" fill="#7f1d1d">2 · Fuera de la clase</text>
+    <text x="36" y="226" fill="#312e81">3 · Invisibles</text>
+    <text x="456" y="226" fill="#713f12">4 · No se heredan</text>
+  </g>
+  <g font-size="13">
+    <g fill="#14532d"><text x="36" y="104">Se usan en el constructor, los</text><text x="36" y="124">métodos y los getters.</text></g>
+    <g fill="#7f1d1d"><text x="456" y="104">Leerlos es un error de sintaxis,</text><text x="456" y="124">detectado antes de ejecutar nada.</text></g>
+    <g fill="#312e81"><text x="36" y="250">No salen en Object.keys,</text><text x="36" y="270">for...in ni JSON.stringify.</text></g>
+    <g fill="#713f12"><text x="456" y="250">Una clase hija no puede usar el</text><text x="456" y="270">#x declarado por su padre.</text></g>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" text-anchor="middle">
+    <rect x="36" y="136" width="368" height="32" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/><text x="220" y="157" fill="#14532d">this.#saldo += monto;  // correcto</text>
+    <rect x="456" y="136" width="368" height="32" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="640" y="157" fill="#7f1d1d">cuenta.#saldo  // SyntaxError</text>
+    <rect x="36" y="282" width="368" height="32" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.5"/><text x="220" y="303" fill="#312e81">JSON.stringify(cuenta)  // sin #saldo</text>
+    <rect x="456" y="282" width="368" height="32" rx="8" fill="#ffffff" stroke="#fde68a" stroke-width="1.5"/><text x="640" y="303" fill="#713f12">this.#x en la hija  // SyntaxError</text>
+  </g>
+</svg>
