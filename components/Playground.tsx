@@ -46,13 +46,97 @@ function buildSrcDoc(code: string, runId: string, mode: PlaygroundMode): string 
       return typeof v === "object" && v !== null ? JSON.stringify(v, null, 2) : String(v);
     } catch (e) { return String(v); }
   }
-  function send(kind, args) {
-    parent.postMessage({ runId: runId, kind: kind, text: Array.prototype.map.call(args, fmt).join(" ") }, "*");
+  var indent = "";
+  var counts = {};
+  var timers = {};
+  // Sustituciones de formato (%s, %d, %i, %f, %o, %O y %c), como define el estándar de la consola.
+  function fmtArgs(args) {
+    var a = Array.prototype.slice.call(args);
+    var first = a[0];
+    if (typeof first !== "string" || first.indexOf("%") === -1 || a.length < 2) return a.map(fmt).join(" ");
+    var i = 1, out = "";
+    for (var k = 0; k < first.length; k++) {
+      var ch = first.charAt(k), n = first.charAt(k + 1);
+      if (ch === "%" && n !== "" && "sdifoOc".indexOf(n) !== -1 && i < a.length) {
+        var v = a[i++]; k++;
+        if (n === "s") out += typeof v === "object" && v !== null ? fmt(v) : String(v);
+        else if (n === "d" || n === "i") out += typeof v === "symbol" ? "NaN" : String(parseInt(v, 10));
+        else if (n === "f") out += typeof v === "symbol" ? "NaN" : String(parseFloat(v));
+        else if (n === "c") out += "";
+        else out += fmt(v);
+      } else out += ch;
+    }
+    return [out].concat(a.slice(i).map(fmt)).join(" ");
   }
+  function emit(kind, text) {
+    if (indent) text = text.split("\\n").map(function (l) { return indent + l; }).join("\\n");
+    parent.postMessage({ runId: runId, kind: kind, text: text }, "*");
+  }
+  function send(kind, args) { emit(kind, fmtArgs(args)); }
+  function lab(l) { return l === undefined ? "default" : String(l); }
+  function cell(v) {
+    if (typeof v === "string") return "'" + v + "'";
+    if (typeof v === "object" && v !== null) { try { return JSON.stringify(v); } catch (e) { return String(v); } }
+    return String(v);
+  }
+  function pad(t, w) { return " " + t + new Array(w - t.length).join(" "); }
   console.log = function () { send("log", arguments); };
+  console.debug = function () { send("log", arguments); };
   console.info = function () { send("info", arguments); };
   console.warn = function () { send("warn", arguments); };
   console.error = function () { send("error", arguments); };
+  console.dir = function (o) { send("log", [o]); };
+  console.group = console.groupCollapsed = function () {
+    if (arguments.length) send("log", arguments);
+    indent += "  ";
+  };
+  console.groupEnd = function () { indent = indent.slice(2); };
+  console.clear = function () { parent.postMessage({ runId: runId, kind: "clear", text: "" }, "*"); };
+  console.assert = function (cond) {
+    if (cond) return;
+    var rest = Array.prototype.slice.call(arguments, 1);
+    emit("error", !rest.length ? "Assertion failed" : typeof rest[0] === "string" ? "Assertion failed: " + fmtArgs(rest) : "Assertion failed " + fmtArgs(rest));
+  };
+  console.count = function (l) { l = lab(l); counts[l] = (counts[l] || 0) + 1; emit("log", l + ": " + counts[l]); };
+  console.countReset = function (l) { counts[lab(l)] = 0; };
+  console.time = function (l) { timers[lab(l)] = performance.now(); };
+  console.timeLog = function (l) {
+    l = lab(l);
+    if (!(l in timers)) { emit("warn", "Timer '" + l + "' does not exist"); return; }
+    var extra = Array.prototype.slice.call(arguments, 1).map(fmt);
+    emit("log", [l + ": " + (performance.now() - timers[l]).toFixed(2) + "ms"].concat(extra).join(" "));
+  };
+  console.timeEnd = function (l) { console.timeLog(l); delete timers[lab(l)]; };
+  console.table = function (data, cols) {
+    if (typeof data !== "object" || data === null) { send("log", arguments); return; }
+    var keys = Array.isArray(data) ? data.map(function (x, i) { return String(i); }) : Object.keys(data);
+    var names = [], hasValues = false, rows = [];
+    keys.forEach(function (key) {
+      var row = data[key], r = { idx: key, cells: {} };
+      if (typeof row === "object" && row !== null) {
+        Object.keys(row).forEach(function (c) {
+          if (cols && cols.indexOf(c) === -1) return;
+          if (names.indexOf(c) === -1) names.push(c);
+          r.cells[c] = cell(row[c]);
+        });
+      } else { hasValues = true; r.value = cell(row); }
+      rows.push(r);
+    });
+    var heads = ["(index)"].concat(names);
+    if (hasValues) heads.push("Values");
+    var body = rows.map(function (r) {
+      var line = [r.idx];
+      names.forEach(function (c) { line.push(r.cells[c] === undefined ? "" : r.cells[c]); });
+      if (hasValues) line.push(r.value === undefined ? "" : r.value);
+      return line;
+    });
+    var w = heads.map(function (h, c) {
+      return Math.max.apply(null, [h.length].concat(body.map(function (l) { return l[c].length; }))) + 2;
+    });
+    function rule(l, m, r) { return l + w.map(function (n) { return new Array(n + 1).join("─"); }).join(m) + r; }
+    function line(cells) { return "│" + cells.map(function (t, c) { return pad(t, w[c]); }).join("│") + "│"; }
+    emit("log", [rule("┌", "┬", "┐"), line(heads), rule("├", "┼", "┤")].concat(body.map(line), [rule("└", "┴", "┘")]).join("\\n"));
+  };
   window.addEventListener("error", function (e) { send("error", [String(e.message).replace(/^Uncaught /, "")]); });
   window.addEventListener("unhandledrejection", function (e) { send("error", ["Promesa rechazada: " + fmt(e.reason)]); });
   ${runner}
@@ -91,8 +175,12 @@ export default function Playground({
     if (!run) return;
     const onMessage = (e: MessageEvent) => {
       if (e.source !== iframeRef.current?.contentWindow) return;
-      const data = e.data as { runId?: string; kind?: Kind; text?: string } | null;
+      const data = e.data as { runId?: string; kind?: Kind | "clear"; text?: string } | null;
       if (!data || data.runId !== run.id || !data.kind) return;
+      if (data.kind === "clear") {
+        setLines([]);
+        return;
+      }
       setLines((prev) => [...prev, { kind: data.kind as Kind, text: String(data.text ?? "") }]);
     };
     window.addEventListener("message", onMessage);

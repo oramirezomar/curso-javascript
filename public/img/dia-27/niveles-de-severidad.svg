@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 370" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Niveles de severidad de los mensajes de la consola</title>
+  <desc id="d">Según la documentación de Chrome DevTools, cada método de console tiene un nivel de severidad. log e info son de nivel Info y se ven como texto normal. warn es de nivel Warning y se ve con fondo amarillo. error es de nivel Error y se ve con fondo rojo. debug es de nivel Verbose y solo se ve si ese nivel está activado. assert es de nivel Error y solo escribe cuando la condición es falsa. El menú Log Levels permite mostrar u ocultar cada nivel.</desc>
+  <rect width="860" height="370" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cada método tiene un nivel de severidad</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="200" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="120" y="68">Método</text>
+    <rect x="230" y="46" width="180" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="320" y="68">Nivel en Chrome</text>
+    <rect x="420" y="46" width="420" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="630" y="68">Cómo se ve</text>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="20" y="88" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/><rect x="230" y="88" width="180" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/><rect x="420" y="88" width="420" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <rect x="20" y="132" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/><rect x="230" y="132" width="180" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/><rect x="420" y="132" width="420" height="38" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <rect x="20" y="176" width="200" height="38" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="230" y="176" width="180" height="38" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="420" y="176" width="420" height="38" rx="8" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="220" width="200" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/><rect x="230" y="220" width="180" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/><rect x="420" y="220" width="420" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+    <rect x="20" y="264" width="200" height="38" rx="8" fill="#e5e7eb" stroke="#6b7280"/><rect x="230" y="264" width="180" height="38" rx="8" fill="#e5e7eb" stroke="#6b7280"/><rect x="420" y="264" width="420" height="38" rx="8" fill="#e5e7eb" stroke="#6b7280"/>
+    <rect x="20" y="308" width="200" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/><rect x="230" y="308" width="180" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/><rect x="420" y="308" width="420" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81" text-anchor="middle">
+    <text x="120" y="112">console.log()</text><text x="120" y="156">console.info()</text><text x="120" y="200">console.warn()</text><text x="120" y="244">console.error()</text><text x="120" y="288">console.debug()</text><text x="120" y="332">console.assert()</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#3b2410">
+    <text x="320" y="112">Info</text><text x="320" y="156">Info</text><text x="320" y="200">Warning</text><text x="320" y="244">Error</text><text x="320" y="288">Verbose</text><text x="320" y="332">Error</text>
+  </g>
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="630" y="112">Texto normal</text>
+    <text x="630" y="156">Igual que log</text>
+    <text x="630" y="200">Fondo amarillo</text>
+    <text x="630" y="244">Fondo rojo</text>
+    <text x="630" y="288">Solo con el nivel Verbose activado</text>
+    <text x="630" y="332">Como un error, pero solo si la condición es falsa</text>
+  </g>
+</svg>

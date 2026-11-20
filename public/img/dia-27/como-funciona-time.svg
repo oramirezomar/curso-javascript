@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo medir el tiempo con console.time</title>
+  <desc id="d">Cinco pasos con la etiqueta llenar. Primero console.time llenar arranca el cronómetro. Después se ejecuta el código que se quiere medir. console.timeLog llenar muestra el tiempo parcial y el cronómetro sigue. console.timeEnd llenar muestra el tiempo final y borra el cronómetro. Si se llama otra vez a timeEnd, aparece un aviso porque el cronómetro ya no existe. La etiqueta debe ser idéntica en todas las llamadas. Sin etiqueta se usa default. El tiempo se mide en milisegundos.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Un cronómetro con nombre</text>
+  <g stroke-width="2">
+    <rect x="20" y="50" width="820" height="52" rx="10" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="112" width="820" height="52" rx="10" fill="#f3f4f6" stroke="#9ca3af"/>
+    <rect x="20" y="174" width="820" height="52" rx="10" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="20" y="236" width="820" height="52" rx="10" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="298" width="820" height="52" rx="10" fill="#fee2e2" stroke="#b91c1c"/>
+  </g>
+  <g text-anchor="middle" font-size="16" font-weight="800">
+    <circle cx="52" cy="76" r="16" fill="#15803d"/><text x="52" y="82" fill="#ffffff">1</text>
+    <circle cx="52" cy="138" r="16" fill="#6b7280"/><text x="52" y="144" fill="#ffffff">2</text>
+    <circle cx="52" cy="200" r="16" fill="#4338ca"/><text x="52" y="206" fill="#ffffff">3</text>
+    <circle cx="52" cy="262" r="16" fill="#a16207"/><text x="52" y="268" fill="#ffffff">4</text>
+    <circle cx="52" cy="324" r="16" fill="#b91c1c"/><text x="52" y="330" fill="#ffffff">5</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800">
+    <text x="84" y="81" fill="#14532d">console.time("llenar")</text>
+    <text x="84" y="143" fill="#374151">// el código que quieres medir</text>
+    <text x="84" y="205" fill="#312e81">console.timeLog("llenar")</text>
+    <text x="84" y="267" fill="#713f12">console.timeEnd("llenar")</text>
+    <text x="84" y="329" fill="#7f1d1d">console.timeEnd("llenar")</text>
+  </g>
+  <g font-size="13">
+    <text x="440" y="81" fill="#14532d">Arranca el cronómetro con esa etiqueta</text>
+    <text x="440" y="143" fill="#374151">El cronómetro sigue corriendo</text>
+    <text x="440" y="205" fill="#312e81">Muestra el tiempo parcial; sigue corriendo</text>
+    <text x="440" y="267" fill="#713f12">Muestra el tiempo final y borra el cronómetro</text>
+    <text x="440" y="329" fill="#7f1d1d">Aviso: el cronómetro ya no existe</text>
+  </g>
+  <rect x="20" y="364" width="820" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="389" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">La etiqueta debe ser idéntica. Sin etiqueta se usa "default". El tiempo se mide en milisegundos.</text>
+</svg>
