@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">La cadena de prototipos</title>
+  <desc id="d">El objeto snoopy tiene como prototipo a Animal.prototype, que a su vez tiene como prototipo a Object.prototype, cuyo prototipo es null. Al buscar una propiedad, JavaScript la busca primero en el propio objeto y, si no la encuentra, sube por la cadena. snoopy.nombre se encuentra en snoopy. snoopy.sonar se encuentra en Animal.prototype. snoopy.toString se encuentra en Object.prototype. snoopy.volar no se encuentra en ningún eslabón y devuelve undefined.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Si no está en el objeto, JavaScript sube por la cadena</text>
+
+  <!-- Eslabones -->
+  <g text-anchor="middle">
+    <rect x="20" y="56" width="180" height="120" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="110" y="80" font-size="14" font-weight="800" fill="#14532d">snoopy</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#14532d">
+      <text x="110" y="108">nombre</text><text x="110" y="128">genero</text>
+    </g>
+    <text x="110" y="164" font-size="11" fill="#14532d">propiedades propias</text>
+
+    <rect x="240" y="56" width="190" height="120" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <text x="335" y="80" font-size="14" font-weight="800" fill="#312e81">Animal.prototype</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81">
+      <text x="335" y="108">constructor</text><text x="335" y="128">sonar</text><text x="335" y="148">saludar</text>
+    </g>
+
+    <rect x="470" y="56" width="190" height="120" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="565" y="80" font-size="14" font-weight="800" fill="#7c2d12">Object.prototype</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#7c2d12">
+      <text x="565" y="108">toString</text><text x="565" y="128">hasOwnProperty</text><text x="565" y="148">...</text>
+    </g>
+
+    <rect x="700" y="56" width="140" height="120" rx="12" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="770" y="126" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#6b7280">null</text>
+  </g>
+
+  <!-- Flechas [[Prototype]] -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="200" y1="121" x2="232" y2="121"/><polygon points="230,115 240,121 230,127"/>
+    <line x1="430" y1="121" x2="462" y2="121"/><polygon points="460,115 470,121 460,127"/>
+    <line x1="660" y1="121" x2="692" y2="121"/><polygon points="690,115 700,121 690,127"/>
+  </g>
+  <text x="430" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#783d06">Cada flecha es el [[Prototype]] del eslabón anterior.</text>
+
+  <!-- Tabla de búsquedas -->
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="212" width="230" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="135" y="234">Búsqueda</text>
+    <rect x="260" y="212" width="360" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="440" y="234">Dónde se encuentra</text>
+    <rect x="630" y="212" width="210" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="735" y="234">Pasos</text>
+  </g>
+  <g fill="#ffffff" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="20" y="252" width="230" height="38" rx="8"/><rect x="260" y="252" width="360" height="38" rx="8"/><rect x="630" y="252" width="210" height="38" rx="8"/>
+    <rect x="20" y="296" width="230" height="38" rx="8"/><rect x="260" y="296" width="360" height="38" rx="8"/><rect x="630" y="296" width="210" height="38" rx="8"/>
+    <rect x="20" y="340" width="230" height="38" rx="8"/><rect x="260" y="340" width="360" height="38" rx="8"/><rect x="630" y="340" width="210" height="38" rx="8"/>
+    <rect x="20" y="384" width="230" height="38" rx="8"/><rect x="260" y="384" width="360" height="38" rx="8"/><rect x="630" y="384" width="210" height="38" rx="8"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81" text-anchor="middle">
+    <text x="135" y="276">snoopy.nombre</text>
+    <text x="135" y="320">snoopy.sonar()</text>
+    <text x="135" y="364">snoopy.toString()</text>
+    <text x="135" y="408">snoopy.volar</text>
+  </g>
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="440" y="276">En snoopy (propiedad propia)</text>
+    <text x="440" y="320">En Animal.prototype</text>
+    <text x="440" y="364">En Object.prototype</text>
+    <text x="440" y="408">En ningún eslabón: devuelve undefined</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="735" y="276" fill="#14532d">1 eslabón</text>
+    <text x="735" y="320" fill="#312e81">2 eslabones</text>
+    <text x="735" y="364" fill="#7c2d12">3 eslabones</text>
+    <text x="735" y="408" fill="#6b7280">recorre toda la cadena</text>
+  </g>
+</svg>

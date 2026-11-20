@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué hace new al llamar a una función constructora</title>
+  <desc id="d">Cuatro pasos al ejecutar new Animal("Snoopy", "macho"). Primero, se crea un objeto vacío. Segundo, se enlaza su prototipo con Animal.prototype. Tercero, se ejecuta la función con this apuntando al objeto nuevo, de modo que this.nombre y this.genero se asignan en él. Cuarto, se devuelve ese objeto. Sin new, this no apunta a un objeto nuevo: en modo estricto da un TypeError y sin modo estricto crea variables globales.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">new Animal("Snoopy", "macho") paso a paso</text>
+
+  <!-- Flechas entre tarjetas -->
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="208" y1="132" x2="224" y2="132"/><polygon points="222,126 232,132 222,138"/>
+    <line x1="428" y1="132" x2="444" y2="132"/><polygon points="442,126 452,132 442,138"/>
+    <line x1="648" y1="132" x2="664" y2="132"/><polygon points="662,126 672,132 662,138"/>
+  </g>
+
+  <!-- Tarjetas -->
+  <rect x="20" y="52" width="188" height="214" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <rect x="232" y="52" width="196" height="214" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="452" y="52" width="196" height="214" rx="12" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="672" y="52" width="168" height="214" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+
+  <g text-anchor="middle" font-size="13" font-weight="800">
+    <text x="114" y="78" fill="#312e81">1 · Crea un objeto vacío</text>
+    <text x="330" y="78" fill="#1e3a8a">2 · Enlaza su prototipo</text>
+    <text x="550" y="78" fill="#713f12">3 · Ejecuta la función</text>
+    <text x="756" y="78" fill="#14532d">4 · Lo devuelve</text>
+  </g>
+
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700">
+    <rect x="52" y="104" width="124" height="34" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="2"/><text x="114" y="126" fill="#312e81">{ }</text>
+
+    <rect x="252" y="104" width="156" height="34" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/><text x="330" y="126" fill="#1e3a8a">{ }</text>
+    <text x="330" y="160" fill="#1e3a8a">↓ [[Prototype]]</text>
+    <rect x="252" y="170" width="156" height="34" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/><text x="330" y="192" fill="#1e3a8a" font-size="12">Animal.prototype</text>
+
+    <rect x="468" y="100" width="164" height="22" rx="6" fill="#ffffff" stroke="#ca8a04" stroke-width="2"/><text x="550" y="116" fill="#713f12" font-size="11">this = el objeto nuevo</text>
+    <text x="550" y="146" fill="#713f12" font-size="12">this.nombre = "Snoopy"</text>
+    <text x="550" y="168" fill="#713f12" font-size="12">this.genero = "macho"</text>
+
+    <rect x="688" y="100" width="136" height="76" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+    <text x="756" y="124" fill="#14532d" font-size="12">snoopy</text>
+    <text x="756" y="144" fill="#14532d" font-size="11">nombre: "Snoopy"</text>
+    <text x="756" y="162" fill="#14532d" font-size="11">genero: "macho"</text>
+  </g>
+
+  <g font-size="12" fill="#3b2410" text-anchor="middle">
+    <text x="114" y="244">Todavía no tiene</text><text x="114" y="260">propiedades.</text>
+    <text x="330" y="244">Así hereda los métodos</text><text x="330" y="260">del prototipo.</text>
+    <text x="550" y="244">Los atributos se</text><text x="550" y="260">asignan al objeto.</text>
+    <text x="756" y="244">Es la instancia que</text><text x="756" y="260">guardas en la variable.</text>
+  </g>
+
+  <rect x="60" y="292" width="740" height="140" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="430" y="322" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d">Si olvidas new</text>
+  <text x="430" y="352" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#7f1d1d">Animal("Snoopy", "macho");   // sin new</text>
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="430" y="382">No se crea ningún objeto: this no apunta a una instancia nueva.</text>
+    <text x="430" y="404">En modo estricto da un TypeError; sin modo estricto, asigna las propiedades al objeto global.</text>
+  </g>
+</svg>
