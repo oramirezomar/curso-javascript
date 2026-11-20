@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Tres formas de enlazar los prototipos</title>
+  <desc id="d">Tres maneras de hacer que Perro.prototype herede de Animal.prototype. La primera, Object.setPrototypeOf(Perro.prototype, Animal.prototype), cambia el prototipo del objeto que ya existe, es la opción que muestra la documentación de MDN, conserva constructor y no depende del orden de los métodos. La segunda, Perro.prototype = Object.create(Animal.prototype), reemplaza el objeto, es la forma antigua, y pierde constructor y los métodos asignados antes. La tercera, Perro.prototype = new Animal(), ejecuta el constructor sin datos, deja nombre y genero en undefined dentro del prototipo y falla si el constructor exige datos, por lo que conviene evitarla.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tres formas de enlazar, una recomendada</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="48" width="320" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="180" y="70">Forma</text>
+    <rect x="350" y="48" width="230" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="465" y="70">Qué hace</text>
+    <rect x="590" y="48" width="250" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="715" y="70">Valoración</text>
+  </g>
+  <!-- Fila 1 -->
+  <rect x="20" y="92" width="320" height="90" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <rect x="350" y="92" width="230" height="90" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <rect x="590" y="92" width="250" height="90" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#14532d">
+    <text x="34" y="128">Object.setPrototypeOf(</text>
+    <text x="34" y="150">&#160;&#160;Perro.prototype, Animal.prototype)</text>
+  </g>
+  <g font-size="13" fill="#14532d">
+    <text x="364" y="128">Cambia el prototipo del</text>
+    <text x="364" y="148">objeto que ya existe</text>
+  </g>
+  <g font-size="12" fill="#14532d">
+    <text x="604" y="118" font-weight="800">Recomendada</text>
+    <text x="604" y="138">Conserva constructor y el orden</text>
+    <text x="604" y="158">de los métodos no importa.</text>
+  </g>
+  <!-- Fila 2 -->
+  <rect x="20" y="192" width="320" height="90" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <rect x="350" y="192" width="230" height="90" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <rect x="590" y="192" width="250" height="90" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#713f12">
+    <text x="34" y="228">Perro.prototype =</text>
+    <text x="34" y="250">&#160;&#160;Object.create(Animal.prototype)</text>
+  </g>
+  <g font-size="13" fill="#713f12">
+    <text x="364" y="228">Reemplaza Perro.prototype</text>
+    <text x="364" y="248">por un objeto nuevo</text>
+  </g>
+  <g font-size="12" fill="#713f12">
+    <text x="604" y="218" font-weight="800">Forma antigua</text>
+    <text x="604" y="238">Se pierden constructor y los</text>
+    <text x="604" y="258">métodos asignados antes.</text>
+  </g>
+  <!-- Fila 3 -->
+  <rect x="20" y="292" width="320" height="90" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="350" y="292" width="230" height="90" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="590" y="292" width="250" height="90" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#7f1d1d">
+    <text x="34" y="328">Perro.prototype =</text>
+    <text x="34" y="350">&#160;&#160;new Animal()</text>
+  </g>
+  <g font-size="13" fill="#7f1d1d">
+    <text x="364" y="328">Ejecuta Animal() sin datos</text>
+    <text x="364" y="348">y usa esa instancia</text>
+  </g>
+  <g font-size="12" fill="#7f1d1d">
+    <text x="604" y="312" font-weight="800">Evitar</text>
+    <text x="604" y="331">nombre y genero quedan en</text>
+    <text x="604" y="349">undefined en el prototipo y</text>
+    <text x="604" y="367">falla si el constructor exige datos.</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Herencia entre constructores en dos pasos</title>
+  <desc id="d">Para que Perro herede de Animal hacen falta dos pasos. Paso 1: dentro de Perro se llama a Animal.call(this, nombre, genero), y así la instancia recibe los atributos nombre y genero, además de su propio atributo tamano. Paso 2: se escribe Object.setPrototypeOf(Perro.prototype, Animal.prototype), y así la instancia puede usar los métodos sonar y saludar de Animal.prototype. Sin el paso 1 faltan los atributos y sin el paso 2 faltan los métodos.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Perro hereda de Animal en dos pasos</text>
+  <!-- Paso 1 -->
+  <rect x="20" y="52" width="400" height="248" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="40" y="82" font-size="16" font-weight="800" fill="#14532d">Paso 1 · Los atributos</text>
+  <text x="40" y="104" font-size="13" fill="#14532d">Reutilizar el constructor del padre</text>
+  <rect x="40" y="118" width="360" height="92" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#14532d">
+    <text x="52" y="140">function Perro(nombre, genero, tamano) {</text>
+    <text x="52" y="160" font-weight="800">&#160;&#160;Animal.call(this, nombre, genero);</text>
+    <text x="52" y="180">&#160;&#160;this.tamano = tamano;</text>
+    <text x="52" y="200">}</text>
+  </g>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <rect x="40" y="228" width="100" height="30" rx="15" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/><text x="90" y="248" fill="#14532d">nombre</text>
+    <rect x="150" y="228" width="100" height="30" rx="15" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/><text x="200" y="248" fill="#14532d">genero</text>
+    <rect x="260" y="228" width="100" height="30" rx="15" fill="#ffffff" stroke="#15803d" stroke-width="1.5" stroke-dasharray="5 3"/><text x="310" y="248" fill="#14532d">tamano</text>
+  </g>
+  <text x="40" y="282" font-size="12" fill="#14532d">Los dos primeros vienen de Animal; tamano es propio de Perro.</text>
+  <!-- Paso 2 -->
+  <rect x="440" y="52" width="400" height="248" rx="14" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="460" y="82" font-size="16" font-weight="800" fill="#312e81">Paso 2 · Los métodos</text>
+  <text x="460" y="104" font-size="13" fill="#312e81">Enlazar los prototipos</text>
+  <rect x="460" y="118" width="360" height="92" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.5"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" fill="#312e81">
+    <text x="472" y="140" font-weight="800">Object.setPrototypeOf(</text>
+    <text x="472" y="160">&#160;&#160;Perro.prototype,</text>
+    <text x="472" y="180">&#160;&#160;Animal.prototype</text>
+    <text x="472" y="200">);</text>
+  </g>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <rect x="460" y="228" width="170" height="30" rx="15" fill="#c7d2fe" stroke="#4338ca" stroke-width="1.5"/><text x="545" y="248" fill="#312e81">sonar()</text>
+    <rect x="640" y="228" width="170" height="30" rx="15" fill="#c7d2fe" stroke="#4338ca" stroke-width="1.5"/><text x="725" y="248" fill="#312e81">saludar()</text>
+  </g>
+  <text x="460" y="282" font-size="12" fill="#312e81">Se encuentran en Animal.prototype, no se copian a la instancia.</text>
+  <!-- Resumen -->
+  <rect x="20" y="318" width="820" height="72" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <g text-anchor="middle" fill="#4d290b">
+    <text x="430" y="346" font-size="14" font-weight="800">Cada paso resuelve una cosa distinta</text>
+    <text x="430" y="368" font-size="13">Sin el paso 1 faltan los atributos. Sin el paso 2 faltan los métodos.</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Sobrescritura de métodos en la cadena de prototipos</title>
+  <desc id="d">La instancia snoopy, creada con new Perro, tiene como prototipo a Perro.prototype, que define sonar y ladrar y tiene como prototipo a Animal.prototype. La instancia lola, creada con new Animal, tiene como prototipo directamente a Animal.prototype, que define sonar y saludar. Cuando se llama snoopy.sonar, JavaScript se detiene en Perro.prototype y el sonar de Animal.prototype queda tapado para snoopy. snoopy.saludar no está en Perro.prototype, así que lo resuelve Animal.prototype. lola.sonar lo resuelve Animal.prototype.</desc>
+  <rect width="860" height="480" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">El primer eslabón que tiene el método es el que responde</text>
+  <g text-anchor="middle">
+    <rect x="20" y="56" width="150" height="70" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="95" y="86" font-size="14" font-weight="800" fill="#14532d">snoopy</text>
+    <text x="95" y="108" font-size="12" fill="#14532d">new Perro(...)</text>
+    <rect x="20" y="196" width="150" height="70" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="95" y="226" font-size="14" font-weight="800" fill="#14532d">lola</text>
+    <text x="95" y="248" font-size="12" fill="#14532d">new Animal(...)</text>
+    <rect x="290" y="50" width="230" height="100" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <text x="405" y="76" font-size="14" font-weight="800" fill="#713f12">Perro.prototype</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#713f12">
+      <text x="405" y="102">sonar (sobrescrito)</text><text x="405" y="124">ladrar</text>
+    </g>
+    <rect x="610" y="120" width="230" height="146" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+    <text x="725" y="146" font-size="14" font-weight="800" fill="#312e81">Animal.prototype</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#312e81">
+      <text x="725" y="172">constructor</text><text x="725" y="192">sonar</text><text x="725" y="212">saludar</text>
+    </g>
+    <text x="725" y="244" font-size="11" fill="#312e81">Para snoopy, este sonar queda tapado</text>
+  </g>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="170" y1="91" x2="280" y2="91"/><polygon points="278,85 288,91 278,97"/>
+    <line x1="520" y1="120" x2="600" y2="156"/><polygon points="596,148 608,160 594,162"/>
+    <line x1="170" y1="231" x2="600" y2="231"/><polygon points="598,225 608,231 598,237"/>
+  </g>
+  <text x="430" y="288" text-anchor="middle" font-size="12" font-weight="700" fill="#783d06">Cada flecha es un [[Prototype]]. lola no pasa por Perro.prototype.</text>
+  <!-- Tabla -->
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="308" width="230" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="135" y="330">Llamada</text>
+    <rect x="260" y="308" width="270" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="395" y="330">Quién responde</text>
+    <rect x="540" y="308" width="300" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="690" y="330">Resultado</text>
+  </g>
+  <g fill="#ffffff" stroke="#e8c98a" stroke-width="1.5">
+    <rect x="20" y="348" width="230" height="38" rx="8"/><rect x="260" y="348" width="270" height="38" rx="8"/><rect x="540" y="348" width="300" height="38" rx="8"/>
+    <rect x="20" y="392" width="230" height="38" rx="8"/><rect x="260" y="392" width="270" height="38" rx="8"/><rect x="540" y="392" width="300" height="38" rx="8"/>
+    <rect x="20" y="436" width="230" height="38" rx="8"/><rect x="260" y="436" width="270" height="38" rx="8"/><rect x="540" y="436" width="300" height="38" rx="8"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81" text-anchor="middle">
+    <text x="135" y="372">snoopy.sonar()</text>
+    <text x="135" y="416">snoopy.saludar()</text>
+    <text x="135" y="460">lola.sonar()</text>
+  </g>
+  <g font-size="13" fill="#3b2410" text-anchor="middle">
+    <text x="395" y="372">Perro.prototype (sobrescrito)</text>
+    <text x="395" y="416">Animal.prototype (heredado)</text>
+    <text x="395" y="460">Animal.prototype</text>
+    <text x="690" y="372">soy un perro y mi sonido es un ladrido</text>
+    <text x="690" y="416">hola, me llamo Snoopy</text>
+    <text x="690" y="460">hago sonidos porque estoy vivo</text>
+  </g>
+</svg>
