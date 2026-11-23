@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Grados y radianes</title>
+  <desc id="d">Las funciones trigonométricas de Math reciben radianes, no grados. Para convertir, radianes es grados por Math.PI entre 180, y grados es radianes por 180 entre Math.PI. Tabla de equivalencias: 0 grados son 0 radianes, con seno 0 y coseno 1. 30 grados son pi sexto, con seno 0.5 y coseno 0.866. 45 grados son pi cuarto, con seno 0.707 y coseno 0.707. 90 grados son pi medio, con seno 1 y coseno casi 0. 180 grados son pi, con seno casi 0 y coseno menos 1. 360 grados son 2 pi, con seno casi 0 y coseno 1. Math.sin de 30 no es 0.5, porque 30 se interpreta como 30 radianes.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Math trabaja en radianes, no en grados</text>
+  <rect x="20" y="46" width="400" height="62" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <rect x="440" y="46" width="400" height="62" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <text x="36" y="70" fill="#312e81">grados → radianes</text>
+    <text x="36" y="93" fill="#312e81">(grados * Math.PI) / 180</text>
+    <text x="456" y="70" fill="#14532d">radianes → grados</text>
+    <text x="456" y="93" fill="#14532d">(radianes * 180) / Math.PI</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="124" width="150" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="95" y="146">Grados</text>
+    <rect x="180" y="124" width="250" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="305" y="146">Radianes</text>
+    <rect x="440" y="124" width="190" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="535" y="146">Math.sin</text>
+    <rect x="640" y="124" width="200" height="34" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="740" y="146">Math.cos</text>
+  </g>
+  <rect x="20" y="166" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="166" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="166" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="166" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="187" fill="#312e81">0°</text><text x="305" y="187" fill="#312e81" font-family="ui-monospace, Menlo, monospace">0</text><text x="535" y="187" fill="#14532d" font-family="ui-monospace, Menlo, monospace">0</text><text x="740" y="187" fill="#14532d" font-family="ui-monospace, Menlo, monospace">1</text></g>
+  <rect x="20" y="202" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="202" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="202" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="202" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="223" fill="#312e81">30°</text><text x="305" y="223" fill="#312e81" font-family="ui-monospace, Menlo, monospace">π / 6</text><text x="535" y="223" fill="#14532d" font-family="ui-monospace, Menlo, monospace">0.5</text><text x="740" y="223" fill="#14532d" font-family="ui-monospace, Menlo, monospace">0.866</text></g>
+  <rect x="20" y="238" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="238" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="238" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="238" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="259" fill="#312e81">45°</text><text x="305" y="259" fill="#312e81" font-family="ui-monospace, Menlo, monospace">π / 4</text><text x="535" y="259" fill="#14532d" font-family="ui-monospace, Menlo, monospace">0.707</text><text x="740" y="259" fill="#14532d" font-family="ui-monospace, Menlo, monospace">0.707</text></g>
+  <rect x="20" y="274" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="274" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="274" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="274" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="295" fill="#312e81">90°</text><text x="305" y="295" fill="#312e81" font-family="ui-monospace, Menlo, monospace">π / 2</text><text x="535" y="295" fill="#14532d" font-family="ui-monospace, Menlo, monospace">1</text><text x="740" y="295" fill="#14532d" font-family="ui-monospace, Menlo, monospace">≈ 0</text></g>
+  <rect x="20" y="310" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="310" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="310" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="310" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="331" fill="#312e81">180°</text><text x="305" y="331" fill="#312e81" font-family="ui-monospace, Menlo, monospace">π</text><text x="535" y="331" fill="#14532d" font-family="ui-monospace, Menlo, monospace">≈ 0</text><text x="740" y="331" fill="#14532d" font-family="ui-monospace, Menlo, monospace">−1</text></g>
+  <rect x="20" y="346" width="150" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="180" y="346" width="250" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="440" y="346" width="190" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <rect x="640" y="346" width="200" height="32" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="14" font-weight="800"><text x="95" y="367" fill="#312e81">360°</text><text x="305" y="367" fill="#312e81" font-family="ui-monospace, Menlo, monospace">2π</text><text x="535" y="367" fill="#14532d" font-family="ui-monospace, Menlo, monospace">≈ 0</text><text x="740" y="367" fill="#14532d" font-family="ui-monospace, Menlo, monospace">1</text></g>
+  <rect x="20" y="388" width="820" height="42" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="430" y="413" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">Math.sin(30) no da 0.5: el 30 se toma como 30 radianes y el resultado es −0.988.</text>
+</svg>

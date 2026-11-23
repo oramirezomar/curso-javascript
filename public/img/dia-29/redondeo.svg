@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cuatro formas de redondear</title>
+  <desc id="d">Tabla con el resultado de Math.ceil, Math.floor, Math.round y Math.trunc para seis números. Con 7.2: ceil 8, floor 7, round 7, trunc 7. Con 7.5: ceil 8, floor 7, round 8, trunc 7. Con 7.8: ceil 8, floor 7, round 8, trunc 7. Con menos 7.2: ceil menos 7, floor menos 8, round menos 7, trunc menos 7. Con menos 7.5: ceil menos 7, floor menos 8, round menos 7, trunc menos 7. Con menos 7.8: ceil menos 7, floor menos 8, round menos 8, trunc menos 7. Con negativos, floor baja y trunc solo quita los decimales. Un medio exacto sube hacia más infinito: round de 7.5 es 8 y round de menos 7.5 es menos 7.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Ceil, floor, round y trunc con positivos y negativos</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="120" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="80" y="71">número</text>
+    <rect x="150" y="46" width="165" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="232" y="64">Math.ceil</text><text x="232" y="79" font-size="10" font-weight="400">hacia arriba</text>
+    <rect x="325" y="46" width="165" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="407" y="64">Math.floor</text><text x="407" y="79" font-size="10" font-weight="400">hacia abajo</text>
+    <rect x="500" y="46" width="165" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="582" y="64">Math.round</text><text x="582" y="79" font-size="10" font-weight="400">al más cercano</text>
+    <rect x="675" y="46" width="165" height="40" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="757" y="64">Math.trunc</text><text x="757" y="79" font-size="10" font-weight="400">quita los decimales</text>
+  </g>
+  <rect x="20" y="96" width="120" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="150" y="96" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="325" y="96" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="500" y="96" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="675" y="96" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">
+    <text x="80" y="121">7.2</text>
+    <text x="232" y="121">8</text>
+    <text x="407" y="121">7</text>
+    <text x="582" y="121">7</text>
+    <text x="757" y="121">7</text>
+  </g>
+  <rect x="20" y="140" width="120" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="150" y="140" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="325" y="140" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="500" y="140" width="165" height="38" rx="8" fill="#dcfce7" stroke="#b91c1c" stroke-width="3"/>
+  <rect x="675" y="140" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">
+    <text x="80" y="165">7.5</text>
+    <text x="232" y="165">8</text>
+    <text x="407" y="165">7</text>
+    <text x="582" y="165">8</text>
+    <text x="757" y="165">7</text>
+  </g>
+  <rect x="20" y="184" width="120" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="150" y="184" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="325" y="184" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="500" y="184" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="675" y="184" width="165" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">
+    <text x="80" y="209">7.8</text>
+    <text x="232" y="209">8</text>
+    <text x="407" y="209">7</text>
+    <text x="582" y="209">8</text>
+    <text x="757" y="209">7</text>
+  </g>
+  <rect x="20" y="228" width="120" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="150" y="228" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="325" y="228" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="500" y="228" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="675" y="228" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">
+    <text x="80" y="253">−7.2</text>
+    <text x="232" y="253">−7</text>
+    <text x="407" y="253">−8</text>
+    <text x="582" y="253">−7</text>
+    <text x="757" y="253">−7</text>
+  </g>
+  <rect x="20" y="272" width="120" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="150" y="272" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="325" y="272" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="500" y="272" width="165" height="38" rx="8" fill="#fef9c3" stroke="#b91c1c" stroke-width="3"/>
+  <rect x="675" y="272" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">
+    <text x="80" y="297">−7.5</text>
+    <text x="232" y="297">−7</text>
+    <text x="407" y="297">−8</text>
+    <text x="582" y="297">−7</text>
+    <text x="757" y="297">−7</text>
+  </g>
+  <rect x="20" y="316" width="120" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="150" y="316" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="325" y="316" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="500" y="316" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="675" y="316" width="165" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">
+    <text x="80" y="341">−7.8</text>
+    <text x="232" y="341">−7</text>
+    <text x="407" y="341">−8</text>
+    <text x="582" y="341">−8</text>
+    <text x="757" y="341">−7</text>
+  </g>
+  <g font-size="12" fill="#4d290b" text-anchor="middle">
+    <text x="430" y="378">Con negativos, floor baja (−7.2 pasa a −8) y trunc solo quita los decimales (−7.2 pasa a −7).</text>
+    <text x="430" y="398">Un .5 exacto sube hacia +∞: round(7.5) es 8, pero round(−7.5) es −7 (borde rojo).</text>
+  </g>
+</svg>

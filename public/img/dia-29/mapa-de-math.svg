@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Mapa del objeto Math</title>
+  <desc id="d">Ocho grupos de miembros del objeto Math. Constantes: PI, E, SQRT2, SQRT1_2, LN2, LN10, LOG2E y LOG10E. Redondeo: ceil, floor, round y trunc. Signo y valor absoluto: abs y sign. Potencias y raíces: pow, sqrt, cbrt, hypot y exp. Comparar: min y max. Azar: random. Trigonometría, en radianes: sin, cos, tan, asin, acos, atan y atan2. Logaritmos: log, log2 y log10.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Math: todo es estático, se usa como Math.algo</text>
+  <g stroke-width="2">
+    <rect x="20" y="48" width="195" height="172" rx="12" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="233" y="48" width="195" height="172" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="446" y="48" width="195" height="172" rx="12" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="659" y="48" width="181" height="172" rx="12" fill="#ffedd5" stroke="#ea580c"/>
+    <rect x="20" y="238" width="195" height="172" rx="12" fill="#f3e8ff" stroke="#7e22ce"/>
+    <rect x="233" y="238" width="195" height="172" rx="12" fill="#fee2e2" stroke="#b91c1c"/>
+    <rect x="446" y="238" width="195" height="172" rx="12" fill="#cffafe" stroke="#0e7490"/>
+    <rect x="659" y="238" width="181" height="172" rx="12" fill="#f3f4f6" stroke="#6b7280"/>
+  </g>
+  <g font-size="14" font-weight="800">
+    <text x="34" y="76" fill="#312e81">Constantes</text>
+    <text x="247" y="76" fill="#14532d">Redondeo</text>
+    <text x="460" y="76" fill="#713f12">Signo y valor</text>
+    <text x="673" y="76" fill="#7c2d12">Potencias y raíces</text>
+    <text x="34" y="266" fill="#581c87">Comparar</text>
+    <text x="247" y="266" fill="#7f1d1d">Azar</text>
+    <text x="460" y="266" fill="#155e75">Trigonometría</text>
+    <text x="673" y="266" fill="#374151">Logaritmos</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700">
+    <g fill="#312e81"><text x="34" y="102">PI</text><text x="34" y="120">E</text><text x="34" y="138">SQRT2</text><text x="34" y="156">SQRT1_2</text><text x="34" y="174">LN2</text><text x="34" y="192">LN10</text><text x="110" y="102">LOG2E</text><text x="110" y="120">LOG10E</text></g>
+    <g fill="#14532d"><text x="247" y="106">ceil()</text><text x="247" y="132">floor()</text><text x="247" y="158">round()</text><text x="247" y="184">trunc()</text></g>
+    <g fill="#713f12"><text x="460" y="106">abs()</text><text x="460" y="132">sign()</text></g>
+    <g fill="#7c2d12"><text x="673" y="102">pow()</text><text x="673" y="124">sqrt()</text><text x="673" y="146">cbrt()</text><text x="673" y="168">hypot()</text><text x="673" y="190">exp()</text></g>
+    <g fill="#581c87"><text x="34" y="296">min()</text><text x="34" y="322">max()</text></g>
+    <g fill="#7f1d1d"><text x="247" y="296">random()</text></g>
+    <g fill="#155e75"><text x="460" y="294">sin()</text><text x="460" y="314">cos()</text><text x="460" y="334">tan()</text><text x="460" y="354">asin()</text><text x="460" y="374">acos()</text><text x="545" y="294">atan()</text><text x="545" y="314">atan2()</text></g>
+    <g fill="#374151"><text x="673" y="296">log()</text><text x="673" y="322">log2()</text><text x="673" y="348">log10()</text></g>
+  </g>
+  <g font-size="11">
+    <text x="34" y="212" fill="#312e81">valores fijos</text>
+    <text x="247" y="204" fill="#14532d">a enteros</text>
+    <text x="460" y="204" fill="#713f12">cantidad y dirección</text>
+    <text x="673" y="210" fill="#7c2d12">y distancias</text>
+    <text x="34" y="402" fill="#581c87">de varios valores</text>
+    <text x="247" y="320" fill="#7f1d1d">decimal de 0 a casi 1</text>
+    <text x="247" y="338" fill="#7f1d1d">(no apto para seguridad)</text>
+    <text x="460" y="400" fill="#155e75">ángulos en radianes</text>
+    <text x="673" y="402" fill="#374151">naturales y en base 2 y 10</text>
+  </g>
+</svg>
