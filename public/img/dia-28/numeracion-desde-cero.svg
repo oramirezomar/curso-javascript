@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Numeración de los días de la semana y de los meses</title>
+  <desc id="d">getDay devuelve el día de la semana de 0 a 6: domingo es 0, lunes 1, martes 2, miércoles 3, jueves 4, viernes 5 y sábado 6. getMonth devuelve el mes de 0 a 11: enero es 0, febrero 1, marzo 2, y así hasta diciembre, que es 11. En cambio getDate devuelve el día del mes, que empieza en 1. getFullYear devuelve el año completo, mientras que getYear está en desuso.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Casi todo empieza en cero, menos el día del mes</text>
+  <text x="20" y="62" font-size="14" font-weight="800" fill="#4d290b">getDay(): día de la semana</text>
+  <rect x="20" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="75" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">0</text>
+  <text x="75" y="124" text-anchor="middle" font-size="13" fill="#312e81">domingo</text>
+  <rect x="138" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="193" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">1</text>
+  <text x="193" y="124" text-anchor="middle" font-size="13" fill="#312e81">lunes</text>
+  <rect x="256" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="311" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">2</text>
+  <text x="311" y="124" text-anchor="middle" font-size="13" fill="#312e81">martes</text>
+  <rect x="374" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="429" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">3</text>
+  <text x="429" y="124" text-anchor="middle" font-size="13" fill="#312e81">miércoles</text>
+  <rect x="492" y="72" width="110" height="64" rx="10" fill="#fef08a" stroke="#a16207" stroke-width="3"/>
+  <text x="547" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#713f12">4</text>
+  <text x="547" y="124" text-anchor="middle" font-size="13" fill="#713f12">jueves</text>
+  <rect x="610" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="665" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">5</text>
+  <text x="665" y="124" text-anchor="middle" font-size="13" fill="#312e81">viernes</text>
+  <rect x="728" y="72" width="110" height="64" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="783" y="102" text-anchor="middle" font-size="20" font-weight="800" fill="#312e81">6</text>
+  <text x="783" y="124" text-anchor="middle" font-size="13" fill="#312e81">sábado</text>
+  <text x="20" y="172" font-size="14" font-weight="800" fill="#4d290b">getMonth(): mes del año</text>
+  <rect x="20" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="51" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">0</text>
+  <text x="51" y="234" text-anchor="middle" font-size="13" fill="#14532d">ene</text>
+  <rect x="88" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="119" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">1</text>
+  <text x="119" y="234" text-anchor="middle" font-size="13" fill="#14532d">feb</text>
+  <rect x="156" y="182" width="62" height="64" rx="10" fill="#fef08a" stroke="#a16207" stroke-width="3"/>
+  <text x="187" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#713f12">2</text>
+  <text x="187" y="234" text-anchor="middle" font-size="13" fill="#713f12">mar</text>
+  <rect x="224" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="255" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">3</text>
+  <text x="255" y="234" text-anchor="middle" font-size="13" fill="#14532d">abr</text>
+  <rect x="292" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="323" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">4</text>
+  <text x="323" y="234" text-anchor="middle" font-size="13" fill="#14532d">may</text>
+  <rect x="360" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="391" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">5</text>
+  <text x="391" y="234" text-anchor="middle" font-size="13" fill="#14532d">jun</text>
+  <rect x="428" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="459" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">6</text>
+  <text x="459" y="234" text-anchor="middle" font-size="13" fill="#14532d">jul</text>
+  <rect x="496" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="527" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">7</text>
+  <text x="527" y="234" text-anchor="middle" font-size="13" fill="#14532d">ago</text>
+  <rect x="564" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="595" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">8</text>
+  <text x="595" y="234" text-anchor="middle" font-size="13" fill="#14532d">sep</text>
+  <rect x="632" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="663" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">9</text>
+  <text x="663" y="234" text-anchor="middle" font-size="13" fill="#14532d">oct</text>
+  <rect x="700" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="731" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">10</text>
+  <text x="731" y="234" text-anchor="middle" font-size="13" fill="#14532d">nov</text>
+  <rect x="768" y="182" width="62" height="64" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="799" y="212" text-anchor="middle" font-size="20" font-weight="800" fill="#14532d">11</text>
+  <text x="799" y="234" text-anchor="middle" font-size="13" fill="#14532d">dic</text>
+  <rect x="20" y="268" width="400" height="92" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <rect x="440" y="268" width="400" height="92" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <g fill="#4d290b">
+    <text x="36" y="294" font-size="13" font-weight="800">getDate() sí empieza en 1</text>
+    <text x="36" y="316" font-size="13">Devuelve el día del mes: el 12 de marzo es 12.</text>
+    <text x="36" y="338" font-size="13">Jueves 12 de marzo = getDay() 4, getDate() 12, getMonth() 2.</text>
+    <text x="456" y="294" font-size="13" font-weight="800">Año completo: getFullYear()</text>
+    <text x="456" y="316" font-size="13">getYear() está en desuso: devuelve el año menos 1900,</text>
+    <text x="456" y="338" font-size="13">así que 2020 daba 120.</text>
+  </g>
+</svg>

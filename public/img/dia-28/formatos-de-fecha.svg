@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Formas de escribir una misma fecha</title>
+  <desc id="d">Un mismo instante, el 12 de marzo de 2020 a las 19:14:28 UTC, escrito de siete maneras. toISOString da 2020-03-12T19:14:28.000Z y sirve para guardar y enviar. JSON.stringify de un objeto con la fecha da el mismo texto ISO entre comillas. toLocaleDateString con es-MX da 12/3/2020. toLocaleTimeString con es-MX da 19:14:28. toLocaleDateString con es-ES y dateStyle full da jueves, 12 de marzo de 2020. Con en-GB y dateStyle long da 12 March 2020. Con de-DE y dateStyle medium da 12.03.2020. Las cuatro últimas formas sirven para mostrar la fecha al usuario según su idioma.</desc>
+  <rect width="860" height="450" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Guardar con ISO, mostrar según el idioma</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="410" height="32" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="225" y="67">Código</text>
+    <rect x="440" y="46" width="260" height="32" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="570" y="67">Resultado</text>
+    <rect x="710" y="46" width="130" height="32" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="775" y="67">Úsalo para</text>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="20" y="86" width="410" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="440" y="86" width="260" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="710" y="86" width="130" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="134" width="410" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="440" y="134" width="260" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="710" y="134" width="130" height="42" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="182" width="410" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="440" y="182" width="260" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="710" y="182" width="130" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="20" y="230" width="410" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="440" y="230" width="260" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="710" y="230" width="130" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="20" y="278" width="410" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="440" y="278" width="260" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="710" y="278" width="130" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="20" y="326" width="410" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="440" y="326" width="260" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="710" y="326" width="130" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="20" y="374" width="410" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="440" y="374" width="260" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="710" y="374" width="130" height="42" rx="8" fill="#e0e7ff" stroke="#4338ca"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800">
+    <g fill="#14532d"><text x="32" y="112">fecha.toISOString()</text><text x="32" y="160">JSON.stringify({ creado: fecha })</text></g>
+    <g fill="#312e81">
+      <text x="32" y="208">fecha.toLocaleDateString("es-MX")</text>
+      <text x="32" y="250">fecha.toLocaleTimeString("es-MX",</text><text x="32" y="265">&#160;&#160;{ hourCycle: "h23" })</text>
+      <text x="32" y="298">fecha.toLocaleDateString("es-ES",</text><text x="32" y="313">&#160;&#160;{ dateStyle: "full" })</text>
+      <text x="32" y="346">fecha.toLocaleDateString("en-GB",</text><text x="32" y="361">&#160;&#160;{ dateStyle: "long" })</text>
+      <text x="32" y="394">fecha.toLocaleDateString("de-DE",</text><text x="32" y="409">&#160;&#160;{ dateStyle: "medium" })</text>
+    </g>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" text-anchor="middle">
+    <g fill="#14532d"><text x="570" y="112">2020-03-12T19:14:28.000Z</text><text x="570" y="160" font-size="10">{"creado":"2020-03-12T19:14:28.000Z"}</text></g>
+    <g fill="#312e81">
+      <text x="570" y="208">12/3/2020</text><text x="570" y="256">19:14:28</text>
+      <text x="570" y="309" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">jueves, 12 de marzo de 2020</text>
+      <text x="570" y="357" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">12 March 2020</text>
+      <text x="570" y="405" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">12.03.2020</text>
+    </g>
+  </g>
+  <g font-size="12" font-weight="800" text-anchor="middle">
+    <g fill="#14532d"><text x="775" y="112">Guardar</text><text x="775" y="160">Enviar a una API</text></g>
+    <g fill="#312e81">
+      <text x="775" y="208">Mostrar</text><text x="775" y="256">Mostrar</text><text x="775" y="304">Mostrar</text><text x="775" y="352">Mostrar</text><text x="775" y="400">Mostrar</text>
+    </g>
+  </g>
+  <text x="430" y="438" text-anchor="middle" font-size="12" fill="#4d290b">Instante: 12 de marzo de 2020, 19:14:28 UTC. Las formas locales usan timeZone: "UTC" para que el resultado no cambie.</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo se desbordan las componentes de una fecha</title>
+  <desc id="d">Cuando una componente de la fecha sale de su rango, JavaScript la corrige y pasa a la siguiente. new Date con 2020, 12 y 1 da el 1 de enero de 2021, porque el mes 12 pasa al año siguiente. new Date con 2020, 1 y 30 da el 1 de marzo de 2020, porque febrero de 2020 tiene 29 días. new Date con 2020, 2 y 0 da el 29 de febrero de 2020, porque el día 0 es el último día del mes anterior. Y fecha.setDate de getDate más 5, partiendo del 27 de febrero de 2020, da el 3 de marzo de 2020.</desc>
+  <rect width="860" height="340" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Lo que se sale de rango pasa a la siguiente componente</text>
+  <g stroke-width="2">
+    <rect x="20" y="48" width="350" height="60" rx="10" fill="#e0e7ff" stroke="#4338ca"/><rect x="380" y="48" width="220" height="60" rx="10" fill="#dcfce7" stroke="#15803d"/><rect x="610" y="48" width="230" height="60" rx="10" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="116" width="350" height="60" rx="10" fill="#e0e7ff" stroke="#4338ca"/><rect x="380" y="116" width="220" height="60" rx="10" fill="#dcfce7" stroke="#15803d"/><rect x="610" y="116" width="230" height="60" rx="10" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="184" width="350" height="60" rx="10" fill="#e0e7ff" stroke="#4338ca"/><rect x="380" y="184" width="220" height="60" rx="10" fill="#dcfce7" stroke="#15803d"/><rect x="610" y="184" width="230" height="60" rx="10" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="252" width="350" height="60" rx="10" fill="#e0e7ff" stroke="#4338ca"/><rect x="380" y="252" width="220" height="60" rx="10" fill="#dcfce7" stroke="#15803d"/><rect x="610" y="252" width="230" height="60" rx="10" fill="#fef9c3" stroke="#a16207"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#312e81">
+    <text x="34" y="84">new Date(2020, 12, 1)</text>
+    <text x="34" y="152">new Date(2020, 1, 30)</text>
+    <text x="34" y="220">new Date(2020, 2, 0)</text>
+    <text x="34" y="282">fecha.setDate(fecha.getDate() + 5)</text>
+  </g>
+  <text x="34" y="300" font-size="11" fill="#312e81">con fecha = 27 de febrero de 2020</text>
+  <g font-size="14" font-weight="800" fill="#14532d">
+    <text x="394" y="84">1 de enero de 2021</text>
+    <text x="394" y="152">1 de marzo de 2020</text>
+    <text x="394" y="220">29 de febrero de 2020</text>
+    <text x="394" y="288">3 de marzo de 2020</text>
+  </g>
+  <g font-size="12" fill="#713f12">
+    <text x="624" y="78">El mes 12 pasa al</text><text x="624" y="95">año siguiente</text>
+    <text x="624" y="146">Febrero de 2020 tiene</text><text x="624" y="163">29 días</text>
+    <text x="624" y="214">El día 0 es el último del</text><text x="624" y="231">mes anterior</text>
+    <text x="624" y="282">Sumar días recorre</text><text x="624" y="299">los meses</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Un instante, varias horas locales</title>
+  <desc id="d">Un objeto Date guarda un solo número: los milisegundos desde el 1 de enero de 1970 en UTC. En el ejemplo, 1584061200000. Ese mismo instante se lee como el 13 de marzo de 2020 a las 01:00 en UTC, con getUTCHours igual a 1. Se lee como el 12 de marzo de 2020 a las 19:00 en la Ciudad de México, que está en UTC menos 6, con getHours igual a 19. Y se lee como el 13 de marzo de 2020 a las 10:00 en Tokio, que está en UTC más 9, con getHours igual a 10. El Date no guarda la zona horaria: la determina el equipo donde se ejecuta el código.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Un Date guarda un solo número</text>
+  <rect x="20" y="48" width="820" height="78" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="430" y="80" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#713f12">1584061200000</text>
+  <text x="430" y="108" text-anchor="middle" font-size="13" fill="#713f12">milisegundos desde el 1 de enero de 1970, 00:00 en UTC</text>
+  <g stroke="#783d06" stroke-width="2.5" fill="#783d06">
+    <line x1="150" y1="128" x2="150" y2="170"/><polygon points="144,168 150,178 156,168"/>
+    <line x1="430" y1="128" x2="430" y2="170"/><polygon points="424,168 430,178 436,168"/>
+    <line x1="710" y1="128" x2="710" y2="170"/><polygon points="704,168 710,178 716,168"/>
+  </g>
+  <rect x="20" y="184" width="260" height="130" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <rect x="300" y="184" width="260" height="130" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <rect x="580" y="184" width="260" height="130" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="150" y="210" font-size="15" font-weight="800" fill="#312e81">UTC</text>
+    <text x="150" y="238" font-size="13" fill="#312e81">13 mar 2020, 01:00</text>
+    <text x="150" y="274" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#312e81">getUTCHours() → 1</text>
+    <text x="150" y="296" font-size="11" fill="#312e81">igual en todo el mundo</text>
+    <text x="430" y="210" font-size="15" font-weight="800" fill="#14532d">Ciudad de México (UTC-6)</text>
+    <text x="430" y="238" font-size="13" fill="#14532d">12 mar 2020, 19:00</text>
+    <text x="430" y="274" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#14532d">getHours() → 19</text>
+    <text x="430" y="296" font-size="11" fill="#14532d">hora local</text>
+    <text x="710" y="210" font-size="15" font-weight="800" fill="#7c2d12">Tokio (UTC+9)</text>
+    <text x="710" y="238" font-size="13" fill="#7c2d12">13 mar 2020, 10:00</text>
+    <text x="710" y="274" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="800" fill="#7c2d12">getHours() → 10</text>
+    <text x="710" y="296" font-size="11" fill="#7c2d12">hora local</text>
+  </g>
+  <rect x="20" y="332" width="820" height="52" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="354" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">El Date no guarda la zona horaria: la decide el equipo donde se ejecuta el código.</text>
+  <text x="430" y="373" text-anchor="middle" font-size="12" fill="#4d290b">Los métodos get... leen la hora local; los getUTC... leen la hora del meridiano de Greenwich.</text>
+</svg>
