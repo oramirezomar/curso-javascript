@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Las partes de una IIFE</title>
+  <desc id="d">Una IIFE se escribe como paréntesis de apertura, la palabra function con sus paréntesis y su cuerpo entre llaves, un paréntesis de cierre, un segundo par de paréntesis vacíos y un punto y coma. El primer par de paréntesis envuelve la función y la convierte en una expresión. El segundo par de paréntesis la ejecuta en ese mismo instante. El punto y coma protege del código que venga a continuación.</desc>
+  <rect width="860" height="330" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una IIFE tiene tres partes</text>
+  <rect x="20" y="52" width="400" height="236" rx="12" fill="#1e293b"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800">
+    <text x="44" y="112"><tspan fill="#60a5fa">(</tspan><tspan fill="#f8fafc">function () {</tspan></text>
+    <text x="44" y="162" fill="#94a3b8" font-weight="400">&#160;&#160;// tu código aquí</text>
+    <text x="44" y="212"><tspan fill="#f8fafc">}</tspan><tspan fill="#60a5fa">)</tspan><tspan fill="#fb923c">()</tspan><tspan fill="#4ade80">;</tspan></text>
+  </g>
+  <text x="44" y="262" font-size="13" fill="#cbd5e1">Una función sin nombre, escrita como expresión.</text>
+  <g>
+    <rect x="450" y="52" width="390" height="68" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="450" y="52" width="10" height="68" rx="4" fill="#2563eb"/>
+    <text x="474" y="80" font-size="15" font-weight="800" fill="#1e3a8a">1. Los paréntesis que envuelven</text>
+    <text x="474" y="102" font-size="13" fill="#1e3a8a">Convierten la función en una expresión.</text>
+    <rect x="450" y="136" width="390" height="68" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <rect x="450" y="136" width="10" height="68" rx="4" fill="#ea580c"/>
+    <text x="474" y="164" font-size="15" font-weight="800" fill="#7c2d12">2. El segundo par de paréntesis</text>
+    <text x="474" y="186" font-size="13" fill="#7c2d12">Llaman a la función en ese mismo instante.</text>
+    <rect x="450" y="220" width="390" height="68" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <rect x="450" y="220" width="10" height="68" rx="4" fill="#16a34a"/>
+    <text x="474" y="248" font-size="15" font-weight="800" fill="#14532d">3. El punto y coma final</text>
+    <text x="474" y="270" font-size="13" fill="#14532d">Evita errores con la línea que viene después.</text>
+  </g>
+  <text x="430" y="314" text-anchor="middle" font-size="12" fill="#4d290b">Lo que se declara dentro de las llaves solo existe dentro de la función.</text>
+</svg>

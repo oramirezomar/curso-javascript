@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Formas de escribir una IIFE</title>
+  <desc id="d">Cinco formas válidas. La clásica, con la función entre paréntesis y otro par que la ejecuta. La variante con todo dentro de los paréntesis. La que usa un operador delante, como exclamación, más o void, solo válida con la palabra function. La que usa una función flecha, que siempre necesita paréntesis alrededor. Y la asíncrona con async, que permite usar await. Sin ningún paréntesis ni operador, escribir function seguido de la llamada da un error de sintaxis.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Formas de escribir una IIFE</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="800">
+    <rect x="20" y="52" width="820" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="40" y="84" fill="#1e3a8a">(function () { … })();</text>
+    <rect x="20" y="114" width="820" height="52" rx="10" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="40" y="146" fill="#312e81">(function () { … }());</text>
+    <rect x="20" y="176" width="820" height="52" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <text x="40" y="208" fill="#713f12">!function () { … }();</text>
+    <rect x="20" y="238" width="820" height="52" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="40" y="270" fill="#14532d">(() =&gt; { … })();</text>
+    <rect x="20" y="300" width="820" height="52" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="40" y="332" fill="#7c2d12">(async () =&gt; { … })();</text>
+  </g>
+  <g font-size="13">
+    <text x="360" y="76" fill="#1e3a8a" font-weight="800">Clásica</text>
+    <text x="360" y="94" fill="#1e3a8a" font-size="12">La más habitual.</text>
+    <text x="360" y="138" fill="#312e81" font-weight="800">Todo dentro de los paréntesis</text>
+    <text x="360" y="156" fill="#312e81" font-size="12">Equivale a la anterior.</text>
+    <text x="360" y="200" fill="#713f12" font-weight="800">Con un operador delante</text>
+    <text x="360" y="218" fill="#713f12" font-size="12">También con + y void. Solo con la palabra function.</text>
+    <text x="360" y="262" fill="#14532d" font-weight="800">Con función flecha</text>
+    <text x="360" y="280" fill="#14532d" font-size="12">Siempre lleva paréntesis alrededor.</text>
+    <text x="360" y="324" fill="#7c2d12" font-weight="800">Asíncrona</text>
+    <text x="360" y="342" fill="#7c2d12" font-size="12">Permite usar await dentro.</text>
+  </g>
+  <rect x="20" y="364" width="820" height="40" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="40" y="389" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#7f1d1d">function () { … }();</text>
+  <text x="360" y="389" font-size="13" fill="#7f1d1d">SyntaxError: sin paréntesis ni operador, se lee como una declaración.</text>
+</svg>

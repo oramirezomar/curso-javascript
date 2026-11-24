@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué se usa hoy en lugar de una IIFE</title>
+  <desc id="d">Seis usos de las IIFE y su equivalente actual. Evitar variables globales entre archivos: módulos con import y export. Aislar variables temporales: bloques con let y const. Copiar el valor de un bucle con var: for con let. Datos privados: clausuras o campos privados con almohadilla en las clases. Usar await fuera de una función async: await de nivel superior, solo en módulos. Calcular una constante con varias instrucciones: sigue siendo útil una IIFE con función flecha.</desc>
+  <rect width="860" height="470" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Para qué servía y qué se usa hoy</text>
+  <text x="210" y="66" text-anchor="middle" font-size="14" font-weight="800" fill="#7f1d1d">Antes, con una IIFE</text>
+  <text x="650" y="66" text-anchor="middle" font-size="14" font-weight="800" fill="#14532d">Hoy</text>
+  <g font-size="13">
+    <rect x="20" y="78" width="380" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="36" y="102" fill="#7f1d1d">Evitar variables globales</text>
+    <text x="36" y="120" fill="#7f1d1d">compartidas entre archivos</text>
+    <rect x="460" y="78" width="380" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <text x="476" y="102" fill="#14532d" font-weight="800">Módulos</text>
+    <text x="476" y="120" fill="#14532d">Cada archivo con import y export tiene su ámbito.</text>
+
+    <rect x="20" y="144" width="380" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="36" y="168" fill="#7f1d1d">Aislar variables temporales</text>
+    <text x="36" y="186" fill="#7f1d1d">dentro de una función</text>
+    <rect x="460" y="144" width="380" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <text x="476" y="168" fill="#14532d" font-weight="800">Bloques con let y const</text>
+    <text x="476" y="186" fill="#14532d">Basta un par de llaves, sin función.</text>
+
+    <rect x="20" y="210" width="380" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="36" y="234" fill="#7f1d1d">Copiar el valor del bucle</text>
+    <text x="36" y="252" fill="#7f1d1d">cuando se usaba var</text>
+    <rect x="460" y="210" width="380" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <text x="476" y="234" fill="#14532d" font-weight="800">for con let</text>
+    <text x="476" y="252" fill="#14532d">Crea una variable nueva en cada vuelta.</text>
+
+    <rect x="20" y="276" width="380" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="36" y="300" fill="#7f1d1d">Datos privados</text>
+    <text x="36" y="318" fill="#7f1d1d">(patrón módulo)</text>
+    <rect x="460" y="276" width="380" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <text x="476" y="300" fill="#14532d" font-weight="800">Clausuras y campos # de las clases</text>
+    <text x="476" y="318" fill="#14532d">Las clases tienen privacidad propia.</text>
+
+    <rect x="20" y="342" width="380" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="36" y="366" fill="#7f1d1d">Usar await en el nivel superior</text>
+    <text x="36" y="384" fill="#7f1d1d">envolviendo todo en una IIFE async</text>
+    <rect x="460" y="342" width="380" height="56" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+    <text x="476" y="366" fill="#14532d" font-weight="800">await de nivel superior</text>
+    <text x="476" y="384" fill="#14532d">Disponible dentro de los módulos.</text>
+
+    <rect x="20" y="408" width="380" height="56" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+    <text x="36" y="432" fill="#713f12">Calcular una constante con</text>
+    <text x="36" y="450" fill="#713f12">varias instrucciones</text>
+    <rect x="460" y="408" width="380" height="56" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+    <text x="476" y="432" fill="#713f12" font-weight="800">Sigue siendo útil</text>
+    <text x="476" y="450" fill="#713f12">Una IIFE con flecha, como expresión.</text>
+  </g>
+  <g fill="none" stroke="#4d290b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M412 106 H448 M440 98 L448 106 L440 114"/>
+    <path d="M412 172 H448 M440 164 L448 172 L440 180"/>
+    <path d="M412 238 H448 M440 230 L448 238 L440 246"/>
+    <path d="M412 304 H448 M440 296 L448 304 L440 312"/>
+    <path d="M412 370 H448 M440 362 L448 370 L440 378"/>
+    <path d="M412 436 H448 M440 428 L448 436 L440 444"/>
+  </g>
+</svg>

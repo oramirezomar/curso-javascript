@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cada IIFE tiene su propio ámbito</title>
+  <desc id="d">A la izquierda, dos archivos de código que declaran la misma variable nombre con var comparten el ámbito global, y el segundo pisa el valor del primero, de modo que nombre vale B. A la derecha, el mismo código dentro de dos IIFE conserva dos variables nombre independientes, una con A y otra con B, y desde fuera no existe ninguna.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">El ámbito de una IIFE es privado</text>
+  <rect x="20" y="52" width="400" height="270" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="220" y="80" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d">Sin IIFE: un único ámbito global</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700">
+    <rect x="44" y="100" width="352" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="58" y="128" fill="#7f1d1d">archivo1: var nombre = "A";</text>
+    <rect x="44" y="160" width="352" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="58" y="188" fill="#7f1d1d">archivo2: var nombre = "B";</text>
+    <rect x="44" y="224" width="352" height="46" rx="8" fill="#fecaca" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="58" y="252" fill="#7f1d1d">nombre → "B"</text>
+  </g>
+  <text x="220" y="300" text-anchor="middle" font-size="13" fill="#7f1d1d">El segundo pisa al primero.</text>
+  <rect x="440" y="52" width="400" height="270" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="640" y="80" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d">Con IIFE: un ámbito por función</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700">
+    <rect x="464" y="100" width="352" height="64" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+    <text x="478" y="124" fill="#14532d">IIFE 1</text>
+    <text x="478" y="148" fill="#14532d">const nombre = "A";</text>
+    <rect x="464" y="174" width="352" height="64" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+    <text x="478" y="198" fill="#14532d">IIFE 2</text>
+    <text x="478" y="222" fill="#14532d">const nombre = "B";</text>
+    <rect x="464" y="252" width="352" height="34" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="2.5"/>
+    <text x="478" y="274" fill="#14532d">typeof nombre → "undefined"</text>
+  </g>
+  <text x="640" y="306" text-anchor="middle" font-size="13" fill="#14532d">Cada una ve solo la suya, y fuera no existe ninguna.</text>
+  <text x="430" y="346" text-anchor="middle" font-size="12" fill="#4d290b">Esa protección evita conflictos entre tu código y el de las bibliotecas.</text>
+</svg>
