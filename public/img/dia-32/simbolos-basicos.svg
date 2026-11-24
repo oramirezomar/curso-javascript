@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Símbolos básicos de las expresiones regulares</title>
+  <desc id="d">Cuatro grupos de símbolos. Clases de caracteres: backslash d un dígito, backslash D lo que no es un dígito, backslash s un espacio, backslash S lo que no es espacio, backslash w una letra ASCII, un dígito o guion bajo, el punto cualquier carácter salvo el salto de línea, corchetes con abc uno de esos caracteres, corchetes con circunflejo cualquiera menos esos, y corchetes con un rango. Anclas y alternativas: circunflejo es el inicio del texto, dólar es el fin, backslash b es el límite de palabra, la barra vertical separa alternativas, y el backslash seguido de un punto o de otra barra escapa un carácter especial. Cuantificadores: asterisco cero o más veces, más una o más, interrogación cero o una, llaves con un número una cantidad exacta, un rango, o un mínimo. Un interrogante tras un cuantificador lo hace perezoso. Grupos y comprobaciones: paréntesis capturan, con nombre, sin captura, y las comprobaciones hacia adelante y hacia atrás, además de backslash p L para cualquier letra con la bandera u.</desc>
+  <rect width="860" height="480" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los símbolos que más vas a usar</text>
+  <rect x="20" y="48" width="200" height="414" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="32" y="74" font-size="13" font-weight="800" fill="#312e81">Clases de caracteres</text>
+  <text x="32" y="100" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">\d</text>
+  <text x="32" y="116" font-size="11" fill="#312e81">un dígito del 0 al 9</text>
+  <text x="32" y="140" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">\D</text>
+  <text x="32" y="156" font-size="11" fill="#312e81">cualquier cosa que no sea dígito</text>
+  <text x="32" y="180" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">\s</text>
+  <text x="32" y="196" font-size="11" fill="#312e81">un espacio en blanco</text>
+  <text x="32" y="220" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">\S</text>
+  <text x="32" y="236" font-size="11" fill="#312e81">algo que no es espacio</text>
+  <text x="32" y="260" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">\w</text>
+  <text x="32" y="276" font-size="11" fill="#312e81">letra ASCII, dígito o _</text>
+  <text x="32" y="300" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">.</text>
+  <text x="32" y="316" font-size="11" fill="#312e81">cualquier carácter, salvo salto</text>
+  <text x="32" y="340" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">[abc]</text>
+  <text x="32" y="356" font-size="11" fill="#312e81">a, b o c</text>
+  <text x="32" y="380" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">[^abc]</text>
+  <text x="32" y="396" font-size="11" fill="#312e81">cualquiera menos a, b y c</text>
+  <text x="32" y="420" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81">[a-z]</text>
+  <text x="32" y="436" font-size="11" fill="#312e81">una letra de la a a la z</text>
+  <rect x="229" y="48" width="200" height="414" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="241" y="74" font-size="13" font-weight="800" fill="#14532d">Anclas y alternativas</text>
+  <text x="241" y="100" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">^</text>
+  <text x="241" y="116" font-size="11" fill="#14532d">inicio del texto</text>
+  <text x="241" y="140" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">$</text>
+  <text x="241" y="156" font-size="11" fill="#14532d">fin del texto</text>
+  <text x="241" y="180" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">\b</text>
+  <text x="241" y="196" font-size="11" fill="#14532d">límite de palabra (ASCII)</text>
+  <text x="241" y="220" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">a|b</text>
+  <text x="241" y="236" font-size="11" fill="#14532d">a o b</text>
+  <text x="241" y="260" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">\.</text>
+  <text x="241" y="276" font-size="11" fill="#14532d">un punto de verdad</text>
+  <text x="241" y="300" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">\\</text>
+  <text x="241" y="316" font-size="11" fill="#14532d">una barra invertida</text>
+  <rect x="438" y="48" width="200" height="414" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+  <text x="450" y="74" font-size="13" font-weight="800" fill="#713f12">Cuantificadores</text>
+  <text x="450" y="100" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">*</text>
+  <text x="450" y="116" font-size="11" fill="#713f12">cero o más veces</text>
+  <text x="450" y="140" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">+</text>
+  <text x="450" y="156" font-size="11" fill="#713f12">una o más veces</text>
+  <text x="450" y="180" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">?</text>
+  <text x="450" y="196" font-size="11" fill="#713f12">cero o una vez</text>
+  <text x="450" y="220" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">{3}</text>
+  <text x="450" y="236" font-size="11" fill="#713f12">exactamente 3 veces</text>
+  <text x="450" y="260" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">{2,}</text>
+  <text x="450" y="276" font-size="11" fill="#713f12">2 o más veces</text>
+  <text x="450" y="300" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">{2,4}</text>
+  <text x="450" y="316" font-size="11" fill="#713f12">entre 2 y 4 veces</text>
+  <text x="450" y="340" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12">+?</text>
+  <text x="450" y="356" font-size="11" fill="#713f12">versión perezosa: lo mínimo</text>
+  <rect x="647" y="48" width="200" height="414" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="659" y="74" font-size="13" font-weight="800" fill="#7c2d12">Grupos y comprobaciones</text>
+  <text x="659" y="100" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(x)</text>
+  <text x="659" y="116" font-size="11" fill="#7c2d12">grupo que captura</text>
+  <text x="659" y="140" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(?&lt;n&gt;x)</text>
+  <text x="659" y="156" font-size="11" fill="#7c2d12">grupo con nombre n</text>
+  <text x="659" y="180" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(?:x)</text>
+  <text x="659" y="196" font-size="11" fill="#7c2d12">grupo que no captura</text>
+  <text x="659" y="220" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(?=x)</text>
+  <text x="659" y="236" font-size="11" fill="#7c2d12">va seguido de x</text>
+  <text x="659" y="260" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(?!x)</text>
+  <text x="659" y="276" font-size="11" fill="#7c2d12">no va seguido de x</text>
+  <text x="659" y="300" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">(?&lt;=x)</text>
+  <text x="659" y="316" font-size="11" fill="#7c2d12">va precedido de x</text>
+  <text x="659" y="340" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7c2d12">\p{L}</text>
+  <text x="659" y="356" font-size="11" fill="#7c2d12">cualquier letra (con u)</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">La trampa de test con la bandera g</title>
+  <desc id="d">Con una expresión regular con la bandera g, el método test recuerda en lastIndex dónde se quedó. Con const letra igual a /a/g y el texto "a", la primera llamada a letra.test encuentra la letra en la posición 0, deja lastIndex en 1 y devuelve true. La segunda llamada empieza a buscar en la posición 1, no encuentra nada, vuelve a poner lastIndex en 0 y devuelve false. La tercera llamada vuelve a empezar desde 0 y devuelve true. Sin la bandera g, las tres llamadas devuelven true. Con exec y la bandera g, cada llamada devuelve la coincidencia siguiente, hasta que devuelve null.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Con la bandera g, la expresión recuerda dónde se quedó</text>
+  <text x="430" y="62" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#4d290b">const letra = /a/g;   letra.test("a")</text>
+  <g stroke-width="2" text-anchor="middle">
+    <rect x="20" y="84" width="260" height="170" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <text x="150" y="110" font-size="14" font-weight="800" fill="#14532d">1.ª llamada</text>
+    <text x="150" y="136" font-size="12" fill="#14532d">lastIndex vale 0: busca desde el inicio</text>
+    <rect x="124" y="148" width="52" height="46" rx="8" fill="#ffffff" stroke="#15803d"/><text x="150" y="180" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#14532d">a</text>
+    <text x="150" y="216" font-size="12" fill="#14532d">la encuentra; lastIndex pasa a 1</text>
+    <text x="150" y="240" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">true</text>
+    <rect x="300" y="84" width="260" height="170" rx="12" fill="#fee2e2" stroke="#b91c1c"/>
+    <text x="430" y="110" font-size="14" font-weight="800" fill="#7f1d1d">2.ª llamada</text>
+    <text x="430" y="136" font-size="12" fill="#7f1d1d">lastIndex vale 1: busca desde el final</text>
+    <rect x="404" y="148" width="52" height="46" rx="8" fill="#e5e7eb" stroke="#9ca3af"/><text x="430" y="180" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#9ca3af">a</text>
+    <text x="430" y="216" font-size="12" fill="#7f1d1d">no queda nada; lastIndex vuelve a 0</text>
+    <text x="430" y="240" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#7f1d1d">false</text>
+    <rect x="580" y="84" width="260" height="170" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <text x="710" y="110" font-size="14" font-weight="800" fill="#14532d">3.ª llamada</text>
+    <text x="710" y="136" font-size="12" fill="#14532d">vuelve a empezar desde 0</text>
+    <rect x="684" y="148" width="52" height="46" rx="8" fill="#ffffff" stroke="#15803d"/><text x="710" y="180" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#14532d">a</text>
+    <text x="710" y="216" font-size="12" fill="#14532d">la encuentra otra vez</text>
+    <text x="710" y="240" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">true</text>
+  </g>
+  <rect x="20" y="272" width="400" height="136" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <rect x="440" y="272" width="400" height="136" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <g font-size="13">
+    <g fill="#4d290b"><text x="36" y="300" font-weight="800">Cómo evitarlo</text><text x="36" y="324">Para solo comprobar si hay coincidencia,</text><text x="36" y="344">escribe la expresión sin la bandera g.</text><text x="36" y="372">Si necesitas g, crea la expresión justo antes</text><text x="36" y="392">de usarla, o reinicia lastIndex a 0.</text></g>
+    <g fill="#312e81"><text x="456" y="300" font-weight="800">Con exec y g, es una ventaja</text><text x="456" y="324">Cada llamada devuelve la coincidencia siguiente,</text><text x="456" y="344">hasta que devuelve null y lastIndex vuelve a 0.</text><text x="456" y="372">Para recorrer todas, también existe matchAll,</text><text x="456" y="392">que no tiene esta trampa.</text></g>
+  </g>
+</svg>

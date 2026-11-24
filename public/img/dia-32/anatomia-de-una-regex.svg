@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Las partes de una expresión regular</title>
+  <desc id="d">La expresión regular escrita como literal, /lorem/gi, tiene tres partes: las barras que la delimitan, el patrón lorem, que es lo que se busca, y las banderas gi, que modifican cómo se busca. Es equivalente a new RegExp("lorem", "gi"). Banderas: g busca todas las coincidencias, i ignora mayúsculas y minúsculas, m hace que ^ y $ actúen en cada línea, s hace que el punto incluya los saltos de línea, u activa el modo Unicode, d da los índices de los grupos, y busca solo en la posición actual, y v es una versión ampliada de u.</desc>
+  <rect width="860" height="470" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una expresión regular: patrón y banderas</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="44" font-weight="800" text-anchor="middle">
+    <rect x="250" y="52" width="60" height="70" rx="10" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="280" y="102" fill="#374151">/</text>
+    <rect x="320" y="52" width="170" height="70" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><text x="405" y="102" fill="#312e81">lorem</text>
+    <rect x="500" y="52" width="60" height="70" rx="10" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="530" y="102" fill="#374151">/</text>
+    <rect x="570" y="52" width="80" height="70" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="610" y="102" fill="#14532d">gi</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="280" y="148" fill="#374151">barra</text>
+    <text x="405" y="148" fill="#312e81">patrón: lo que se busca</text>
+    <text x="530" y="148" fill="#374151">barra</text>
+    <text x="610" y="148" fill="#14532d">banderas</text>
+  </g>
+  <text x="430" y="184" text-anchor="middle" font-size="13" fill="#4d290b">Equivale a:</text>
+  <rect x="220" y="194" width="420" height="40" rx="8" fill="#ffffff" stroke="#e8c98a" stroke-width="1.5"/>
+  <text x="430" y="220" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="800" fill="#4d290b">new RegExp("lorem", "gi")</text>
+  <!-- Banderas -->
+  <text x="20" y="270" font-size="14" font-weight="800" fill="#4d290b">Banderas</text>
+  <g stroke-width="1.5">
+    <rect x="20" y="282" width="190" height="82" rx="10" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="224" y="282" width="190" height="82" rx="10" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="428" y="282" width="190" height="82" rx="10" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="632" y="282" width="208" height="82" rx="10" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="374" width="190" height="82" rx="10" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="224" y="374" width="190" height="82" rx="10" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="428" y="374" width="190" height="82" rx="10" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="632" y="374" width="208" height="82" rx="10" fill="#e0e7ff" stroke="#4338ca"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800">
+    <g fill="#14532d"><text x="34" y="310">g</text><text x="238" y="310">i</text><text x="442" y="310">m</text><text x="646" y="310">s</text></g>
+    <g fill="#312e81"><text x="34" y="402">u</text><text x="238" y="402">d</text><text x="442" y="402">y</text><text x="646" y="402">v</text></g>
+  </g>
+  <g font-size="12">
+    <g fill="#14532d">
+      <text x="34" y="330">global: busca todas las</text><text x="34" y="346">coincidencias</text>
+      <text x="238" y="330">ignora mayúsculas</text><text x="238" y="346">y minúsculas</text>
+      <text x="442" y="330">multilínea: ^ y $ actúan</text><text x="442" y="346">en cada línea</text>
+      <text x="646" y="330">dotAll: el punto incluye</text><text x="646" y="346">los saltos de línea</text>
+    </g>
+    <g fill="#312e81">
+      <text x="34" y="422">modo Unicode (\p{L} y</text><text x="34" y="438">caracteres fuera del BMP)</text>
+      <text x="238" y="422">índices: da la posición</text><text x="238" y="438">de cada grupo</text>
+      <text x="442" y="422">sticky: busca solo en la</text><text x="442" y="438">posición actual</text>
+      <text x="646" y="422">versión ampliada de u,</text><text x="646" y="438">con operaciones de conjuntos</text>
+    </g>
+  </g>
+</svg>

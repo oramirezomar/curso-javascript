@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Un cuantificador afecta solo al elemento anterior</title>
+  <desc id="d">En la expresión /lorem{3}/, el cuantificador llave tres afecta solo a la última letra, la m. Por eso reconoce el texto loremmm, con tres emes, y no loremloremlorem. Para repetir la palabra completa hay que agruparla con paréntesis: /(lorem){3}/ reconoce loremloremlorem y no loremmm.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">{3} repite lo que tiene justo antes</text>
+  <!-- Fila 1 -->
+  <rect x="20" y="48" width="820" height="136" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="36" y="76" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#7f1d1d">/lorem{3}/</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" text-anchor="middle">
+    <rect x="36" y="92" width="44" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="58" y="124" fill="#7f1d1d">l</text>
+    <rect x="86" y="92" width="44" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="108" y="124" fill="#7f1d1d">o</text>
+    <rect x="136" y="92" width="44" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="158" y="124" fill="#7f1d1d">r</text>
+    <rect x="186" y="92" width="44" height="46" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/><text x="208" y="124" fill="#7f1d1d">e</text>
+    <rect x="236" y="92" width="44" height="46" rx="8" fill="#fecaca" stroke="#b91c1c" stroke-width="3"/><text x="258" y="124" fill="#7f1d1d">m</text>
+  </g>
+  <text x="296" y="124" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#b91c1c">× 3</text>
+  <text x="36" y="162" font-size="13" fill="#7f1d1d">Solo la m se repite tres veces.</text>
+  <g font-size="13" fill="#7f1d1d">
+    <text x="440" y="100" font-weight="800">Coincide con:</text>
+    <text x="440" y="124" font-family="ui-monospace, Menlo, monospace">"loremmm"  →  true</text>
+    <text x="440" y="146" font-family="ui-monospace, Menlo, monospace">"loremloremlorem"  →  false</text>
+  </g>
+  <!-- Fila 2 -->
+  <rect x="20" y="200" width="820" height="136" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="36" y="228" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">/(lorem){3}/</text>
+  <rect x="36" y="244" width="244" height="46" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="3"/>
+  <text x="158" y="276" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#14532d">(lorem)</text>
+  <text x="296" y="276" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#15803d">× 3</text>
+  <text x="36" y="314" font-size="13" fill="#14532d">Los paréntesis agrupan: se repite la palabra completa.</text>
+  <g font-size="13" fill="#14532d">
+    <text x="440" y="252" font-weight="800">Coincide con:</text>
+    <text x="440" y="276" font-family="ui-monospace, Menlo, monospace">"loremloremlorem"  →  true</text>
+    <text x="440" y="298" font-family="ui-monospace, Menlo, monospace">"loremmm"  →  false</text>
+  </g>
+  <text x="430" y="362" text-anchor="middle" font-size="12" fill="#4d290b">Lo mismo ocurre con *, + y ?: afectan al elemento que tienen justo a la izquierda.</text>
+</svg>
