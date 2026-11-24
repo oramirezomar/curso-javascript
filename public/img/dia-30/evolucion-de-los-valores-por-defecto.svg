@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cómo ha cambiado dar un valor por defecto</title>
+  <desc id="d">Cuatro etapas. Antes de ES2015, se escribía nombre = nombre || "desconocido", que sustituye cualquier valor falso. Con ES2015, los parámetros por defecto, function saludar(nombre = "desconocido"), solo actúan con undefined. Con ES2020, el operador ??, nombre ?? "desconocido", actúa con null y undefined, y respeta 0, la cadena vacía y false. Con ES2021, las asignaciones lógicas, nombre ??= "desconocido", asignan solo si hace falta. También con ES2020, el encadenamiento opcional usuario?.perfil reemplaza al patrón usuario &amp;&amp; usuario.perfil.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Del cortocircuito a las herramientas modernas</text>
+  <g stroke-width="2">
+    <rect x="20" y="48" width="820" height="76" rx="12" fill="#fee2e2" stroke="#b91c1c"/>
+    <rect x="20" y="134" width="820" height="76" rx="12" fill="#fef9c3" stroke="#a16207"/>
+    <rect x="20" y="220" width="820" height="76" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="306" width="820" height="76" rx="12" fill="#e0e7ff" stroke="#4338ca"/>
+  </g>
+  <g font-size="14" font-weight="800">
+    <text x="36" y="76" fill="#7f1d1d">Antes de ES2015</text>
+    <text x="36" y="162" fill="#713f12">ES2015</text>
+    <text x="36" y="248" fill="#14532d">ES2020</text>
+    <text x="36" y="334" fill="#312e81">ES2021</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800">
+    <text x="190" y="76" fill="#7f1d1d">nombre = nombre || "desconocido";</text>
+    <text x="190" y="162" fill="#713f12">function saludar(nombre = "desconocido") { }</text>
+    <text x="190" y="248" fill="#14532d">nombre ?? "desconocido";   usuario?.perfil;</text>
+    <text x="190" y="334" fill="#312e81">nombre ??= "desconocido";   a ||= b;   a &amp;&amp;= b;</text>
+  </g>
+  <g font-size="12">
+    <text x="190" y="100" fill="#7f1d1d">Sustituye cualquier valor falso, también 0, "" y false.</text>
+    <text x="190" y="186" fill="#713f12">Solo actúa si el argumento falta o es undefined; null y 0 se respetan.</text>
+    <text x="190" y="272" fill="#14532d">?? sustituye solo null y undefined. ?. reemplaza a usuario &amp;&amp; usuario.perfil.</text>
+    <text x="190" y="358" fill="#312e81">Asignan solo si hace falta, con cortocircuito: si no hace falta, no se asigna.</text>
+  </g>
+  <text x="430" y="414" text-anchor="middle" font-size="12" fill="#4d290b">|| y &amp;&amp; siguen siendo útiles: para elegir el primer valor verdadero y para condiciones.</text>
+</svg>

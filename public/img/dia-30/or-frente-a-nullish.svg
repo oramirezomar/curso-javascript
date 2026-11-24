@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 432" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">|| frente a ?? con un valor por defecto</title>
+  <desc id="d">Resultado de valor || "defecto" y de valor ?? "defecto" para siete valores. Con 0, || da "defecto" y ?? da 0. Con la cadena vacía, || da "defecto" y ?? da la cadena vacía. Con false, || da "defecto" y ?? da false. Con NaN, || da "defecto" y ?? da NaN. Con null, ambos dan "defecto". Con undefined, ambos dan "defecto". Con "hola", ambos dan "hola". El operador || sustituye cualquier valor falso, y ?? solo sustituye null y undefined.</desc>
+  <rect width="860" height="432" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">|| sustituye lo falso; ?? solo lo que falta</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="200" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="120" y="69">valor</text>
+    <rect x="230" y="46" width="300" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="380" y="69" font-family="ui-monospace, Menlo, monospace">valor || "defecto"</text>
+    <rect x="540" y="46" width="300" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="690" y="69" font-family="ui-monospace, Menlo, monospace">valor ?? "defecto"</text>
+  </g>
+  <rect x="20" y="90" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="90" width="300" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="540" y="90" width="300" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="115" fill="#312e81">0</text><text x="380" y="115" fill="#7f1d1d">"defecto"</text><text x="690" y="115" fill="#14532d">0</text></g>
+  <rect x="20" y="134" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="134" width="300" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="540" y="134" width="300" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="159" fill="#312e81">""</text><text x="380" y="159" fill="#7f1d1d">"defecto"</text><text x="690" y="159" fill="#14532d">""</text></g>
+  <rect x="20" y="178" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="178" width="300" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="540" y="178" width="300" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="203" fill="#312e81">false</text><text x="380" y="203" fill="#7f1d1d">"defecto"</text><text x="690" y="203" fill="#14532d">false</text></g>
+  <rect x="20" y="222" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="222" width="300" height="38" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="540" y="222" width="300" height="38" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="247" fill="#312e81">NaN</text><text x="380" y="247" fill="#7f1d1d">"defecto"</text><text x="690" y="247" fill="#14532d">NaN</text></g>
+  <rect x="20" y="266" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="266" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="540" y="266" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="291" fill="#312e81">null</text><text x="380" y="291" fill="#374151">"defecto"</text><text x="690" y="291" fill="#374151">"defecto"</text></g>
+  <rect x="20" y="310" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="310" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="540" y="310" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="335" fill="#312e81">undefined</text><text x="380" y="335" fill="#374151">"defecto"</text><text x="690" y="335" fill="#374151">"defecto"</text></g>
+  <rect x="20" y="354" width="200" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="230" y="354" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="540" y="354" width="300" height="38" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800"><text x="120" y="379" fill="#312e81">"hola"</text><text x="380" y="379" fill="#374151">"hola"</text><text x="690" y="379" fill="#374151">"hola"</text></g>
+  <text x="430" y="420" text-anchor="middle" font-size="12" fill="#4d290b">En rojo y verde, las filas donde || descarta un valor que quizá era válido: 0, la cadena vacía, false y NaN.</text>
+</svg>

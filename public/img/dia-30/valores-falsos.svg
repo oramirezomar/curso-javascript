@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Valores falsos y verdaderos</title>
+  <desc id="d">Hay ocho valores falsos (falsy): false, 0, menos 0, 0n, la cadena vacía, null, undefined y NaN. Todo lo demás es verdadero (truthy), incluidos valores que parecen vacíos o negativos: la cadena "0", la cadena "false", el arreglo vacío, el objeto vacío, números negativos como menos 2, cualquier cadena con texto, las funciones e Infinity.</desc>
+  <rect width="860" height="330" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Falsos y verdaderos: solo hay ocho falsos</text>
+  <rect x="20" y="46" width="820" height="116" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="36" y="72" font-size="14" font-weight="800" fill="#7f1d1d">Valores falsos (falsy): a || b pasa al lado derecho</text>
+  <rect x="36" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="82" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">false</text>
+  <rect x="136" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="182" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">0</text>
+  <rect x="236" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="282" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">-0</text>
+  <rect x="336" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="382" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">0n</text>
+  <rect x="436" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="482" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">""</text>
+  <rect x="536" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="582" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">null</text>
+  <rect x="636" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="682" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">undefined</text>
+  <rect x="736" y="90" width="92" height="52" rx="10" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="782" y="122" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">NaN</text>
+  <rect x="20" y="176" width="820" height="116" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="36" y="202" font-size="14" font-weight="800" fill="#14532d">Todo lo demás es verdadero (truthy), aunque lo parezca vacío o negativo</text>
+  <rect x="36" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="82" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">"0"</text>
+  <rect x="136" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="182" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">"false"</text>
+  <rect x="236" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="282" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">[]</text>
+  <rect x="336" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="382" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">{}</text>
+  <rect x="436" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="482" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">-2</text>
+  <rect x="536" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="582" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">"texto"</text>
+  <rect x="636" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="682" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">() =&gt; {}</text>
+  <rect x="736" y="220" width="92" height="52" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="782" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">Infinity</text>
+  <text x="430" y="316" text-anchor="middle" font-size="12" fill="#4d290b">Los textos "0" y "false", el arreglo vacío y el objeto vacío son verdaderos. Hay que recordarlo al usar || y &amp;&amp;.</text>
+</svg>

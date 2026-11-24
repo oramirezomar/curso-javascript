@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué devuelven || y &amp;&amp;</title>
+  <desc id="d">El operador a || b devuelve a si a es verdadero y, en ese caso, ni siquiera evalúa b. Si a es falso, devuelve b. Ejemplos: "Ana" || "anónimo" devuelve "Ana", y "" || "anónimo" devuelve "anónimo". El operador a &amp;&amp; b hace lo contrario: devuelve a si a es falso y no evalúa b. Si a es verdadero, devuelve b. Ejemplos: 0 &amp;&amp; "listo" devuelve 0, y "Ana" &amp;&amp; "listo" devuelve "listo". Los dos devuelven uno de los operandos, no necesariamente true o false.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los dos devuelven uno de sus operandos</text>
+  <!-- Panel OR -->
+  <rect x="20" y="48" width="400" height="300" rx="14" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="220" y="82" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#312e81">a || b</text>
+  <text x="220" y="106" text-anchor="middle" font-size="13" fill="#312e81">Busca el primer valor verdadero</text>
+  <rect x="40" y="124" width="170" height="86" rx="10" fill="#ffffff" stroke="#818cf8" stroke-width="1.5"/>
+  <rect x="230" y="124" width="170" height="86" rx="10" fill="#ffffff" stroke="#818cf8" stroke-width="1.5"/>
+  <g text-anchor="middle" fill="#312e81">
+    <text x="125" y="148" font-size="13" font-weight="800">¿a es verdadero?</text>
+    <text x="125" y="170" font-size="13">Sí: devuelve a</text>
+    <text x="125" y="190" font-size="12">b ni se evalúa</text>
+    <text x="315" y="148" font-size="13" font-weight="800">¿a es falso?</text>
+    <text x="315" y="170" font-size="13">Sí: devuelve b</text>
+    <text x="315" y="190" font-size="12">(el que sea)</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#312e81">
+    <rect x="40" y="228" width="360" height="42" rx="8" fill="#c7d2fe" stroke="#4338ca" stroke-width="1.5"/>
+    <text x="52" y="246">"Ana" || "anónimo"</text><text x="52" y="262" font-weight="400" font-size="12">→ "Ana"</text>
+    <rect x="40" y="280" width="360" height="42" rx="8" fill="#c7d2fe" stroke="#4338ca" stroke-width="1.5"/>
+    <text x="52" y="298">"" || "anónimo"</text><text x="52" y="314" font-weight="400" font-size="12">→ "anónimo"</text>
+  </g>
+  <!-- Panel AND -->
+  <rect x="440" y="48" width="400" height="300" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="640" y="82" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="800" fill="#14532d">a &amp;&amp; b</text>
+  <text x="640" y="106" text-anchor="middle" font-size="13" fill="#14532d">Busca el primer valor falso</text>
+  <rect x="460" y="124" width="170" height="86" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <rect x="650" y="124" width="170" height="86" rx="10" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <g text-anchor="middle" fill="#14532d">
+    <text x="545" y="148" font-size="13" font-weight="800">¿a es falso?</text>
+    <text x="545" y="170" font-size="13">Sí: devuelve a</text>
+    <text x="545" y="190" font-size="12">b ni se evalúa</text>
+    <text x="735" y="148" font-size="13" font-weight="800">¿a es verdadero?</text>
+    <text x="735" y="170" font-size="13">Sí: devuelve b</text>
+    <text x="735" y="190" font-size="12">(el que sea)</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#14532d">
+    <rect x="460" y="228" width="360" height="42" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/>
+    <text x="472" y="246">0 &amp;&amp; "listo"</text><text x="472" y="262" font-weight="400" font-size="12">→ 0</text>
+    <rect x="460" y="280" width="360" height="42" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/>
+    <text x="472" y="298">"Ana" &amp;&amp; "listo"</text><text x="472" y="314" font-weight="400" font-size="12">→ "listo"</text>
+  </g>
+  <rect x="20" y="362" width="820" height="62" rx="12" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <g text-anchor="middle" fill="#4d290b">
+    <text x="430" y="388" font-size="14" font-weight="800">Si el lado izquierdo decide el resultado, el derecho no se evalúa.</text>
+    <text x="430" y="410" font-size="13">Por eso se llaman operadores de cortocircuito: una llamada a función a la derecha puede no ejecutarse.</text>
+  </g>
+</svg>
