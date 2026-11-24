@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Los tres cuadros de diálogo y lo que devuelven</title>
+  <desc id="d">alert muestra un mensaje con un botón Aceptar y devuelve undefined. confirm muestra un mensaje con los botones Cancelar y Aceptar y devuelve un booleano: true si se acepta y false si se cancela. prompt muestra un mensaje, un cuadro de texto y los botones Cancelar y Aceptar. Devuelve un texto con lo que escribió el usuario, una cadena vacía si aceptó sin escribir nada, y null si canceló.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">alert, confirm y prompt</text>
+  <!-- alert -->
+  <rect x="20" y="52" width="260" height="170" rx="10" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
+  <path d="M20 62 a10 10 0 0 1 10 -10 h240 a10 10 0 0 1 10 10 v26 h-260 z" fill="#e5e7eb"/>
+  <text x="34" y="76" font-size="12" font-weight="700" fill="#374151">Esta página dice</text>
+  <text x="34" y="122" font-size="14" fill="#111827">Archivo guardado</text>
+  <rect x="180" y="170" width="86" height="34" rx="8" fill="#2563eb"/>
+  <text x="223" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Aceptar</text>
+  <!-- confirm -->
+  <rect x="300" y="52" width="260" height="170" rx="10" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
+  <path d="M300 62 a10 10 0 0 1 10 -10 h240 a10 10 0 0 1 10 10 v26 h-260 z" fill="#e5e7eb"/>
+  <text x="314" y="76" font-size="12" font-weight="700" fill="#374151">Esta página dice</text>
+  <text x="314" y="122" font-size="14" fill="#111827">¿Eliminar el archivo?</text>
+  <rect x="404" y="170" width="74" height="34" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="441" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Cancelar</text>
+  <rect x="486" y="170" width="62" height="34" rx="8" fill="#2563eb"/>
+  <text x="517" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Aceptar</text>
+  <!-- prompt -->
+  <rect x="580" y="52" width="260" height="170" rx="10" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
+  <path d="M580 62 a10 10 0 0 1 10 -10 h240 a10 10 0 0 1 10 10 v26 h-260 z" fill="#e5e7eb"/>
+  <text x="594" y="76" font-size="12" font-weight="700" fill="#374151">Esta página dice</text>
+  <text x="594" y="110" font-size="14" fill="#111827">¿Cómo te llamas?</text>
+  <rect x="594" y="122" width="232" height="30" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="604" y="142" font-size="13" fill="#111827">Ana</text>
+  <rect x="684" y="170" width="74" height="34" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="721" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Cancelar</text>
+  <rect x="766" y="170" width="60" height="34" rx="8" fill="#2563eb"/>
+  <text x="796" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Aceptar</text>
+  <!-- retornos -->
+  <g stroke-width="2">
+    <rect x="20" y="240" width="260" height="172" rx="12" fill="#f3f4f6" stroke="#6b7280"/>
+    <rect x="300" y="240" width="260" height="172" rx="12" fill="#e0e7ff" stroke="#4338ca"/>
+    <rect x="580" y="240" width="260" height="172" rx="12" fill="#dcfce7" stroke="#15803d"/>
+  </g>
+  <g font-size="14" font-weight="800">
+    <text x="36" y="268" fill="#374151">alert(mensaje)</text>
+    <text x="316" y="268" fill="#312e81">confirm(mensaje)</text>
+    <text x="596" y="268" fill="#14532d">prompt(mensaje, porDefecto)</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <g fill="#374151"><text x="36" y="302">undefined</text></g>
+    <g fill="#312e81"><text x="316" y="302">true</text><text x="316" y="330">false</text></g>
+    <g fill="#14532d"><text x="596" y="292">"Ana"</text><text x="596" y="336">""</text><text x="596" y="380">null</text></g>
+  </g>
+  <g font-size="12">
+    <g fill="#374151"><text x="36" y="326">Solo informa: no hay nada que</text><text x="36" y="344">decidir, y por eso no devuelve nada.</text></g>
+    <g fill="#312e81"><text x="372" y="302">si el usuario pulsa Aceptar</text><text x="372" y="330">si pulsa Cancelar</text></g>
+    <g fill="#14532d"><text x="596" y="310">Aceptar con texto (siempre texto)</text><text x="596" y="354">Aceptar sin escribir nada</text><text x="596" y="398">Cancelar, aunque haya escrito algo</text></g>
+  </g>
+</svg>

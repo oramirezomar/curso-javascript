@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Alternativas a alert, confirm y prompt</title>
+  <desc id="d">En lugar de alert se puede usar un mensaje en la propia página o un elemento dialog. En lugar de confirm, un elemento dialog con botones de aceptar y cancelar. En lugar de prompt, un campo input dentro de un formulario. En Node.js, que no tiene window ni estos métodos, se usa el módulo readline para leer lo que escribe el usuario en la terminal.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Para aplicaciones reales, hay mejores opciones</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="200" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="120" y="69">En vez de…</text>
+    <rect x="230" y="46" width="610" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="535" y="69">Usa…</text>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="20" y="92" width="200" height="56" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="230" y="92" width="610" height="56" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="156" width="200" height="56" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="230" y="156" width="610" height="56" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="220" width="200" height="56" rx="8" fill="#e0e7ff" stroke="#4338ca"/><rect x="230" y="220" width="610" height="56" rx="8" fill="#dcfce7" stroke="#15803d"/>
+    <rect x="20" y="284" width="200" height="56" rx="8" fill="#fef9c3" stroke="#a16207"/><rect x="230" y="284" width="610" height="56" rx="8" fill="#fef9c3" stroke="#a16207"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#312e81" text-anchor="middle">
+    <text x="120" y="126">alert()</text><text x="120" y="190">confirm()</text><text x="120" y="254">prompt()</text>
+  </g>
+  <text x="120" y="318" text-anchor="middle" font-size="14" font-weight="800" fill="#713f12">En Node.js: nada de esto</text>
+  <g font-size="13" fill="#14532d">
+    <text x="246" y="116">Un aviso dentro de la propia página, o un &lt;dialog&gt; con un solo botón.</text>
+    <text x="246" y="136" font-size="12">No bloquea el resto del programa y se puede estilizar.</text>
+    <text x="246" y="180">Un &lt;dialog&gt; abierto con showModal(), con botones Aceptar y Cancelar.</text>
+    <text x="246" y="200" font-size="12">Devuelve la decisión cuando se cierra, sin congelar la página.</text>
+    <text x="246" y="244">Un &lt;input&gt; dentro de un &lt;form&gt;, con su etiqueta y su validación.</text>
+    <text x="246" y="264" font-size="12">Se puede escribir, corregir y enviar con calma.</text>
+  </g>
+  <g font-size="13" fill="#713f12">
+    <text x="246" y="308">No existe window ni alert. Se usa el módulo node:readline para leer de la terminal.</text>
+    <text x="246" y="328" font-size="12">Con readline/promises, la pregunta se hace con rl.question(), y se espera con await.</text>
+  </g>
+</svg>

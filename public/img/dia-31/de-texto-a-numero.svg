@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">De lo que escribe el usuario a un número</title>
+  <desc id="d">Qué dan Number y parseInt con distintos textos que podría devolver prompt. Con "42", ambos dan 42. Con " 3.5 ", Number da 3.5 y parseInt da 3. Con "12px", Number da NaN y parseInt da 12. Con la cadena vacía, Number da 0, un valor engañoso, y parseInt da NaN. Con "3,5", con coma decimal, Number da NaN y parseInt da 3 sin avisar del error. Con "abc", ambos dan NaN. Con null, que es lo que devuelve Cancelar, Number da 0. Por eso hay que comprobar primero null y la cadena vacía, y luego convertir.</desc>
+  <rect width="860" height="500" fill="#fffdf7"/>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">prompt devuelve texto: valida antes de convertir</text>
+  <g font-size="13" font-weight="800" text-anchor="middle" fill="#4d290b">
+    <rect x="20" y="46" width="250" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="145" y="69">Lo que devuelve prompt</text>
+    <rect x="280" y="46" width="150" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="355" y="69">Number()</text>
+    <rect x="440" y="46" width="150" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="515" y="69">parseInt()</text>
+    <rect x="600" y="46" width="240" height="36" rx="8" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/><text x="720" y="69">Cuidado con</text>
+  </g>
+  <rect x="20" y="92" width="250" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="280" y="92" width="150" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="440" y="92" width="150" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="600" y="92" width="240" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d"><text x="145" y="119">"42"</text><text x="355" y="119">42</text><text x="515" y="119">42</text></g>
+  <text x="720" y="118" text-anchor="middle" font-size="12" fill="#14532d">—</text>
+  <rect x="20" y="142" width="250" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="280" y="142" width="150" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="440" y="142" width="150" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="600" y="142" width="240" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12"><text x="145" y="169">" 3.5 "</text><text x="355" y="169">3.5</text><text x="515" y="169">3</text></g>
+  <text x="720" y="168" text-anchor="middle" font-size="12" fill="#713f12">parseInt pierde los decimales</text>
+  <rect x="20" y="192" width="250" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="280" y="192" width="150" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="440" y="192" width="150" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <rect x="600" y="192" width="240" height="42" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#713f12"><text x="145" y="219">"12px"</text><text x="355" y="219">NaN</text><text x="515" y="219">12</text></g>
+  <text x="720" y="218" text-anchor="middle" font-size="12" fill="#713f12">parseInt acepta texto sobrante</text>
+  <rect x="20" y="242" width="250" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="280" y="242" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="440" y="242" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="600" y="242" width="240" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d"><text x="145" y="269">""</text><text x="355" y="269">0</text><text x="515" y="269">NaN</text></g>
+  <text x="720" y="268" text-anchor="middle" font-size="12" fill="#7f1d1d">Number("") es 0, no NaN</text>
+  <rect x="20" y="292" width="250" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="280" y="292" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="440" y="292" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="600" y="292" width="240" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d"><text x="145" y="319">"3,5"</text><text x="355" y="319">NaN</text><text x="515" y="319">3</text></g>
+  <text x="720" y="318" text-anchor="middle" font-size="12" fill="#7f1d1d">parseInt da 3 sin avisar</text>
+  <rect x="20" y="342" width="250" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="280" y="342" width="150" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="440" y="342" width="150" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="600" y="342" width="240" height="42" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d"><text x="145" y="369">"abc"</text><text x="355" y="369">NaN</text><text x="515" y="369">NaN</text></g>
+  <text x="720" y="368" text-anchor="middle" font-size="12" fill="#14532d">—</text>
+  <rect x="20" y="392" width="250" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="280" y="392" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="440" y="392" width="150" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="600" y="392" width="240" height="42" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <g text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d"><text x="145" y="419">null (Cancelar)</text><text x="355" y="419">0</text><text x="515" y="419">NaN</text></g>
+  <text x="720" y="418" text-anchor="middle" font-size="12" fill="#7f1d1d">Number(null) es 0</text>
+  <rect x="20" y="448" width="820" height="40" rx="10" fill="#ffedc9" stroke="#b45f06" stroke-width="2"/>
+  <text x="430" y="473" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">Primero descarta null y la cadena vacía; después usa Number() y comprueba Number.isNaN().</text>
+</svg>

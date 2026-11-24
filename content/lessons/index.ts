@@ -37,6 +37,7 @@ import { day27 } from "./day-27";
 import { day28 } from "./day-28";
 import { day29 } from "./day-29";
 import { day30 } from "./day-30";
+import { day31 } from "./day-31";
 
 export const sections: CourseSection[] = [
   { title: "Introducción y contexto", dayRange: [1, 2], icon: "🧭" },
@@ -48,10 +49,10 @@ export const sections: CourseSection[] = [
   { title: "Sintaxis moderna (ES2015)", dayRange: [19, 22], icon: "✨" },
   { title: "Programación orientada a objetos", dayRange: [23, 26], icon: "🧬" },
   { title: "Objetos nativos y utilidades", dayRange: [27, 29], icon: "🧰" },
-  { title: "Herramientas del lenguaje", dayRange: [30, 30], icon: "🛠️" },
+  { title: "Herramientas del lenguaje", dayRange: [30, 31], icon: "🛠️" },
 ];
 
-export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06, day07, day08, day09, day10, day11, day12, day13, day14, day15, day16, day17, day18, day19, day20, day21, day22, day23, day24, day25, day26, day27, day28, day29, day30];
+export const lessons: Lesson[] = [day01, day02, day03, day04, day05, day06, day07, day08, day09, day10, day11, day12, day13, day14, day15, day16, day17, day18, day19, day20, day21, day22, day23, day24, day25, day26, day27, day28, day29, day30, day31];
 
 export function getLessonByDay(day: number): Lesson | undefined {
   return lessons.find((lesson) => lesson.day === day);
