@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Llamar a una función antes de definirla</title>
+  <desc id="d">Tres casos. Una función declarada con function se puede llamar antes de su línea, porque se eleva, y funciona. Una función expresada guardada en const no se puede usar antes de su línea, y da un ReferenceError. Una función expresada guardada en var existe como undefined antes de su línea, y llamarla da un TypeError.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">¿Qué pasa si la llamas antes de definirla?</text>
+  <g>
+    <rect x="20" y="52" width="270" height="290" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <rect x="300" y="52" width="270" height="290" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <rect x="580" y="52" width="260" height="290" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  </g>
+  <g font-size="14" font-weight="800">
+    <text x="36" y="80" fill="#14532d">Declarada</text>
+    <text x="316" y="80" fill="#7f1d1d">Expresada con const</text>
+    <text x="596" y="80" fill="#78350f">Expresada con var</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12.5" font-weight="700">
+    <rect x="34" y="96" width="242" height="104" rx="8" fill="#1e293b"/>
+    <text x="46" y="120" fill="#fca5a5">saludar();</text>
+    <text x="46" y="144" fill="#f8fafc">function saludar() {</text>
+    <text x="46" y="164" fill="#f8fafc">&#160;&#160;return "hola";</text>
+    <text x="46" y="184" fill="#f8fafc">}</text>
+    <rect x="314" y="96" width="242" height="104" rx="8" fill="#1e293b"/>
+    <text x="326" y="120" fill="#fca5a5">saludar();</text>
+    <text x="326" y="144" fill="#f8fafc">const saludar = () =&gt; {</text>
+    <text x="326" y="164" fill="#f8fafc">&#160;&#160;return "hola";</text>
+    <text x="326" y="184" fill="#f8fafc">};</text>
+    <rect x="594" y="96" width="232" height="104" rx="8" fill="#1e293b"/>
+    <text x="606" y="120" fill="#fca5a5">saludar();</text>
+    <text x="606" y="144" fill="#f8fafc">var saludar = function () {</text>
+    <text x="606" y="164" fill="#f8fafc">&#160;&#160;return "hola";</text>
+    <text x="606" y="184" fill="#f8fafc">};</text>
+  </g>
+  <g font-size="14" font-weight="800" text-anchor="middle">
+    <rect x="40" y="220" width="230" height="40" rx="8" fill="#16a34a"/><text x="155" y="246" fill="#ffffff">Funciona</text>
+    <rect x="320" y="220" width="230" height="40" rx="8" fill="#b91c1c"/><text x="435" y="246" fill="#ffffff">ReferenceError</text>
+    <rect x="600" y="220" width="220" height="40" rx="8" fill="#b45309"/><text x="710" y="246" fill="#ffffff">TypeError</text>
+  </g>
+  <g font-size="12.5">
+    <g fill="#14532d"><text x="36" y="288">La declaración se eleva: el</text><text x="36" y="306">motor la conoce desde el</text><text x="36" y="324">principio de su ámbito.</text></g>
+    <g fill="#7f1d1d"><text x="316" y="288">La variable existe, pero no se</text><text x="316" y="306">puede leer hasta llegar a su</text><text x="316" y="324">línea (zona muerta temporal).</text></g>
+    <g fill="#78350f"><text x="596" y="288">La variable existe desde el</text><text x="596" y="306">inicio con valor undefined, y</text><text x="596" y="324">undefined no se puede llamar.</text></g>
+  </g>
+  <text x="430" y="366" text-anchor="middle" font-size="12" fill="#4d290b">Ninguno de los dos errores es un error de sintaxis: el código se lee bien, y falla al ejecutarse.</text>
+</svg>

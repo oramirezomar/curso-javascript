@@ -344,7 +344,7 @@ export const day35: Lesson = {
     {
       type: "paragraph",
       text:
-        "Enunciado: programa una función `recortarTexto(cadena, longitud)` que devuelva el texto recortado a los primeros `longitud` caracteres. Por ejemplo, `recortarTexto(\"Hola Mundo\", 4)` devuelve `\"Hola\"`. Si no se indica la longitud, se usa 1. Si la longitud es mayor que el texto, devuelve el texto completo. Si `cadena` no es un texto, o `longitud` no es un entero mayor o igual que 0, avisa con `console.warn` y devuelve `undefined`. Antes de resolverlo, MDN tiene varios métodos para obtener un trozo de un texto, y no se comportan igual.",
+        "Enunciado: programa una función `recortarTexto(cadena, longitud)` que devuelva el texto recortado a los primeros `longitud` caracteres. Por ejemplo, `recortarTexto(\"Hola Mundo\", 4)` devuelve `\"Hola\"`. Si la longitud es mayor que el texto, devuelve el texto completo. Si `cadena` no es un texto, o `longitud` no se indica o no es un entero mayor o igual que 0, avisa con `console.warn` y devuelve `undefined`. Antes de resolverlo, MDN tiene varios métodos para obtener un trozo de un texto, y no se comportan igual.",
     },
     {
       type: "playground",
@@ -404,9 +404,9 @@ export const day35: Lesson = {
             "`slice(0, longitud)` devuelve exactamente lo que pide el enunciado, y no falla si la longitud es mayor que el texto. Fíjate en el experimento 4.",
         },
         {
-          title: "Pista 2: la longitud por defecto",
+          title: "Pista 2: si falta la longitud",
           text:
-            "Un parámetro puede tener un valor por defecto, que viste en la lección de parámetros: `function f(a, b = 1)`. Se aplica solo cuando el argumento falta, o vale `undefined`.",
+            "Un parámetro al que no se pasa ningún argumento vale `undefined`. Como `slice(0, undefined)` devuelve el texto entero sin error, como viste en el experimento 4, tu función debe detectar ese caso antes de llamar a `slice`.",
         },
         {
           title: "Pista 3: ¿es un entero mayor o igual que 0?",
@@ -422,8 +422,8 @@ export const day35: Lesson = {
       code: L(
         "// RETO 2: recortarTexto(cadena, longitud)",
         "// Devuelve los primeros \"longitud\" caracteres del texto.",
-        "// Si no se indica longitud, se usa 1. Si es mayor que el texto, devuelve el texto completo.",
-        "// Si cadena no es un texto, o longitud no es un número entero mayor o igual que 0,",
+        "// Si longitud es mayor que el texto, devuelve el texto completo.",
+        "// Si cadena no es un texto, o longitud no se indica o no es un número entero mayor o igual que 0,",
         "// avisa con console.warn y devuelve undefined.",
         "",
         "// Pequeño verificador: ejecuta cada caso y compara el resultado con lo esperado",
@@ -450,7 +450,7 @@ export const day35: Lesson = {
         "probar('(\"Hola Mundo\", 4) → \"Hola\"', () => recortarTexto(\"Hola Mundo\", 4), \"Hola\");",
         "probar(\"una longitud mayor que el texto\", () => recortarTexto(\"Hola Mundo\", 100), \"Hola Mundo\");",
         "probar(\"longitud 0\", () => recortarTexto(\"Hola Mundo\", 0), \"\");",
-        "probar(\"sin longitud se usa 1\", () => recortarTexto(\"Hola Mundo\"), \"H\");",
+        "probar(\"sin indicar la longitud\", () => recortarTexto(\"Hola Mundo\"), undefined);",
         "probar(\"un texto vacío\", () => recortarTexto(\"\", 3), \"\");",
         "probar(\"longitud negativa\", () => recortarTexto(\"Hola Mundo\", -2), undefined);",
         "probar(\"longitud decimal\", () => recortarTexto(\"Hola Mundo\", 2.5), undefined);",
@@ -464,7 +464,7 @@ export const day35: Lesson = {
         "✔ (\"Hola Mundo\", 4) → \"Hola\"",
         "✔ una longitud mayor que el texto",
         "✔ longitud 0",
-        "✔ sin longitud se usa 1",
+        "✔ sin indicar la longitud",
         "✔ un texto vacío",
         "✔ longitud negativa",
         "✔ longitud decimal",

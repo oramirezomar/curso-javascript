@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Ternarios encadenados frente a comprobaciones con if</title>
+  <desc id="d">Dos formas de escribir la misma lógica. A la izquierda, una función flecha de una sola línea con dos operadores ternarios encadenados: cada rama anidada hay que leerla de dentro hacia fuera. A la derecha, una función con dos if que devuelven de forma temprana, y que se lee de arriba abajo, con una línea final que resuelve el problema.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">La misma lógica, escrita de dos maneras</text>
+  <rect x="20" y="52" width="410" height="290" rx="12" fill="#1e293b"/>
+  <rect x="440" y="52" width="400" height="290" rx="12" fill="#1e293b"/>
+  <text x="38" y="80" font-size="14" font-weight="800" fill="#fde68a">Ternarios encadenados</text>
+  <text x="458" y="80" font-size="14" font-weight="800" fill="#bbf7d0">if con salida temprana</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#f8fafc">
+    <text x="38" y="112">const f = (cadena, longitud) =&gt;</text>
+    <text x="38" y="136">&#160;&#160;!esTexto(cadena)</text>
+    <text x="38" y="160" fill="#fca5a5">&#160;&#160;&#160;&#160;? avisoTexto()</text>
+    <text x="38" y="184">&#160;&#160;&#160;&#160;: !esEntero(longitud)</text>
+    <text x="38" y="208" fill="#fca5a5">&#160;&#160;&#160;&#160;&#160;&#160;? avisoLongitud()</text>
+    <text x="38" y="232" fill="#86efac">&#160;&#160;&#160;&#160;&#160;&#160;: cadena.slice(0, longitud);</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#f8fafc">
+    <text x="458" y="112">function f(cadena, longitud) {</text>
+    <text x="458" y="136">&#160;&#160;if (!esTexto(cadena)) {</text>
+    <text x="458" y="156" fill="#fca5a5">&#160;&#160;&#160;&#160;return avisoTexto();</text>
+    <text x="458" y="176">&#160;&#160;}</text>
+    <text x="458" y="200">&#160;&#160;if (!esEntero(longitud)) {</text>
+    <text x="458" y="220" fill="#fca5a5">&#160;&#160;&#160;&#160;return avisoLongitud();</text>
+    <text x="458" y="240">&#160;&#160;}</text>
+    <text x="458" y="264" fill="#86efac">&#160;&#160;return cadena.slice(0, longitud);</text>
+    <text x="458" y="288">}</text>
+  </g>
+  <g font-size="13" fill="#cbd5e1">
+    <text x="38" y="270">Una sola expresión, sin llaves ni return.</text>
+    <text x="38" y="290">Con una comprobación es elegante. Con dos,</text>
+    <text x="38" y="310">cada rama se anida y cuesta leerla.</text>
+    <text x="458" y="308">Se lee de arriba abajo. Cada if descarta un</text>
+    <text x="458" y="326" font-size="13">caso, y la última línea resuelve el problema.</text>
+  </g>
+  <text x="430" y="378" text-anchor="middle" font-size="12" fill="#4d290b">MDN indica que el ternario se puede encadenar como una cadena if…else if…else. Las dos formas son válidas: elige la más legible.</text>
+</svg>

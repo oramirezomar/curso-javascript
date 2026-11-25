@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué recorta slice con distintas longitudes</title>
+  <desc id="d">El texto Hola Mundo tiene diez posiciones numeradas de 0 a 9. Con slice de 0 a 4 se obtienen las cuatro primeras letras, Hola. Con slice de 0 a menos 2, el menos 2 cuenta desde el final, y se obtiene Hola Mun, ocho letras, lo contrario de lo que se quería. Con slice de 0 a 2,5 el decimal se trunca a 2 y se obtiene Ho.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una longitud negativa no da error: recorta otra cosa</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="800" text-anchor="middle">
+    <g id="fila1">
+      <rect x="70" y="60" width="44" height="46" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="92" y="91" fill="#14532d">H</text>
+      <rect x="120" y="60" width="44" height="46" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="142" y="91" fill="#14532d">o</text>
+      <rect x="170" y="60" width="44" height="46" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="192" y="91" fill="#14532d">l</text>
+      <rect x="220" y="60" width="44" height="46" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="242" y="91" fill="#14532d">a</text>
+      <rect x="270" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="292" y="91" fill="#94a3b8">&#160;</text>
+      <rect x="320" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="342" y="91" fill="#94a3b8">M</text>
+      <rect x="370" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="392" y="91" fill="#94a3b8">u</text>
+      <rect x="420" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="442" y="91" fill="#94a3b8">n</text>
+      <rect x="470" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="492" y="91" fill="#94a3b8">d</text>
+      <rect x="520" y="60" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="542" y="91" fill="#94a3b8">o</text>
+    </g>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="92" y="122">0</text><text x="142" y="122">1</text><text x="192" y="122">2</text><text x="242" y="122">3</text><text x="292" y="122">4</text><text x="342" y="122">5</text><text x="392" y="122">6</text><text x="442" y="122">7</text><text x="492" y="122">8</text><text x="542" y="122">9</text>
+  </g>
+  <text x="590" y="90" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#14532d">slice(0, 4)</text>
+  <text x="590" y="108" font-size="13" fill="#14532d">→ "Hola"</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="800" text-anchor="middle">
+    <rect x="70" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="92" y="201" fill="#7f1d1d">H</text>
+    <rect x="120" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="142" y="201" fill="#7f1d1d">o</text>
+    <rect x="170" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="192" y="201" fill="#7f1d1d">l</text>
+    <rect x="220" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="242" y="201" fill="#7f1d1d">a</text>
+    <rect x="270" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="292" y="201" fill="#7f1d1d">&#160;</text>
+    <rect x="320" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="342" y="201" fill="#7f1d1d">M</text>
+    <rect x="370" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="392" y="201" fill="#7f1d1d">u</text>
+    <rect x="420" y="170" width="44" height="46" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="442" y="201" fill="#7f1d1d">n</text>
+    <rect x="470" y="170" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="492" y="201" fill="#94a3b8">d</text>
+    <rect x="520" y="170" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="542" y="201" fill="#94a3b8">o</text>
+  </g>
+  <text x="590" y="200" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#7f1d1d">slice(0, -2)</text>
+  <text x="590" y="218" font-size="13" fill="#7f1d1d">→ "Hola Mun"</text>
+  <text x="590" y="236" font-size="12" fill="#7f1d1d">el -2 cuenta desde el final</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="800" text-anchor="middle">
+    <rect x="70" y="270" width="44" height="46" rx="6" fill="#fde68a" stroke="#a16207" stroke-width="2"/><text x="92" y="301" fill="#713f12">H</text>
+    <rect x="120" y="270" width="44" height="46" rx="6" fill="#fde68a" stroke="#a16207" stroke-width="2"/><text x="142" y="301" fill="#713f12">o</text>
+    <rect x="170" y="270" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="192" y="301" fill="#94a3b8">l</text>
+    <rect x="220" y="270" width="44" height="46" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><text x="242" y="301" fill="#94a3b8">a</text>
+  </g>
+  <text x="590" y="296" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#713f12">slice(0, 2.5)</text>
+  <text x="590" y="314" font-size="13" fill="#713f12">→ "Ho"</text>
+  <text x="590" y="332" font-size="12" fill="#713f12">el decimal se trunca a 2</text>
+</svg>

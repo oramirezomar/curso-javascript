@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Comprobar con !cadena frente a comprobar el tipo</title>
+  <desc id="d">Tabla con seis valores y el resultado de dos comprobaciones. La comprobación de valor falso, no cadena, acepta el texto hola mundo, rechaza el texto vacío aunque es un texto válido, rechaza el cero, y acepta por error el número 12345, el arreglo 1 2 3 y el objeto. La comprobación de tipo, typeof igual a string, acepta el texto hola mundo y el texto vacío, y rechaza correctamente el cero, el número, el arreglo y el objeto.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Dos formas de comprobar que hay un texto</text>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="50" width="220" height="48" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/><text x="130" y="80" fill="#1e293b">Valor recibido</text>
+    <rect x="250" y="50" width="290" height="48" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+    <text x="395" y="70" font-family="ui-monospace, Menlo, monospace" fill="#713f12">!cadena</text><text x="395" y="88" font-size="11" font-weight="400" fill="#713f12">valor falso = «no hay texto»</text>
+    <rect x="550" y="50" width="290" height="48" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="695" y="70" font-family="ui-monospace, Menlo, monospace" fill="#14532d">typeof cadena !== "string"</text><text x="695" y="88" font-size="11" font-weight="400" fill="#14532d">comprueba el tipo</text>
+  </g>
+  <g fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2">
+    <rect x="20" y="108" width="820" height="44" rx="8"/><rect x="20" y="158" width="820" height="44" rx="8"/><rect x="20" y="208" width="820" height="44" rx="8"/><rect x="20" y="258" width="820" height="44" rx="8"/><rect x="20" y="308" width="820" height="44" rx="8"/><rect x="20" y="358" width="820" height="44" rx="8"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#1e293b" text-anchor="middle">
+    <text x="130" y="136">"hola mundo"</text><text x="130" y="186">""</text><text x="130" y="236">0</text><text x="130" y="286">12345</text><text x="130" y="336">[1, 2, 3]</text><text x="130" y="386">{ nombre: "Ana" }</text>
+  </g>
+  <g font-size="13" font-weight="700" text-anchor="middle">
+    <rect x="262" y="116" width="266" height="28" rx="6" fill="#dcfce7"/><text x="395" y="135" fill="#14532d">Acepta. Correcto.</text>
+    <rect x="262" y="166" width="266" height="28" rx="6" fill="#fef3c7"/><text x="395" y="185" fill="#78350f">Rechaza, aunque es un texto válido</text>
+    <rect x="262" y="216" width="266" height="28" rx="6" fill="#dcfce7"/><text x="395" y="235" fill="#14532d">Rechaza. Correcto.</text>
+    <rect x="262" y="266" width="266" height="28" rx="6" fill="#fee2e2"/><text x="395" y="285" fill="#7f1d1d">Acepta, y length da undefined</text>
+    <rect x="262" y="316" width="266" height="28" rx="6" fill="#fee2e2"/><text x="395" y="335" fill="#7f1d1d">Acepta, y cuenta 3 elementos</text>
+    <rect x="262" y="366" width="266" height="28" rx="6" fill="#fee2e2"/><text x="395" y="385" fill="#7f1d1d">Acepta, y length da undefined</text>
+    <rect x="562" y="116" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="135" fill="#14532d">Acepta. Correcto.</text>
+    <rect x="562" y="166" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="185" fill="#14532d">Acepta: es un texto, con 0 caracteres</text>
+    <rect x="562" y="216" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="235" fill="#14532d">Rechaza. Correcto.</text>
+    <rect x="562" y="266" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="285" fill="#14532d">Rechaza. Correcto.</text>
+    <rect x="562" y="316" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="335" fill="#14532d">Rechaza. Correcto.</text>
+    <rect x="562" y="366" width="266" height="28" rx="6" fill="#dcfce7"/><text x="695" y="385" fill="#14532d">Rechaza. Correcto.</text>
+  </g>
+  <text x="430" y="424" text-anchor="middle" font-size="12" fill="#4d290b">Los valores falsos son "", 0, null, undefined, NaN y false. Un arreglo o un objeto, aunque estén vacíos, son verdaderos.</text>
+</svg>
