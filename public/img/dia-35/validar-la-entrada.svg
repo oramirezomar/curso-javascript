@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Validar la entrada antes de resolver</title>
+  <desc id="d">Diagrama de decisión de la función recortarTexto con los parámetros cadena y longitud. Primero se pregunta si cadena es un texto: si no lo es, se avisa con console.warn y se devuelve undefined. Después se pregunta si longitud es un entero mayor o igual que cero: si no lo es, también se avisa y se devuelve undefined. Si ambas respuestas son sí, se devuelve cadena.slice de cero a longitud.</desc>
+  <defs><marker id="f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#4d290b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Primero se valida, después se resuelve</text>
+  <rect x="270" y="52" width="320" height="44" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="430" y="80" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#1e3a8a">recortarTexto(cadena, longitud)</text>
+  <path d="M430 96 V126" stroke="#4d290b" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <polygon points="430,128 570,174 430,220 290,174" fill="#fef9c3" stroke="#a16207" stroke-width="2.5"/>
+  <text x="430" y="170" text-anchor="middle" font-size="14" font-weight="800" fill="#713f12">¿cadena es</text>
+  <text x="430" y="190" text-anchor="middle" font-size="14" font-weight="800" fill="#713f12">un texto?</text>
+  <path d="M570 174 H648" stroke="#4d290b" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <text x="610" y="166" text-anchor="middle" font-size="13" font-weight="800" fill="#b91c1c">No</text>
+  <rect x="650" y="148" width="190" height="52" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="745" y="170" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">console.warn(…)</text>
+  <text x="745" y="188" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#7f1d1d">return undefined</text>
+  <path d="M430 220 V248" stroke="#4d290b" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <text x="446" y="242" font-size="13" font-weight="800" fill="#15803d">Sí</text>
+  <polygon points="430,250 590,298 430,346 270,298" fill="#fef9c3" stroke="#a16207" stroke-width="2.5"/>
+  <text x="430" y="294" text-anchor="middle" font-size="14" font-weight="800" fill="#713f12">¿longitud es un entero</text>
+  <text x="430" y="314" text-anchor="middle" font-size="14" font-weight="800" fill="#713f12">mayor o igual que 0?</text>
+  <path d="M590 298 H648" stroke="#4d290b" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <text x="620" y="290" text-anchor="middle" font-size="13" font-weight="800" fill="#b91c1c">No</text>
+  <rect x="650" y="272" width="190" height="52" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="745" y="294" text-anchor="middle" font-size="13" font-weight="800" fill="#7f1d1d">console.warn(…)</text>
+  <text x="745" y="312" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" fill="#7f1d1d">return undefined</text>
+  <path d="M430 346 V364" stroke="#4d290b" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <text x="446" y="362" font-size="13" font-weight="800" fill="#15803d">Sí</text>
+  <rect x="270" y="366" width="320" height="42" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="430" y="392" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#14532d">return cadena.slice(0, longitud)</text>
+  <text x="130" y="170" text-anchor="middle" font-size="12" fill="#4d290b">Cada validación</text>
+  <text x="130" y="188" text-anchor="middle" font-size="12" fill="#4d290b">descarta un caso</text>
+  <text x="130" y="206" text-anchor="middle" font-size="12" fill="#4d290b">antes de seguir.</text>
+</svg>

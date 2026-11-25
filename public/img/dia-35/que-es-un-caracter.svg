@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Cuántos caracteres tiene un texto</title>
+  <desc id="d">Tabla con cuatro textos y tres formas de contarlos. El texto hola vale 4 con length, 4 con el operador de propagación y 4 que ve una persona. El emoji de la cara sonriente vale 2 con length, 1 con el operador de propagación y 1 que ve una persona. La letra e con acento descompuesta, escrita como una e y un acento aparte, vale 2 con length, 2 con el operador de propagación y 1 que ve una persona. El emoji de la familia vale 8 con length, 5 con el operador de propagación y 1 que ve una persona. Intl.Segmenter cuenta lo que ve una persona.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">¿Cuántos caracteres tiene un texto?</text>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="52" width="220" height="44" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/><text x="130" y="79" fill="#1e293b">Texto</text>
+    <rect x="250" y="52" width="190" height="44" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/><text x="345" y="72" fill="#7f1d1d">length</text><text x="345" y="88" font-size="11" font-weight="400" fill="#7f1d1d">unidades UTF-16</text>
+    <rect x="450" y="52" width="190" height="44" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/><text x="545" y="72" fill="#713f12">[...texto].length</text><text x="545" y="88" font-size="11" font-weight="400" fill="#713f12">puntos de código</text>
+    <rect x="650" y="52" width="190" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><text x="745" y="72" fill="#14532d">Lo que ve una persona</text><text x="745" y="88" font-size="11" font-weight="400" fill="#14532d">Intl.Segmenter</text>
+  </g>
+  <g>
+    <rect x="20" y="106" width="820" height="56" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="20" y="172" width="820" height="56" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="20" y="238" width="820" height="56" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="20" y="304" width="820" height="56" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  </g>
+  <g font-size="26" text-anchor="middle">
+    <text x="130" y="144" font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="800" fill="#1e293b">"hola"</text>
+    <text x="130" y="210" font-size="20">😀 <tspan font-size="14" fill="#1e293b" font-family="system-ui, sans-serif" font-weight="800">cara sonriente</tspan></text>
+    <text x="130" y="272" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#1e293b">e + acento aparte</text>
+    <text x="130" y="342" font-size="20">👨‍👩‍👧 <tspan font-size="14" fill="#1e293b" font-family="system-ui, sans-serif" font-weight="800">emoji de familia</tspan></text>
+  </g>
+  <g font-size="26" font-weight="800" text-anchor="middle">
+    <text x="345" y="144" fill="#7f1d1d">4</text><text x="545" y="144" fill="#713f12">4</text><text x="745" y="144" fill="#14532d">4</text>
+    <text x="345" y="210" fill="#7f1d1d">2</text><text x="545" y="210" fill="#713f12">1</text><text x="745" y="210" fill="#14532d">1</text>
+    <text x="345" y="276" fill="#7f1d1d">2</text><text x="545" y="276" fill="#713f12">2</text><text x="745" y="276" fill="#14532d">1</text>
+    <text x="345" y="342" fill="#7f1d1d">8</text><text x="545" y="342" fill="#713f12">5</text><text x="745" y="342" fill="#14532d">1</text>
+  </g>
+  <text x="430" y="386" text-anchor="middle" font-size="12" fill="#4d290b">Con los textos habituales en español, length suele coincidir con lo que se ve. Con emojis y acentos separados, no.</text>
+</svg>

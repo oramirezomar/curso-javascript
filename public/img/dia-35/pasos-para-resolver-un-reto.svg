@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Seis pasos para resolver un reto</title>
+  <desc id="d">Seis pasos en orden. Uno, entender el enunciado: qué recibe, qué devuelve y un ejemplo. Dos, pensar en la entrada: qué pasa si no es un texto o si falta. Tres, buscar la herramienta en la documentación de MDN. Cuatro, escribir la solución, primero lo básico y después las validaciones. Cinco, probar con casos normales y extremos. Seis, comparar con otras soluciones y mejorar.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cómo abordar un reto de programación</text>
+  <g>
+    <rect x="20" y="56" width="256" height="130" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="302" y="56" width="256" height="130" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="584" y="56" width="256" height="130" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <rect x="20" y="214" width="256" height="130" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <rect x="302" y="214" width="256" height="130" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <rect x="584" y="214" width="256" height="130" rx="12" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+  </g>
+  <g font-size="17" font-weight="800" text-anchor="middle" fill="#ffffff">
+    <circle cx="48" cy="84" r="16" fill="#2563eb"/><text x="48" y="90">1</text>
+    <circle cx="330" cy="84" r="16" fill="#7c3aed"/><text x="330" y="90">2</text>
+    <circle cx="612" cy="84" r="16" fill="#a16207"/><text x="612" y="90">3</text>
+    <circle cx="48" cy="242" r="16" fill="#16a34a"/><text x="48" y="248">4</text>
+    <circle cx="330" cy="242" r="16" fill="#ea580c"/><text x="330" y="248">5</text>
+    <circle cx="612" cy="242" r="16" fill="#db2777"/><text x="612" y="248">6</text>
+  </g>
+  <g font-size="15" font-weight="800">
+    <text x="74" y="90" fill="#1e3a8a">Entender el enunciado</text>
+    <text x="356" y="90" fill="#4c1d95">Pensar en la entrada</text>
+    <text x="638" y="90" fill="#713f12">Buscar la herramienta</text>
+    <text x="74" y="248" fill="#14532d">Escribir la solución</text>
+    <text x="356" y="248" fill="#7c2d12">Probar con casos</text>
+    <text x="638" y="248" fill="#831843">Comparar y mejorar</text>
+  </g>
+  <g font-size="13">
+    <g fill="#1e3a8a"><text x="36" y="124">¿Qué recibe, qué devuelve?</text><text x="36" y="144">Mira el ejemplo del enunciado.</text></g>
+    <g fill="#4c1d95"><text x="318" y="124">¿Y si no es un texto?</text><text x="318" y="144">¿Y si falta, o está vacío?</text></g>
+    <g fill="#713f12"><text x="600" y="124">Busca el método en la</text><text x="600" y="144">documentación de MDN.</text></g>
+    <g fill="#14532d"><text x="36" y="282">Primero lo básico que funciona.</text><text x="36" y="302">Después, las validaciones.</text></g>
+    <g fill="#7c2d12"><text x="318" y="282">Casos normales y casos</text><text x="318" y="302">extremos: vacío, negativo…</text></g>
+    <g fill="#831843"><text x="600" y="282">Otra solución puede ser</text><text x="600" y="302">mejor que la tuya.</text></g>
+  </g>
+  <g fill="none" stroke="#4d290b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M280 121 H298 M291 114 L298 121 L291 128"/>
+    <path d="M562 121 H580 M573 114 L580 121 L573 128"/>
+    <path d="M280 279 H298 M291 272 L298 279 L291 286"/>
+    <path d="M562 279 H580 M573 272 L580 279 L573 286"/>
+    <path d="M712 190 V202 H148 V210 M141 203 L148 210 L155 203"/>
+  </g>
+  <text x="430" y="368" text-anchor="middle" font-size="12" fill="#4d290b">A menudo, las comprobaciones de la entrada ocupan más líneas que el código que resuelve el problema.</text>
+</svg>

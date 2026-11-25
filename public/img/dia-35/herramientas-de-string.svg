@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 350" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Herramientas de String para los retos</title>
+  <desc id="d">Cuatro herramientas. La propiedad length cuenta las unidades de un texto: hola punto length es 4. El método slice recorta un trozo: Hola Mundo punto slice de 0 a 4 da Hola. El método split divide un texto en un arreglo: a coma b coma c punto split con coma da un arreglo con a, b y c. El método repeat repite el texto: ja punto repeat de 3 da jajaja.</desc>
+  <rect width="860" height="350" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuatro herramientas de String para los retos</text>
+  <g>
+    <rect x="20" y="52" width="196" height="268" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="228" y="52" width="196" height="268" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="436" y="52" width="196" height="268" rx="12" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <rect x="644" y="52" width="196" height="268" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" text-anchor="middle">
+    <text x="118" y="88" fill="#1e3a8a">.length</text>
+    <text x="326" y="88" fill="#4c1d95">.slice()</text>
+    <text x="534" y="88" fill="#713f12">.split()</text>
+    <text x="742" y="88" fill="#14532d">.repeat()</text>
+  </g>
+  <g font-size="12.5" text-anchor="middle">
+    <g fill="#1e3a8a"><text x="118" y="118">Cuenta las unidades</text><text x="118" y="136">de un texto.</text></g>
+    <g fill="#4c1d95"><text x="326" y="118">Devuelve un trozo,</text><text x="326" y="136">sin tocar el original.</text></g>
+    <g fill="#713f12"><text x="534" y="118">Parte el texto y</text><text x="534" y="136">devuelve un arreglo.</text></g>
+    <g fill="#14532d"><text x="742" y="118">Pega el texto consigo</text><text x="742" y="136">mismo n veces.</text></g>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700">
+    <rect x="34" y="162" width="168" height="76" rx="8" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="46" y="186" fill="#1e3a8a">"hola".length</text><text x="46" y="206" fill="#1e3a8a">→ 4</text>
+    <rect x="242" y="162" width="168" height="76" rx="8" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="254" y="182" fill="#4c1d95">"Hola Mundo"</text><text x="254" y="200" fill="#4c1d95">.slice(0, 4)</text><text x="254" y="220" fill="#4c1d95">→ "Hola"</text>
+    <rect x="450" y="162" width="168" height="76" rx="8" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="462" y="182" fill="#713f12">"a,b,c"</text><text x="462" y="200" fill="#713f12">.split(",")</text><text x="462" y="220" fill="#713f12">→ ["a","b","c"]</text>
+    <rect x="658" y="162" width="168" height="76" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+    <text x="670" y="186" fill="#14532d">"ja".repeat(3)</text><text x="670" y="206" fill="#14532d">→ "jajaja"</text>
+  </g>
+  <g font-size="12" text-anchor="middle">
+    <g fill="#1e3a8a"><text x="118" y="266">Es una propiedad:</text><text x="118" y="284">sin paréntesis.</text></g>
+    <g fill="#4c1d95"><text x="326" y="266">Admite índices</text><text x="326" y="284">negativos.</text></g>
+    <g fill="#713f12"><text x="534" y="266">Con "" separa</text><text x="534" y="284">cada unidad.</text></g>
+    <g fill="#14532d"><text x="742" y="266">No añade separador.</text><text x="742" y="284">Falla con negativos.</text></g>
+  </g>
+  <text x="430" y="340" text-anchor="middle" font-size="12" fill="#4d290b">Ninguno modifica el texto original: los textos son inmutables.</text>
+</svg>
