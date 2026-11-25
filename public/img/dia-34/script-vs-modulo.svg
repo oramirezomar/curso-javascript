@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Script clásico frente a módulo</title>
+  <desc id="d">Comparación de seis aspectos. Ámbito: en un script clásico todo lo del nivel superior es global y compartido, y en un módulo cada archivo tiene su propio ámbito. Modo estricto: en un script solo si se escribe, y en un módulo siempre. Compartir código: con variables globales, o con export e import de forma explícita. Carga: el script detiene la lectura de la página, y el módulo se difiere automáticamente. Ejecuciones: el script se ejecuta una vez por cada etiqueta, y el módulo una sola vez aunque se importe muchas veces. Etiqueta: script con src, o script con type module.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Script clásico frente a módulo</text>
+  <rect x="190" y="50" width="320" height="34" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="350" y="73" text-anchor="middle" font-size="15" font-weight="800" fill="#78350f">Script clásico</text>
+  <rect x="530" y="50" width="310" height="34" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="685" y="73" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d">Módulo</text>
+  <g font-size="13" font-weight="800" fill="#4d290b">
+    <text x="24" y="124">Ámbito</text>
+    <text x="24" y="182">Modo estricto</text>
+    <text x="24" y="240">Compartir código</text>
+    <text x="24" y="298">Carga de la página</text>
+    <text x="24" y="356">Ejecuciones</text>
+    <text x="24" y="414">Etiqueta</text>
+  </g>
+  <g fill="#fffbeb" stroke="#d97706" stroke-width="1.2">
+    <rect x="190" y="96" width="320" height="46" rx="8"/><rect x="190" y="154" width="320" height="46" rx="8"/><rect x="190" y="212" width="320" height="46" rx="8"/><rect x="190" y="270" width="320" height="46" rx="8"/><rect x="190" y="328" width="320" height="46" rx="8"/><rect x="190" y="386" width="320" height="46" rx="8"/>
+  </g>
+  <g fill="#f0fdf4" stroke="#16a34a" stroke-width="1.2">
+    <rect x="530" y="96" width="310" height="46" rx="8"/><rect x="530" y="154" width="310" height="46" rx="8"/><rect x="530" y="212" width="310" height="46" rx="8"/><rect x="530" y="270" width="310" height="46" rx="8"/><rect x="530" y="328" width="310" height="46" rx="8"/><rect x="530" y="386" width="310" height="46" rx="8"/>
+  </g>
+  <g font-size="12.5" fill="#78350f">
+    <text x="204" y="116">Lo del nivel superior es global</text><text x="204" y="132">y se comparte entre archivos</text>
+    <text x="204" y="181">Solo si escribes "use strict"</text>
+    <text x="204" y="239">Mediante variables globales</text>
+    <text x="204" y="290">Detiene la lectura de la página</text><text x="204" y="306">mientras se descarga y ejecuta</text>
+    <text x="204" y="355">Una vez por cada etiqueta</text>
+    <text x="204" y="413" font-family="ui-monospace, Menlo, monospace" font-size="12">&lt;script src="a.js"&gt;</text>
+  </g>
+  <g font-size="12.5" fill="#14532d">
+    <text x="544" y="116">Cada archivo tiene el suyo</text><text x="544" y="132">y no ve el de los demás</text>
+    <text x="544" y="181">Siempre, sin escribirlo</text>
+    <text x="544" y="239">Con export e import, de forma explícita</text>
+    <text x="544" y="297">Se difiere de forma automática</text>
+    <text x="544" y="348">Una sola vez, aunque se importe</text><text x="544" y="364">desde muchos archivos</text>
+    <text x="544" y="413" font-family="ui-monospace, Menlo, monospace" font-size="12">&lt;script type="module" src="a.js"&gt;</text>
+  </g>
+</svg>

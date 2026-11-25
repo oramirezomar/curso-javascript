@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Formas de exportar e importar</title>
+  <desc id="d">Cinco formas. Exportar con nombre se escribe export const PI e importa con llaves, con el mismo nombre. Exportar por defecto se escribe export default function e importa sin llaves, con el nombre que elijas. Un alias se escribe export sumar as add, e importa add as mas. Importar todo se escribe import asterisco as calc, y entrega un objeto con todas las exportaciones. Importar solo por sus efectos se escribe import con la ruta, sin nada más, y solo ejecuta el módulo.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Formas de exportar e importar</text>
+  <g font-size="13" font-weight="800">
+    <text x="30" y="68" fill="#14532d">Exportar</text>
+    <text x="318" y="68" fill="#1e3a8a">Importar</text>
+    <text x="668" y="68" fill="#4d290b">Cómo se nombra</text>
+  </g>
+  <g>
+    <rect x="20" y="80" width="820" height="52" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <rect x="20" y="140" width="820" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+    <rect x="20" y="200" width="820" height="52" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+    <rect x="20" y="260" width="820" height="52" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="20" y="320" width="820" height="52" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12.5" font-weight="700">
+    <text x="34" y="111" fill="#14532d">export const PI = 3;</text>
+    <text x="318" y="111" fill="#1e3a8a">import { PI } from "./a.js";</text>
+    <text x="34" y="171" fill="#14532d">export default function () {}</text>
+    <text x="318" y="171" fill="#1e3a8a">import saludar from "./a.js";</text>
+    <text x="34" y="231" fill="#713f12">export { sumar as add };</text>
+    <text x="318" y="231" fill="#713f12">import { add as mas } from "./a.js";</text>
+    <text x="34" y="291" fill="#4c1d95">export { a, b };</text>
+    <text x="318" y="291" fill="#4c1d95">import * as calc from "./a.js";</text>
+    <text x="34" y="351" fill="#334155">(cualquier módulo)</text>
+    <text x="318" y="351" fill="#334155">import "./a.js";</text>
+  </g>
+  <g font-size="12">
+    <text x="668" y="111" fill="#14532d">Con llaves, el mismo nombre</text>
+    <text x="668" y="171" fill="#1e3a8a">Sin llaves, nombre libre</text>
+    <text x="668" y="231" fill="#713f12">Alias con la palabra as</text>
+    <text x="668" y="291" fill="#4c1d95">Un objeto con todo</text>
+    <text x="668" y="351" fill="#334155">Solo se ejecuta</text>
+  </g>
+</svg>

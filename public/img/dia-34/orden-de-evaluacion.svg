@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Dependencias y orden de ejecución</title>
+  <desc id="d">El archivo principal.js importa calculo.js y constantes.js. El archivo calculo.js también importa constantes.js. Los módulos se ejecutan empezando por los que no dependen de nadie: primero constantes.js, después calculo.js y por último principal.js. Cada módulo se ejecuta una sola vez, y las importaciones se ejecutan antes que el resto del código de cada archivo.</desc>
+  <rect width="860" height="380" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cada módulo se ejecuta una vez, y primero los que no dependen de nadie</text>
+  <text x="170" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">Quién importa a quién</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" text-anchor="middle">
+    <rect x="70" y="82" width="200" height="50" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/><text x="170" y="113" fill="#1e3a8a">principal.js</text>
+    <rect x="70" y="190" width="200" height="50" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2.5"/><text x="170" y="221" fill="#713f12">calculo.js</text>
+    <rect x="70" y="298" width="200" height="50" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/><text x="170" y="329" fill="#14532d">constantes.js</text>
+  </g>
+  <g fill="none" stroke="#4d290b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M170 132 V190 M162 182 L170 190 L178 182"/>
+    <path d="M170 240 V298 M162 290 L170 298 L178 290"/>
+    <path d="M70 107 H40 V323 H70 M62 315 L70 323 L62 331"/>
+  </g>
+  <text x="190" y="166" font-size="12" fill="#4d290b">import</text>
+  <text x="190" y="274" font-size="12" fill="#4d290b">import</text>
+  <text x="34" y="214" font-size="12" fill="#4d290b" transform="rotate(-90 34 214)" text-anchor="middle">import</text>
+  <text x="590" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#4d290b">Orden en que se ejecutan</text>
+  <g>
+    <circle cx="380" cy="107" r="18" fill="#16a34a"/><text x="380" y="113" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">1</text>
+    <text x="414" y="112" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#14532d">constantes.js</text>
+    <text x="414" y="132" font-size="12" fill="#4d290b">No depende de nadie.</text>
+    <circle cx="380" cy="195" r="18" fill="#a16207"/><text x="380" y="201" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">2</text>
+    <text x="414" y="200" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#713f12">calculo.js</text>
+    <text x="414" y="220" font-size="12" fill="#4d290b">Ya tiene lo que importa.</text>
+    <circle cx="380" cy="283" r="18" fill="#2563eb"/><text x="380" y="289" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">3</text>
+    <text x="414" y="288" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" fill="#1e3a8a">principal.js</text>
+    <text x="414" y="308" font-size="12" fill="#4d290b">Corre cuando todo está listo.</text>
+  </g>
+  <rect x="380" y="326" width="460" height="38" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="396" y="350" font-size="12" fill="#78350f">constantes.js se ejecuta una sola vez, aunque lo importen dos archivos.</text>
+</svg>

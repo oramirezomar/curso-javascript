@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Solo sale lo que se exporta</title>
+  <desc id="d">El archivo constantes.js declara tres cosas. Una constante PI con export, una función saludar con export default, y una constante usuario sin export, que queda privada. El archivo modulos.js puede importar PI entre llaves y saludar sin llaves, pero no puede importar usuario, que da un error.</desc>
+  <rect width="860" height="390" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Solo sale lo que se exporta</text>
+  <rect x="20" y="52" width="400" height="300" rx="12" fill="#1e293b"/>
+  <text x="40" y="82" font-size="14" font-weight="800" fill="#e2e8f0">constantes.js</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13.5" font-weight="700">
+    <rect x="34" y="104" width="372" height="62" rx="8" fill="#14532d"/>
+    <text x="48" y="130" fill="#bbf7d0">export const PI = 3.14159;</text>
+    <text x="48" y="152" fill="#86efac" font-family="system-ui, sans-serif" font-size="12" font-weight="400">Exportación con nombre</text>
+    <rect x="34" y="178" width="372" height="62" rx="8" fill="#1e3a8a"/>
+    <text x="48" y="204" fill="#bfdbfe">export default function saludar() {…}</text>
+    <text x="48" y="226" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="400">Exportación por defecto: solo una</text>
+    <rect x="34" y="252" width="372" height="62" rx="8" fill="#374151"/>
+    <text x="48" y="278" fill="#e5e7eb">const usuario = "admin";</text>
+    <text x="48" y="300" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12" font-weight="400">Sin export: privada del módulo</text>
+  </g>
+  <rect x="440" y="52" width="400" height="300" rx="12" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
+  <text x="460" y="82" font-size="14" font-weight="800" fill="#78350f">modulos.js</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12.5" font-weight="700">
+    <rect x="454" y="104" width="372" height="62" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="468" y="130" fill="#14532d">import { PI } from "./constantes.js";</text>
+    <text x="468" y="152" fill="#166534" font-family="system-ui, sans-serif" font-size="12" font-weight="400">Con llaves: el nombre debe coincidir</text>
+    <rect x="454" y="178" width="372" height="62" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="468" y="204" fill="#1e3a8a">import saludar from "./constantes.js";</text>
+    <text x="468" y="226" fill="#1d4ed8" font-family="system-ui, sans-serif" font-size="12" font-weight="400">Sin llaves: el nombre lo eliges tú</text>
+    <rect x="454" y="252" width="372" height="62" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="468" y="278" fill="#7f1d1d">import { usuario } from "./constantes.js";</text>
+    <text x="468" y="300" fill="#991b1b" font-family="system-ui, sans-serif" font-size="12" font-weight="400">SyntaxError: ese módulo no lo exporta</text>
+  </g>
+  <g fill="none" stroke="#4d290b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M420 135 H440 M432 127 L440 135 L432 143"/>
+    <path d="M420 209 H440 M432 201 L440 209 L432 217"/>
+    <path d="M420 283 H440" stroke-dasharray="4 5"/>
+  </g>
+  <text x="430" y="378" text-anchor="middle" font-size="12" fill="#4d290b">Los nombres de un módulo no se mezclan con los de otro, salvo que los importes.</text>
+</svg>
