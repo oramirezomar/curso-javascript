@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Limpiar un texto para saber si es un palíndromo</title>
+  <desc id="d">Cinco pasos con la frase Acaso hubo búhos acá entre signos de interrogación. Uno, pasar a minúsculas. Dos, descomponer con normalize NFD, que separa cada tilde de su letra. Tres, quitar las marcas de tilde con la propiedad Unicode M. Cuatro, quitar todo lo que no sea una letra o un número, y queda acasohubobuhosaca. Cinco, comparar con su reverso: son iguales, así que es un palíndromo.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cinco pasos para comparar solo las letras</text>
+  <g>
+    <rect x="20" y="52" width="820" height="64" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+    <rect x="20" y="124" width="820" height="64" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.8"/>
+    <rect x="20" y="196" width="820" height="64" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="1.8"/>
+    <rect x="20" y="268" width="820" height="64" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="1.8"/>
+    <rect x="20" y="340" width="820" height="64" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  </g>
+  <g font-size="16" font-weight="800" text-anchor="middle" fill="#ffffff">
+    <circle cx="48" cy="84" r="15" fill="#2563eb"/><text x="48" y="90">1</text>
+    <circle cx="48" cy="156" r="15" fill="#7c3aed"/><text x="48" y="162">2</text>
+    <circle cx="48" cy="228" r="15" fill="#a16207"/><text x="48" y="234">3</text>
+    <circle cx="48" cy="300" r="15" fill="#ea580c"/><text x="48" y="306">4</text>
+    <circle cx="48" cy="372" r="15" fill="#16a34a"/><text x="48" y="378">5</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <text x="80" y="78" fill="#1e3a8a">toLowerCase()</text>
+    <text x="80" y="150" fill="#4c1d95">normalize("NFD")</text>
+    <text x="80" y="222" fill="#713f12">replace(/\p{M}/gu, "")</text>
+    <text x="80" y="294" fill="#7c2d12">replace(/[^\p{L}\p{N}]/gu, "")</text>
+    <text x="80" y="366" fill="#14532d">limpio === [...limpio].reverse().join("")</text>
+  </g>
+  <g font-size="12" fill="#334155">
+    <text x="80" y="98">Mayúsculas y minúsculas pasan a ser iguales.</text>
+    <text x="80" y="170">Separa cada tilde de su letra: la "ú" pasa a ser "u" y una marca.</text>
+    <text x="80" y="242">Quita las marcas: la tilde desaparece (y la ñ pasa a ser n).</text>
+    <text x="80" y="314">Quita espacios, signos y cualquier cosa que no sea letra o número.</text>
+    <text x="80" y="386">Si el texto limpio es igual a su reverso, es un palíndromo.</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" text-anchor="end">
+    <text x="826" y="78" fill="#1e3a8a">"¿acaso hubo búhos acá?"</text>
+    <text x="826" y="150" fill="#4c1d95">"¿acaso hubo búhos acá?" (24 unidades)</text>
+    <text x="826" y="222" fill="#713f12">"¿acaso hubo buhos aca?"</text>
+    <text x="826" y="294" fill="#7c2d12">"acasohubobuhosaca"</text>
+    <text x="826" y="366" fill="#14532d">true</text>
+  </g>
+  <text x="826" y="426" text-anchor="end" font-size="12" fill="#4d290b">Frase de partida: "¿Acaso hubo búhos acá?"</text>
+</svg>
