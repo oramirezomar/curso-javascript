@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Para comprobar un primo basta llegar a la raíz cuadrada</title>
+  <desc id="d">Los divisores de 36 vienen en pares: 1 por 36, 2 por 18, 3 por 12, 4 por 9 y 6 por 6. Cada divisor grande tiene un compañero pequeño, menor o igual que la raíz cuadrada de 36, que es 6. Por eso basta probar los divisores hasta 6. Para el primo 999983, probar todos los números anteriores exige 999981 divisiones, y probar solo hasta la raíz cuadrada exige 998.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Los divisores vienen en pares</text>
+  <text x="20" y="66" font-size="14" font-weight="800" fill="#1e293b">Divisores de 36</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="800" text-anchor="middle">
+    <rect x="20" y="80" width="150" height="52" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="95" y="113" fill="#14532d">2 × 18</text>
+    <rect x="180" y="80" width="150" height="52" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="255" y="113" fill="#14532d">3 × 12</text>
+    <rect x="340" y="80" width="150" height="52" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="415" y="113" fill="#14532d">4 × 9</text>
+    <rect x="500" y="80" width="150" height="52" rx="8" fill="#86efac" stroke="#15803d" stroke-width="3"/><text x="575" y="113" fill="#14532d">6 × 6</text>
+  </g>
+  <g font-size="13" fill="#14532d">
+    <text x="20" y="156">El divisor pequeño (2, 3, 4, 6) es siempre ≤ √36 = 6.</text>
+    <text x="20" y="176">Si 36 tuviera un divisor mayor que 6, su pareja sería menor que 6 y ya la habrías encontrado.</text>
+  </g>
+  <rect x="670" y="80" width="170" height="96" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.8"/>
+  <text x="755" y="112" text-anchor="middle" font-size="14" font-weight="800" fill="#78350f">Condición del bucle</text>
+  <text x="755" y="140" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="800" fill="#78350f">i * i &lt;= n</text>
+  <text x="755" y="162" text-anchor="middle" font-size="12" fill="#78350f">sin calcular la raíz</text>
+  <text x="20" y="226" font-size="14" font-weight="800" fill="#1e293b">Cuántas divisiones se hacen para comprobar que 999983 es primo</text>
+  <g font-size="13" font-weight="800">
+    <text x="20" y="262" fill="#7f1d1d">Probar hasta n − 1</text>
+    <rect x="200" y="246" width="620" height="24" rx="5" fill="#fecaca" stroke="#b91c1c" stroke-width="1.5"/>
+    <text x="812" y="263" text-anchor="end" fill="#7f1d1d">999 981 divisiones</text>
+    <text x="20" y="306" fill="#14532d">Probar hasta √n</text>
+    <rect x="200" y="290" width="20" height="24" rx="5" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="232" y="307" fill="#14532d">998 divisiones</text>
+  </g>
+  <g font-size="13" fill="#4d290b">
+    <text x="20" y="350">Mil veces menos trabajo para el mismo resultado. Con un primo de más de 2000 millones, 2147483647,</text>
+    <text x="20" y="370">basta con unas 46 mil divisiones. Probar todos los anteriores no terminaría en un tiempo razonable.</text>
+  </g>
+  <text x="430" y="406" text-anchor="middle" font-size="12" fill="#64748b">Las barras no están a escala: la de √n sería casi invisible.</text>
+</svg>

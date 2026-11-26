@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Convertir entre Celsius y Fahrenheit</title>
+  <desc id="d">Dos fórmulas. De Celsius a Fahrenheit: F es C por 9 entre 5, más 32. De Fahrenheit a Celsius: C es F menos 32, por 5 entre 9. Cuatro puntos de referencia: menos 40 grados son iguales en las dos escalas; 0 grados Celsius son 32 Fahrenheit, el punto de congelación del agua; 37 Celsius son 98,6 Fahrenheit, la temperatura corporal habitual; 100 Celsius son 212 Fahrenheit, el punto de ebullición del agua a nivel del mar.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Dos fórmulas y cuatro puntos de referencia</text>
+  <rect x="20" y="52" width="400" height="82" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="38" y="80" font-size="14" font-weight="800" fill="#1e3a8a">De Celsius a Fahrenheit</text>
+  <text x="38" y="112" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" fill="#1e3a8a">F = C × 9 / 5 + 32</text>
+  <rect x="440" y="52" width="400" height="82" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="458" y="80" font-size="14" font-weight="800" fill="#7c2d12">De Fahrenheit a Celsius</text>
+  <text x="458" y="112" font-family="ui-monospace, Menlo, monospace" font-size="17" font-weight="800" fill="#7c2d12">C = (F − 32) × 5 / 9</text>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="156" width="130" height="38" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/><text x="85" y="180" fill="#1e3a8a">°C</text>
+    <rect x="160" y="156" width="130" height="38" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/><text x="225" y="180" fill="#7c2d12">°F</text>
+    <rect x="300" y="156" width="540" height="38" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/><text x="570" y="180" fill="#1e293b">Qué representa</text>
+  </g>
+  <g fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2">
+    <rect x="20" y="202" width="820" height="40" rx="8"/><rect x="20" y="248" width="820" height="40" rx="8"/><rect x="20" y="294" width="820" height="40" rx="8"/><rect x="20" y="340" width="820" height="40" rx="8"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" text-anchor="middle">
+    <text x="85" y="228" fill="#1e3a8a">−40</text><text x="225" y="228" fill="#7c2d12">−40</text>
+    <text x="85" y="274" fill="#1e3a8a">0</text><text x="225" y="274" fill="#7c2d12">32</text>
+    <text x="85" y="320" fill="#1e3a8a">37</text><text x="225" y="320" fill="#7c2d12">98.6</text>
+    <text x="85" y="366" fill="#1e3a8a">100</text><text x="225" y="366" fill="#7c2d12">212</text>
+  </g>
+  <g font-size="13" fill="#334155">
+    <text x="312" y="228">El único valor que coincide en las dos escalas.</text>
+    <text x="312" y="274">Punto de congelación del agua.</text>
+    <text x="312" y="320">Temperatura corporal habitual.</text>
+    <text x="312" y="366">Ebullición del agua a nivel del mar.</text>
+  </g>
+</svg>
