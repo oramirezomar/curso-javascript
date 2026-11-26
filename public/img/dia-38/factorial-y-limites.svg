@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El factorial crece muy deprisa</title>
+  <desc id="d">Tabla del factorial de algunos números. 5 factorial es 120 y 10 factorial es 3628800, exactos. 18 factorial es 6402373705728000, el último que es un entero seguro. 19 factorial ya supera el máximo entero seguro, 9007199254740991. 23 factorial es el primero cuyo cálculo con números normales no es exacto. 170 factorial es 7,25 por 10 elevado a 306, el último finito. 171 factorial da Infinity. Con BigInt el resultado es exacto para cualquier tamaño.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Hasta dónde llega un factorial con Number</text>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="50" width="90" height="38" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/><text x="65" y="74" fill="#1e293b">n</text>
+    <rect x="118" y="50" width="330" height="38" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/><text x="283" y="74" fill="#4c1d95">n! calculado con Number</text>
+    <rect x="456" y="50" width="384" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/><text x="648" y="74" fill="#713f12">Qué ocurre</text>
+  </g>
+  <g>
+    <rect x="20" y="96" width="820" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+    <rect x="20" y="142" width="820" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+    <rect x="20" y="188" width="820" height="40" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+    <rect x="20" y="234" width="820" height="40" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+    <rect x="20" y="280" width="820" height="40" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+    <rect x="20" y="326" width="820" height="40" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#1e293b" text-anchor="middle">
+    <text x="65" y="122">5</text><text x="65" y="168">10</text><text x="65" y="214">18</text><text x="65" y="260">19</text><text x="65" y="306">23</text><text x="65" y="352">171</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" text-anchor="middle">
+    <text x="283" y="122" fill="#14532d">120</text>
+    <text x="283" y="168" fill="#14532d">3628800</text>
+    <text x="283" y="214" fill="#14532d">6402373705728000</text>
+    <text x="283" y="260" fill="#78350f">121645100408832000</text>
+    <text x="283" y="306" fill="#7f1d1d">2.585201673888498e+22</text>
+    <text x="283" y="352" fill="#7f1d1d">Infinity</text>
+  </g>
+  <g font-size="12.5" font-weight="700">
+    <text x="470" y="122" fill="#14532d">Exacto.</text>
+    <text x="470" y="168" fill="#14532d">Exacto.</text>
+    <text x="470" y="214" fill="#14532d">El último entero seguro (≤ 9007199254740991).</text>
+    <text x="470" y="260" fill="#78350f">Ya no es un entero seguro.</text>
+    <text x="470" y="306" fill="#7f1d1d">Primero que difiere del valor exacto.</text>
+    <text x="470" y="352" fill="#7f1d1d">170! es lo último finito; 171! es Infinity.</text>
+  </g>
+  <text x="430" y="394" text-anchor="middle" font-size="12" fill="#4d290b">Con BigInt (por ejemplo 25n * 24n * …) el resultado es exacto, y solo lo limita la memoria.</text>
+</svg>

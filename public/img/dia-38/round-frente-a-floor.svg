@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Math.round frente a Math.floor para un número al azar</title>
+  <desc id="d">Dos tiras que reparten el intervalo de 0 a 1 entre los posibles resultados. Con Math.round de azar por 100 más 500, el resultado 500 y el resultado 600 reciben solo medio tramo cada uno, así que salen la mitad de veces, y además el 500 queda fuera del rango pedido de 501 a 600. Con Math.floor de azar por 100 más 501, los cien resultados de 501 a 600 reciben un tramo igual.</desc>
+  <rect width="860" height="360" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cuánto espacio recibe cada resultado</text>
+  <text x="20" y="72" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#7f1d1d">Math.round(azar * 100) + 500</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="86" width="40" height="52" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="40" y="118" fill="#7f1d1d">500</text>
+    <rect x="66" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="107" y="118" fill="#7f1d1d">501</text>
+    <rect x="154" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="195" y="118" fill="#7f1d1d">502</text>
+    <rect x="242" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="283" y="118" fill="#7f1d1d">503</text>
+    <text x="388" y="118" font-size="20" fill="#7f1d1d">· · ·</text>
+    <rect x="454" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="495" y="118" fill="#7f1d1d">597</text>
+    <rect x="542" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="583" y="118" fill="#7f1d1d">598</text>
+    <rect x="630" y="86" width="82" height="52" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/><text x="671" y="118" fill="#7f1d1d">599</text>
+    <rect x="718" y="86" width="40" height="52" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="738" y="118" fill="#7f1d1d">600</text>
+  </g>
+  <g font-size="12.5" fill="#7f1d1d">
+    <text x="20" y="160">500: sale la mitad de veces, y no pertenece al rango pedido.</text>
+    <text x="840" y="160" text-anchor="end">600: también sale la mitad de veces.</text>
+  </g>
+  <text x="20" y="214" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#14532d">Math.floor(azar * 100) + 501</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="61" y="260" fill="#14532d">501</text>
+    <rect x="108" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="149" y="260" fill="#14532d">502</text>
+    <rect x="196" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="237" y="260" fill="#14532d">503</text>
+    <rect x="284" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="325" y="260" fill="#14532d">504</text>
+    <text x="410" y="260" font-size="20" fill="#14532d">· · ·</text>
+    <rect x="454" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="495" y="260" fill="#14532d">597</text>
+    <rect x="542" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="583" y="260" fill="#14532d">598</text>
+    <rect x="630" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="671" y="260" fill="#14532d">599</text>
+    <rect x="718" y="228" width="82" height="52" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/><text x="759" y="260" fill="#14532d">600</text>
+  </g>
+  <text x="20" y="302" font-size="12.5" fill="#14532d">Los cien resultados, de 501 a 600, reciben el mismo espacio: es una distribución uniforme.</text>
+  <text x="430" y="340" text-anchor="middle" font-size="12" fill="#4d290b">Las tiras no están a escala: solo muestran qué resultados reciben un tramo completo y cuáles la mitad.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Un número capicúa se comprueba como texto</title>
+  <desc id="d">Seis números convertidos a texto con String y comparados con su reverso. 2002 se lee igual y es capicúa. 2000 se convierte en 0002, que no es igual, así que no es capicúa. 212.212 con decimales es capicúa. 18.99 al revés es 99.81 y no lo es. El menos 121 al revés es 121 menos, así que no lo es. NaN, aunque no es un número válido, se lee NaN en los dos sentidos, y por eso hay que descartarlo antes con Number.isFinite.</desc>
+  <rect width="860" height="410" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">String(numero) comparado con su reverso</text>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="50" width="170" height="38" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/><text x="105" y="74" fill="#1e293b">Número</text>
+    <rect x="200" y="50" width="170" height="38" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/><text x="285" y="74" fill="#4c1d95">String(n)</text>
+    <rect x="380" y="50" width="170" height="38" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/><text x="465" y="74" fill="#713f12">Al revés</text>
+    <rect x="560" y="50" width="280" height="38" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><text x="700" y="74" fill="#14532d">¿Capicúa?</text>
+  </g>
+  <g>
+    <rect x="20" y="96" width="820" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="20" y="142" width="820" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="20" y="188" width="820" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="20" y="234" width="820" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="20" y="280" width="820" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="20" y="326" width="820" height="40" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.8"/>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" text-anchor="middle" fill="#1e293b">
+    <text x="105" y="122">2002</text><text x="285" y="122">"2002"</text><text x="465" y="122">"2002"</text>
+    <text x="105" y="168">2000</text><text x="285" y="168">"2000"</text><text x="465" y="168">"0002"</text>
+    <text x="105" y="214">212.212</text><text x="285" y="214">"212.212"</text><text x="465" y="214">"212.212"</text>
+    <text x="105" y="260">18.99</text><text x="285" y="260">"18.99"</text><text x="465" y="260">"99.81"</text>
+    <text x="105" y="306">-121</text><text x="285" y="306">"-121"</text><text x="465" y="306">"121-"</text>
+    <text x="105" y="352" fill="#7f1d1d">NaN</text><text x="285" y="352" fill="#7f1d1d">"NaN"</text><text x="465" y="352" fill="#7f1d1d">"NaN"</text>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="700" y="122" fill="#14532d">Sí</text>
+    <text x="700" y="168" fill="#7f1d1d">No: los ceros pasan al principio</text>
+    <text x="700" y="214" fill="#14532d">Sí: el punto cuenta como un carácter</text>
+    <text x="700" y="260" fill="#7f1d1d">No</text>
+    <text x="700" y="306" fill="#7f1d1d">No: el signo menos cuenta</text>
+    <text x="700" y="352" fill="#7f1d1d">¡Daría "sí"! Hay que descartarlo antes</text>
+  </g>
+  <text x="430" y="394" text-anchor="middle" font-size="12" fill="#4d290b">typeof NaN es "number". Number.isFinite(NaN) es false, y por eso es la comprobación correcta.</text>
+</svg>
