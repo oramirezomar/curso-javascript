@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Una función para muchos patrones</title>
+  <desc id="d">La función validarPatron recibe una cadena y un patrón. Primero comprueba que la cadena sea un texto no vacío y, si no, avisa con warn y devuelve undefined. Después comprueba que el patrón sea una expresión regular con instanceof RegExp y, si no, avisa y devuelve undefined. Luego crea una copia del patrón sin las banderas g e y, para que no guarde estado. Por último prueba la copia con test y devuelve true o false. El mismo código sirve para el nombre, el correo y tres dígitos: solo cambia la expresión que se le pasa.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Una función, muchos patrones</text>
+  <rect x="20" y="60" width="500" height="360" rx="14" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="40" y="92" text-anchor="start" font-size="17" font-weight="800" fill="#7c2d12" font-family="ui-monospace, Menlo, monospace">validarPatron(cadena, patron)</text>
+  <rect x="40" y="112" width="460" height="64" rx="10" fill="#ffffff" stroke="#fdba74" stroke-width="2"/>
+  <circle cx="68" cy="144" r="14" fill="#c2410c"/>
+  <text x="68" y="149" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">1</text>
+  <text x="94" y="139" text-anchor="start" font-size="14" font-weight="800" fill="#431407">¿cadena es un texto no vacío?</text>
+  <text x="94" y="160" text-anchor="start" font-size="12" font-weight="500" fill="#7c2d12" font-family="ui-monospace, Menlo, monospace">si no: warn y undefined</text>
+  <rect x="40" y="188" width="460" height="64" rx="10" fill="#ffffff" stroke="#fdba74" stroke-width="2"/>
+  <circle cx="68" cy="220" r="14" fill="#c2410c"/>
+  <text x="68" y="225" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">2</text>
+  <text x="94" y="215" text-anchor="start" font-size="14" font-weight="800" fill="#431407">¿patron es una RegExp?</text>
+  <text x="94" y="236" text-anchor="start" font-size="12" font-weight="500" fill="#7c2d12" font-family="ui-monospace, Menlo, monospace">patron instanceof RegExp · si no: warn y undefined</text>
+  <rect x="40" y="264" width="460" height="64" rx="10" fill="#ffffff" stroke="#fdba74" stroke-width="2"/>
+  <circle cx="68" cy="296" r="14" fill="#c2410c"/>
+  <text x="68" y="301" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">3</text>
+  <text x="94" y="291" text-anchor="start" font-size="14" font-weight="800" fill="#431407">Copia sin las banderas g e y</text>
+  <text x="94" y="312" text-anchor="start" font-size="12" font-weight="500" fill="#7c2d12" font-family="ui-monospace, Menlo, monospace">new RegExp(patron.source, flags sin g ni y)</text>
+  <rect x="40" y="340" width="460" height="64" rx="10" fill="#ffffff" stroke="#fdba74" stroke-width="2"/>
+  <circle cx="68" cy="372" r="14" fill="#c2410c"/>
+  <text x="68" y="377" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">4</text>
+  <text x="94" y="367" text-anchor="start" font-size="14" font-weight="800" fill="#431407">Prueba la copia</text>
+  <text x="94" y="388" text-anchor="start" font-size="12" font-weight="500" fill="#7c2d12" font-family="ui-monospace, Menlo, monospace">copia.test(cadena) → true o false</text>
+  <text x="680" y="70" text-anchor="middle" font-size="15" font-weight="800" fill="#4d290b">El mismo código, otros patrones</text>
+  <rect x="540" y="86" width="300" height="100" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="556" y="112" text-anchor="start" font-size="15" font-weight="800" fill="#14532d">Nombre</text>
+  <text x="556" y="138" text-anchor="start" font-size="12.5" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">/^\p{L}+(?:[ '’-]\p{L}+)*$/u</text>
+  <text x="556" y="164" text-anchor="start" font-size="11.5" font-weight="500" fill="#14532d" font-family="ui-monospace, Menlo, monospace">validarPatron("Ana-María", …) → true</text>
+  <rect x="540" y="198" width="300" height="100" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="556" y="224" text-anchor="start" font-size="15" font-weight="800" fill="#1e3a8a">Correo</text>
+  <text x="556" y="250" text-anchor="start" font-size="12.5" font-weight="700" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">/^[a-z0-9_+-]+(?:\.…)$/i</text>
+  <text x="556" y="276" text-anchor="start" font-size="11.5" font-weight="500" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">validarPatron("ana@x.com", …) → true</text>
+  <rect x="540" y="310" width="300" height="100" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="556" y="336" text-anchor="start" font-size="15" font-weight="800" fill="#78350f">Tres dígitos</text>
+  <text x="556" y="362" text-anchor="start" font-size="12.5" font-weight="700" fill="#78350f" font-family="ui-monospace, Menlo, monospace">/^\d{3}$/</text>
+  <text x="556" y="388" text-anchor="start" font-size="11.5" font-weight="500" fill="#78350f" font-family="ui-monospace, Menlo, monospace">validarPatron("1234", …) → false</text>
+</svg>

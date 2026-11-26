@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Anatomía de la expresión que valida un nombre</title>
+  <desc id="d">La expresión /^\p{L}+(?:[ '’-]\p{L}+)*$/u se compone de cinco piezas. El signo ^ indica que empieza ahí, sin nada antes. \p{L}+ es una o más letras de cualquier idioma. El grupo (?: [ '’-] \p{L}+ )* es cero o más veces un separador, que puede ser un espacio, un guion o un apóstrofo, seguido de más letras. El signo $ indica que termina ahí, sin nada después. La bandera u activa las propiedades Unicode. Son válidos José Ñandú, Ana-María, O'Brien, 李小龍 y Борис. No son válidos Mariana 35, Ana--María, un espacio antes del nombre, un guion al principio, R2-D2 ni Ana con una coma.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Anatomía de la expresión del nombre</text>
+  <text x="430" y="84" text-anchor="middle" font-size="28" font-weight="800" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">/^\p{L}+(?:[ '’-]\p{L}+)*$/u</text>
+  <rect x="20" y="112" width="156" height="172" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="98" y="148" text-anchor="middle" font-size="19" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">^</text>
+  <text x="98" y="182" text-anchor="middle" font-size="12" font-weight="500" fill="#1e3a8a">Empieza aquí:</text>
+  <text x="98" y="204" text-anchor="middle" font-size="12" font-weight="500" fill="#1e3a8a">no puede haber</text>
+  <text x="98" y="226" text-anchor="middle" font-size="12" font-weight="500" fill="#1e3a8a">nada antes.</text>
+  <rect x="186" y="112" width="156" height="172" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="264" y="148" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">\p{L}+</text>
+  <text x="264" y="182" text-anchor="middle" font-size="12" font-weight="500" fill="#14532d">Una o más letras</text>
+  <text x="264" y="204" text-anchor="middle" font-size="12" font-weight="500" fill="#14532d">de cualquier</text>
+  <text x="264" y="226" text-anchor="middle" font-size="12" font-weight="500" fill="#14532d">idioma.</text>
+  <rect x="352" y="112" width="156" height="172" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="430" y="148" text-anchor="middle" font-size="19" font-weight="800" fill="#78350f" font-family="ui-monospace, Menlo, monospace">(?: … )*</text>
+  <text x="430" y="182" text-anchor="middle" font-size="12" font-weight="500" fill="#78350f">Cero o más veces:</text>
+  <text x="430" y="204" text-anchor="middle" font-size="12" font-weight="500" fill="#78350f">un separador (espacio,</text>
+  <text x="430" y="226" text-anchor="middle" font-size="12" font-weight="500" fill="#78350f">guion o apóstrofo)</text>
+  <text x="430" y="248" text-anchor="middle" font-size="12" font-weight="500" fill="#78350f">y más letras.</text>
+  <rect x="518" y="112" width="156" height="172" rx="14" fill="#fce7f3" stroke="#db2777" stroke-width="2.5"/>
+  <text x="596" y="148" text-anchor="middle" font-size="19" font-weight="800" fill="#831843" font-family="ui-monospace, Menlo, monospace">$</text>
+  <text x="596" y="182" text-anchor="middle" font-size="12" font-weight="500" fill="#831843">Termina aquí:</text>
+  <text x="596" y="204" text-anchor="middle" font-size="12" font-weight="500" fill="#831843">no puede haber</text>
+  <text x="596" y="226" text-anchor="middle" font-size="12" font-weight="500" fill="#831843">nada después.</text>
+  <rect x="684" y="112" width="156" height="172" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="762" y="148" text-anchor="middle" font-size="19" font-weight="800" fill="#4c1d95" font-family="ui-monospace, Menlo, monospace">u</text>
+  <text x="762" y="182" text-anchor="middle" font-size="12" font-weight="500" fill="#4c1d95">Bandera: activa</text>
+  <text x="762" y="204" text-anchor="middle" font-size="12" font-weight="500" fill="#4c1d95">\p{L} y entiende</text>
+  <text x="762" y="226" text-anchor="middle" font-size="12" font-weight="500" fill="#4c1d95">los caracteres</text>
+  <text x="762" y="248" text-anchor="middle" font-size="12" font-weight="500" fill="#4c1d95">Unicode.</text>
+  <rect x="20" y="308" width="406" height="100" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="38" y="336" text-anchor="start" font-size="16" font-weight="800" fill="#14532d">✔ Válidos</text>
+  <text x="38" y="364" text-anchor="start" font-size="14" font-weight="600" fill="#14532d" font-family="ui-monospace, Menlo, monospace">José Ñandú · Ana-María · O'Brien</text>
+  <text x="38" y="388" text-anchor="start" font-size="14" font-weight="600" fill="#14532d" font-family="ui-monospace, Menlo, monospace">李小龍 · Борис · Jose + tilde suelta</text>
+  <rect x="434" y="308" width="406" height="100" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="452" y="336" text-anchor="start" font-size="16" font-weight="800" fill="#7f1d1d">✘ Inválidos</text>
+  <text x="452" y="364" text-anchor="start" font-size="14" font-weight="600" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">Mariana 35 · Ana--María · R2-D2</text>
+  <text x="452" y="388" text-anchor="start" font-size="14" font-weight="600" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">␣Ana · Ana␣ · -Ana · Ana,</text>
+</svg>

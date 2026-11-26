@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Las partes de un correo electrónico</title>
+  <desc id="d">El correo ana.perez+compras@mail.empresa.com.co tiene cuatro zonas. La parte local, antes de la arroba, admite letras sin tilde, números y los símbolos punto, guion bajo, más y guion; no puede empezar ni terminar con punto ni tener dos puntos seguidos, y mide hasta 64 caracteres. La arroba aparece exactamente una vez. El dominio son etiquetas separadas por puntos, con letras sin tilde, números y guiones, sin guion al principio ni al final y hasta 63 caracteres cada una. La última etiqueta, la extensión, solo lleva letras y mide de 2 a 63. El correo completo mide como máximo 254 caracteres. Esto solo comprueba la forma: no demuestra que el correo exista.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Las partes de un correo electrónico</text>
+  <text x="430" y="92" text-anchor="middle" font-size="24" font-weight="800" font-family="ui-monospace, Menlo, monospace"><tspan fill="#1d4ed8">ana.perez+compras</tspan><tspan fill="#b45309">@</tspan><tspan fill="#15803d">mail.empresa.com.</tspan><tspan fill="#6d28d9">co</tspan></text>
+  <rect x="20" y="122" width="262" height="206" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="151.0" y="154" text-anchor="middle" font-size="17" font-weight="800" fill="#1e3a8a">Parte local</text>
+  <text x="151.0" y="186" text-anchor="middle" font-size="12.5" font-weight="500" fill="#1e3a8a">Letras sin tilde, números</text>
+  <text x="151.0" y="212" text-anchor="middle" font-size="12.5" font-weight="500" fill="#1e3a8a">y los símbolos . _ + -</text>
+  <text x="151.0" y="238" text-anchor="middle" font-size="12.5" font-weight="500" fill="#1e3a8a">Sin punto al principio,</text>
+  <text x="151.0" y="264" text-anchor="middle" font-size="12.5" font-weight="500" fill="#1e3a8a">al final ni dos seguidos</text>
+  <text x="151.0" y="290" text-anchor="middle" font-size="12.5" font-weight="500" fill="#1e3a8a">Hasta 64 caracteres</text>
+  <rect x="294" y="122" width="92" height="206" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="340.0" y="154" text-anchor="middle" font-size="17" font-weight="800" fill="#78350f">La @</text>
+  <text x="340.0" y="186" text-anchor="middle" font-size="12.5" font-weight="500" fill="#78350f">Una sola</text>
+  <text x="340.0" y="212" text-anchor="middle" font-size="12.5" font-weight="500" fill="#78350f">en todo</text>
+  <text x="340.0" y="238" text-anchor="middle" font-size="12.5" font-weight="500" fill="#78350f">el texto</text>
+  <rect x="398" y="122" width="262" height="206" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="529.0" y="154" text-anchor="middle" font-size="17" font-weight="800" fill="#14532d">Dominio</text>
+  <text x="529.0" y="186" text-anchor="middle" font-size="12.5" font-weight="500" fill="#14532d">Etiquetas separadas por puntos</text>
+  <text x="529.0" y="212" text-anchor="middle" font-size="12.5" font-weight="500" fill="#14532d">Letras sin tilde, números</text>
+  <text x="529.0" y="238" text-anchor="middle" font-size="12.5" font-weight="500" fill="#14532d">y guiones (nunca _)</text>
+  <text x="529.0" y="264" text-anchor="middle" font-size="12.5" font-weight="500" fill="#14532d">Sin guion al principio ni al final</text>
+  <text x="529.0" y="290" text-anchor="middle" font-size="12.5" font-weight="500" fill="#14532d">Hasta 63 caracteres cada una</text>
+  <rect x="672" y="122" width="168" height="206" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="756.0" y="154" text-anchor="middle" font-size="17" font-weight="800" fill="#4c1d95">Extensión</text>
+  <text x="756.0" y="186" text-anchor="middle" font-size="12.5" font-weight="500" fill="#4c1d95">Es la última</text>
+  <text x="756.0" y="212" text-anchor="middle" font-size="12.5" font-weight="500" fill="#4c1d95">etiqueta</text>
+  <text x="756.0" y="238" text-anchor="middle" font-size="12.5" font-weight="500" fill="#4c1d95">Solo letras,</text>
+  <text x="756.0" y="264" text-anchor="middle" font-size="12.5" font-weight="500" fill="#4c1d95">de 2 a 63</text>
+  <rect x="20" y="350" width="820" height="70" rx="14" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="38" y="376" text-anchor="start" font-size="14" font-weight="800" fill="#7c2d12">El correo completo mide como máximo 254 caracteres.</text>
+  <text x="38" y="402" text-anchor="start" font-size="13" font-weight="400" fill="#7c2d12">La expresión solo comprueba la forma. Para saber si el correo existe, hay que enviarle un mensaje de confirmación.</text>
+</svg>

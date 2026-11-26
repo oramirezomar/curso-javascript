@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Vocales, consonantes y caracteres que no cuentan</title>
+  <desc id="d">El texto «Hola, Ñandú 2» tiene trece caracteres. Cuatro son vocales: o, a, a y ú. Cinco son consonantes: H, l, Ñ, n y d. Cuatro no cuentan: la coma, los dos espacios y el 2. El código decide con tres pasos: comprueba si es una letra latina con la propiedad Script=Latin, obtiene la letra sin su tilde con normalize NFD y comprueba si esa letra base es a, e, i, o o u. Una letra con tilde puede ser un solo carácter o dos: la ú son u más el acento, y la Ñ son N más la tilde de la eñe.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cada carácter cae en una de tres categorías</text>
+  <rect x="44" y="58" width="52" height="58" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="70" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">H</text>
+  <rect x="104" y="58" width="52" height="58" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="130" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">o</text>
+  <rect x="164" y="58" width="52" height="58" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="190" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">l</text>
+  <rect x="224" y="58" width="52" height="58" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="250" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">a</text>
+  <rect x="284" y="58" width="52" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="310" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#64748b" font-family="ui-monospace, Menlo, monospace">,</text>
+  <rect x="344" y="58" width="52" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="370" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#64748b" font-family="ui-monospace, Menlo, monospace">␣</text>
+  <rect x="404" y="58" width="52" height="58" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="430" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">Ñ</text>
+  <rect x="464" y="58" width="52" height="58" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="490" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">a</text>
+  <rect x="524" y="58" width="52" height="58" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="550" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">n</text>
+  <rect x="584" y="58" width="52" height="58" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="610" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">d</text>
+  <rect x="644" y="58" width="52" height="58" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="670" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">ú</text>
+  <rect x="704" y="58" width="52" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="730" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#64748b" font-family="ui-monospace, Menlo, monospace">␣</text>
+  <rect x="764" y="58" width="52" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="790" y="98" text-anchor="middle" font-size="26" font-weight="800" fill="#64748b" font-family="ui-monospace, Menlo, monospace">2</text>
+  <rect x="20" y="138" width="262" height="84" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="38" y="168" text-anchor="start" font-size="18" font-weight="800" fill="#14532d">Vocales: 4</text>
+  <text x="38" y="196" text-anchor="start" font-size="15" font-weight="400" fill="#14532d" font-family="ui-monospace, Menlo, monospace">o, a, a, ú</text>
+  <rect x="299" y="138" width="262" height="84" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="317" y="168" text-anchor="start" font-size="18" font-weight="800" fill="#1e3a8a">Consonantes: 5</text>
+  <text x="317" y="196" text-anchor="start" font-size="15" font-weight="400" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">H, l, Ñ, n, d</text>
+  <rect x="578" y="138" width="262" height="84" rx="14" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="596" y="168" text-anchor="start" font-size="18" font-weight="800" fill="#475569">Se ignoran: 4</text>
+  <text x="596" y="196" text-anchor="start" font-size="15" font-weight="400" fill="#475569" font-family="ui-monospace, Menlo, monospace">coma, dos espacios y el 2</text>
+  <rect x="20" y="244" width="410" height="160" rx="14" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="38" y="272" text-anchor="start" font-size="15" font-weight="800" fill="#7c2d12">Cómo decide el código</text>
+  <circle cx="48" cy="295" r="10" fill="#c2410c"/>
+  <text x="48" y="299" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">1</text>
+  <text x="68" y="298" text-anchor="start" font-size="13" font-weight="800" fill="#431407" font-family="ui-monospace, Menlo, monospace">/\p{Script=Latin}/u.test(c)</text>
+  <text x="68" y="314" text-anchor="start" font-size="12" font-weight="400" fill="#7c2d12">¿Es una letra latina?</text>
+  <circle cx="48" cy="333" r="10" fill="#c2410c"/>
+  <text x="48" y="337" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">2</text>
+  <text x="68" y="336" text-anchor="start" font-size="13" font-weight="800" fill="#431407" font-family="ui-monospace, Menlo, monospace">c.normalize("NFD")[0]</text>
+  <text x="68" y="352" text-anchor="start" font-size="12" font-weight="400" fill="#7c2d12">La letra base, sin la tilde</text>
+  <circle cx="48" cy="371" r="10" fill="#c2410c"/>
+  <text x="48" y="375" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">3</text>
+  <text x="68" y="374" text-anchor="start" font-size="13" font-weight="800" fill="#431407" font-family="ui-monospace, Menlo, monospace">/[aeiou]/i.test(base)</text>
+  <text x="68" y="390" text-anchor="start" font-size="12" font-weight="400" fill="#7c2d12">¿Es una vocal? Si no, consonante</text>
+  <rect x="442" y="244" width="398" height="160" rx="14" fill="#eef2ff" stroke="#4f46e5" stroke-width="2.5"/>
+  <text x="460" y="272" text-anchor="start" font-size="15" font-weight="800" fill="#312e81">Una tilde puede ser uno o dos caracteres</text>
+  <text x="460" y="304" text-anchor="start" font-size="12.5" font-weight="600" fill="#1e1b4b" font-family="ui-monospace, Menlo, monospace">"ú".length               → 1</text>
+  <text x="460" y="330" text-anchor="start" font-size="12.5" font-weight="600" fill="#1e1b4b" font-family="ui-monospace, Menlo, monospace">"ú".normalize("NFD").length → 2</text>
+  <text x="460" y="356" text-anchor="start" font-size="12.5" font-weight="600" fill="#1e1b4b" font-family="ui-monospace, Menlo, monospace">"ú"  →  "u" + "´"  →  base u  →  vocal</text>
+  <text x="460" y="382" text-anchor="start" font-size="12.5" font-weight="600" fill="#1e1b4b" font-family="ui-monospace, Menlo, monospace">"Ñ"  →  "N" + "~"  →  base N  →  consonante</text>
+</svg>
