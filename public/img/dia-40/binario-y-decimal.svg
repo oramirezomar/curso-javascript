@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Del binario al decimal</title>
+  <desc id="d">El número binario 1110010 tiene siete dígitos. Cada posición vale una potencia de 2, de 2 a la 6, que es 64, hasta 2 a la 0, que es 1. Se suman las posiciones con un 1: 64 más 32 más 16 más 2, que da 114. parseInt con la base 2 hace esta conversión, y toString con la base 2 hace la inversa. Con un dígito que no es binario, parseInt de 102 en base 2 se detiene en el 2 y devuelve 2 sin avisar.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Cada posición vale una potencia de 2</text>
+  <text x="20" y="90" font-size="13" font-weight="800" fill="#64748b">Potencia</text>
+  <text x="20" y="150" font-size="13" font-weight="800" fill="#64748b">Dígito</text>
+  <text x="20" y="210" font-size="13" font-weight="800" fill="#64748b">Valor</text>
+  <text x="158" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^6</text>
+  <rect x="120" y="104" width="76" height="62" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="158" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#14532d">1</text>
+  <text x="158" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">64</text>
+  <text x="246" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^5</text>
+  <rect x="208" y="104" width="76" height="62" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="246" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#14532d">1</text>
+  <text x="246" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">32</text>
+  <text x="334" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^4</text>
+  <rect x="296" y="104" width="76" height="62" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="334" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#14532d">1</text>
+  <text x="334" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">16</text>
+  <text x="422" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^3</text>
+  <rect x="384" y="104" width="76" height="62" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="422" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#94a3b8">0</text>
+  <text x="422" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#cbd5e1">0</text>
+  <text x="510" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^2</text>
+  <rect x="472" y="104" width="76" height="62" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="510" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#94a3b8">0</text>
+  <text x="510" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#cbd5e1">0</text>
+  <text x="598" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^1</text>
+  <rect x="560" y="104" width="76" height="62" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="598" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#14532d">1</text>
+  <text x="598" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">2</text>
+  <text x="686" y="90" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="800" fill="#4c1d95">2^0</text>
+  <rect x="648" y="104" width="76" height="62" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5"/>
+  <text x="686" y="147" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="30" font-weight="800" fill="#94a3b8">0</text>
+  <text x="686" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#cbd5e1">0</text>
+  <rect x="120" y="236" width="616" height="50" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="428" y="268" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="800" fill="#14532d">64 + 32 + 16 + 2 = 114</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="800">
+    <rect x="20" y="306" width="400" height="74" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+    <text x="36" y="332" fill="#1e3a8a">parseInt("1110010", 2)  →  114</text>
+    <text x="36" y="356" fill="#1e3a8a">(114).toString(2)  →  "1110010"</text>
+    <rect x="440" y="306" width="400" height="74" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.8"/>
+    <text x="456" y="332" fill="#7f1d1d">parseInt("102", 2)  →  2</text>
+    <text x="456" y="356" font-family="system-ui, sans-serif" font-weight="400" font-size="12.5" fill="#7f1d1d">Se detiene en el 2 y no avisa: hay que validar antes.</text>
+  </g>
+</svg>

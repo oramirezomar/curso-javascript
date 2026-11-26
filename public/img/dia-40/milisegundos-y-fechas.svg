@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Las fechas como milisegundos</title>
+  <desc id="d">Una fecha de JavaScript es un número de milisegundos desde el 1 de enero de 1970 a las 00:00 UTC. getTime devuelve ese número. Restar dos fechas da la diferencia en milisegundos. Para pasarla a otra unidad se divide: 1000 milisegundos son un segundo, por 60 un minuto, por 60 una hora, por 24 un día. Un día son 86400000 milisegundos. Un año no tiene un número fijo de milisegundos: dura 365 o 366 días. Una fecha inválida, como new Date con el texto hola, sigue siendo una instancia de Date, pero getTime devuelve NaN.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">De milisegundos a otras unidades</text>
+  <g>
+    <rect x="20" y="52" width="130" height="86" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="186" y="52" width="130" height="86" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="352" y="52" width="130" height="86" rx="10" fill="#fef9c3" stroke="#a16207" stroke-width="2"/>
+    <rect x="518" y="52" width="130" height="86" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <rect x="684" y="52" width="156" height="86" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  </g>
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <text x="85" y="82" fill="#1e3a8a">1 segundo</text>
+    <text x="251" y="82" fill="#4c1d95">1 minuto</text>
+    <text x="417" y="82" fill="#713f12">1 hora</text>
+    <text x="583" y="82" fill="#14532d">1 día</text>
+    <text x="762" y="82" fill="#7f1d1d">1 año</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="800" text-anchor="middle">
+    <text x="85" y="114" fill="#1e3a8a">1000</text>
+    <text x="251" y="114" fill="#4c1d95">60 000</text>
+    <text x="417" y="114" fill="#713f12">3 600 000</text>
+    <text x="583" y="114" fill="#14532d">86 400 000</text>
+    <text x="762" y="114" fill="#7f1d1d">¿365 o 366 días?</text>
+  </g>
+  <g fill="none" stroke="#4d290b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M154 95 H182 M175 88 L182 95 L175 102"/><path d="M320 95 H348 M341 88 L348 95 L341 102"/><path d="M486 95 H514 M507 88 L514 95 L507 102"/><path d="M652 95 H680 M673 88 L680 95 L673 102"/>
+  </g>
+  <g font-size="12.5" font-weight="700" text-anchor="middle" fill="#4d290b">
+    <text x="168" y="158">× 60</text><text x="334" y="158">× 60</text><text x="500" y="158">× 24</text><text x="666" y="158">× ¿?</text>
+  </g>
+  <rect x="20" y="190" width="400" height="120" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="38" y="218" font-size="14" font-weight="800" fill="#0c4a6e">Una fecha es un número</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12.5" font-weight="700" fill="#0c4a6e">
+    <text x="38" y="244">new Date(0)  →  1 ene 1970, 00:00 UTC</text>
+    <text x="38" y="266">fecha.getTime()  →  milisegundos</text>
+    <text x="38" y="288">hasta - desde  →  diferencia en ms</text>
+  </g>
+  <rect x="440" y="190" width="400" height="120" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="458" y="218" font-size="14" font-weight="800" fill="#7f1d1d">Una fecha inválida sigue siendo Date</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="12.5" font-weight="700" fill="#7f1d1d">
+    <text x="458" y="244">new Date("hola") instanceof Date  →  true</text>
+    <text x="458" y="266">new Date("hola").getTime()  →  NaN</text>
+    <text x="458" y="288">String(new Date("hola"))  →  "Invalid Date"</text>
+  </g>
+  <text x="430" y="342" text-anchor="middle" font-size="13" fill="#4d290b">Hasta el día, todo es exacto: 86 400 000 ms. A partir del año hay que contar con el calendario.</text>
+  <text x="430" y="368" text-anchor="middle" font-size="12" fill="#64748b">Los segundos, minutos, horas y días de la cadena son exactos. Los meses y los años no.</text>
+</svg>
