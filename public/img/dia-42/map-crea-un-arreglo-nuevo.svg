@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">map crea un arreglo nuevo</title>
+  <desc id="d">El arreglo original 1, 4, 5 pasa por map con la función n por n y produce un arreglo nuevo, 1, 16, 25. El original sigue siendo 1, 4, 5. forEach con una asignación dentro devuelve undefined y cambia el original, que queda en 1, 16, 25. Un arreglo con un hueco, como 1, vacío, 3, se comporta distinto según el método: map y every saltan el hueco, y for...of lo visita como undefined.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">map devuelve un arreglo nuevo y no toca el original</text>
+  <text x="130" y="70" text-anchor="middle" font-size="13" font-weight="800" fill="#475569">Arreglo original</text>
+  <rect x="40" y="84" width="70" height="60" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="75" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="120" y="84" width="70" height="60" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="155" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">4</text>
+  <rect x="200" y="84" width="70" height="60" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="235" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">5</text>
+  <path d="M300 114 L520 114" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <path d="M508 104 L522 114 L508 124" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <text x="410" y="100" text-anchor="middle" font-size="15" font-weight="800" fill="#4d290b" font-family="ui-monospace, Menlo, monospace">map((n) =&gt; n * n)</text>
+  <text x="410" y="140" text-anchor="middle" font-size="12" font-weight="500" fill="#475569">un arreglo nuevo</text>
+  <text x="670" y="70" text-anchor="middle" font-size="13" font-weight="800" fill="#475569">Arreglo nuevo</text>
+  <rect x="580" y="84" width="70" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="615" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="660" y="84" width="70" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="695" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">16</text>
+  <rect x="740" y="84" width="70" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="775" y="124" text-anchor="middle" font-size="26" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">25</text>
+  <rect x="20" y="190" width="262" height="170" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="151" y="222" text-anchor="middle" font-size="16" font-weight="800" fill="#14532d">map</text>
+  <text x="151" y="256" text-anchor="middle" font-size="13.5" font-weight="500" fill="#14532d">Devuelve un arreglo nuevo</text>
+  <text x="151" y="286" text-anchor="middle" font-size="13.5" font-weight="500" fill="#14532d">El original queda igual:</text>
+  <text x="151" y="316" text-anchor="middle" font-size="13.5" font-weight="500" fill="#14532d">1, 4, 5</text>
+  <rect x="299" y="190" width="262" height="170" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="430" y="222" text-anchor="middle" font-size="16" font-weight="800" fill="#7f1d1d">forEach con asignación</text>
+  <text x="430" y="256" text-anchor="middle" font-size="13.5" font-weight="500" fill="#7f1d1d">Devuelve undefined</text>
+  <text x="430" y="286" text-anchor="middle" font-size="13.5" font-weight="500" fill="#7f1d1d">Cambia el original:</text>
+  <text x="430" y="316" text-anchor="middle" font-size="13.5" font-weight="500" fill="#7f1d1d">1, 16, 25</text>
+  <rect x="578" y="190" width="262" height="170" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="709" y="222" text-anchor="middle" font-size="16" font-weight="800" fill="#78350f">Un arreglo con huecos</text>
+  <text x="709" y="256" text-anchor="middle" font-size="13.5" font-weight="500" fill="#78350f">[1, , 3] tiene un hueco</text>
+  <text x="709" y="286" text-anchor="middle" font-size="13.5" font-weight="500" fill="#78350f">map y every lo saltan</text>
+  <text x="709" y="316" text-anchor="middle" font-size="13.5" font-weight="500" fill="#78350f">for...of lo visita: undefined</text>
+</svg>

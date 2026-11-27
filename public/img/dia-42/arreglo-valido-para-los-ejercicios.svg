@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Qué es un arreglo válido para estos ejercicios</title>
+  <desc id="d">Para aceptar un arreglo de números se hacen tres comprobaciones en orden. Primero, Array.isArray del argumento. Segundo, que su longitud sea mayor que 0. Tercero, recorrer cada elemento con for...of y comprobar Number.isFinite, que rechaza textos, null, NaN e Infinity, y visita los huecos como undefined. Se aceptan 1, 4, 5 y menos 3, 0, 2,5. Se rechazan el texto 145, un objeto parecido a un arreglo, un arreglo vacío, un arreglo con un texto, con NaN, con Infinity o con un hueco.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Tres comprobaciones antes de trabajar con el arreglo</text>
+  <rect x="20" y="60" width="262" height="132" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="50" cy="92" r="14" fill="#2563eb"/>
+  <text x="50" y="97" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">1</text>
+  <text x="74" y="98" text-anchor="start" font-size="15" font-weight="800" fill="#1e3a8a">¿Es un arreglo?</text>
+  <text x="40" y="132" text-anchor="start" font-size="13" font-weight="700" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">Array.isArray(arreglo)</text>
+  <text x="40" y="166" text-anchor="start" font-size="11.5" font-weight="500" fill="#1e3a8a">rechaza texto, objeto, null</text>
+  <rect x="299" y="60" width="262" height="132" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <circle cx="329" cy="92" r="14" fill="#d97706"/>
+  <text x="329" y="97" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">2</text>
+  <text x="353" y="98" text-anchor="start" font-size="15" font-weight="800" fill="#78350f">¿Tiene elementos?</text>
+  <text x="319" y="132" text-anchor="start" font-size="13" font-weight="700" fill="#78350f" font-family="ui-monospace, Menlo, monospace">arreglo.length > 0</text>
+  <text x="319" y="166" text-anchor="start" font-size="11.5" font-weight="500" fill="#78350f">rechaza el arreglo vacío</text>
+  <rect x="578" y="60" width="262" height="132" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <circle cx="608" cy="92" r="14" fill="#16a34a"/>
+  <text x="608" y="97" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">3</text>
+  <text x="632" y="98" text-anchor="start" font-size="15" font-weight="800" fill="#14532d">¿Son números finitos?</text>
+  <text x="598" y="132" text-anchor="start" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">for...of + Number.isFinite</text>
+  <text x="598" y="166" text-anchor="start" font-size="11.5" font-weight="500" fill="#14532d">rechaza texto, null, NaN, Infinity y huecos</text>
+  <rect x="20" y="214" width="262" height="196" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="38" y="244" text-anchor="start" font-size="16" font-weight="800" fill="#14532d">✔ Se aceptan</text>
+  <text x="38" y="278" text-anchor="start" font-size="15" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">[1, 4, 5]</text>
+  <text x="38" y="308" text-anchor="start" font-size="15" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">[-3, 0, 2.5]</text>
+  <text x="38" y="338" text-anchor="start" font-size="15" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">[7]</text>
+  <rect x="299" y="214" width="541" height="196" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="317" y="244" text-anchor="start" font-size="16" font-weight="800" fill="#7f1d1d">✘ Se rechazan</text>
+  <text x="317" y="276" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">"145"</text>
+  <text x="317" y="292" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">un texto</text>
+  <text x="317" y="312" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">{ 0: 1, length: 1 }</text>
+  <text x="317" y="328" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">parecido a un arreglo</text>
+  <text x="317" y="348" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[]</text>
+  <text x="317" y="364" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">arreglo vacío</text>
+  <text x="317" y="384" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[1, "3"]</text>
+  <text x="317" y="400" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">un texto dentro</text>
+  <text x="579" y="276" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[1, NaN]</text>
+  <text x="579" y="292" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">NaN dentro</text>
+  <text x="579" y="312" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[1, Infinity]</text>
+  <text x="579" y="328" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">Infinity dentro</text>
+  <text x="579" y="348" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[1, , 3]</text>
+  <text x="579" y="364" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">un hueco dentro</text>
+  <text x="579" y="384" text-anchor="start" font-size="13" font-weight="700" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">null</text>
+  <text x="579" y="400" text-anchor="start" font-size="11" font-weight="500" fill="#7f1d1d">no es un arreglo</text>
+</svg>

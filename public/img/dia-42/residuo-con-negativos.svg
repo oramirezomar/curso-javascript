@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El residuo de un negativo es negativo</title>
+  <desc id="d">Tabla del residuo de dividir entre 2 los números de menos 3 a 3. El residuo n % 2 vale menos 1, 0, menos 1, 0, 1, 0, 1. Comprobar si el residuo es igual a 1 solo detecta como impares el 1 y el 3, y falla con menos 3 y menos 1. Comprobar si el residuo es distinto de 0 detecta bien todos los impares. El operador porcentaje es un residuo, no un módulo: toma el signo del dividendo.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">n % 2 con números negativos</text>
+  <rect x="20" y="60" width="130" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="85" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="#334155" font-family="ui-monospace, Menlo, monospace">n</text>
+  <rect x="160" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="204" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">−3</text>
+  <rect x="257" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="301" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">−2</text>
+  <rect x="354" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="398" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">−1</text>
+  <rect x="451" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="495" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">0</text>
+  <rect x="548" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="592" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="645" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="689" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">2</text>
+  <rect x="742" y="60" width="88" height="56" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="786" y="95" text-anchor="middle" font-size="20" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">3</text>
+  <rect x="20" y="130" width="130" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="85" y="164" text-anchor="middle" font-size="13" font-weight="800" fill="#334155" font-family="ui-monospace, Menlo, monospace">n % 2</text>
+  <rect x="160" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="204" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">−1</text>
+  <rect x="257" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="301" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">0</text>
+  <rect x="354" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="398" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">−1</text>
+  <rect x="451" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="495" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">0</text>
+  <rect x="548" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="592" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="645" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="689" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">0</text>
+  <rect x="742" y="130" width="88" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="786" y="164" text-anchor="middle" font-size="20" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="20" y="196" width="130" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="85" y="230" text-anchor="middle" font-size="13" font-weight="800" fill="#334155" font-family="ui-monospace, Menlo, monospace">n % 2 === 1</text>
+  <rect x="160" y="196" width="88" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="204" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="257" y="196" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="301" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="354" y="196" width="88" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="398" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="451" y="196" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="495" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="548" y="196" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="592" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <rect x="645" y="196" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="689" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="742" y="196" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="786" y="230" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <rect x="20" y="262" width="130" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="85" y="296" text-anchor="middle" font-size="13" font-weight="800" fill="#334155" font-family="ui-monospace, Menlo, monospace">n % 2 !== 0</text>
+  <rect x="160" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="204" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <rect x="257" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="301" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="354" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="398" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <rect x="451" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="495" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="548" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="592" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <rect x="645" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="689" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">false</text>
+  <rect x="742" y="262" width="88" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="786" y="296" text-anchor="middle" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <text x="430" y="346" text-anchor="middle" font-size="14" font-weight="800" fill="#4d290b">Con === 1, los impares −3 y −1 se pierden: su residuo es −1.</text>
+  <text x="430" y="372" text-anchor="middle" font-size="13" font-weight="500" fill="#64748b">% es un residuo, no un módulo: toma el signo del dividendo.</text>
+</svg>

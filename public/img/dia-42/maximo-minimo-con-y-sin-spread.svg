@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Math.max y Math.min reciben números sueltos</title>
+  <desc id="d">Math.max recibe los números como argumentos sueltos. Math.max de 1, 5 y 3 da 5. Math.max de un arreglo con 1, 5 y 3 da NaN, porque el arreglo se convierte en un solo valor que no es un número. Con el operador de propagación, Math.max de los tres elementos da 5. Math.max sin argumentos da menos Infinity. Con un arreglo de un millón de elementos, la propagación lanza un RangeError, porque los elementos se pasan como argumentos, y un bucle o reduce da 999999 sin ese límite.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Argumentos sueltos, y un límite con arreglos enormes</text>
+  <rect x="20" y="60" width="500" height="58" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="36" y="85" text-anchor="start" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">Math.max(1, 5, 3)</text>
+  <text x="36" y="106" text-anchor="start" font-size="12" font-weight="500" fill="#14532d">argumentos sueltos</text>
+  <text x="504" y="96" text-anchor="end" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">→ 5</text>
+  <rect x="20" y="128" width="500" height="58" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="36" y="153" text-anchor="start" font-size="15" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">Math.max([1, 5, 3])</text>
+  <text x="36" y="174" text-anchor="start" font-size="12" font-weight="500" fill="#7f1d1d">el arreglo es un solo valor</text>
+  <text x="504" y="164" text-anchor="end" font-size="19" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">→ NaN</text>
+  <rect x="20" y="196" width="500" height="58" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="36" y="221" text-anchor="start" font-size="15" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">Math.max(...[1, 5, 3])</text>
+  <text x="36" y="242" text-anchor="start" font-size="12" font-weight="500" fill="#14532d">la propagación los separa</text>
+  <text x="504" y="232" text-anchor="end" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">→ 5</text>
+  <rect x="20" y="264" width="500" height="58" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="36" y="289" text-anchor="start" font-size="15" font-weight="800" fill="#78350f" font-family="ui-monospace, Menlo, monospace">Math.max()</text>
+  <text x="36" y="310" text-anchor="start" font-size="12" font-weight="500" fill="#78350f">sin argumentos: por eso se rechaza el arreglo vacío</text>
+  <text x="504" y="300" text-anchor="end" font-size="19" font-weight="800" fill="#78350f" font-family="ui-monospace, Menlo, monospace">→ -Infinity</text>
+  <rect x="20" y="332" width="500" height="58" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="36" y="357" text-anchor="start" font-size="15" font-weight="800" fill="#78350f" font-family="ui-monospace, Menlo, monospace">Math.max([7])</text>
+  <text x="36" y="378" text-anchor="start" font-size="12" font-weight="500" fill="#78350f">funciona por casualidad: [7] se convierte en 7</text>
+  <text x="504" y="368" text-anchor="end" font-size="19" font-weight="800" fill="#78350f" font-family="ui-monospace, Menlo, monospace">→ 7</text>
+  <rect x="540" y="60" width="300" height="336" rx="14" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="690" y="92" text-anchor="middle" font-size="16" font-weight="800" fill="#334155">Un millón de elementos</text>
+  <rect x="556" y="112" width="268" height="92" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="570" y="140" text-anchor="start" font-size="13.5" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">Math.max(...enorme)</text>
+  <text x="570" y="166" text-anchor="start" font-size="20" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">RangeError</text>
+  <text x="570" y="190" text-anchor="start" font-size="11.5" font-weight="500" fill="#7f1d1d">los elementos son argumentos</text>
+  <rect x="556" y="222" width="268" height="92" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="570" y="250" text-anchor="start" font-size="13.5" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">bucle o reduce</text>
+  <text x="570" y="276" text-anchor="start" font-size="20" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">999999</text>
+  <text x="570" y="300" text-anchor="start" font-size="11.5" font-weight="500" fill="#14532d">sin límite de argumentos</text>
+  <text x="690" y="346" text-anchor="middle" font-size="12" font-weight="500" fill="#475569">El límite depende del motor:</text>
+  <text x="690" y="366" text-anchor="middle" font-size="12" font-weight="500" fill="#475569">unas decenas de miles de</text>
+  <text x="690" y="384" text-anchor="middle" font-size="12" font-weight="500" fill="#475569">elementos ya pueden fallar.</text>
+</svg>
