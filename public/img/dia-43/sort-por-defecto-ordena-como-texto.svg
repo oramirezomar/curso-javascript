@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">sort ordena como texto si no recibe un comparador</title>
+  <desc id="d">El arreglo 10, 9, 1, 7 ordenado con sort sin comparador queda 1, 10, 7, 9, porque compara los números como texto: el texto 1 va antes que 10, que va antes que 7 y que 9. Con el comparador a menos b queda 1, 7, 9, 10. Si el comparador devuelve un número negativo, a va antes que b. Para ordenar de mayor a menor se usa b menos a. sort y reverse modifican el arreglo original. toSorted y toReversed, y una copia con la propagación, no lo modifican.</desc>
+  <rect width="860" height="420" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">sort sin comparador ordena como texto</text>
+  <rect x="20" y="56" width="820" height="92" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="40" y="94" text-anchor="start" font-size="16" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[10, 9, 1, 7].sort()</text>
+  <text x="40" y="122" text-anchor="start" font-size="13" font-weight="500" fill="#7f1d1d">compara textos: "1" &lt; "10" &lt; "7" &lt; "9"</text>
+  <rect x="530" y="74" width="70" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="565.0" y="109.7" text-anchor="middle" font-size="22" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="608" y="74" width="70" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="643.0" y="109.7" text-anchor="middle" font-size="22" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">10</text>
+  <rect x="686" y="74" width="70" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="721.0" y="109.7" text-anchor="middle" font-size="22" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">7</text>
+  <rect x="764" y="74" width="70" height="56" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="799.0" y="109.7" text-anchor="middle" font-size="22" font-weight="800" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">9</text>
+  <text x="512" y="108" text-anchor="end" font-size="22" font-weight="800" fill="#7f1d1d">→</text>
+  <rect x="20" y="160" width="820" height="92" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="40" y="198" text-anchor="start" font-size="16" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">[10, 9, 1, 7].sort((a, b) =&gt; a - b)</text>
+  <text x="40" y="226" text-anchor="start" font-size="13" font-weight="500" fill="#14532d">compara números: la resta decide el orden</text>
+  <rect x="530" y="178" width="70" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="565.0" y="213.7" text-anchor="middle" font-size="22" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">1</text>
+  <rect x="608" y="178" width="70" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="643.0" y="213.7" text-anchor="middle" font-size="22" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">7</text>
+  <rect x="686" y="178" width="70" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="721.0" y="213.7" text-anchor="middle" font-size="22" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">9</text>
+  <rect x="764" y="178" width="70" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="799.0" y="213.7" text-anchor="middle" font-size="22" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">10</text>
+  <text x="512" y="212" text-anchor="end" font-size="22" font-weight="800" fill="#14532d">→</text>
+  <rect x="20" y="272" width="262" height="128" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="151" y="302" text-anchor="middle" font-size="15" font-weight="800" fill="#1e3a8a">Cómo decide el comparador</text>
+  <text x="151" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="#1e3a8a">a - b &lt; 0: a va antes</text>
+  <text x="151" y="356" text-anchor="middle" font-size="13" font-weight="500" fill="#1e3a8a">a - b &gt; 0: b va antes</text>
+  <text x="151" y="380" text-anchor="middle" font-size="13" font-weight="500" fill="#1e3a8a">a - b = 0: conservan su orden</text>
+  <rect x="299" y="272" width="262" height="128" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="430" y="302" text-anchor="middle" font-size="15" font-weight="800" fill="#78350f">De mayor a menor</text>
+  <text x="430" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">(a, b) =&gt; b - a</text>
+  <text x="430" y="356" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">o ordenar de menor a mayor</text>
+  <text x="430" y="380" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">y luego invertir con reverse</text>
+  <rect x="578" y="272" width="262" height="128" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="709" y="302" text-anchor="middle" font-size="15" font-weight="800" fill="#4c1d95">¿Modifica el original?</text>
+  <text x="709" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="#4c1d95">sort y reverse: sí</text>
+  <text x="709" y="356" text-anchor="middle" font-size="13" font-weight="500" fill="#4c1d95">toSorted y toReversed: no</text>
+  <text x="709" y="380" text-anchor="middle" font-size="13" font-weight="500" fill="#4c1d95">[...arreglo].sort(): copia</text>
+</svg>

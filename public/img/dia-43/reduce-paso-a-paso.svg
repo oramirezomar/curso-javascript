@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">reduce paso a paso</title>
+  <desc id="d">reduce con la función acumulado más actual y el valor inicial 0, aplicada a 1, 2, 3, 4. Primera vuelta: acumulado 0 y actual 1 dan 1. Segunda: acumulado 1 y actual 2 dan 3. Tercera: acumulado 3 y actual 3 dan 6. Cuarta: acumulado 6 y actual 4 dan 10. El promedio es 10 entre 4, que es 2,5. Sin valor inicial, reduce empieza con el primer elemento como acumulado y el índice 1. Con un arreglo vacío y sin valor inicial lanza un TypeError. Si el callback no devuelve nada, el acumulado pasa a ser undefined.</desc>
+  <rect width="860" height="430" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">reduce((acumulado, actual) =&gt; acumulado + actual, 0)</text>
+  <rect x="20" y="56" width="190" height="132" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="115" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#1e3a8a">vuelta 1</text>
+  <text x="115" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">0 + 1</text>
+  <text x="115" y="134" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1e3a8a">acumulado + actual</text>
+  <rect x="65" y="146" width="100" height="34" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="115" y="170" text-anchor="middle" font-size="18" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">= 1</text>
+  <path d="M212 122 L226 122" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <path d="M220 114 L228 122 L220 130" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <rect x="230" y="56" width="190" height="132" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="325" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#1e3a8a">vuelta 2</text>
+  <text x="325" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">1 + 2</text>
+  <text x="325" y="134" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1e3a8a">acumulado + actual</text>
+  <rect x="275" y="146" width="100" height="34" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="325" y="170" text-anchor="middle" font-size="18" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">= 3</text>
+  <path d="M422 122 L436 122" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <path d="M430 114 L438 122 L430 130" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <rect x="440" y="56" width="190" height="132" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="535" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#1e3a8a">vuelta 3</text>
+  <text x="535" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">3 + 3</text>
+  <text x="535" y="134" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1e3a8a">acumulado + actual</text>
+  <rect x="485" y="146" width="100" height="34" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="535" y="170" text-anchor="middle" font-size="18" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">= 6</text>
+  <path d="M632 122 L646 122" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <path d="M640 114 L648 122 L640 130" stroke="#4d290b" stroke-width="3" fill="none"/>
+  <rect x="650" y="56" width="190" height="132" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="745" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#1e3a8a">vuelta 4</text>
+  <text x="745" y="112" text-anchor="middle" font-size="24" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">6 + 4</text>
+  <text x="745" y="134" text-anchor="middle" font-size="11.5" font-weight="500" fill="#1e3a8a">acumulado + actual</text>
+  <rect x="695" y="146" width="100" height="34" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="745" y="170" text-anchor="middle" font-size="18" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">= 10</text>
+  <rect x="260" y="206" width="340" height="60" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="430" y="244" text-anchor="middle" font-size="20" font-weight="800" fill="#4c1d95" font-family="ui-monospace, Menlo, monospace">promedio = 10 / 4 = 2.5</text>
+  <rect x="20" y="290" width="262" height="126" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="151" y="320" text-anchor="middle" font-size="15" font-weight="800" fill="#78350f">Sin valor inicial</text>
+  <text x="151" y="348" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">El primer elemento es el</text>
+  <text x="151" y="372" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">acumulado, y se empieza en</text>
+  <text x="151" y="396" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">el índice 1</text>
+  <rect x="299" y="290" width="262" height="126" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="430" y="320" text-anchor="middle" font-size="15" font-weight="800" fill="#7f1d1d">Vacío sin valor inicial</text>
+  <text x="430" y="348" text-anchor="middle" font-size="13" font-weight="500" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[].reduce((a, b) =&gt; a + b)</text>
+  <text x="430" y="372" text-anchor="middle" font-size="13" font-weight="500" fill="#7f1d1d">lanza un TypeError</text>
+  <rect x="578" y="290" width="262" height="126" rx="14" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="709" y="320" text-anchor="middle" font-size="15" font-weight="800" fill="#7c2d12">Olvidar el return</text>
+  <text x="709" y="348" text-anchor="middle" font-size="13" font-weight="500" fill="#7c2d12">Si el callback no devuelve</text>
+  <text x="709" y="372" text-anchor="middle" font-size="13" font-weight="500" fill="#7c2d12">nada, el acumulado pasa a</text>
+  <text x="709" y="396" text-anchor="middle" font-size="13" font-weight="500" fill="#7c2d12">ser undefined</text>
+</svg>

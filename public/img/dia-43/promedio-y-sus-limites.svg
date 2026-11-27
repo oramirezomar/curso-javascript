@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">El promedio y sus límites</title>
+  <desc id="d">El promedio es la suma entre la cantidad de elementos. Tres límites: los decimales, con 0,1, 0,2 y 0,3 el promedio es 0,20000000000000004 y toFixed devuelve un texto; la suma de números enormes, porque la suma de dos 1e308 es Infinity y una media incremental da 1e308; y la validación previa, porque un arreglo vacío daría 0 entre 0, que es NaN, y un NaN dentro contagia al resultado.</desc>
+  <rect width="860" height="400" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">promedio = suma / cantidad, y tres límites</text>
+  <rect x="20" y="56" width="820" height="70" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="430" y="100" text-anchor="middle" font-size="20" font-weight="800" fill="#4c1d95" font-family="ui-monospace, Menlo, monospace">arreglo.reduce((suma, n) =&gt; suma + n, 0) / arreglo.length</text>
+  <rect x="20" y="150" width="262" height="226" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="151" y="184" text-anchor="middle" font-size="17" font-weight="800" fill="#78350f">Decimales</text>
+  <text x="151" y="226" text-anchor="middle" font-size="13" font-weight="600" fill="#78350f" font-family="ui-monospace, Menlo, monospace">[0.1, 0.2, 0.3]</text>
+  <text x="151" y="264" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">promedio: 0.20000000000000004</text>
+  <text x="151" y="302" text-anchor="middle" font-size="13" font-weight="500" fill="#78350f">toFixed(2) da el texto "0.20"</text>
+  <rect x="299" y="150" width="262" height="226" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="430" y="184" text-anchor="middle" font-size="17" font-weight="800" fill="#7f1d1d">Números enormes</text>
+  <text x="430" y="226" text-anchor="middle" font-size="13" font-weight="600" fill="#7f1d1d" font-family="ui-monospace, Menlo, monospace">[1e308, 1e308]</text>
+  <text x="430" y="264" text-anchor="middle" font-size="13" font-weight="500" fill="#7f1d1d">la suma es Infinity</text>
+  <text x="430" y="302" text-anchor="middle" font-size="13" font-weight="500" fill="#7f1d1d">la media incremental da 1e308</text>
+  <rect x="578" y="150" width="262" height="226" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="709" y="184" text-anchor="middle" font-size="17" font-weight="800" fill="#1e3a8a">Entradas inválidas</text>
+  <text x="709" y="226" text-anchor="middle" font-size="13" font-weight="600" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">[] daría 0 / 0, que es NaN</text>
+  <text x="709" y="264" text-anchor="middle" font-size="13" font-weight="500" fill="#1e3a8a">un NaN dentro contagia</text>
+  <text x="709" y="302" text-anchor="middle" font-size="13" font-weight="500" fill="#1e3a8a">todo el resultado</text>
+</svg>

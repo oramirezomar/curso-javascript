@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <title id="t">filter con indexOf frente a Set</title>
+  <desc id="d">El arreglo x, 10, x, 2, el texto 10, 10, true, true tiene ocho elementos. indexOf devuelve la primera posición de cada valor: 0, 1, 0, 3, 4, 1, 6, 6. Un elemento se queda si su posición coincide con su indexOf: se quedan x, 10, 2, el texto 10 y true, y son repetidos el segundo x, el segundo 10 y el segundo true. filter con indexOf compara cada elemento con los anteriores y pierde el NaN, porque indexOf de NaN es menos 1. Set recorre el arreglo una sola vez, considera iguales NaN con NaN y 0 con menos 0, conserva el orden de inserción y compara los objetos por referencia.</desc>
+  <rect width="860" height="440" fill="#fffdf7"/>
+  <text x="430" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#4d290b">Qué elementos se quedan: x, 10, 2, "10" y true</text>
+  <text x="20" y="76" text-anchor="start" font-size="12" font-weight="800" fill="#475569">valor</text>
+  <rect x="36" y="86" width="88" height="54" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="80.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">"x"</text>
+  <text x="80" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">indexOf: 0</text>
+  <text x="80" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">se queda</text>
+  <rect x="136" y="86" width="88" height="54" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="180.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">10</text>
+  <text x="180" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">indexOf: 1</text>
+  <text x="180" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">se queda</text>
+  <rect x="236" y="86" width="88" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="280.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">"x"</text>
+  <text x="280" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b" font-family="ui-monospace, Menlo, monospace">indexOf: 0</text>
+  <text x="280" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#64748b">repetido</text>
+  <rect x="336" y="86" width="88" height="54" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="380.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">2</text>
+  <text x="380" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">indexOf: 3</text>
+  <text x="380" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">se queda</text>
+  <rect x="436" y="86" width="88" height="54" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="480.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">"10"</text>
+  <text x="480" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">indexOf: 4</text>
+  <text x="480" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">se queda</text>
+  <rect x="536" y="86" width="88" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="580.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">10</text>
+  <text x="580" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b" font-family="ui-monospace, Menlo, monospace">indexOf: 1</text>
+  <text x="580" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#64748b">repetido</text>
+  <rect x="636" y="86" width="88" height="54" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="680.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">true</text>
+  <text x="680" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d" font-family="ui-monospace, Menlo, monospace">indexOf: 6</text>
+  <text x="680" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#14532d">se queda</text>
+  <rect x="736" y="86" width="88" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="780.0" y="119.65" text-anchor="middle" font-size="19" font-weight="800" fill="#475569" font-family="ui-monospace, Menlo, monospace">true</text>
+  <text x="780" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b" font-family="ui-monospace, Menlo, monospace">indexOf: 6</text>
+  <text x="780" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#64748b">repetido</text>
+  <rect x="20" y="214" width="406" height="206" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="38" y="244" text-anchor="start" font-size="17" font-weight="800" fill="#1e3a8a" font-family="ui-monospace, Menlo, monospace">filter + indexOf</text>
+  <text x="38" y="274" text-anchor="start" font-size="13.5" font-weight="500" fill="#1e3a8a">Compara cada elemento con los</text>
+  <text x="38" y="300" text-anchor="start" font-size="13.5" font-weight="500" fill="#1e3a8a">anteriores: recorre de nuevo el arreglo</text>
+  <text x="38" y="326" text-anchor="start" font-size="13.5" font-weight="500" fill="#1e3a8a">Pierde el NaN: indexOf(NaN) es -1</text>
+  <text x="38" y="352" text-anchor="start" font-size="13.5" font-weight="500" fill="#1e3a8a">Hay que entender el tercer parámetro</text>
+  <text x="38" y="378" text-anchor="start" font-size="13.5" font-weight="500" fill="#1e3a8a">(el arreglo) para escribirlo</text>
+  <rect x="434" y="214" width="406" height="206" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="452" y="244" text-anchor="start" font-size="17" font-weight="800" fill="#14532d" font-family="ui-monospace, Menlo, monospace">new Set</text>
+  <text x="452" y="274" text-anchor="start" font-size="13.5" font-weight="500" fill="#14532d">Recorre el arreglo una sola vez</text>
+  <text x="452" y="300" text-anchor="start" font-size="13.5" font-weight="500" fill="#14532d">NaN igual a NaN, y 0 igual a -0</text>
+  <text x="452" y="326" text-anchor="start" font-size="13.5" font-weight="500" fill="#14532d">Conserva el orden de inserción</text>
+  <text x="452" y="352" text-anchor="start" font-size="13.5" font-weight="500" fill="#14532d">Los objetos se comparan por referencia</text>
+  <text x="452" y="378" text-anchor="start" font-size="13.5" font-weight="500" fill="#14532d">[...new Set(arreglo)]: una línea</text>
+</svg>
